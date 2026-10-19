@@ -10,8 +10,8 @@
   <meta property="og:type" content="website">
   <title>Alphan Akbulut | Senior Product Owner & Technical Product Manager</title>
   <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./hero-graph.css?v=cinematic-20261019-2">
-  <script src="./hero-graph.js?v=cinematic-20261019-2" defer></script>
+  <link rel="stylesheet" href="./hero-graph.css?v=fullbleed-3">
+  <script src="./hero-graph.js?v=fullbleed-3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,106 +23,111 @@
   </div>
 </header>
 <main id="main">
-<section class="hero" id="top" aria-labelledby="hero-title">
-  <div class="wrap hero-layout">
-    <div>
-      <p class="label">Senior Product Owner / Technical Product Manager</p>
-      <h1 id="hero-title">From complexity<br>to <em>clarity.</em></h1>
-      <p class="intro">I connect business analysis, product leadership and technical thinking to untangle dependencies, resolve bottlenecks and turn ambiguous requirements into clear, deliverable outcomes.</p>
-      <div class="actions"><a class="btn btn-main" href="Alphan_Akbulut_CV_2026.pdf" download>Download my CV <span aria-hidden="true">↗</span></a><a class="btn" href="#work">See selected work <span aria-hidden="true">↓</span></a></div>
-      <p class="fineprint">Istanbul, Türkiye <span>·</span> PSM I / PSPO I <span>·</span> 10+ years in digital product and operations</p>
+<section class="hero hero-cinematic" id="top" aria-labelledby="hero-title">
+  <div class="product-graph" id="product-graph" data-palette="mint" data-state="blocked" data-phase="intro" aria-label="Interactive system showing how evidence, decisions and dependencies shape delivery.">
+    <div class="pg-map">
+      <svg class="pg-svg" viewBox="0 0 1200 720" preserveAspectRatio="none" aria-label="System paths from intake through analysis, decisions and a blocked provider to delivery. Select a node for details.">
+        <title>Product thinking: from complexity to clarity</title>
+        <g aria-hidden="true">
+            <path class="pg-link" id="pg-path-0" d="M632 359 C702 359 706 238 762 238" />
+            <path class="pg-link" id="pg-path-1" d="M632 359 C702 359 706 493 762 493" />
+            <path class="pg-link" id="pg-path-2" d="M762 238 C820 238 829 359 900 359" />
+            <path class="pg-link" id="pg-path-3" d="M762 493 C820 493 829 359 900 359" />
+            <path class="pg-link" id="pg-path-4" d="M900 359 C970 359 970 238 1042 238" />
+            <path class="pg-link" id="pg-path-5" data-lane="blocked" d="M900 359 C970 359 970 493 1042 493" />
+            <path class="pg-link" id="pg-path-6" d="M1042 238 C1105 238 1107 359 1154 359" />
+            <path class="pg-link" id="pg-path-7" data-lane="blocked" d="M1042 493 C1105 493 1107 359 1154 359" />
+        </g>
+            <g class="pg-node" data-node="intake" tabindex="0" role="button" aria-label="Inspect Intake">
+              <circle class="pg-orbit" cx="632" cy="359" r="30"/>
+              <circle class="pg-disk" cx="632" cy="359" r="22"/>
+              <text class="pg-symbol" x="632" y="359">IN</text>
+              <text class="pg-label" x="632" y="405">INPUT</text>
+            </g>
+            <g class="pg-node" data-node="analysis" tabindex="0" role="button" aria-label="Inspect Analysis">
+              <circle class="pg-orbit" cx="762" cy="238" r="30"/>
+              <circle class="pg-disk" cx="762" cy="238" r="22"/>
+              <text class="pg-symbol" x="762" y="238">AN</text>
+              <text class="pg-label" x="762" y="284">ANALYZE</text>
+            </g>
+            <g class="pg-node" data-node="evidence" tabindex="0" role="button" aria-label="Inspect Evidence">
+              <circle class="pg-orbit" cx="762" cy="493" r="30"/>
+              <circle class="pg-disk" cx="762" cy="493" r="22"/>
+              <text class="pg-symbol" x="762" y="493">EV</text>
+              <text class="pg-label" x="762" y="539">EVIDENCE</text>
+            </g>
+            <g class="pg-node" data-node="decision" tabindex="0" role="button" aria-label="Inspect Decision">
+              <circle class="pg-orbit" cx="900" cy="359" r="30"/>
+              <circle class="pg-disk" cx="900" cy="359" r="22"/>
+              <text class="pg-symbol" x="900" y="359">IF</text>
+              <text class="pg-label" x="900" y="405">DECISION</text>
+            </g>
+            <g class="pg-node" data-node="rules" tabindex="0" role="button" aria-label="Inspect Rules">
+              <circle class="pg-orbit" cx="1042" cy="238" r="30"/>
+              <circle class="pg-disk" cx="1042" cy="238" r="22"/>
+              <text class="pg-symbol" x="1042" y="238">BR</text>
+              <text class="pg-label" x="1042" y="284">RULES</text>
+            </g>
+            <g class="pg-node is-selected" data-node="provider" tabindex="0" role="button" aria-label="Inspect Provider">
+              <circle class="pg-orbit" cx="1042" cy="493" r="30"/>
+              <circle class="pg-disk" cx="1042" cy="493" r="22"/>
+              <text class="pg-symbol" x="1042" y="493">PX</text>
+              <text class="pg-label" x="1042" y="539">PROVIDER</text>
+            </g>
+            <g class="pg-node" data-node="output" tabindex="0" role="button" aria-label="Inspect Delivery">
+              <circle class="pg-orbit" cx="1154" cy="359" r="30"/>
+              <circle class="pg-disk" cx="1154" cy="359" r="22"/>
+              <text class="pg-symbol" x="1154" y="359">✓</text>
+              <text class="pg-label" x="1154" y="405">DELIVERY</text>
+            </g>
+        <text x="1042" y="446" class="pg-caution" aria-hidden="true">BOTTLENECK</text>
+      </svg>
+      <canvas class="pg-canvas" aria-hidden="true"></canvas>
+      <div class="pg-map-foot" aria-hidden="true"><span id="pg-map-hint">BOTTLENECK / PROVIDER PATH</span></div>
     </div>
-    <aside class="product-graph" id="product-graph" data-palette="mint" data-state="blocked" aria-label="Interactive illustration of product decision-making and dependency resolution">
-      <div class="pg-topline"><span>SYSTEM INTELLIGENCE <b>/ 01</b></span><span class="pg-live"><i aria-hidden="true"></i>INTERACTIVE MODEL</span></div>
-      <div class="pg-head">
-        <div><p class="pg-kicker">COMPLEXITY → DECISION → DELIVERY</p><h2>A thousand signals.<br><em>One clear decision.</em></h2></div>
-        <div class="pg-flag"><span id="pg-flag-label">BLOCKER</span></div>
+    <div class="pg-topline"><span>LIVE SYSTEM STUDY <b>/ 01</b></span><span class="pg-live"><i aria-hidden="true"></i>ILLUSTRATIVE NETWORK</span></div>
+    <div class="pg-flag" aria-live="polite"><span id="pg-flag-label">BLOCKER</span></div>
+    <div class="pg-summary" aria-live="polite">
+      <div class="pg-summary-head"><span id="pg-insight-step">SYSTEM INSIGHT / INVESTIGATE</span><span>07 NODES / 08 PATHS</span></div>
+      <strong id="pg-insight-title">External dependency</strong>
+      <p id="pg-insight-detail">The illustrative provider integration is blocked. One branch queues until the dependency is resolved.</p>
+    </div>
+    <div class="pg-bottom">
+      <button class="pg-button" id="pg-resolve" type="button"><span id="pg-button-label">Resolve blocker</span><span aria-hidden="true">↗</span></button>
+      <div class="pg-timer"><small id="pg-clock-label">SIMULATED TIME</small><strong id="pg-clock-value">T+00:12</strong></div>
+    </div>
+    <div class="pg-toolrow" aria-label="Animation controls">
+      <label class="pg-tool-label" for="pg-shape">SIGNAL</label>
+      <select class="pg-select" id="pg-shape" aria-label="Particle geometry">
+        <option value="drop">Drops</option><option value="diamond">Diamonds</option><option value="hex">Hexagons</option>
+      </select>
+      <div class="pg-colors" role="group" aria-label="Particle color">
+        <button class="pg-swatch" data-palette="mint" type="button" style="--swatch:#A6F3C3" aria-pressed="true" aria-label="Mint color"></button>
+        <button class="pg-swatch" data-palette="cyan" type="button" style="--swatch:#7CD9FF" aria-pressed="false" aria-label="Cyan color"></button>
+        <button class="pg-swatch" data-palette="amber" type="button" style="--swatch:#FFD29B" aria-pressed="false" aria-label="Amber color"></button>
       </div>
-      <div class="pg-progress" aria-hidden="true"><span>01 / DISCOVER</span><span>02 / BOTTLENECK</span><span>03 / CLARITY</span></div>
-      <div class="pg-map">
-        <svg class="pg-svg" viewBox="0 0 540 300" preserveAspectRatio="none" aria-label="Information flows through input, analysis, evidence, decisions, business rules and provider integration toward delivery. Select a node to inspect its role.">
-          <title>Interactive decision network</title>
-          <g aria-hidden="true">
-          <path class="pg-link" id="pg-path-0" d="M50 150 C88 150 112 75 160 75" />
-          <path class="pg-link" id="pg-path-1" d="M50 150 C88 150 112 225 160 225" />
-          <path class="pg-link" id="pg-path-2" d="M160 75 C214 75 239 150 280 150" />
-          <path class="pg-link" id="pg-path-3" d="M160 225 C214 225 239 150 280 150" />
-          <path class="pg-link" id="pg-path-4" d="M280 150 C332 150 356 75 403 75" />
-          <path class="pg-link" id="pg-path-5" data-lane="blocked" d="M280 150 C332 150 356 225 403 225" />
-          <path class="pg-link" id="pg-path-6" d="M403 75 C458 75 460 150 500 150" />
-          <path class="pg-link" id="pg-path-7" data-lane="blocked" d="M403 225 C458 225 460 150 500 150" />
-          </g>
-          <g class="pg-node" data-node="intake" tabindex="0" role="button" aria-label="Inspect Input">
-            <circle class="pg-orbit" cx="50" cy="150" r="27" />
-            <circle class="pg-disk" cx="50" cy="150" r="20" />
-            <text class="pg-symbol" x="50" y="150">IN</text>
-            <text class="pg-label" x="50" y="194">INPUT</text>
-          </g>
-          <g class="pg-node" data-node="analysis" tabindex="0" role="button" aria-label="Inspect Analysis">
-            <circle class="pg-orbit" cx="160" cy="75" r="27" />
-            <circle class="pg-disk" cx="160" cy="75" r="20" />
-            <text class="pg-symbol" x="160" y="75">AN</text>
-            <text class="pg-label" x="160" y="117">ANALYSIS</text>
-          </g>
-          <g class="pg-node" data-node="evidence" tabindex="0" role="button" aria-label="Inspect Evidence">
-            <circle class="pg-orbit" cx="160" cy="225" r="27" />
-            <circle class="pg-disk" cx="160" cy="225" r="20" />
-            <text class="pg-symbol" x="160" y="225">EV</text>
-            <text class="pg-label" x="160" y="266">EVIDENCE</text>
-          </g>
-          <g class="pg-node" data-node="decision" tabindex="0" role="button" aria-label="Inspect Decision logic">
-            <circle class="pg-orbit" cx="280" cy="150" r="27" />
-            <circle class="pg-disk" cx="280" cy="150" r="20" />
-            <text class="pg-symbol" x="280" y="150">IF</text>
-            <text class="pg-label" x="280" y="194">DECISION</text>
-          </g>
-          <g class="pg-node" data-node="rules" tabindex="0" role="button" aria-label="Inspect Business rules">
-            <circle class="pg-orbit" cx="403" cy="75" r="27" />
-            <circle class="pg-disk" cx="403" cy="75" r="20" />
-            <text class="pg-symbol" x="403" y="75">RL</text>
-            <text class="pg-label" x="403" y="117">RULE ENGINE</text>
-          </g>
-          <g class="pg-node is-selected" data-node="provider" tabindex="0" role="button" aria-label="Inspect Provider dependency">
-            <circle class="pg-orbit" cx="403" cy="225" r="27" />
-            <circle class="pg-disk" cx="403" cy="225" r="20" />
-            <text class="pg-symbol" x="403" y="225">PX</text>
-            <text class="pg-label" x="403" y="269">PROVIDER</text>
-          </g>
-          <g class="pg-node" data-node="output" tabindex="0" role="button" aria-label="Inspect Delivery">
-            <circle class="pg-orbit" cx="500" cy="150" r="27" />
-            <circle class="pg-disk" cx="500" cy="150" r="20" />
-            <text class="pg-symbol" x="500" y="150">OK</text>
-            <text class="pg-label" x="500" y="194">DELIVER</text>
-          </g>
-          <text x="403" y="185" class="pg-caution" aria-hidden="true">BOTTLENECK</text>
-        </svg>
-        <canvas class="pg-canvas" aria-hidden="true"></canvas>
-        <div class="pg-map-foot">● <span id="pg-map-hint">BOTTLENECK / PROVIDER PATH</span> &nbsp;·&nbsp; CLICK NODES</div>
-      </div>
-      <div class="pg-summary" aria-live="polite">
-        <div class="pg-summary-head"><span id="pg-insight-step">SYSTEM INSIGHT / INVESTIGATE</span><span>07 NODES · 08 PATHS</span></div>
-        <strong id="pg-insight-title">External dependency</strong>
-        <p id="pg-insight-detail">Illustrative provider integration is blocked. One branch queues until the dependency is resolved.</p>
-      </div>
-      <div class="pg-bottom">
-        <button class="pg-button" id="pg-resolve" type="button"><span id="pg-button-label">Resolve blocker</span><span aria-hidden="true">↗</span></button>
-        <div class="pg-timer"><small id="pg-clock-label">SIMULATED TIME</small><strong id="pg-clock-value">T+00:12</strong></div>
-      </div>
-      <div class="pg-toolrow">
-        <div class="pg-tools"><label class="pg-tool-label" for="pg-shape">SIGNALS</label><select class="pg-select" id="pg-shape" aria-label="Particle geometry">
-          <option value="drop">Rain drops</option><option value="diamond">Diamonds</option><option value="hex">Hexagons</option>
-        </select></div>
-        <div class="pg-tools"><span class="pg-tool-label">COLOR</span><div class="pg-colors" role="group" aria-label="Signal color">
-          <button class="pg-swatch" data-palette="mint" type="button" style="--swatch:#A6F3C3" aria-pressed="true" aria-label="Mint color"></button>
-          <button class="pg-swatch" data-palette="cyan" type="button" style="--swatch:#7CD9FF" aria-pressed="false" aria-label="Cyan color"></button>
-          <button class="pg-swatch" data-palette="amber" type="button" style="--swatch:#FFD29B" aria-pressed="false" aria-label="Amber color"></button>
-        </div></div>
-        <button class="pg-pause" id="pg-pause" type="button" aria-pressed="false">Pause motion</button>
-      </div>
-      <p class="pg-caption">Click <strong>Resolve blocker</strong> for the lightning &amp; AA reveal. Interactive concept · Synthetic flow, not a live system.</p>
-    </aside>
+      <button class="pg-pause" id="pg-pause" type="button" aria-pressed="false">Pause</button>
+    </div>
   </div>
-  <div class="wrap scroll">SCROLL TO EXPLORE</div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <p class="hero-eyebrow"><span class="hero-index">AA / 001</span> SENIOR PRODUCT OWNER &nbsp;·&nbsp; TECHNICAL PRODUCT MANAGER</p>
+      <h1 id="hero-title">From<br>complexity<br><em>to clarity.</em></h1>
+      <p class="hero-intro">Turning ambiguous business needs into clear decisions, resilient systems, and products teams can deliver.</p>
+      <div class="hero-actions">
+        <a class="hero-primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
+        <a class="hero-secondary" href="Alphan_Akbulut_CV_2026.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-credentials"><span>PSM I &nbsp;/&nbsp; PSPO I</span><span>10+ YEARS IN PRODUCT & OPERATIONS</span><span>ISTANBUL, TÜRKİYE</span></div>
+    </div>
+    <div class="hero-narrative" aria-hidden="true"><span>ANALYZE</span><span class="hero-narrative-line"></span><span>DECIDE</span><span class="hero-narrative-line"></span><span>DELIVER</span></div>
+  </div>
+  <div class="hero-baseline"><div class="wrap hero-baseline-inner">
+    <span>01 / A SYSTEMS-THINKING PORTFOLIO</span>
+    <span>EXPERIMENT WITH THE NETWORK <span aria-hidden="true">↗</span></span>
+    <a href="#about">SCROLL TO EXPLORE ↓</a>
+  </div></div>
 </section>
 
 <section class="section" id="about" aria-labelledby="about-title">
