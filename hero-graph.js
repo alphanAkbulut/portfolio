@@ -11,6 +11,7 @@
   const ctx=canvas?.getContext?.("2d",{alpha:true});
   const routes=[...root.querySelectorAll(".pg-link")];
   const nodes=[...root.querySelectorAll(".pg-node")];
+  const diagram=root.querySelector(".pg-svg");
   const button=el("pg-resolve"),buttonText=el("pg-button-label"),flag=el("pg-flag-label"),liveStatus=el("pg-a11y-status");
   const shapeSelect=el("pg-shape"),pauseButton=el("pg-pause"),colors=[...root.querySelectorAll(".pg-swatch")];
   const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches||false;
@@ -21,9 +22,9 @@
   };
   let seed=241963;
   function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
-  const count=window.matchMedia?.("(max-width: 600px)")?.matches?570:1650;
+  const count=window.matchMedia?.("(max-width: 600px)")?.matches?440:(window.matchMedia?.("(max-width: 1000px)")?.matches?780:1100);
   let tone=palettes.mint,shape="drop",phase=reduced?"blocked":"intro";
-  let phaseElapsed=0,now=0;
+  let phaseElapsed=0,now=0,renderedMorph=0,rewindStartMorph=0,instantFinal=false;
   let paused=reduced,visible=true,last=0,lastDraw=0,active=true;
   let surfaceWidth=0,surfaceHeight=0,particleSprite=null;
   const paths=routes.map(node=>{
@@ -116,6 +117,11 @@
     root.dataset.phase=state;
     const resolved=state==="flash"||state==="logo";
     root.dataset.state=resolved?"resolved":"blocked";
+    if(state==="rewind"){
+      flag.textContent="REPLAYING";buttonText.textContent="Resetting…";button.disabled=true;
+      liveStatus.textContent="The animation is resetting smoothly.";return;
+    }
+    button.disabled=false;
     flag.textContent=state==="flash"?"RESTORING":resolved?"PATH OPEN":"PATH BLOCKED";
     buttonText.textContent=resolved?"Replay":"Resolve blocker";
     liveStatus.textContent=state==="flash"?"The blocked path is reopening."
@@ -123,14 +129,21 @@
       :"Provider path blocked. Select Resolve blocker to see the recovery.";
   }
   function reset(){
-    phase=(reduced||paused)?"blocked":"intro";phaseElapsed=0;
     root.classList.remove("pg-lightning","pg-bloom");
+    if(reduced||paused){
+      phase="blocked";phaseElapsed=0;instantFinal=false;renderedMorph=0;
+    }else{
+      rewindStartMorph=renderedMorph;
+      phase="rewind";phaseElapsed=0;
+    }
     status(phase);
     if(ctx)paint();
   }
   function trigger(){
+    if(phase==="rewind")return;
     if(phase==="flash"||phase==="logo"){reset();return}
-    phase=(reduced||paused)?"logo":"flash";phaseElapsed=0;
+    instantFinal=reduced||paused;
+    phase=instantFinal?"logo":"flash";phaseElapsed=instantFinal?3:0;
     status(phase);
     if(phase==="flash"){
       // Single emphasis peak; neither a full-page white flash nor looping strobe.
@@ -159,10 +172,18 @@
     const bounds=canvas.getBoundingClientRect();
     surfaceWidth=bounds.width;surfaceHeight=bounds.height;
     if(surfaceWidth<10||surfaceHeight<10)return;
-    const dpr=Math.min(window.devicePixelRatio||1,1.65);
+    const dpr=Math.min(window.devicePixelRatio||1,1.55);
     const w=Math.ceil(surfaceWidth*dpr),h=Math.ceil(surfaceHeight*dpr);
     if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
-    ctx.setTransform(w/1200,0,0,h/720,0,0);
+    // Match the SVG viewBox's uniform xMidYMid meet transform exactly.
+    // Non-uniform scaling caused both clipping and stretched diagram geometry.
+    const view={x:588,y:172,width:625,height:402};
+    const zoom=Math.min(surfaceWidth/view.width,surfaceHeight/view.height);
+    const offsetX=(surfaceWidth-view.width*zoom)*.5;
+    const offsetY=(surfaceHeight-view.height*zoom)*.5;
+    const sx=w/surfaceWidth,sy=h/surfaceHeight;
+    ctx.setTransform(sx*zoom,0,0,sy*zoom,
+      sx*(offsetX-view.x*zoom),sy*(offsetY-view.y*zoom));
     paint();
   }
   function drawWave(path,progress,boost){
@@ -211,10 +232,22 @@
   }
   function paint(){
     if(!ctx||!surfaceWidth||!surfaceHeight)return;
-    ctx.clearRect(0,0,1200,720);
-    const gather=smooth(phaseElapsed/3.4),isLogo=phase==="flash"||phase==="logo";
-    const morph=isLogo?(phase==="logo"&&(reduced||paused)?1:smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3)):0;
-    const reveal=phase==="intro"?gather:1;
+    // Clear the backing pixels, not a transformed design rectangle.
+    ctx.save();ctx.setTransform(1,0,0,1,0,0);
+    ctx.clearRect(0,0,canvas.width,canvas.height);ctx.restore();
+    const isLogo=phase==="flash"||phase==="logo";
+    // Keep transition time continuous across flash → logo (no hard morph jump).
+    const eventTime=phase==="flash"?phaseElapsed:phase==="logo"?1.85+phaseElapsed:0;
+    const morph=isLogo?(instantFinal?1:smooth((eventTime-.24)/3.05))
+      :phase==="rewind"?rewindStartMorph*(1-smooth(phaseElapsed/1.35)):0;
+    const reveal=phase==="intro"?smooth(phaseElapsed/3.9)
+      :phase==="rewind"?1-smooth((phaseElapsed-1.10)/.95):1;
+    renderedMorph=morph;
+    // The line network fades with the particles instead of switching between scenes.
+    const lineOpacity=phase==="intro"?.13+.82*reveal
+      :phase==="rewind"?( .045+.91*(1-morph))*(.14+.86*reveal)
+      :isLogo?.045+.91*(1-smooth((morph-.3)/.7)):.95;
+    if(diagram)diagram.style.opacity=String(lineOpacity);
     ctx.save();ctx.globalCompositeOperation="screen";
     for(let i=0;i<dots.length;i++){
       const p=dots[i],orbit=now*(.8+p.speed*.33)+p.seed;
@@ -260,17 +293,17 @@
     if(!active)return;
     window.requestAnimationFrame(tick);
     if(!visible||document.hidden||!ctx||!surfaceWidth){last=0;return}
-    if(t-lastDraw<22)return;
-    const delta=last?Math.min((t-last)/1000,.058):.024;
+    if(t-lastDraw<16)return;
+    const delta=last?Math.min((t-last)/1000,.05):.016;
     last=t;lastDraw=t;
     if(!paused){
       now+=delta;phaseElapsed+=delta;
-      if(phase==="intro"&&phaseElapsed>3.4){phase="blocked";phaseElapsed=0;status(phase)}
-      else if(phase==="flash"){
-        if(phaseElapsed>=1.85){
-          phase="logo";phaseElapsed=0;root.classList.remove("pg-lightning","pg-bloom");
-          status(phase);
-        }
+      if(phase==="intro"&&phaseElapsed>=3.9){phase="blocked";phaseElapsed=0;status(phase)}
+      else if(phase==="flash"&&phaseElapsed>=1.85){
+        phase="logo";phaseElapsed=0;
+        root.classList.remove("pg-lightning","pg-bloom");status(phase);
+      }else if(phase==="rewind"&&phaseElapsed>=2.05){
+        phase="intro";phaseElapsed=0;renderedMorph=0;instantFinal=false;status(phase);
       }
       paint();
     }

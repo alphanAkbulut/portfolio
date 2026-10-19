@@ -462,3 +462,85 @@
   .hero-cinematic .pg-hud .pg-button{font-size:9px}
   .hero-cinematic .pg-settings>summary{font-size:8px}
 }
+
+
+/* Fit and motion v2
+ * The scene uses a shared 625×402 logical viewBox for SVG and Canvas.
+ * Keep the artwork within the visible right-side stage instead of offsetting a
+ * fixed-width image beyond the viewport. Breakpoints reposition, not stretch. */
+.hero-cinematic .pg-map{
+  inset:auto;
+  top:17%;
+  bottom:154px;
+  left:clamp(535px,43vw,720px);
+  right:clamp(18px,3vw,50px);
+  width:auto;
+  height:auto;
+  max-width:none;
+  overflow:hidden;
+  -webkit-mask-image:none!important;
+  mask-image:none!important;
+}
+.hero-cinematic .pg-svg{
+  transition:filter .5s ease;
+  overflow:hidden;
+}
+.hero-cinematic .pg-canvas{
+  opacity:.95;
+}
+.hero-cinematic .pg-node .pg-label{
+  font-size:13px;
+  stroke-width:2.7px;
+  letter-spacing:.035em;
+}
+.hero-cinematic .pg-node .pg-symbol{
+  font-size:17px;
+}
+.hero-cinematic .pg-caution{
+  font-size:12px;
+}
+.hero-cinematic .pg-hud{
+  max-width:calc(100% - 34px);
+}
+.hero-cinematic .pg-hud .pg-button:disabled{
+  cursor:wait;
+  opacity:.62;
+}
+@media(max-width:1150px) and (min-width:851px){
+  .hero-cinematic .pg-map{
+    inset:auto;
+    top:20%;
+    bottom:154px;
+    left:48%;
+    right:16px;
+    width:auto;height:auto;
+  }
+}
+@media(max-width:850px){
+  .hero-cinematic .pg-map{
+    inset:auto;
+    top:40%;
+    bottom:153px;
+    left:24px;
+    right:24px;
+    width:auto;
+    height:auto;
+  }
+}
+@media(max-width:600px){
+  .hero-cinematic .pg-map{
+    inset:auto;
+    top:42%;
+    bottom:150px;
+    left:12px;
+    right:12px;
+    width:auto;
+    height:auto;
+  }
+  .hero-cinematic .pg-node .pg-label{font-size:16px}
+  .hero-cinematic .pg-node .pg-symbol{font-size:20px}
+  .hero-cinematic .pg-caution{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-cinematic .pg-svg{transition:none!important}
+}
