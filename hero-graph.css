@@ -102,3 +102,52 @@
 @media(max-width:600px){.product-graph{border-radius:17px}.pg-topline{padding:17px 16px 0;font-size:8px}.pg-head{padding:17px 16px 0}.pg-head h2{font-size:27px!important}.pg-kicker{font-size:8px}.pg-flag{font-size:8px;padding:5px 7px}.pg-map{height:230px}.pg-map-foot{left:14px;font-size:7px}.pg-summary{margin:4px 14px 0;padding:12px;min-height:103px}.pg-summary p{font-size:10px}.pg-bottom{padding:14px;gap:8px}.pg-toolrow{padding:12px 14px;flex-wrap:wrap}.pg-caption{padding:0 14px 13px}.pg-tools{gap:6px}.pg-tool-label{font-size:8px}}
 @media(max-width:375px){.pg-head h2{font-size:23px!important}.pg-live{font-size:7px}.pg-topline{letter-spacing:.07em}.pg-tool-label{display:none}.pg-button{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.product-graph *, .product-graph *:before,.product-graph *:after{animation:none!important;transition:none!important}.pg-button:hover{transform:none}}
+
+/* Cinematic particle sequence: a single controlled pulse at blocker recovery. */
+.pg-svg{transition:opacity 950ms cubic-bezier(.22,1,.36,1),filter 650ms ease}
+.product-graph[data-phase="intro"] .pg-svg{opacity:.18;filter:blur(2px)}
+.product-graph[data-phase="blocked"] .pg-svg{opacity:1;filter:none}
+.product-graph[data-phase="flash"] .pg-svg{opacity:.8;filter:drop-shadow(0 0 9px rgba(var(--pg-rgb),.28))}
+.product-graph[data-phase="logo"] .pg-svg{opacity:.045;filter:blur(7px);pointer-events:none}
+.product-graph[data-phase="logo"] .pg-map-foot{opacity:.8}
+.pg-map{isolation:isolate}
+.pg-map::after{content:"";position:absolute;inset:-15%;z-index:5;pointer-events:none;opacity:0;
+ background:radial-gradient(ellipse 70% 58% at 68% 58%,rgba(246,255,253,.57),rgba(var(--pg-rgb),.23) 34%,transparent 76%);
+ mix-blend-mode:screen}
+.product-graph.pg-bloom .pg-map::after{animation:pg-electric-bloom 1.4s cubic-bezier(.21,.88,.2,1) both}
+.product-graph.pg-bloom{animation:pg-network-glow 1.4s ease-out both}
+.product-graph.pg-lightning .pg-link{
+ animation:pg-route-surge 1.3s ease-out both
+}
+.product-graph.pg-lightning .pg-node .pg-orbit{
+ animation:pg-nodes-energize 1.25s ease-out both
+}
+@keyframes pg-electric-bloom{
+ 0%,16%{opacity:0}
+ 31%{opacity:.24}
+ 43%{opacity:.75}
+ 58%{opacity:.27}
+ 72%{opacity:.07}
+ 100%{opacity:0}
+}
+@keyframes pg-network-glow{
+ 0%,18%{border-color:rgba(157,215,219,.21);box-shadow:0 45px 105px rgba(0,0,0,.38), inset 0 1px rgba(255,255,255,.085)}
+ 44%{border-color:rgba(var(--pg-rgb),.8);box-shadow:0 45px 105px rgba(0,0,0,.38),0 0 44px rgba(var(--pg-rgb),.21),inset 0 0 34px rgba(var(--pg-rgb),.14)}
+ 100%{border-color:rgba(157,215,219,.21);box-shadow:0 45px 105px rgba(0,0,0,.38), inset 0 1px rgba(255,255,255,.085)}
+}
+@keyframes pg-route-surge{
+ 0%,15%{stroke-width:1.55;filter:none}
+ 43%{stroke:rgba(var(--pg-rgb),.98);stroke-width:2.8;filter:drop-shadow(0 0 12px rgba(var(--pg-rgb),.96))}
+ 78%,100%{stroke-width:1.55;filter:none}
+}
+@keyframes pg-nodes-energize{
+ 0%,15%{stroke-width:1}
+ 43%{stroke:var(--pg-accent);stroke-width:2;filter:drop-shadow(0 0 10px rgba(var(--pg-rgb),.85))}
+ 100%{stroke-width:1;filter:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .pg-svg{transition:none!important}
+ .pg-map::after,.product-graph.pg-bloom .pg-map::after{display:none!important}
+ .product-graph.pg-bloom,.product-graph.pg-lightning .pg-link,
+ .product-graph.pg-lightning .pg-node .pg-orbit{animation:none!important}
+}
