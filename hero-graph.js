@@ -1,201 +1,337 @@
-/* Product Flow Lab: dependency-free animated diagram. All values are illustrative. */
+/* Product Flow Lab / Particle narrative.
+ * Original Canvas 2D + SVG animation; no ThreeUI source, no external dependencies.
+ * Scenario is synthetic. Phases: entropy > network > blocker > lightning > AA.
+ */
 (() => {
   "use strict";
-  const root = document.getElementById("product-graph");
-  if (!root) return;
-  const canvas = root.querySelector(".pg-canvas");
-  const ctx = canvas && canvas.getContext ? canvas.getContext("2d", { alpha:true }) : null;
-  const svg = root.querySelector(".pg-svg");
-  const paths = Array.from(root.querySelectorAll(".pg-link"));
-  const nodes = Array.from(root.querySelectorAll(".pg-node"));
-  const resolveButton = root.querySelector("#pg-resolve");
-  const resolveLabel = root.querySelector("#pg-button-label");
-  const statusLabel = root.querySelector("#pg-flag-label");
-  const insightStep = root.querySelector("#pg-insight-step");
-  const insightTitle = root.querySelector("#pg-insight-title");
-  const insightDetail = root.querySelector("#pg-insight-detail");
-  const clockLabel = root.querySelector("#pg-clock-label");
-  const clockValue = root.querySelector("#pg-clock-value");
-  const graphHint = root.querySelector("#pg-map-hint");
-  const shapeSelect = root.querySelector("#pg-shape");
-  const pauseButton = root.querySelector("#pg-pause");
-  const swatches = Array.from(root.querySelectorAll(".pg-swatch"));
-  const reducedQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : {matches:false};
-  const reduced = reducedQuery.matches;
-  const palette = {
-    mint: {r:166,g:243,b:195},
-    cyan: {r:124,g:217,b:255},
+  const root=document.getElementById("product-graph");
+  if(!root)return;
+  const el=id=>root.querySelector("#"+id);
+  const canvas=root.querySelector(".pg-canvas");
+  const ctx=canvas?.getContext?.("2d",{alpha:true});
+  const routes=[...root.querySelectorAll(".pg-link")];
+  const nodes=[...root.querySelectorAll(".pg-node")];
+  const button=el("pg-resolve"),buttonText=el("pg-button-label"),flag=el("pg-flag-label");
+  const insightStep=el("pg-insight-step"),insightTitle=el("pg-insight-title"),insightDetail=el("pg-insight-detail");
+  const clockTitle=el("pg-clock-label"),clock=el("pg-clock-value"),hint=el("pg-map-hint");
+  const shapeSelect=el("pg-shape"),pauseButton=el("pg-pause"),colors=[...root.querySelectorAll(".pg-swatch")];
+  const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches||false;
+  const palettes={
+    mint:{r:166,g:243,b:195},
+    cyan:{r:124,g:217,b:255},
     amber:{r:255,g:210,b:155}
   };
-  const nodeContent = {
-    intake:["Input captured","A new requirement or event enters the system. First, identify the source and its business purpose."],
-    analysis:["Analyze the requirement","Examine workflow context, existing behavior, stakeholders, constraints, and dependencies before proposing changes."],
-    evidence:["Verify the evidence","Compare sample API payloads, process rules, operational data, and logs to narrow down the problem."],
-    decision:["Decision logic","Rules and validated evidence determine which delivery paths are applicable and which need further investigation."],
-    rules:["Business rules evaluated","Define conditions, exceptions, and acceptance criteria. Check that the outcomes can be tested."],
-    provider:["External dependency","Illustrative provider integration is blocked. One branch queues until the dependency is resolved."],
-    output:["Delivery outcome","Validated work reaches the delivery stage. Release readiness depends on the affected paths and risks."]
+  const guide={
+    intake:["Input captured","A requirement enters the system. Identify the business objective and the source before choosing a solution."],
+    analysis:["Analyze the requirement","Explore user journeys, stakeholder needs, dependencies and existing processes."],
+    evidence:["Verify the evidence","Review relevant process rules, API behavior, operational data and logs before defining scope."],
+    decision:["Decision logic","Evaluate rules, risk, impact and feasibility. Route only validated work into delivery."],
+    rules:["Business rules evaluated","Define testable business conditions, exceptions and acceptance criteria."],
+    provider:["External dependency","The illustrative provider integration is blocked. Information accumulates until the dependency is resolved."],
+    output:["Delivery outcome","Resolved paths lead to implementation, acceptance testing and release readiness."]
   };
-  let selected = "provider", isBlocked = true, paused = reduced, visible = true;
-  let time = 0, elapsed = 12, recovery = 0, previous = 0, lastPaint = 0, frameId = 0, width = 0, height = 0;
-  let shape = "drop", tone = palette.mint;
-  let seed = 61917;
-  function rnd() {seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed / 4294967296;}
-  const rain = Array.from({length:38},(_,i)=>({
-    x:rnd()*540,y:rnd()*300,vel:7+rnd()*17,scale:.5+rnd()*1.3,
-    opacity:.10+rnd()*.26,drift:(rnd()-.5)*2.4,phase:rnd()*6.28
+  let seed=241963;
+  function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
+  const count=window.matchMedia?.("(max-width: 600px)")?.matches?390:890;
+  let tone=palettes.mint,shape="drop",phase=reduced?"blocked":"intro";
+  let phaseElapsed=0,now=0,blockTime=12,recovery=0;
+  let paused=reduced,visible=true,last=0,lastDraw=0,active=true;
+  let surfaceWidth=0,surfaceHeight=0,particleSprite=null;
+  const paths=routes.map(node=>{
+    try{return {node,length:node.getTotalLength()}}catch{return {node,length:0}}
+  });
+  const point=(path,t)=>path.node.getPointAtLength(Math.max(0,Math.min(1,t))*path.length);
+  const dots=Array.from({length:count},(_,i)=>({
+    x:rand()*540,y:rand()*300,scatterX:rand()*540,scatterY:rand()*300,
+    graphX:0,graphY:0,logoX:0,logoY:0,
+    size:.45+rand()*.73,alpha:.46+rand()*.52,speed:.35+rand()*.7,
+    seed:rand()*6.283,drift:rand()*1.7+.5
   }));
-  const lengths = paths.map(p => {try{return p.getTotalLength()}catch(e){return 0}});
-  function rgba(color,a){return "rgba("+color.r+","+color.g+","+color.b+","+a+")"}
-  function pad(n){return Math.floor(n).toString().padStart(2,"0")}
-  function fmt(sec){return "T+"+pad(sec/60)+":"+pad(sec%60)}
-  function updateClock(){
-    clockLabel.textContent = isBlocked ? "SIMULATED TIME" : "TIME SINCE RECOVERY";
-    clockValue.textContent = isBlocked ? fmt(elapsed) : fmt(recovery);
-  }
-  function selectNode(id){
-    if(!nodeContent[id])return;
-    selected=id;
-    nodes.forEach(n=>n.classList.toggle("is-selected",n.dataset.node===id));
-    insightStep.textContent=isBlocked?"SYSTEM INSIGHT / INVESTIGATE":"SYSTEM INSIGHT / RESOLVED";
-    const item=nodeContent[id];
-    if(id==="provider" && !isBlocked){
-      insightTitle.textContent="Dependency cleared. Flow restored.";
-      insightDetail.textContent="The blocked integration path is available again. Follow the moving signals toward delivery.";
-    } else {
-      insightTitle.textContent=item[0];
-      insightDetail.textContent=item[1];
+  const smooth=t=>{const x=Math.max(0,Math.min(1,t));return x*x*(3-2*x)};
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+  const lerp=(a,b,t)=>a+(b-a)*t;
+  const rgba=(c,a)=>"rgba("+c.r+","+c.g+","+c.b+","+a+")";
+  function makeLogoTargets(){
+    const targetCanvas=document.createElement("canvas");
+    targetCanvas.width=540;targetCanvas.height=300;
+    const off=targetCanvas.getContext("2d",{willReadFrequently:true});
+    if(!off)return;
+    off.fillStyle="#fff";off.textAlign="center";off.textBaseline="middle";
+    off.font="800 150px Arial, Helvetica, sans-serif";
+    off.fillText("AA",270,133);
+    off.font="700 18px Arial, Helvetica, sans-serif";
+    off.letterSpacing="4px";
+    off.fillText("PRODUCT THINKING",270,251);
+    const data=off.getImageData(0,0,540,300).data;
+    let targets=[];
+    for(let y=33;y<274;y+=3){
+      for(let x=55;x<487;x+=3){
+        if(data[(y*540+x)*4+3]>90 && rand()>.09)targets.push([x,y]);
+      }
+    }
+    if(!targets.length)return;
+    for(let i=0;i<dots.length;i++){
+      const [x,y]=targets[Math.floor(rand()*targets.length)];
+      dots[i].logoX=x+(rand()-.5)*1.8;
+      dots[i].logoY=y+(rand()-.5)*1.8;
     }
   }
-  function updateState(){
-    root.dataset.state=isBlocked?"blocked":"resolved";
-    statusLabel.textContent=isBlocked?"BLOCKER":"RESOLVED";
-    resolveLabel.textContent=isBlocked?"Resolve blocker":"Reset scenario";
-    graphHint.textContent=isBlocked?"BOTTLENECK / PROVIDER PATH":"ALL PATHS / OPEN";
-    selectNode(isBlocked?"provider":"provider");
+  function makeGraphTargets(){
+    const coords=[[50,150],[160,75],[160,225],[280,150],[403,75],[403,225],[500,150]];
+    for(let i=0;i<dots.length;i++){
+      const p=dots[i];
+      if(i%6===0){
+        const [cx,cy]=coords[Math.floor(rand()*coords.length)];
+        const angle=rand()*Math.PI*2,radius=16+rand()*16;
+        p.graphX=cx+Math.cos(angle)*radius;p.graphY=cy+Math.sin(angle)*radius;
+      }else{
+        const lane=Math.floor(rand()*paths.length);
+        const path=paths[lane];
+        if(!path?.length){p.graphX=rand()*540;p.graphY=rand()*300;continue}
+        const pos=point(path,rand());
+        p.graphX=pos.x+(rand()-.5)*10;p.graphY=pos.y+(rand()-.5)*10;
+      }
+    }
+  }
+  function sprite(){
+    if(!ctx)return;
+    const c=document.createElement("canvas");c.width=38;c.height=38;
+    const g=c.getContext("2d");
+    const radial=g.createRadialGradient(19,19,0,19,19,17);
+    radial.addColorStop(0,rgba(tone,.65));radial.addColorStop(.3,rgba(tone,.26));
+    radial.addColorStop(1,rgba(tone,0));
+    g.fillStyle=radial;g.fillRect(0,0,38,38);
+    g.fillStyle=rgba(tone,.98);
+    g.beginPath();
+    if(shape==="diamond"){
+      g.moveTo(19,12);g.lineTo(24,19);g.lineTo(19,26);g.lineTo(14,19);g.closePath();
+    }else if(shape==="hex"){
+      for(let j=0;j<6;j++){
+        let a=j*Math.PI/3-Math.PI/2,x=19+Math.cos(a)*5.4,y=19+Math.sin(a)*5.4;
+        j?g.lineTo(x,y):g.moveTo(x,y);
+      }g.closePath();
+    }else{
+      g.moveTo(19,10);g.bezierCurveTo(22,15,24,18,23,21);
+      g.bezierCurveTo(21,26,17,26,15,21);g.bezierCurveTo(14,18,16,15,19,10);g.closePath();
+    }
+    g.fill();
+    particleSprite=c;
+  }
+  function drawDot(x,y,p,alpha=1,size=1){
+    if(!particleSprite)return;
+    ctx.globalAlpha=Math.max(0,Math.min(1,p.alpha*alpha));
+    const scale=p.size*size;
+    ctx.drawImage(particleSprite,x-9.5*scale,y-9.5*scale,19*scale,19*scale);
+  }
+  function updateClock(){
+    clockTitle.textContent=phase==="intro"||phase==="blocked"?"SIMULATED TIME":"TIME SINCE RECOVERY";
+    const seconds=phase==="intro"||phase==="blocked"?blockTime:recovery;
+    const format=n=>String(Math.floor(n)).padStart(2,"0");
+    clock.textContent="T+"+format(seconds/60)+":"+format(seconds%60);
+  }
+  function status(state){
+    root.dataset.phase=state;
+    const resolved=state==="flash"||state==="logo";
+    root.dataset.state=resolved?"resolved":"blocked";
+    flag.textContent=state==="flash"?"RESOLVING":resolved?"RESOLVED":"BLOCKER";
+    buttonText.textContent=resolved?"Replay scenario":"Resolve blocker";
+    hint.textContent=state==="logo"?"COMPLEXITY / RESOLVED":resolved?"ALL PATHS / OPEN":"BOTTLENECK / PROVIDER PATH";
+    if(resolved){
+      insightStep.textContent="SYSTEM INSIGHT / RESOLVED";
+      insightTitle.textContent=state==="logo"?"From complexity to clarity.":"Dependency cleared. Restoring flow.";
+      insightDetail.textContent=state==="logo"?
+        "The blocked dependency is resolved. Evidence, decisions and delivery paths converge into a clear outcome.":
+        "A short lightning pulse travels the decision route as the network recovers.";
+    }else{
+      selectNode("provider");
+    }
     updateClock();
   }
-  resolveButton.addEventListener("click",()=>{
-    isBlocked=!isBlocked;
-    if(!isBlocked)recovery=0;
-    else elapsed=12;
-    updateState();
-    if(ctx)paint();
-  });
+  function selectNode(id){
+    if(!guide[id])return;
+    nodes.forEach(n=>n.classList.toggle("is-selected",n.dataset.node===id));
+    if(phase==="flash"||phase==="logo")return;
+    insightStep.textContent="SYSTEM INSIGHT / INVESTIGATE";
+    insightTitle.textContent=guide[id][0];insightDetail.textContent=guide[id][1];
+  }
   nodes.forEach(n=>{
-    const action=()=>selectNode(n.dataset.node);
-    n.addEventListener("click",action);
+    const handle=()=>selectNode(n.dataset.node);
+    n.addEventListener("click",handle);
     n.addEventListener("keydown",e=>{
-      if(e.key==="Enter"||e.key===" "){e.preventDefault();action()}
+      if(e.key==="Enter"||e.key===" "){e.preventDefault();handle()}
     });
   });
-  shapeSelect.addEventListener("change",()=>{shape=shapeSelect.value;if(ctx)paint()});
-  swatches.forEach(button=>button.addEventListener("click",()=>{
-    const key=button.dataset.palette;
-    if(!palette[key])return;
-    tone=palette[key];root.dataset.palette=key;
-    swatches.forEach(b=>b.setAttribute("aria-pressed",String(b===button)));
-    if(ctx)paint();
-  }));
-  function setPaused(val){
-    paused=val;
-    pauseButton.textContent=paused?"Play motion":"Pause motion";
-    pauseButton.setAttribute("aria-pressed",String(paused));
+  function reset(){
+    phase=reduced?"blocked":"intro";phaseElapsed=0;blockTime=12;recovery=0;
+    root.classList.remove("pg-lightning","pg-bloom");
+    status(phase);
     if(ctx)paint();
   }
-  pauseButton.addEventListener("click",()=>setPaused(!paused));
+  function trigger(){
+    if(phase==="flash"||phase==="logo"){reset();return}
+    phase=reduced?"logo":"flash";phaseElapsed=0;recovery=0;
+    status(phase);
+    if(!reduced){
+      // Single emphasis peak; neither a full-page white flash nor looping strobe.
+      root.classList.remove("pg-lightning","pg-bloom");
+      void root.offsetWidth;
+      root.classList.add("pg-lightning","pg-bloom");
+    }
+    if(ctx)paint();
+  }
+  button.addEventListener("click",trigger);
+  shapeSelect.addEventListener("change",()=>{shape=shapeSelect.value;sprite();paint()});
+  colors.forEach(button=>button.addEventListener("click",()=>{
+    if(!palettes[button.dataset.palette])return;
+    tone=palettes[button.dataset.palette];root.dataset.palette=button.dataset.palette;
+    colors.forEach(b=>b.setAttribute("aria-pressed",String(button===b)));
+    sprite();paint();
+  }));
+  function togglePause(value){
+    paused=value;
+    pauseButton.textContent=paused?"Play motion":"Pause motion";
+    pauseButton.setAttribute("aria-pressed",String(paused));
+  }
+  pauseButton.addEventListener("click",()=>togglePause(!paused));
   function resize(){
     if(!ctx)return;
-    const box=canvas.getBoundingClientRect();
-    width=box.width;height=box.height;
-    if(width<10||height<10)return;
-    const dpr=Math.min(window.devicePixelRatio||1,1.8);
-    const w=Math.round(width*dpr),h=Math.round(height*dpr);
+    const bounds=canvas.getBoundingClientRect();
+    surfaceWidth=bounds.width;surfaceHeight=bounds.height;
+    if(surfaceWidth<10||surfaceHeight<10)return;
+    const dpr=Math.min(window.devicePixelRatio||1,1.65);
+    const w=Math.ceil(surfaceWidth*dpr),h=Math.ceil(surfaceHeight*dpr);
     if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
     ctx.setTransform(w/540,0,0,h/300,0,0);
     paint();
   }
-  function drawParticle(x,y,s,a){
-    ctx.save();
-    ctx.translate(x,y);
-    ctx.rotate(-.2);
-    ctx.fillStyle=rgba(tone,a);
-    ctx.shadowColor=rgba(tone,Math.min(1,a*1.8));ctx.shadowBlur=7;
-    ctx.beginPath();
-    if(shape==="diamond"){
-      ctx.moveTo(0,-s*1.55);ctx.lineTo(s,0);ctx.lineTo(0,s*1.55);ctx.lineTo(-s,0);ctx.closePath();
-    }else if(shape==="hex"){
-      for(let j=0;j<6;j++){
-        const th=-Math.PI/2+j*Math.PI/3;
-        const px=Math.cos(th)*s*1.35,py=Math.sin(th)*s*1.35;
-        if(j===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);
+  function drawWave(path,progress,boost){
+    if(!path?.length||progress<=0)return;
+    const samples=35;
+    ctx.save();ctx.lineJoin="round";ctx.lineCap="round";
+    ctx.globalCompositeOperation="screen";
+    for(let layer=0;layer<3;layer++){
+      const lineWidths=[13,5.5,1.65],opacities=[.12,.35,.95];
+      ctx.beginPath();
+      for(let i=0;i<=samples;i++){
+        const u=(i/samples)*progress;
+        const pt=point(path,u), jitter=(i===0||i===samples)?0:Math.sin(i*3.1+now*43)*((layer===2)?2.2:1.5);
+        const x=pt.x,y=pt.y+jitter;
+        i?ctx.lineTo(x,y):ctx.moveTo(x,y);
       }
-      ctx.closePath();
-    }else{
-      ctx.moveTo(0,-s*2);ctx.bezierCurveTo(s*.6,-s,1.05*s,-.2*s,s*.85,s*.7);
-      ctx.bezierCurveTo(s*.55,s*1.5,-s*.6,s*1.5,-s*.85,s*.7);
-      ctx.bezierCurveTo(-s*1.05,-.2*s,-s*.6,-s,0,-s*2);ctx.closePath();
-    }
-    ctx.fill();ctx.restore();
-  }
-  function paint(){
-    if(!ctx||!width||!height)return;
-    ctx.clearRect(0,0,540,300);
-    ctx.save();
-    for(const d of rain){
-      const yy=(d.y+time*d.vel)%320-10;
-      const xx=(d.x+Math.sin(time*.24+d.phase)*3+d.drift*time*.12+540)%540;
-      drawParticle(xx,yy,d.scale,d.opacity);
-    }
-    // Moving "information packets" trace the graph's actual SVG paths.
-    for(let lane=0;lane<paths.length;lane++){
-      if(lane===7&&isBlocked)continue;
-      const path=paths[lane],len=lengths[lane];
-      if(!len)continue;
-      for(let i=0;i<3;i++){
-        let progress=(time*(isBlocked?.085:.15)+i/3+lane*.157)%1;
-        if(lane===5&&isBlocked)progress=Math.min(progress*.78,.78);
-        const point=path.getPointAtLength(progress*len);
-        const alpha=(.36+.40*Math.sin(Math.PI*progress)) * (lane===5&&isBlocked?.8:1);
-        drawParticle(point.x,point.y,(i===0?2.3:1.6),alpha);
-      }
-    }
-    // The stalled branch visibly accumulates work upstream of the blocker.
-    if(isBlocked){
-      for(let j=0;j<6;j++){
-        const offset=j*.85+time*.35;
-        drawParticle(369-Math.floor(j/2)*7+Math.sin(offset)*2.5,221+(j%3-1)*8,1.85,.63+j*.035);
-      }
-      ctx.strokeStyle="rgba(255,160,140,.20)";ctx.lineWidth=.9;
-      const pulse=24+Math.sin(time*2.2)*3;
-      ctx.beginPath();ctx.arc(403,225,pulse,0,Math.PI*2);ctx.stroke();
-    }else{
-      ctx.strokeStyle=rgba(tone,.19);ctx.lineWidth=.85;
-      ctx.beginPath();ctx.arc(403,225,25+Math.sin(time*2.2)*3,0,Math.PI*2);ctx.stroke();
+      ctx.strokeStyle=layer===2?"rgba(240,255,252,.97)":rgba(tone,opacities[layer]*boost);
+      ctx.lineWidth=lineWidths[layer]*boost;
+      if(layer===2){ctx.shadowColor=rgba(tone,.75);ctx.shadowBlur=15}
+      ctx.stroke();
     }
     ctx.restore();
   }
-  function step(stamp){
-    frameId=window.requestAnimationFrame(step);
-    if(!visible||document.hidden||!ctx||!width)return;
-    if(stamp-lastPaint<32)return;
-    let dt=previous?Math.min(.07,(stamp-previous)/1000):.033;
-    previous=stamp;lastPaint=stamp;
-    if(!paused){time+=dt;if(isBlocked)elapsed+=dt;else recovery+=dt;paint()}
-    if(Math.floor(stamp/240)!==Math.floor((stamp-32)/240))updateClock();
+  function drawLightning(){
+    if(phase!=="flash")return;
+    const t=phaseElapsed;
+    // Path 5 enters blocked provider; path 7 exits to delivery.
+    // One primary traveling surge and one quieter afterglow.
+    for(let pass=0;pass<2;pass++){
+      const progress=clamp((t-pass*.26-.05)/.86,0,1);
+      const strength=pass===0?1:.34;
+      if(progress<=0||progress>=1)continue;
+      const amount=progress*2;
+      drawWave(paths[5],Math.min(amount,1),strength);
+      if(amount>1)drawWave(paths[7],amount-1,strength);
+    }
+    const swell=Math.exp(-Math.pow((t-.59)/.22,2));
+    if(swell>.003){
+      ctx.save();ctx.globalCompositeOperation="screen";
+      const grad=ctx.createRadialGradient(390,188,7,390,188,220);
+      grad.addColorStop(0,rgba(tone,.3*swell));
+      grad.addColorStop(.35,rgba(tone,.10*swell));
+      grad.addColorStop(1,rgba(tone,0));
+      ctx.fillStyle=grad;ctx.fillRect(0,0,540,300);ctx.restore();
+    }
   }
-  if(window.IntersectionObserver){
-    const observer=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)previous=0},{threshold:0.02});
-    observer.observe(root);
+  function paint(){
+    if(!ctx||!surfaceWidth||!surfaceHeight)return;
+    ctx.clearRect(0,0,540,300);
+    const gather=smooth(phaseElapsed/3.4),isLogo=phase==="flash"||phase==="logo";
+    const morph=isLogo?smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3):0;
+    const reveal=phase==="intro"?gather:1;
+    ctx.save();ctx.globalCompositeOperation="screen";
+    for(let i=0;i<dots.length;i++){
+      const p=dots[i],orbit=now*(.8+p.speed*.33)+p.seed;
+      const jitter=Math.sin(orbit)*p.drift;
+      const baseX=lerp(p.scatterX,p.graphX,reveal)+jitter*(1-morph);
+      const baseY=lerp(p.scatterY,p.graphY,reveal)+Math.cos(orbit*.87)*p.drift*(1-morph);
+      const x=lerp(baseX,p.logoX,morph);
+      const y=lerp(baseY,p.logoY,morph);
+      const twinkle=.76+Math.sin(now*(1.8+p.speed)+p.seed)*.19;
+      drawDot(x,y,p,(phase==="flash"?1.16:1)*twinkle,phase==="logo"?1.05:.77);
+    }
+    // Moving data packets show direction and velocity through actual SVG routes.
+    const packetOpacity=(1-morph)*(phase==="intro"?.72:1);
+    if(packetOpacity>.03){
+      for(let i=0;i<paths.length;i++){
+        if(i===7&&(phase==="intro"||phase==="blocked"))continue;
+        const route=paths[i];
+        if(!route.length)continue;
+        for(let j=0;j<4;j++){
+          let progress=(now*(isLogo?.3:.085)+j/4+i*.19)%1;
+          if(i===5&&!isLogo)progress=Math.min(progress,.76);
+          const pos=point(route,progress);
+          const fake={size:.96,alpha:(.55+Math.sin(progress*Math.PI)*.35)*packetOpacity};
+          drawDot(pos.x,pos.y,fake,1,1.45);
+        }
+      }
+    }
+    ctx.restore();
+    if(phase==="intro"||phase==="blocked"){
+      // The bottleneck shows a visibly accumulating queue.
+      ctx.save();ctx.globalCompositeOperation="screen";
+      for(let i=0;i<11;i++){
+        const p={size:.8,alpha:.66};
+        drawDot(364-(i%4)*6+Math.sin(now*1.3+i)*1.6,221+Math.floor(i/4)*7,p,.9,1.2);
+      }
+      ctx.strokeStyle="rgba(248,145,129,.22)";ctx.lineWidth=1;
+      ctx.beginPath();ctx.arc(403,225,26+Math.sin(now*2)*3,0,Math.PI*2);ctx.stroke();
+      ctx.restore();
+    }
+    drawLightning();
   }
-  document.addEventListener("visibilitychange",()=>{previous=0});
+  function tick(t){
+    if(!active)return;
+    window.requestAnimationFrame(tick);
+    if(!visible||document.hidden||!ctx||!surfaceWidth){last=0;return}
+    if(t-lastDraw<22)return;
+    const delta=last?Math.min((t-last)/1000,.058):.024;
+    last=t;lastDraw=t;
+    if(!paused){
+      now+=delta;phaseElapsed+=delta;
+      if(phase==="intro"&&phaseElapsed>3.4){phase="blocked";phaseElapsed=0;status(phase)}
+      else if(phase==="blocked"){blockTime+=delta}
+      else if(phase==="flash"){
+        recovery+=delta;
+        if(phaseElapsed>=1.85){
+          phase="logo";phaseElapsed=0;root.classList.remove("pg-lightning","pg-bloom");
+          status(phase);
+        }
+      }else if(phase==="logo"){recovery+=delta}
+      paint();
+    }
+    if(Math.floor(t/250)!==Math.floor((t-25)/250))updateClock();
+  }
+  makeGraphTargets();
+  makeLogoTargets();
+  sprite();
+  status(phase);
+  togglePause(paused);
   if(ctx){
     resize();
-    if(window.ResizeObserver){new ResizeObserver(resize).observe(root.querySelector(".pg-map"))}
+    if(window.ResizeObserver)new ResizeObserver(resize).observe(root.querySelector(".pg-map"));
     else window.addEventListener("resize",resize,{passive:true});
-    if(!reduced)frameId=window.requestAnimationFrame(step);
+    if(window.IntersectionObserver)new IntersectionObserver(entries=>{
+      visible=entries.some(e=>e.isIntersecting);
+      if(visible)last=0;
+    },{threshold:.02}).observe(root);
+    document.addEventListener("visibilitychange",()=>{last=0});
+    if(!reduced)window.requestAnimationFrame(tick);
+    else paint();
   }
-  updateState();
-  if(reduced){setPaused(true);if(ctx)paint()}
-  // Keep the SVG as a fully readable, keyboard-operated fallback without Canvas.
 })();
