@@ -48,10 +48,10 @@
     if(!off)return;
     off.fillStyle="#fff";off.textAlign="center";off.textBaseline="middle";
     off.font="800 222px Arial, Helvetica, sans-serif";
-    off.fillText("AA",930,235);
+    off.fillText("AA",930,285);
     off.font="700 20px Arial, Helvetica, sans-serif";
     if("letterSpacing" in off)off.letterSpacing="5px";
-    off.fillText("PRODUCT THINKING",930,350);
+    off.fillText("PRODUCT THINKING",930,422);
     const data=off.getImageData(0,0,1200,720).data;
     let targets=[];
     for(let y=132;y<560;y+=3){
