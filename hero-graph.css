@@ -151,3 +151,51 @@
  .product-graph.pg-bloom,.product-graph.pg-lightning .pg-link,
  .product-graph.pg-lightning .pg-node .pg-orbit{animation:none!important}
 }
+
+/* Cinematic v2 — immediately recognizable design without requiring interaction */
+.product-graph{
+ border-color:rgba(var(--pg-rgb),.43);
+ background:radial-gradient(ellipse 76% 64% at 53% 47%,rgba(var(--pg-rgb),.13),transparent 72%),
+  radial-gradient(ellipse 66% 52% at 82% 84%,rgba(70,139,186,.11),transparent 78%),
+  linear-gradient(145deg,#0c1b29 0%,#0b1421 62%,#071420 100%);
+ box-shadow:0 40px 105px rgba(0,0,0,.48),0 0 75px rgba(var(--pg-rgb),.075),inset 0 0 80px rgba(var(--pg-rgb),.025);
+}
+.product-graph .pg-head h2{font-size:clamp(26px,2.5vw,35px)!important}
+.product-graph .pg-topline{padding-top:26px}
+.pg-progress{
+ display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;position:relative;z-index:2;
+ margin:14px 25px 0;border-bottom:1px solid rgba(var(--pg-rgb),.18);padding-bottom:9px;
+ font-size:8px;font-weight:800;letter-spacing:.13em;color:#7894A6;
+}
+.pg-progress span{position:relative;padding-left:11px}
+.pg-progress span:before{content:"";position:absolute;left:0;top:4px;width:4px;height:4px;
+ border-radius:50%;background:#547482;box-shadow:0 0 0 2px rgba(84,116,130,.12)}
+.pg-progress span:nth-child(2){color:#F1AB96}
+.pg-progress span:nth-child(2):before{background:#F1AB96;box-shadow:0 0 9px rgba(249,143,113,.48)}
+.product-graph[data-phase="flash"] .pg-progress span:nth-child(2),
+.product-graph[data-phase="logo"] .pg-progress span:nth-child(2){color:var(--pg-accent)}
+.product-graph[data-phase="flash"] .pg-progress span:nth-child(2):before,
+.product-graph[data-phase="logo"] .pg-progress span:nth-child(2):before{background:var(--pg-accent);box-shadow:0 0 13px rgba(var(--pg-rgb),.8)}
+.product-graph[data-phase="flash"] .pg-progress span:nth-child(3),
+.product-graph[data-phase="logo"] .pg-progress span:nth-child(3){color:var(--pg-accent)}
+.product-graph[data-phase="flash"] .pg-progress span:nth-child(3):before,
+.product-graph[data-phase="logo"] .pg-progress span:nth-child(3):before{background:var(--pg-accent);box-shadow:0 0 13px rgba(var(--pg-rgb),.9)}
+.product-graph .pg-map{
+ margin-top:3px;
+ background:radial-gradient(ellipse 52% 60% at 50% 48%,rgba(var(--pg-rgb),.04),transparent 84%);
+}
+.product-graph .pg-svg{filter:drop-shadow(0 0 5px rgba(var(--pg-rgb),.22))}
+.product-graph .pg-link{stroke:rgba(var(--pg-rgb),.39)}
+.product-graph .pg-node .pg-orbit{stroke:rgba(var(--pg-rgb),.36)}
+.product-graph .pg-node .pg-disk{filter:drop-shadow(0 0 8px rgba(var(--pg-rgb),.2))}
+.product-graph .pg-button{box-shadow:0 0 27px rgba(var(--pg-rgb),.13)}
+.product-graph .pg-button:hover{box-shadow:0 0 30px rgba(var(--pg-rgb),.28)}
+.product-graph .pg-caption strong{color:var(--pg-accent);font-weight:750}
+@media(max-width:600px){
+ .pg-progress{margin:12px 14px 0;font-size:7px;letter-spacing:.035em}
+ .product-graph .pg-head h2{font-size:25px!important}
+ .product-graph .pg-topline{padding-top:17px}
+}
+@media(prefers-reduced-motion:reduce){
+ .product-graph .pg-svg{filter:none}
+}
