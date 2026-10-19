@@ -32,7 +32,7 @@
   };
   let seed=241963;
   function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
-  const count=window.matchMedia?.("(max-width: 600px)")?.matches?390:890;
+  const count=window.matchMedia?.("(max-width: 600px)")?.matches?570:1650;
   let tone=palettes.mint,shape="drop",phase=reduced?"blocked":"intro";
   let phaseElapsed=0,now=0,blockTime=12,recovery=0;
   let paused=reduced,visible=true,last=0,lastDraw=0,active=true;
@@ -42,7 +42,7 @@
   });
   const point=(path,t)=>path.node.getPointAtLength(Math.max(0,Math.min(1,t))*path.length);
   const dots=Array.from({length:count},(_,i)=>({
-    x:rand()*540,y:rand()*300,scatterX:rand()*540,scatterY:rand()*300,
+    x:rand()*1200,y:rand()*720,scatterX:rand()*1200,scatterY:rand()*720,
     graphX:0,graphY:0,logoX:0,logoY:0,
     size:.45+rand()*.73,alpha:.46+rand()*.52,speed:.35+rand()*.7,
     seed:rand()*6.283,drift:rand()*1.7+.5
@@ -53,20 +53,20 @@
   const rgba=(c,a)=>"rgba("+c.r+","+c.g+","+c.b+","+a+")";
   function makeLogoTargets(){
     const targetCanvas=document.createElement("canvas");
-    targetCanvas.width=540;targetCanvas.height=300;
+    targetCanvas.width=1200;targetCanvas.height=720;
     const off=targetCanvas.getContext("2d",{willReadFrequently:true});
     if(!off)return;
     off.fillStyle="#fff";off.textAlign="center";off.textBaseline="middle";
-    off.font="800 150px Arial, Helvetica, sans-serif";
-    off.fillText("AA",270,133);
-    off.font="700 18px Arial, Helvetica, sans-serif";
-    off.letterSpacing="4px";
-    off.fillText("PRODUCT THINKING",270,251);
-    const data=off.getImageData(0,0,540,300).data;
+    off.font="800 270px Arial, Helvetica, sans-serif";
+    off.fillText("AA",930,346);
+    off.font="700 23px Arial, Helvetica, sans-serif";
+    if("letterSpacing" in off)off.letterSpacing="5px";
+    off.fillText("PRODUCT THINKING",930,517);
+    const data=off.getImageData(0,0,1200,720).data;
     let targets=[];
-    for(let y=33;y<274;y+=3){
-      for(let x=55;x<487;x+=3){
-        if(data[(y*540+x)*4+3]>90 && rand()>.09)targets.push([x,y]);
+    for(let y=132;y<560;y+=3){
+      for(let x=610;x<1180;x+=3){
+        if(data[(y*1200+x)*4+3]>90 && rand()>.09)targets.push([x,y]);
       }
     }
     if(!targets.length)return;
@@ -77,7 +77,7 @@
     }
   }
   function makeGraphTargets(){
-    const coords=[[50,150],[160,75],[160,225],[280,150],[403,75],[403,225],[500,150]];
+    const coords=[[632,359],[762,238],[762,493],[900,359],[1042,238],[1042,493],[1154,359]];
     for(let i=0;i<dots.length;i++){
       const p=dots[i];
       if(i%6===0){
@@ -87,7 +87,7 @@
       }else{
         const lane=Math.floor(rand()*paths.length);
         const path=paths[lane];
-        if(!path?.length){p.graphX=rand()*540;p.graphY=rand()*300;continue}
+        if(!path?.length){p.graphX=rand()*1200;p.graphY=rand()*720;continue}
         const pos=point(path,rand());
         p.graphX=pos.x+(rand()-.5)*10;p.graphY=pos.y+(rand()-.5)*10;
       }
@@ -201,7 +201,7 @@
     const dpr=Math.min(window.devicePixelRatio||1,1.65);
     const w=Math.ceil(surfaceWidth*dpr),h=Math.ceil(surfaceHeight*dpr);
     if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
-    ctx.setTransform(w/540,0,0,h/300,0,0);
+    ctx.setTransform(w/1200,0,0,h/720,0,0);
     paint();
   }
   function drawWave(path,progress,boost){
@@ -241,16 +241,16 @@
     const swell=Math.exp(-Math.pow((t-.59)/.22,2));
     if(swell>.003){
       ctx.save();ctx.globalCompositeOperation="screen";
-      const grad=ctx.createRadialGradient(390,188,7,390,188,220);
+      const grad=ctx.createRadialGradient(1010,360,7,1010,360,355);
       grad.addColorStop(0,rgba(tone,.3*swell));
       grad.addColorStop(.35,rgba(tone,.10*swell));
       grad.addColorStop(1,rgba(tone,0));
-      ctx.fillStyle=grad;ctx.fillRect(0,0,540,300);ctx.restore();
+      ctx.fillStyle=grad;ctx.fillRect(0,0,1200,720);ctx.restore();
     }
   }
   function paint(){
     if(!ctx||!surfaceWidth||!surfaceHeight)return;
-    ctx.clearRect(0,0,540,300);
+    ctx.clearRect(0,0,1200,720);
     const gather=smooth(phaseElapsed/3.4),isLogo=phase==="flash"||phase==="logo";
     const morph=isLogo?(phase==="logo"&&(reduced||paused)?1:smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3)):0;
     const reveal=phase==="intro"?gather:1;
@@ -287,10 +287,10 @@
       ctx.save();ctx.globalCompositeOperation="screen";
       for(let i=0;i<11;i++){
         const p={size:.8,alpha:.66};
-        drawDot(364-(i%4)*6+Math.sin(now*1.3+i)*1.6,221+Math.floor(i/4)*7,p,.9,1.2);
+        drawDot(995-(i%4)*8+Math.sin(now*1.3+i)*1.6,489+Math.floor(i/4)*9,p,.9,1.2);
       }
       ctx.strokeStyle="rgba(248,145,129,.22)";ctx.lineWidth=1;
-      ctx.beginPath();ctx.arc(403,225,26+Math.sin(now*2)*3,0,Math.PI*2);ctx.stroke();
+      ctx.beginPath();ctx.arc(1042,493,31+Math.sin(now*2)*3,0,Math.PI*2);ctx.stroke();
       ctx.restore();
     }
     drawLightning();
