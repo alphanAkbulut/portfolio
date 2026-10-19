@@ -36,7 +36,7 @@ The following are **selected examples**, not a complete inventory of my work or 
 
 ### Contact
 
-[LinkedIn](https://www.linkedin.com/in/alphan-a-14005118/) · [Email](mailto:alphanakbulut@hotmail.com) · [GitHub](https://github.com/alphanAkbulut)
+[LinkedIn](https://www.linkedin.com/in/alphan-akbulut-14005118/?isSelfProfile=true) · [alphanakbulut@hotmail.com](mailto:alphanakbulut@hotmail.com) · [GitHub](https://github.com/alphanAkbulut)
 
 ---
 
