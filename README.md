@@ -1,5 +1,8 @@
 # Alphan Akbulut
 
+> **Portfolio redesign master plan (2026-10-20):** Before modifying the hero or trying Three.js, read **[START HERE — full context and handoff](docs/00-START-HERE.md)**. The [vision and decision log](docs/01-product-vision-and-decisions.md), [technical roadmap](docs/02-technical-plan-and-roadmap.md), [next-session prompt](docs/03-resume-next-session.md), and [BPMN hero concept](docs/bpmn-hero-concept.md) preserve the complete plan. **V3A vs V3B vs V3C has NOT been decided yet.** This is planning only; production is unchanged.
+
+
 **Senior Product Owner | Technical Product Manager**  
 *PSM I · PSPO I · Istanbul, Türkiye*
 
