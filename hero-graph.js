@@ -50,12 +50,13 @@
     ambientSeed=(Math.imul(1664525,ambientSeed)+1013904223)>>>0;
     return ambientSeed/4294967296;
   }
-  const ambientCount=window.matchMedia?.("(max-width:600px)")?.matches?95:
-    (window.matchMedia?.("(max-width:850px)")?.matches?155:290);
+  const ambientCount=window.matchMedia?.("(max-width:600px)")?.matches?170:
+    (window.matchMedia?.("(max-width:850px)")?.matches?300:730);
   const ambientDots=Array.from({length:ambientCount},()=>({
-    x:ambientRandom(),y:ambientRandom(),speed:.004+ambientRandom()*.012,
-    size:.47+ambientRandom()*.58,opacity:.44+ambientRandom()*.44,
-    phase:ambientRandom()*Math.PI*2,drift:4+ambientRandom()*11
+    x:ambientRandom(),y:ambientRandom(),speed:.004+ambientRandom()*.009,
+    size:.36+ambientRandom()*.64,opacity:.38+ambientRandom()*.45,
+    phase:ambientRandom()*Math.PI*2,drift:4+ambientRandom()*11,
+    lane:ambientRandom(),depth:ambientRandom()
   }));
   let ambientWidth=0,ambientHeight=0;
   function resizeAmbient(){
@@ -77,18 +78,35 @@
     a.clearRect(0,0,ambientWidth,ambientHeight);
     a.save();
     a.globalCompositeOperation="screen";
-    const settle=phase==="intro" ? (.55+.45*smooth(phaseElapsed/3.9)) : 1;
-    const quiet=phase==="logo" ? .65 : 1;
-    const pulse=phase==="flash" ? .17*Math.exp(-Math.pow((phaseElapsed-.7)/.36,2)) : 0;
+    const opening=phase==="intro" ? smooth(phaseElapsed/3.9) : 1;
+    const surge=phase==="flash" ? smooth(phaseElapsed/1.55) : 0;
+    const rewind=phase==="rewind" ? smooth(phaseElapsed/2.05) : 0;
+    const resting=phase==="logo" ? .68 : 1;
     for(const p of ambientDots){
-      // Light signals drift continuously left-to-right, across the entire first screen.
       const normX=(p.x+now*p.speed)%1;
-      const x=normX*ambientWidth;
-      const y=p.y*ambientHeight+Math.sin(now*.43+p.phase+normX*6)*p.drift;
-      // More restrained behind large type, brighter closer to the schematic.
-      const luminance=.42+.58*smooth((normX-.18)/.62);
-      a.globalAlpha=Math.min(1,p.opacity*(.33+.36*luminance)*settle*quiet+pulse*.11);
-      const size=p.size*(luminance<.60 ? .8 : 1);
+      // The ambient field stays present, but a coherent wave begins on the left
+      // and progressively transfers energy toward the right-hand process model.
+      const ingress=phase==="intro"
+        ? smooth((opening*1.5-normX+.08)/.52)
+        : 1;
+      const front=surge*1.35-.17;
+      const travelingWave=phase==="flash"
+        ? Math.exp(-Math.pow((normX-front)/.16,2)) : 0;
+      const convergence=phase==="flash"
+        ? smooth((surge-.22)/.75)*p.depth*.66
+        : phase==="logo" ? p.depth*.43*(1-rewind)
+        : 0;
+      const originY=p.y*ambientHeight+
+        Math.sin(now*.43+p.phase+normX*6)*p.drift;
+      const targetY=ambientHeight*(.46+(p.lane-.5)*.24);
+      const x=normX*ambientWidth+
+        convergence*(ambientWidth*.82-normX*ambientWidth);
+      const y=originY+(targetY-originY)*convergence;
+      const rightBias=.65+.35*smooth((normX-.08)/.84);
+      const opacity=p.opacity*(.35+.23*rightBias)*
+        (.26+.74*ingress)*resting*(1-.30*rewind)+travelingWave*.43;
+      a.globalAlpha=Math.min(.87,Math.max(0,opacity));
+      const size=p.size*(.82+.18*rightBias)*(1+travelingWave*.26);
       a.drawImage(particleSprite,x-10*size,y-10*size,20*size,20*size);
     }
     a.restore();

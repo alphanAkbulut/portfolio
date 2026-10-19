@@ -574,3 +574,51 @@
 @media(prefers-reduced-motion:reduce){
   .hero-cinematic .pg-ambient-canvas{opacity:.48}
 }
+
+
+/* Atmosphere continuity pass: equalize the two layers' backdrop and avoid
+   an obvious vertical shading boundary behind the title. */
+.hero.hero-cinematic{
+  background:#081620;
+}
+.hero.hero-cinematic:before{
+  background:
+    radial-gradient(ellipse 83% 80% at 64% 42%,
+      rgba(28,69,75,.25) 0%,
+      rgba(22,51,65,.15) 43%,
+      rgba(9,26,38,.06) 74%,
+      transparent 100%),
+    linear-gradient(110deg,#081620 0%,#0a1a25 47%,#081620 100%);
+}
+.hero-cinematic .product-graph{
+  background:transparent;
+}
+.hero-cinematic .pg-map,
+.hero-cinematic .pg-map:before{
+  background:transparent;
+}
+.hero-cinematic .hero-vignette{
+  background:
+    linear-gradient(90deg,
+      rgba(8,22,32,.23) 0%,
+      rgba(8,22,32,.20) 22%,
+      rgba(8,22,32,.12) 46%,
+      rgba(8,22,32,.04) 70%,
+      transparent 100%),
+    linear-gradient(0deg,#081620 0%,transparent 16%,transparent 87%,rgba(8,22,32,.15) 100%);
+}
+.hero-cinematic .pg-ambient-canvas{
+  opacity:.97;
+}
+@media(max-width:850px){
+  .hero-cinematic .hero-vignette{
+    background:linear-gradient(180deg,
+      rgba(8,22,32,.36) 0%,
+      rgba(8,22,32,.20) 31%,
+      rgba(8,22,32,.08) 66%,
+      #081620 100%);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-cinematic .pg-ambient-canvas{opacity:.42}
+}
