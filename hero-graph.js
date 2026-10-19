@@ -162,16 +162,16 @@
     });
   });
   function reset(){
-    phase=reduced?"blocked":"intro";phaseElapsed=0;blockTime=12;recovery=0;
+    phase=(reduced||paused)?"blocked":"intro";phaseElapsed=0;blockTime=12;recovery=0;
     root.classList.remove("pg-lightning","pg-bloom");
     status(phase);
     if(ctx)paint();
   }
   function trigger(){
     if(phase==="flash"||phase==="logo"){reset();return}
-    phase=reduced?"logo":"flash";phaseElapsed=0;recovery=0;
+    phase=(reduced||paused)?"logo":"flash";phaseElapsed=0;recovery=0;
     status(phase);
-    if(!reduced){
+    if(phase==="flash"){
       // Single emphasis peak; neither a full-page white flash nor looping strobe.
       root.classList.remove("pg-lightning","pg-bloom");
       void root.offsetWidth;
@@ -252,7 +252,7 @@
     if(!ctx||!surfaceWidth||!surfaceHeight)return;
     ctx.clearRect(0,0,540,300);
     const gather=smooth(phaseElapsed/3.4),isLogo=phase==="flash"||phase==="logo";
-    const morph=isLogo?smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3):0;
+    const morph=isLogo?(phase==="logo"&&(reduced||paused)?1:smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3)):0;
     const reveal=phase==="intro"?gather:1;
     ctx.save();ctx.globalCompositeOperation="screen";
     for(let i=0;i<dots.length;i++){
