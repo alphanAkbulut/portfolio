@@ -8,3 +8,16 @@
 
 /* Mindset-first portfolio refinements */
 .approach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.approach-card,.background-card{background:linear-gradient(155deg,#192b3d,#132031);border:1px solid #405467;padding:30px 24px}.approach-card .step,.background-card .step{display:block;color:var(--accent);font-size:10px;letter-spacing:.13em;font-weight:800}.approach-card h3{font-size:20px;line-height:1.35;letter-spacing:-.03em;margin:34px 0 15px}.approach-card p,.background-card p{font-size:13px;color:var(--muted);line-height:1.8;margin:0}.background-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.background-card{display:flex;flex-direction:column;min-height:285px}.background-card h3{font-size:20px;line-height:1.35;letter-spacing:-.03em;margin:19px 0 13px}.background-card .card-detail{margin-top:auto;padding-top:22px;font-size:11px;letter-spacing:.02em;color:#8eafc0}.background-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);margin-top:25px;padding-top:20px;font-size:12px;color:var(--muted)}.background-footer .plain-link{white-space:nowrap;color:var(--accent)}@media(max-width:920px){.approach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.background-grid{grid-template-columns:1fr}.background-card{min-height:0}}@media(max-width:600px){.approach-grid{grid-template-columns:1fr}.approach-card h3{margin-top:20px}.background-footer{flex-direction:column;align-items:flex-start}.background-footer .plain-link{white-space:normal}}
+
+/* Case-study preview: preserve the entire screenshot without cropping */
+.showcase .preview{padding-bottom:18px}
+.showcase .preview img{
+  flex:0 1 auto;
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:520px;
+  object-fit:contain;
+  object-position:top center;
+  border-bottom:1px solid #526a78;
+}
