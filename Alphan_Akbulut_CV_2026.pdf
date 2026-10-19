@@ -1,0 +1,176 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 4679 >>
+stream
+0.045 0.078 0.12 rg 0 750 595 92 re f
+BT /F2 22.0 Tf 0.97 0.98 0.97 rg 1 0 0 1 46.0 803.0 Tm (ALPHAN AKBULUT) Tj ET
+BT /F1 10.5 Tf 0.73 0.95 0.65 rg 1 0 0 1 47.0 779.0 Tm (Senior Technical Product Manager  |  Senior Product Owner  |  PSM I  |  PSPO I) Tj ET
+BT /F1 8.5 Tf 0.87 0.9 0.92 rg 1 0 0 1 47.0 761.0 Tm (Istanbul, TR  |  alphanakbulut@hotmail.com  |  +90 537 227 07 80) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 719.0 Tm (SUMMARY) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 714.0 m 548 714.0 l S
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 696.0 Tm (Technical Product Manager | Senior Product Owner with 10+ years of experience delivering digital) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 683.7 Tm (products across e-commerce, B2B/B2C platforms, and operational systems. Strong background in) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 671.4 Tm (API-driven product delivery, backlog ownership, technical analysis, UI/UX definition, and) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 659.1 Tm (cross-functional execution with engineering teams.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 641.8 Tm (Combines product ownership, business process expertise, and hands-on problem solving to turn complex) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 629.5 Tm (operational and integration requirements into scalable product solutions across retail and travel) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 617.2 Tm (domains.) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 588.9 Tm (EXPERIENCE) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 583.9 m 548 583.9 l S
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 565.9 Tm (Senior Technical Product Manager - Biletbank \(Technoly Istanbul\)) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 551.9 Tm (10/2023 - 04/2026 | Istanbul, TR) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 536.9 Tm (- Managed end-to-end API integrations with AJET NDC \(20.1/SOAP to 24.1/REST migration\), AVIA) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 524.6 Tm (Center, and AERTicket-related provider flows, including schema mapping and go-live delivery.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 507.3 Tm (- Owned roadmap and backlog for the B2B Travel Agency Portal; translated provider and business) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 495.0 Tm (needs into prioritized epics and stories, AC/DoD, and sprint delivery.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 477.7 Tm (- Defined and delivered ancillary service flows, provider-specific logic, product behavior, and) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 465.4 Tm (post-booking add-on UX requirements.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 448.1 Tm (- Managed the Faring pricing module, including standard/dynamic markups and fare consolidation;) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 435.8 Tm (took over governance from a third-party vendor.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 418.5 Tm (- Investigated pricing, booking, and payment issues using SQL Server \(T-SQL\), Postman, SoapUI,) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 406.2 Tm (and internal logs.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 388.9 Tm (- Designed onboarding and agency-registration journeys, wireframes, acceptance criteria, and) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 376.6 Tm (release-ready product requirements.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 359.3 Tm (- Aligned directly with airline and provider teams on technical issues, escalations, testing, and) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 347.0 Tm (rollout readiness.) Tj ET
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 329.7 Tm (Product Owner / Scrum Master \(Contract via SahaBT\) - Coca-Cola Icecek) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 315.7 Tm (09/2022 - 04/2023 | Contract) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 300.7 Tm (- Supported Salesforce Contract Lifecycle Management \(CLM\) rollout for Finance and Sales) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 288.4 Tm (Operations across 11 countries.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 271.1 Tm (- Owned Jira backlog and facilitated Scrum ceremonies, refining epics and stories with AC/DoD.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 253.8 Tm (- Coordinated UAT test cases, execution, defect triage, release notes, and runbooks.) Tj ET
+0.80 0.84 0.87 RG 0.5 w 47 40 m 548 40 l S
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 47.0 27.0 Tm (Alphan Akbulut  |  Professional CV  |  2026) Tj ET
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 518.0 27.0 Tm (1 / 3) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 4739 >>
+stream
+0.045 0.078 0.12 rg 0 750 595 92 re f
+BT /F2 22.0 Tf 0.97 0.98 0.97 rg 1 0 0 1 46.0 803.0 Tm (ALPHAN AKBULUT) Tj ET
+BT /F1 10.5 Tf 0.73 0.95 0.65 rg 1 0 0 1 47.0 779.0 Tm (Senior Technical Product Manager  |  Senior Product Owner  |  PSM I  |  PSPO I) Tj ET
+BT /F1 8.5 Tf 0.87 0.9 0.92 rg 1 0 0 1 47.0 761.0 Tm (Istanbul, TR  |  alphanakbulut@hotmail.com  |  +90 537 227 07 80) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 719.0 Tm (EXPERIENCE - CONTINUED) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 714.0 m 548 714.0 l S
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 696.0 Tm (Product Owner / Scrum Master - Farmazon) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 682.0 Tm (12/2021 - 05/2022) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 667.0 Tm (- Owned roadmap and backlog for B2B e-commerce and Order Management \(OMS\), including sprint) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 654.7 Tm (goals, user stories, and AC/DoD.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 637.4 Tm (- Delivered marketplace and API integrations \(OpenAPI/Swagger, Postman\); defined API contracts) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 625.1 Tm (and supported UAT.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 607.8 Tm (- Collaborated with design in Figma, wrote Gherkin scenarios, and maintained release notes and) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 595.5 Tm (runbooks.) Tj ET
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 578.2 Tm (DeFacto - Senior Product Owner \(E-commerce\)) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 564.2 Tm (01/2021 - 12/2021) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 549.2 Tm (- Owned core product scope for defacto.com.tr, prioritized the roadmap, and coordinated) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 536.9 Tm (engineering, category, and business teams.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 519.6 Tm (- Improved back-office and operational tooling for 25 e-commerce sites, covering discovery, UAT,) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 507.3 Tm (and release readiness.) Tj ET
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 490.0 Tm (DeFacto - Senior Merchandiser \(Commercial Operations\)) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 476.0 Tm (01/2019 - 01/2021) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 461.0 Tm (- Delivered the cross-country Local and Direct Sourcing program using as-is/to-be process) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 448.7 Tm (mapping, requirements, and tooling improvements.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 431.4 Tm (- Managed vendor onboarding and category spend; defined SLAs/KPIs and worked with IT, Legal,) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 419.1 Tm (Finance, and Business Development.) Tj ET
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 401.8 Tm (DeFacto - Product Owner \(Returns & Refunds Program\)) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 387.8 Tm (12/2015 - 01/2019) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 372.8 Tm (- Owned the company-wide returns and refunds program across systems, operations, and budget.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 355.5 Tm (- Led process and system improvements reducing annual costs from $8M to $3M \(-62.5%\) over two) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 343.2 Tm (years.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 325.9 Tm (- Managed backlog, KPIs, approval workflows, reporting, and cross-team delivery across stores,) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 313.6 Tm (e-commerce, Finance, and Customer Service.) Tj ET
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 296.3 Tm (Business Analyst - Universal Information Technologies) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 282.3 Tm (12/2014 - 12/2015) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 267.3 Tm (- Conducted requirements and process analysis through stakeholder interviews and workshops;) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 255.0 Tm (documented as-is models, KPIs, and pain points.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 237.7 Tm (- Performed gap/impact analysis and designed to-be workflows using BPMN/SOPs, acceptance) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 225.4 Tm (criteria, and process documentation.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 208.1 Tm (- Supported test design, UAT, go-live analysis, and continuous process improvements.) Tj ET
+0.80 0.84 0.87 RG 0.5 w 47 40 m 548 40 l S
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 47.0 27.0 Tm (Alphan Akbulut  |  Professional CV  |  2026) Tj ET
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 518.0 27.0 Tm (2 / 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 3759 >>
+stream
+0.045 0.078 0.12 rg 0 750 595 92 re f
+BT /F2 22.0 Tf 0.97 0.98 0.97 rg 1 0 0 1 46.0 803.0 Tm (ALPHAN AKBULUT) Tj ET
+BT /F1 10.5 Tf 0.73 0.95 0.65 rg 1 0 0 1 47.0 779.0 Tm (Senior Technical Product Manager  |  Senior Product Owner  |  PSM I  |  PSPO I) Tj ET
+BT /F1 8.5 Tf 0.87 0.9 0.92 rg 1 0 0 1 47.0 761.0 Tm (Istanbul, TR  |  alphanakbulut@hotmail.com  |  +90 537 227 07 80) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 719.0 Tm (EXPERIENCE - CONTINUED) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 714.0 m 548 714.0 l S
+BT /F2 10.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 696.0 Tm (Area Sales Manager / Management Trainee - Hedef Alliance Holding) Tj ET
+BT /F1 8.5 Tf 0.35 0.46 0.54 rg 1 0 0 1 47.0 682.0 Tm (10/2010 - 01/2014) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 667.0 Tm (- Managed regional sales, key accounts, commercial agreements, and sales KPIs.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 649.7 Tm (- Produced stock/sales reporting and annual Census reporting for 75 branches; improved cold-chain) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 637.4 Tm (logistics processes.) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 620.1 Tm (- Supported IT and Operations during the Istanbul mega-warehouse project through) Tj ET
+BT /F1 9.1 Tf 0.15 0.22 0.29 rg 1 0 0 1 56.0 607.8 Tm (industrial-engineering process analysis.) Tj ET
+BT /F1 8.5 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 590.5 Tm (Compulsory military service: 2011-2012, Turkiye.) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 562.2 Tm (EDUCATION) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 557.2 m 548 557.2 l S
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 539.2 Tm (Istanbul Kultur University - B.Sc., Industrial Engineering \(English\) - 2005-2010 - Istanbul, Turkiye) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 510.9 Tm (CERTIFICATIONS) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 505.9 m 548 505.9 l S
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 487.9 Tm (PSM I \(Scrum.org\) | PSPO I \(Scrum.org\) | IBM AI Product Management Certificate - In Progress) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 459.6 Tm (LANGUAGES) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 454.6 m 548 454.6 l S
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 436.6 Tm (Turkish: Native | English: B2 Upper) Tj ET
+BT /F2 11.1 Tf 0.12 0.40 0.35 rg 1 0 0 1 47.0 408.3 Tm (SKILLS AND TOOLS) Tj ET
+0.75 0.83 0.83 RG 0.5 w 47 403.3 m 548 403.3 l S
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 385.3 Tm (Product & Delivery: Agile/Scrum, backlog ownership, roadmap execution, user stories, AC/DoD, UAT,) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 373.0 Tm (stakeholder management.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 355.7 Tm (Domain: E-commerce, B2B/B2C, travel distribution, IATA NDC, back-office systems, pricing and) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 343.4 Tm (ancillary flows.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 326.1 Tm (Technical Product Work: REST, SOAP, IATA NDC 20.1/24.1, OpenAPI/Swagger, API and integration testing,) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 313.8 Tm (XML/JSON schema mapping, technical analysis.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 296.5 Tm (Tools: Jira, Confluence, Postman, SoapUI, Microsoft SQL Server \(T-SQL\), VS Code, Figma.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 279.2 Tm (Design & Process: UI/UX flows, wireframes, mockups, prototypes, BPMN, runbooks, release notes.) Tj ET
+BT /F1 9.2 Tf 0.15 0.22 0.29 rg 1 0 0 1 47.0 261.9 Tm (Web & Markup: HTML, XML, JSON.) Tj ET
+0.80 0.84 0.87 RG 0.5 w 47 40 m 548 40 l S
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 47.0 27.0 Tm (Alphan Akbulut  |  Professional CV  |  2026) Tj ET
+BT /F1 8.0 Tf 0.40 0.49 0.55 rg 1 0 0 1 518.0 27.0 Tm (3 / 3) Tj ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000230 00000 n 
+0000000332 00000 n 
+0000000468 00000 n 
+0000005198 00000 n 
+0000005334 00000 n 
+0000010124 00000 n 
+0000010261 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+14072
+%%EOF
