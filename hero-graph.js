@@ -358,6 +358,10 @@
     if(!paused){
       now+=delta;phaseElapsed+=delta;
       if(phase==="intro"&&phaseElapsed>=3.9){phase="blocked";phaseElapsed=0;status(phase)}
+      // A complete sequence lasts approximately 20 seconds of visible time:
+      // 3.9s intro + 6.1s blocked + 1.85s surge + 6.1s logo + 2.05s rewind.
+      else if(phase==="blocked"&&phaseElapsed>=6.1){trigger()}
+      else if(phase==="logo"&&phaseElapsed>=6.1){reset()}
       else if(phase==="flash"&&phaseElapsed>=1.85){
         phase="logo";phaseElapsed=0;
         root.classList.remove("pg-lightning","pg-bloom");status(phase);
