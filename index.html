@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-typeface="instrument">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,11 @@
   <title>Alphan Akbulut | Senior Product Owner & Technical Product Manager</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./hero-graph.css?v=responsive-motion-2">
-  <link rel="stylesheet" href="./apple-style.css?v=preview-1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./apple-style.css?v=typography-motion-2">
+  <script src="./typeface-preview.js?v=2" defer></script>
   <script src="./hero-graph.js?v=responsive-motion-2" defer></script>
 </head>
 <body>
@@ -213,5 +217,13 @@
 </section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><span>© 2026 Alphan Akbulut</span><a href="Alphan_Akbulut_CV_2026.pdf" download>Download CV (PDF) ↗</a><a href="#top">Back to top ↑</a></div></footer>
+<aside class="type-lab" aria-label="Temporary typography comparison, preview only">
+  <label for="typeface-choice"><span class="type-lab-dot" aria-hidden="true"></span> TYPE STUDY <small>PREVIEW ONLY</small></label>
+  <select id="typeface-choice" aria-label="Compare website font families">
+    <option value="instrument">Instrument Sans</option>
+    <option value="manrope">Manrope</option>
+    <option value="system">System / Apple</option>
+  </select>
+</aside>
 </body>
 </html>
