@@ -240,3 +240,36 @@
  .pg-map:after{display:none!important}
  .product-graph[data-phase="intro"] .pg-svg{opacity:.95;filter:none}
 }
+
+/* Legibility pass: network labels must always render above luminous particles. */
+.pg-map .pg-canvas{z-index:2}
+.pg-map .pg-svg{z-index:4;overflow:visible}
+.pg-map .pg-node .pg-disk{
+ fill:#091d25;fill-opacity:1;
+ stroke:rgba(var(--pg-rgb),.96);stroke-width:1.85;
+ filter:drop-shadow(0 0 11px rgba(0,0,0,.95));
+}
+.pg-map .pg-node[data-node="provider"] .pg-disk{
+ fill:#291b25;stroke:#f5b29d;
+}
+.product-graph[data-state="resolved"] .pg-map .pg-node[data-node="provider"] .pg-disk{
+ fill:#0e302b;stroke:var(--pg-accent);
+}
+.pg-map .pg-node .pg-symbol{
+ fill:#f2fff7;
+ stroke:#071920;stroke-width:3.6px;stroke-linejoin:round;
+ paint-order:stroke fill;
+ font:800 15px/1 var(--sans,Arial,sans-serif);
+ text-anchor:middle;dominant-baseline:central;
+ filter:drop-shadow(0 1px 5px rgba(0,0,0,.85));
+}
+.pg-map .pg-node .pg-label{
+ fill:#e0f3ee;
+ stroke:#071822;stroke-width:3.2px;stroke-linejoin:round;
+ paint-order:stroke fill;
+ font:750 11px/1 var(--sans,Arial,sans-serif);
+ letter-spacing:.12em;text-anchor:middle;
+ filter:drop-shadow(0 2px 5px rgba(0,0,0,.9));
+}
+.pg-map .pg-node .pg-orbit{stroke:rgba(var(--pg-rgb),.62);stroke-width:1.6}
+.pg-map .pg-node:focus-visible .pg-disk{stroke-width:2.8}
