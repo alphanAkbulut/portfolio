@@ -10,8 +10,8 @@
   <meta property="og:type" content="website">
   <title>Alphan Akbulut | Senior Product Owner & Technical Product Manager</title>
   <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./hero-graph.css?v=layout-hotfix-20261019">
-  <script src="./hero-graph.js?v=layout-hotfix-20261019" defer></script>
+  <link rel="stylesheet" href="./hero-graph.css?v=clean-hud-1">
+  <script src="./hero-graph.js?v=clean-hud-1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -38,43 +38,43 @@
             <path class="pg-link" id="pg-path-6" d="M1042 238 C1105 238 1107 359 1154 359" />
             <path class="pg-link" id="pg-path-7" data-lane="blocked" d="M1042 493 C1105 493 1107 359 1154 359" />
         </g>
-            <g class="pg-node" data-node="intake" tabindex="0" role="button" aria-label="Inspect Intake">
+            <g class="pg-node" data-node="intake">
               <circle class="pg-orbit" cx="632" cy="359" r="30"/>
               <circle class="pg-disk" cx="632" cy="359" r="22"/>
               <text class="pg-symbol" x="632" y="359">IN</text>
               <text class="pg-label" x="632" y="405">INPUT</text>
             </g>
-            <g class="pg-node" data-node="analysis" tabindex="0" role="button" aria-label="Inspect Analysis">
+            <g class="pg-node" data-node="analysis">
               <circle class="pg-orbit" cx="762" cy="238" r="30"/>
               <circle class="pg-disk" cx="762" cy="238" r="22"/>
               <text class="pg-symbol" x="762" y="238">AN</text>
               <text class="pg-label" x="762" y="284">ANALYZE</text>
             </g>
-            <g class="pg-node" data-node="evidence" tabindex="0" role="button" aria-label="Inspect Evidence">
+            <g class="pg-node" data-node="evidence">
               <circle class="pg-orbit" cx="762" cy="493" r="30"/>
               <circle class="pg-disk" cx="762" cy="493" r="22"/>
               <text class="pg-symbol" x="762" y="493">EV</text>
               <text class="pg-label" x="762" y="539">EVIDENCE</text>
             </g>
-            <g class="pg-node" data-node="decision" tabindex="0" role="button" aria-label="Inspect Decision">
+            <g class="pg-node" data-node="decision">
               <circle class="pg-orbit" cx="900" cy="359" r="30"/>
               <circle class="pg-disk" cx="900" cy="359" r="22"/>
               <text class="pg-symbol" x="900" y="359">IF</text>
               <text class="pg-label" x="900" y="405">DECISION</text>
             </g>
-            <g class="pg-node" data-node="rules" tabindex="0" role="button" aria-label="Inspect Rules">
+            <g class="pg-node" data-node="rules">
               <circle class="pg-orbit" cx="1042" cy="238" r="30"/>
               <circle class="pg-disk" cx="1042" cy="238" r="22"/>
               <text class="pg-symbol" x="1042" y="238">BR</text>
               <text class="pg-label" x="1042" y="284">RULES</text>
             </g>
-            <g class="pg-node is-selected" data-node="provider" tabindex="0" role="button" aria-label="Inspect Provider">
+            <g class="pg-node is-selected" data-node="provider">
               <circle class="pg-orbit" cx="1042" cy="493" r="30"/>
               <circle class="pg-disk" cx="1042" cy="493" r="22"/>
               <text class="pg-symbol" x="1042" y="493">PX</text>
               <text class="pg-label" x="1042" y="539">PROVIDER</text>
             </g>
-            <g class="pg-node" data-node="output" tabindex="0" role="button" aria-label="Inspect Delivery">
+            <g class="pg-node" data-node="output">
               <circle class="pg-orbit" cx="1154" cy="359" r="30"/>
               <circle class="pg-disk" cx="1154" cy="359" r="22"/>
               <text class="pg-symbol" x="1154" y="359">✓</text>
@@ -86,28 +86,27 @@
       <div class="pg-map-foot" aria-hidden="true"><span id="pg-map-hint">BOTTLENECK / PROVIDER PATH</span></div>
     </div>
     <div class="pg-topline"><span>LIVE SYSTEM STUDY <b>/ 01</b></span><span class="pg-live"><i aria-hidden="true"></i>ILLUSTRATIVE NETWORK</span></div>
-    <div class="pg-flag" aria-live="polite"><span id="pg-flag-label">BLOCKER</span></div>
-    <div class="pg-summary" aria-live="polite">
-      <div class="pg-summary-head"><span id="pg-insight-step">SYSTEM INSIGHT / INVESTIGATE</span><span>07 NODES / 08 PATHS</span></div>
-      <strong id="pg-insight-title">External dependency</strong>
-      <p id="pg-insight-detail">The illustrative provider integration is blocked. One branch queues until the dependency is resolved.</p>
-    </div>
-    <div class="pg-bottom">
+    <div class="pg-hud" aria-label="Network interaction">
+      <span class="pg-hud-state" id="pg-flag-label" aria-live="polite">PATH BLOCKED</span>
       <button class="pg-button" id="pg-resolve" type="button"><span id="pg-button-label">Resolve blocker</span><span aria-hidden="true">↗</span></button>
-      <div class="pg-timer"><small id="pg-clock-label">SIMULATED TIME</small><strong id="pg-clock-value">T+00:12</strong></div>
+      <details class="pg-settings">
+        <summary aria-label="Customize animation appearance">Customize <span aria-hidden="true">⌃</span></summary>
+        <div class="pg-toolrow" aria-label="Appearance options">
+          <label class="pg-tool-label" for="pg-shape">SHAPE</label>
+          <select class="pg-select" id="pg-shape" aria-label="Particle geometry">
+            <option value="drop">Drops</option><option value="diamond">Diamonds</option><option value="hex">Hexagons</option>
+          </select>
+          <span class="pg-tool-label">COLOR</span>
+          <div class="pg-colors" role="group" aria-label="Particle color">
+            <button class="pg-swatch" data-palette="mint" type="button" style="--swatch:#A6F3C3" aria-pressed="true" aria-label="Mint color"></button>
+            <button class="pg-swatch" data-palette="cyan" type="button" style="--swatch:#7CD9FF" aria-pressed="false" aria-label="Cyan color"></button>
+            <button class="pg-swatch" data-palette="amber" type="button" style="--swatch:#FFD29B" aria-pressed="false" aria-label="Amber color"></button>
+          </div>
+          <button class="pg-pause" id="pg-pause" type="button" aria-pressed="false">Pause motion</button>
+        </div>
+      </details>
     </div>
-    <div class="pg-toolrow" aria-label="Animation controls">
-      <label class="pg-tool-label" for="pg-shape">SIGNAL</label>
-      <select class="pg-select" id="pg-shape" aria-label="Particle geometry">
-        <option value="drop">Drops</option><option value="diamond">Diamonds</option><option value="hex">Hexagons</option>
-      </select>
-      <div class="pg-colors" role="group" aria-label="Particle color">
-        <button class="pg-swatch" data-palette="mint" type="button" style="--swatch:#A6F3C3" aria-pressed="true" aria-label="Mint color"></button>
-        <button class="pg-swatch" data-palette="cyan" type="button" style="--swatch:#7CD9FF" aria-pressed="false" aria-label="Cyan color"></button>
-        <button class="pg-swatch" data-palette="amber" type="button" style="--swatch:#FFD29B" aria-pressed="false" aria-label="Amber color"></button>
-      </div>
-      <button class="pg-pause" id="pg-pause" type="button" aria-pressed="false">Pause</button>
-    </div>
+    <p class="pg-a11y-status" id="pg-a11y-status" aria-live="polite">Provider path blocked.</p>
   </div>
   <div class="hero-vignette" aria-hidden="true"></div>
   <div class="wrap hero-layout">
