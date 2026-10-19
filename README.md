@@ -1,35 +1,34 @@
-# Alphan Akbulut — Professional Profile & Selected Work
+# Alphan Akbulut
 
 **Senior Product Owner | Technical Product Manager**  
-Istanbul, Türkiye · PSM I · PSPO I
+*PSM I · PSPO I · Istanbul, Türkiye*
 
-A professional profile highlighting product ownership, cross-functional leadership, analytical thinking and technical product delivery.
+I am a product professional with 10+ years of experience across digital commerce, travel technology, enterprise platforms, and operational processes. My background combines **product ownership, business analysis, technical depth, and cross-functional leadership**.
 
-## What this site shows
+I focus on understanding business problems, analyzing complex workflows and system dependencies, turning findings into clear product decisions, and working with teams to deliver reliable solutions.
 
-- **About & product mindset** — a pragmatic, evidence-led approach to solving complex business problems.
-- **How I work** — discovery, business & technical analysis, product decisions, delivery and validation.
-- **Core expertise** — digital platforms, integrations, UX and operational systems.
-- **Selected work** — a *sample*, not an exhaustive portfolio of all professional engagements.
-- **CV** — detailed employment history and verified credentials in downloadable PDF format.
+My experience includes API-driven airline distribution and B2B platforms at **Biletbank**, enterprise delivery at **Coca-Cola İçecek**, digital commerce and operational transformation at **DeFacto** and **Farmazon**, and a foundational **Business Analyst** role at **Universal Information Technologies**.
 
-## Selected work
+### CV — original PDF
 
-[Business Rule–Driven B2B Agency Onboarding](https://github.com/alphanAkbulut/business-rule-driven-onboarding) — an anonymized product case on conditional flows, rules, agreements and validation. [Live prototype](https://alphanakbulut.github.io/business-rule-driven-onboarding/).
+**[View / download my CV (PDF)](./Alphan_Akbulut_CV_2026.pdf)**
 
-## Technical structure
+This is the original CV PDF provided by me, preserved without edits.
 
-The repository hosts a lightweight static HTML/CSS site on GitHub Pages.
+### Expertise
 
-- `index.html` — main portfolio site.
-- `styles.css` — responsive styling.
-- `Alphan_Akbulut_CV_2026.pdf` — resume PDF for download.
-- `.nojekyll` — instruct GitHub Pages not to use Jekyll processing.
+Product ownership & prioritization · Business and technical analysis · Stakeholder alignment · Agile/Scrum delivery · API integrations (REST, SOAP, IATA NDC) · User journeys & acceptance criteria · UAT & release readiness
 
-To publish: **Settings → Pages → Build and deployment → Deploy from a branch → main / (root)**.
+### Selected work
 
-## Contact
+- [Business Rule–Driven B2B Agency Onboarding](https://github.com/alphanAkbulut/business-rule-driven-onboarding) — [Interactive prototype](https://alphanakbulut.github.io/business-rule-driven-onboarding/)
 
-[Email](mailto:alphanakbulut@hotmail.com) · [LinkedIn](https://www.linkedin.com/in/alphan-a-14005118/) · [GitHub](https://github.com/alphanAkbulut)
+This is one example, **not a complete inventory** of my GitHub projects. Additional projects and case studies can be added later.
 
-*Public profile note:* The site avoids residential address disclosure. Downloadable CV contains contact information as supplied in the resume.
+### Contact
+
+[LinkedIn](https://www.linkedin.com/in/alphan-a-14005118/) · [Email](mailto:alphanakbulut@hotmail.com) · [GitHub](https://github.com/alphanAkbulut)
+
+---
+
+[Portfolio website](https://alphanakbulut.github.io/portfolio/) · *The website's design and project presentation are being refined separately.*
