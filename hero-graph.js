@@ -9,6 +9,12 @@
   const el=id=>root.querySelector("#"+id);
   const canvas=root.querySelector(".pg-canvas");
   const ctx=canvas?.getContext?.("2d",{alpha:true});
+  // A full-hero ambient Canvas is separate from the static right-side diagram.
+  const ambientCanvas=document.createElement("canvas");
+  ambientCanvas.className="pg-ambient-canvas";
+  ambientCanvas.setAttribute("aria-hidden","true");
+  root.insertBefore(ambientCanvas,root.firstChild);
+  const ambientCtx=ambientCanvas.getContext("2d",{alpha:true});
   const routes=[...root.querySelectorAll(".pg-link")];
   const nodes=[...root.querySelectorAll(".pg-node")];
   const diagram=root.querySelector(".pg-svg");
@@ -37,6 +43,57 @@
     size:.45+rand()*.73,alpha:.46+rand()*.52,speed:.35+rand()*.7,
     seed:rand()*6.283,drift:rand()*1.7+.5
   }));
+
+  // Independent PRNG keeps the old right-hand network particle arrangement identical.
+  let ambientSeed=739271;
+  function ambientRandom(){
+    ambientSeed=(Math.imul(1664525,ambientSeed)+1013904223)>>>0;
+    return ambientSeed/4294967296;
+  }
+  const ambientCount=window.matchMedia?.("(max-width:600px)")?.matches?95:
+    (window.matchMedia?.("(max-width:850px)")?.matches?155:290);
+  const ambientDots=Array.from({length:ambientCount},()=>({
+    x:ambientRandom(),y:ambientRandom(),speed:.004+ambientRandom()*.012,
+    size:.47+ambientRandom()*.58,opacity:.44+ambientRandom()*.44,
+    phase:ambientRandom()*Math.PI*2,drift:4+ambientRandom()*11
+  }));
+  let ambientWidth=0,ambientHeight=0;
+  function resizeAmbient(){
+    if(!ambientCtx)return;
+    const rect=ambientCanvas.getBoundingClientRect();
+    ambientWidth=rect.width;ambientHeight=rect.height;
+    if(ambientWidth<10||ambientHeight<10)return;
+    const dpr=Math.min(window.devicePixelRatio||1,1.5);
+    const w=Math.max(1,Math.ceil(ambientWidth*dpr));
+    const h=Math.max(1,Math.ceil(ambientHeight*dpr));
+    if(ambientCanvas.width!==w||ambientCanvas.height!==h){
+      ambientCanvas.width=w;ambientCanvas.height=h;
+    }
+    ambientCtx.setTransform(w/ambientWidth,0,0,h/ambientHeight,0,0);
+  }
+  function drawAmbient(){
+    if(!ambientCtx||!particleSprite||!ambientWidth||!ambientHeight)return;
+    const a=ambientCtx;
+    a.clearRect(0,0,ambientWidth,ambientHeight);
+    a.save();
+    a.globalCompositeOperation="screen";
+    const settle=phase==="intro" ? (.55+.45*smooth(phaseElapsed/3.9)) : 1;
+    const quiet=phase==="logo" ? .65 : 1;
+    const pulse=phase==="flash" ? .17*Math.exp(-Math.pow((phaseElapsed-.7)/.36,2)) : 0;
+    for(const p of ambientDots){
+      // Light signals drift continuously left-to-right, across the entire first screen.
+      const normX=(p.x+now*p.speed)%1;
+      const x=normX*ambientWidth;
+      const y=p.y*ambientHeight+Math.sin(now*.43+p.phase+normX*6)*p.drift;
+      // More restrained behind large type, brighter closer to the schematic.
+      const luminance=.42+.58*smooth((normX-.18)/.62);
+      a.globalAlpha=Math.min(1,p.opacity*(.33+.36*luminance)*settle*quiet+pulse*.11);
+      const size=p.size*(luminance<.60 ? .8 : 1);
+      a.drawImage(particleSprite,x-10*size,y-10*size,20*size,20*size);
+    }
+    a.restore();
+  }
+
   const smooth=t=>{const x=Math.max(0,Math.min(1,t));return x*x*(3-2*x)};
   const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
   const lerp=(a,b,t)=>a+(b-a)*t;
@@ -184,6 +241,7 @@
     const sx=w/surfaceWidth,sy=h/surfaceHeight;
     ctx.setTransform(sx*zoom,0,0,sy*zoom,
       sx*(offsetX-view.x*zoom),sy*(offsetY-view.y*zoom));
+    resizeAmbient();
     paint();
   }
   function drawWave(path,progress,boost){
@@ -232,6 +290,7 @@
   }
   function paint(){
     if(!ctx||!surfaceWidth||!surfaceHeight)return;
+    drawAmbient();
     // Clear the backing pixels, not a transformed design rectangle.
     ctx.save();ctx.setTransform(1,0,0,1,0,0);
     ctx.clearRect(0,0,canvas.width,canvas.height);ctx.restore();
@@ -315,7 +374,11 @@
   togglePause(paused);
   if(ctx){
     resize();
-    if(window.ResizeObserver)new ResizeObserver(resize).observe(root.querySelector(".pg-map"));
+    if(window.ResizeObserver){
+      const observer=new ResizeObserver(resize);
+      observer.observe(root.querySelector(".pg-map"));
+      observer.observe(root);
+    }
     else window.addEventListener("resize",resize,{passive:true});
     if(window.IntersectionObserver)new IntersectionObserver(entries=>{
       visible=entries.some(e=>e.isIntersecting);

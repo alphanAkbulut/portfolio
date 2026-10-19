@@ -544,3 +544,33 @@
 @media(prefers-reduced-motion:reduce){
   .hero-cinematic .pg-svg{transition:none!important}
 }
+
+
+/* Preview-only ambient flow: allow luminous drops to reach behind the large
+ * From complexity to clarity headline. The original network stays right-aligned. */
+.hero-cinematic .pg-ambient-canvas{
+  position:absolute;inset:0;z-index:0;display:block;
+  width:100%;height:100%;pointer-events:none;opacity:1;
+}
+.hero-cinematic .pg-map{z-index:1}
+.hero-cinematic .hero-vignette{
+  background:
+    linear-gradient(90deg,
+      rgba(7,17,27,.65) 0%,
+      rgba(7,17,27,.66) 17%,
+      rgba(7,17,27,.5) 39%,
+      rgba(7,17,27,.11) 69%,
+      rgba(7,17,27,.04) 100%),
+    linear-gradient(0deg,#07111b 0%,transparent 19%,transparent 85%,rgba(7,17,27,.36) 100%);
+}
+.hero-cinematic #hero-title{text-shadow:0 3px 25px rgba(4,12,20,.55)}
+@media(max-width:850px){
+  .hero-cinematic .hero-vignette{
+    background:linear-gradient(180deg,
+      rgba(7,17,27,.8) 0%,rgba(7,17,27,.61) 27%,
+      rgba(7,17,27,.24) 47%,rgba(7,17,27,.18) 80%,#07111b 100%);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-cinematic .pg-ambient-canvas{opacity:.48}
+}
