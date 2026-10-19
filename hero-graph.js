@@ -11,9 +11,8 @@
   const ctx=canvas?.getContext?.("2d",{alpha:true});
   const routes=[...root.querySelectorAll(".pg-link")];
   const nodes=[...root.querySelectorAll(".pg-node")];
-  const button=el("pg-resolve"),buttonText=el("pg-button-label"),flag=el("pg-flag-label");
-  const insightStep=el("pg-insight-step"),insightTitle=el("pg-insight-title"),insightDetail=el("pg-insight-detail");
-  const clockTitle=el("pg-clock-label"),clock=el("pg-clock-value"),hint=el("pg-map-hint");
+  const diagram=root.querySelector(".pg-svg");
+  const button=el("pg-resolve"),buttonText=el("pg-button-label"),flag=el("pg-flag-label"),liveStatus=el("pg-a11y-status");
   const shapeSelect=el("pg-shape"),pauseButton=el("pg-pause"),colors=[...root.querySelectorAll(".pg-swatch")];
   const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches||false;
   const palettes={
@@ -21,20 +20,11 @@
     cyan:{r:124,g:217,b:255},
     amber:{r:255,g:210,b:155}
   };
-  const guide={
-    intake:["Input captured","A requirement enters the system. Identify the business objective and the source before choosing a solution."],
-    analysis:["Analyze the requirement","Explore user journeys, stakeholder needs, dependencies and existing processes."],
-    evidence:["Verify the evidence","Review relevant process rules, API behavior, operational data and logs before defining scope."],
-    decision:["Decision logic","Evaluate rules, risk, impact and feasibility. Route only validated work into delivery."],
-    rules:["Business rules evaluated","Define testable business conditions, exceptions and acceptance criteria."],
-    provider:["External dependency","The illustrative provider integration is blocked. Information accumulates until the dependency is resolved."],
-    output:["Delivery outcome","Resolved paths lead to implementation, acceptance testing and release readiness."]
-  };
   let seed=241963;
   function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
-  const count=window.matchMedia?.("(max-width: 600px)")?.matches?570:1650;
+  const count=window.matchMedia?.("(max-width: 600px)")?.matches?440:(window.matchMedia?.("(max-width: 1000px)")?.matches?780:1100);
   let tone=palettes.mint,shape="drop",phase=reduced?"blocked":"intro";
-  let phaseElapsed=0,now=0,blockTime=12,recovery=0;
+  let phaseElapsed=0,now=0,renderedMorph=0,rewindStartMorph=0,instantFinal=false;
   let paused=reduced,visible=true,last=0,lastDraw=0,active=true;
   let surfaceWidth=0,surfaceHeight=0,particleSprite=null;
   const paths=routes.map(node=>{
@@ -57,11 +47,11 @@
     const off=targetCanvas.getContext("2d",{willReadFrequently:true});
     if(!off)return;
     off.fillStyle="#fff";off.textAlign="center";off.textBaseline="middle";
-    off.font="800 270px Arial, Helvetica, sans-serif";
-    off.fillText("AA",930,346);
-    off.font="700 23px Arial, Helvetica, sans-serif";
+    off.font="800 222px Arial, Helvetica, sans-serif";
+    off.fillText("AA",930,285);
+    off.font="700 20px Arial, Helvetica, sans-serif";
     if("letterSpacing" in off)off.letterSpacing="5px";
-    off.fillText("PRODUCT THINKING",930,517);
+    off.fillText("PRODUCT THINKING",930,422);
     const data=off.getImageData(0,0,1200,720).data;
     let targets=[];
     for(let y=132;y<560;y+=3){
@@ -123,53 +113,37 @@
     const scale=p.size*size;
     ctx.drawImage(particleSprite,x-9.5*scale,y-9.5*scale,19*scale,19*scale);
   }
-  function updateClock(){
-    clockTitle.textContent=phase==="intro"||phase==="blocked"?"SIMULATED TIME":"TIME SINCE RECOVERY";
-    const seconds=phase==="intro"||phase==="blocked"?blockTime:recovery;
-    const format=n=>String(Math.floor(n)).padStart(2,"0");
-    clock.textContent="T+"+format(seconds/60)+":"+format(seconds%60);
-  }
   function status(state){
     root.dataset.phase=state;
     const resolved=state==="flash"||state==="logo";
     root.dataset.state=resolved?"resolved":"blocked";
-    flag.textContent=state==="flash"?"RESOLVING":resolved?"RESOLVED":"BLOCKER";
-    buttonText.textContent=resolved?"Replay scenario":"Resolve blocker";
-    hint.textContent=state==="logo"?"COMPLEXITY / RESOLVED":resolved?"ALL PATHS / OPEN":"BOTTLENECK / PROVIDER PATH";
-    if(resolved){
-      insightStep.textContent="SYSTEM INSIGHT / RESOLVED";
-      insightTitle.textContent=state==="logo"?"From complexity to clarity.":"Dependency cleared. Restoring flow.";
-      insightDetail.textContent=state==="logo"?
-        "The blocked dependency is resolved. Evidence, decisions and delivery paths converge into a clear outcome.":
-        "A short lightning pulse travels the decision route as the network recovers.";
-    }else{
-      selectNode("provider");
+    if(state==="rewind"){
+      flag.textContent="REPLAYING";buttonText.textContent="Resetting…";button.disabled=true;
+      liveStatus.textContent="The animation is resetting smoothly.";return;
     }
-    updateClock();
+    button.disabled=false;
+    flag.textContent=state==="flash"?"RESTORING":resolved?"PATH OPEN":"PATH BLOCKED";
+    buttonText.textContent=resolved?"Replay":"Resolve blocker";
+    liveStatus.textContent=state==="flash"?"The blocked path is reopening."
+      :resolved?"Provider path restored. Replay to start again."
+      :"Provider path blocked. Select Resolve blocker to see the recovery.";
   }
-  function selectNode(id){
-    if(!guide[id])return;
-    nodes.forEach(n=>n.classList.toggle("is-selected",n.dataset.node===id));
-    if(phase==="flash"||phase==="logo")return;
-    insightStep.textContent="SYSTEM INSIGHT / INVESTIGATE";
-    insightTitle.textContent=guide[id][0];insightDetail.textContent=guide[id][1];
-  }
-  nodes.forEach(n=>{
-    const handle=()=>selectNode(n.dataset.node);
-    n.addEventListener("click",handle);
-    n.addEventListener("keydown",e=>{
-      if(e.key==="Enter"||e.key===" "){e.preventDefault();handle()}
-    });
-  });
   function reset(){
-    phase=(reduced||paused)?"blocked":"intro";phaseElapsed=0;blockTime=12;recovery=0;
     root.classList.remove("pg-lightning","pg-bloom");
+    if(reduced||paused){
+      phase="blocked";phaseElapsed=0;instantFinal=false;renderedMorph=0;
+    }else{
+      rewindStartMorph=renderedMorph;
+      phase="rewind";phaseElapsed=0;
+    }
     status(phase);
     if(ctx)paint();
   }
   function trigger(){
+    if(phase==="rewind")return;
     if(phase==="flash"||phase==="logo"){reset();return}
-    phase=(reduced||paused)?"logo":"flash";phaseElapsed=0;recovery=0;
+    instantFinal=reduced||paused;
+    phase=instantFinal?"logo":"flash";phaseElapsed=instantFinal?3:0;
     status(phase);
     if(phase==="flash"){
       // Single emphasis peak; neither a full-page white flash nor looping strobe.
@@ -198,10 +172,18 @@
     const bounds=canvas.getBoundingClientRect();
     surfaceWidth=bounds.width;surfaceHeight=bounds.height;
     if(surfaceWidth<10||surfaceHeight<10)return;
-    const dpr=Math.min(window.devicePixelRatio||1,1.65);
+    const dpr=Math.min(window.devicePixelRatio||1,1.55);
     const w=Math.ceil(surfaceWidth*dpr),h=Math.ceil(surfaceHeight*dpr);
     if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
-    ctx.setTransform(w/1200,0,0,h/720,0,0);
+    // Match the SVG viewBox's uniform xMidYMid meet transform exactly.
+    // Non-uniform scaling caused both clipping and stretched diagram geometry.
+    const view={x:588,y:172,width:625,height:402};
+    const zoom=Math.min(surfaceWidth/view.width,surfaceHeight/view.height);
+    const offsetX=(surfaceWidth-view.width*zoom)*.5;
+    const offsetY=(surfaceHeight-view.height*zoom)*.5;
+    const sx=w/surfaceWidth,sy=h/surfaceHeight;
+    ctx.setTransform(sx*zoom,0,0,sy*zoom,
+      sx*(offsetX-view.x*zoom),sy*(offsetY-view.y*zoom));
     paint();
   }
   function drawWave(path,progress,boost){
@@ -250,10 +232,22 @@
   }
   function paint(){
     if(!ctx||!surfaceWidth||!surfaceHeight)return;
-    ctx.clearRect(0,0,1200,720);
-    const gather=smooth(phaseElapsed/3.4),isLogo=phase==="flash"||phase==="logo";
-    const morph=isLogo?(phase==="logo"&&(reduced||paused)?1:smooth((phase==="logo"?1.7+phaseElapsed:phaseElapsed-1.14)/2.3)):0;
-    const reveal=phase==="intro"?gather:1;
+    // Clear the backing pixels, not a transformed design rectangle.
+    ctx.save();ctx.setTransform(1,0,0,1,0,0);
+    ctx.clearRect(0,0,canvas.width,canvas.height);ctx.restore();
+    const isLogo=phase==="flash"||phase==="logo";
+    // Keep transition time continuous across flash → logo (no hard morph jump).
+    const eventTime=phase==="flash"?phaseElapsed:phase==="logo"?1.85+phaseElapsed:0;
+    const morph=isLogo?(instantFinal?1:smooth((eventTime-.24)/3.05))
+      :phase==="rewind"?rewindStartMorph*(1-smooth(phaseElapsed/1.35)):0;
+    const reveal=phase==="intro"?smooth(phaseElapsed/3.9)
+      :phase==="rewind"?1-smooth((phaseElapsed-1.10)/.95):1;
+    renderedMorph=morph;
+    // The line network fades with the particles instead of switching between scenes.
+    const lineOpacity=phase==="intro"?.13+.82*reveal
+      :phase==="rewind"?( .045+.91*(1-morph))*(.14+.86*reveal)
+      :isLogo?.045+.91*(1-smooth((morph-.3)/.7)):.95;
+    if(diagram)diagram.style.opacity=String(lineOpacity);
     ctx.save();ctx.globalCompositeOperation="screen";
     for(let i=0;i<dots.length;i++){
       const p=dots[i],orbit=now*(.8+p.speed*.33)+p.seed;
@@ -299,23 +293,20 @@
     if(!active)return;
     window.requestAnimationFrame(tick);
     if(!visible||document.hidden||!ctx||!surfaceWidth){last=0;return}
-    if(t-lastDraw<22)return;
-    const delta=last?Math.min((t-last)/1000,.058):.024;
+    if(t-lastDraw<16)return;
+    const delta=last?Math.min((t-last)/1000,.05):.016;
     last=t;lastDraw=t;
     if(!paused){
       now+=delta;phaseElapsed+=delta;
-      if(phase==="intro"&&phaseElapsed>3.4){phase="blocked";phaseElapsed=0;status(phase)}
-      else if(phase==="blocked"){blockTime+=delta}
-      else if(phase==="flash"){
-        recovery+=delta;
-        if(phaseElapsed>=1.85){
-          phase="logo";phaseElapsed=0;root.classList.remove("pg-lightning","pg-bloom");
-          status(phase);
-        }
-      }else if(phase==="logo"){recovery+=delta}
+      if(phase==="intro"&&phaseElapsed>=3.9){phase="blocked";phaseElapsed=0;status(phase)}
+      else if(phase==="flash"&&phaseElapsed>=1.85){
+        phase="logo";phaseElapsed=0;
+        root.classList.remove("pg-lightning","pg-bloom");status(phase);
+      }else if(phase==="rewind"&&phaseElapsed>=2.05){
+        phase="intro";phaseElapsed=0;renderedMorph=0;instantFinal=false;status(phase);
+      }
       paint();
     }
-    if(Math.floor(t/250)!==Math.floor((t-25)/250))updateClock();
   }
   makeGraphTargets();
   makeLogoTargets();

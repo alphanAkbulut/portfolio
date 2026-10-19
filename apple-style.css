@@ -1,0 +1,217 @@
+/* Apple-inspired portfolio design exploration · design-preview only.
+ * Independent interpretation of the Apple HIG material hierarchy, not Apple's code,
+ * branding, fonts or native Liquid Glass implementation.
+ * Glass stays in functional chrome; content remains readable and solid.
+ */
+:root{
+  color-scheme:dark;
+  --bg:#090d13;--surface:#141a22;--card:#1b222c;
+  --line:#313b45;--text:#f5f5f7;--muted:#abb5c0;
+  --accent:#b9e8d1;
+  --sans:-apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue","Segoe UI",Arial,sans-serif;
+  --apple-ease:cubic-bezier(.22,1,.36,1);
+  --apple-instant:cubic-bezier(.2,.78,.2,1);
+  --apple-glass:rgba(29,36,46,.68);
+}
+html{scroll-padding-top:100px}
+body{
+  background:var(--bg);color:var(--text);
+  font:400 15px/1.65 var(--sans);
+  font-feature-settings:"cv05","cv11";
+  font-synthesis:none;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a,button,summary,select{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible{
+  outline:2px solid #dcfff0;outline-offset:4px
+}
+/* Floating navigation is the only persistent glass material on this page. */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  border:0!important;
+  background:transparent!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  padding:12px 16px 0;
+  pointer-events:none;
+}
+.topbar .nav{
+  width:min(1280px,100%);
+  min-height:65px;
+  padding:8px 18px;
+  border:1px solid rgba(220,235,242,.16);
+  border-radius:22px;
+  background:var(--apple-glass);
+  -webkit-backdrop-filter:blur(22px) saturate(1.18);
+  backdrop-filter:blur(22px) saturate(1.18);
+  box-shadow:0 12px 35px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.08);
+  pointer-events:auto;
+}
+.brand-icon{
+  width:39px;height:39px;
+  border:1px solid rgba(202,228,218,.25);
+  background:rgba(255,255,255,.055);
+  border-radius:13px;
+  font-size:15px;letter-spacing:-.08em;
+  transition:background .28s var(--apple-instant),transform .35s var(--apple-ease)
+}
+.brand:hover .brand-icon{transform:scale(1.045);background:rgba(255,255,255,.09)}
+.brand-icon b{color:var(--accent)}
+.brand-label{font-size:12px;font-weight:660;letter-spacing:-.015em}
+.brand-label small{font-size:9px;letter-spacing:.075em;color:#a2b5b9}
+.nav-links{gap:20px}
+.nav-links a{color:#d6dcde;font-size:12px;font-weight:550;
+  transition:color .24s ease,opacity .24s ease,transform .3s var(--apple-ease)}
+.nav-links a:hover{color:#fff;opacity:1;transform:translateY(-1px)}
+.nav-links .nav-cta{
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:999px;
+  background:rgba(255,255,255,.11);
+  padding:12px 17px;
+  color:#f6faf7;
+}
+.nav-links .nav-cta:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.4)}
+.mobile-nav summary{border-radius:999px;background:rgba(255,255,255,.075);
+  min-height:44px;display:flex;align-items:center}
+.mobile-nav nav{border:1px solid rgba(255,255,255,.2);border-radius:19px;
+  background:rgba(29,37,46,.97);
+  box-shadow:0 18px 50px rgba(0,0,0,.34);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+/* Typography over decoration. */
+.hero-cinematic #hero-title{
+  font-family:var(--sans)!important;
+  font-size:clamp(62px,7.2vw,112px)!important;
+  font-weight:620!important;
+  letter-spacing:-.068em!important;
+  line-height:.99!important;
+  color:#f5f5f7;
+}
+.hero-cinematic #hero-title em{
+  font:inherit!important;
+  font-style:normal!important;
+  color:#c5f1db!important;
+  letter-spacing:inherit!important;
+}
+.hero-cinematic .hero-eyebrow,.hero-cinematic .hero-credentials{font-family:var(--sans)}
+.hero-cinematic .hero-intro{max-width:450px;color:#c1cbd0;line-height:1.7}
+h2.section-title{
+  font-size:clamp(40px,4.4vw,60px);
+  font-weight:625;
+  letter-spacing:-.055em;
+  line-height:1.1;
+}
+.showcase-copy h3{font-weight:630;letter-spacing:-.048em}
+.metric .value{font-weight:580;font-feature-settings:"tnum";letter-spacing:-.06em}
+.section{padding-block:clamp(84px,9vw,128px)}
+.alt{background:#111821}
+/* Only the primary hero CTA is tinted; other actions are neutral. */
+.hero-cinematic .hero-primary,.btn-main{
+  border:1px solid #c9f1dc;
+  border-radius:999px;
+  color:#14241d;background:#c9f1dc;
+  font-weight:650;letter-spacing:-.015em;
+  box-shadow:0 3px 16px rgba(170,240,209,.09);
+  transition:transform .35s var(--apple-ease),background .22s ease,
+    box-shadow .35s var(--apple-ease);
+}
+.hero-cinematic .hero-primary:hover,.btn-main:hover{
+  background:#e4fff1;transform:translateY(-2px);
+  box-shadow:0 9px 25px rgba(170,240,209,.14);
+}
+.hero-cinematic .hero-primary:active,.btn-main:active{transform:scale(.975)}
+.hero-cinematic .hero-secondary{border-bottom-color:rgba(230,240,239,.32);font-weight:550}
+.btn{border-radius:999px;min-height:48px;
+  transition:transform .38s var(--apple-ease),border-color .28s ease,
+    background-color .28s ease}
+.btn:active{transform:scale(.975)}
+/* Functional glass overlay, not glass content cards. */
+.hero-cinematic .pg-hud{
+  border:1px solid rgba(221,240,234,.26);
+  border-radius:999px;
+  padding:7px 8px 7px 16px;
+  background:rgba(25,34,43,.64);
+  -webkit-backdrop-filter:blur(20px) saturate(1.12);
+  backdrop-filter:blur(20px) saturate(1.12);
+  box-shadow:0 15px 35px rgba(0,0,0,.22),inset 0 1px rgba(255,255,255,.08);
+}
+.hero-cinematic .pg-hud .pg-button{
+  border:1px solid rgba(255,255,255,.17);
+  background:rgba(255,255,255,.14);
+  border-radius:999px;
+  min-height:38px;
+  padding:9px 15px;
+  color:#f5f7f6;
+  transition:transform .3s var(--apple-ease),background .23s ease;
+}
+.hero-cinematic .pg-hud .pg-button:hover{transform:scale(1.035);background:rgba(255,255,255,.22)}
+.hero-cinematic .pg-hud .pg-button:active{transform:scale(.97)}
+.hero-cinematic .pg-settings>summary{min-height:38px;display:flex;align-items:center;border-radius:16px}
+.hero-cinematic .pg-settings .pg-toolrow{
+  border-radius:20px;
+  background:rgba(24,33,42,.94);
+  -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+  box-shadow:0 18px 42px rgba(0,0,0,.32);
+}
+.hero-cinematic .pg-select{border-radius:12px;background:#162530}
+.hero-cinematic .pg-pause{min-height:36px}
+/* Product work lives on solid surfaces; glass stays out of the content layer. */
+.metric{
+  border:1px solid rgba(198,215,218,.13);
+  border-radius:21px;background:#1a222d;
+  box-shadow:none;transition:transform .48s var(--apple-ease),border-color .32s ease
+}
+.metric:hover{transform:translateY(-4px);border-color:rgba(197,235,216,.3)}
+.metric .source{letter-spacing:.07em}
+.showcase{
+  border:1px solid rgba(202,224,228,.16);
+  border-radius:24px;
+  background:#1b2430;
+  box-shadow:0 24px 70px rgba(0,0,0,.14);
+}
+.showcase .preview{background:#121e29}
+.chips span{
+  border:1px solid rgba(203,230,220,.18);
+  border-radius:999px;background:rgba(255,255,255,.03);
+  color:#d5e4df;padding:6px 13px
+}
+.pillar,.skill{border-top-color:rgba(203,221,220,.2)}
+.job{border-bottom-color:rgba(203,221,220,.15)}
+/* An intentional quiet, bright final section. */
+.contact{
+  color:#171c22;
+  background:#eef1ef;
+}
+.contact .label{color:#447262}
+.contact h2{letter-spacing:-.055em;font-weight:630}
+.contact h2 em{font-family:inherit;font-style:normal;color:#376b56}
+.contact p:not(.label){color:#54625d}
+.contact-links a{border-bottom:1px solid #ced6d2;color:#152621}
+.contact-links a:first-child{border-top:1px solid #ced6d2}
+.contact-links a:hover{color:#34654e}
+@media(max-width:850px){
+  .topbar{padding:9px 10px 0}
+  .topbar .nav{width:100%;padding:7px 13px;border-radius:19px;min-height:60px}
+  .mobile-nav nav{right:0;top:51px}
+  .hero-cinematic #hero-title{font-size:clamp(56px,10vw,88px)!important}
+}
+@media(max-width:600px){
+  .topbar{padding:7px 8px 0}
+  .topbar .nav{border-radius:16px;min-height:57px}
+  .hero-cinematic #hero-title{font-size:clamp(51px,11vw,68px)!important}
+  .hero-cinematic .pg-hud{border-radius:20px;flex-wrap:wrap;justify-content:center}
+  .metric,.showcase{border-radius:17px}
+  .section{padding-block:70px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-cinematic .hero-primary,.btn,.metric,.brand-icon,.nav-links a,
+  .hero-cinematic .pg-hud .pg-button{
+    transition:none!important;transform:none!important
+  }
+}
+@supports not ((-webkit-backdrop-filter:blur(10px)) or (backdrop-filter:blur(10px))){
+  .topbar .nav{background:#1c2731}
+  .hero-cinematic .pg-hud{background:#1a2831}
+  .hero-cinematic .pg-settings .pg-toolrow{background:#1a2831}
+}
