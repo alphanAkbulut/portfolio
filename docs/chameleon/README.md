@@ -3,7 +3,7 @@
 > **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
 
 
-**Status:** PLAN APPROVAL PENDING; implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read EVERY file in this folder before coding.
+**Status:** D1 ENVIRONMENT AUDIT COMPLETE; next task requires user approval; implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read EVERY file in this folder before coding.
 
 ## Vision, one sentence
 A breathtakingly realistic, nature-documentary-like chameleon in a living forest walks through the forest with optional subtle localized skin color fluctuations (without touching special colored props), drinks and suddenly pauses as if alerted, disturbs the real water and the website's glass components, notices the visitor, changes color **together with the entire website**, and makes independent eye contact with the cursor; scrolling gracefully pulls the camera back and enters the actual portfolio.
@@ -11,6 +11,7 @@ A breathtakingly realistic, nature-documentary-like chameleon in a living forest
 The initial viewer emotion is **calm and trust**, then discovery and surprise: **"Eyvah, bizi fark etti!" / "Oh, it noticed us!"** Unlike decorative 3D particles, each major UI motion has an intelligible story cause. Delight is earned through realism, not childish cartoon faces.
 
 ## Navigation
+- [09 — Skin task log](09-skin-task-log.md): current task, D1 environment findings, approval boundaries and next single step.
 - [07 — V4 development plan](07-v4-development-plan.md): current scope, tools/models, PoC gates, milestones, costs, acceptance and release plan.
 - [08 — Sources and evidence](08-sources-and-evidence.md): checked sources, access limitations and unknowns.
 - [01 — Film and interaction screenplay](01-cinematic-story-and-interaction.md): shot-by-shot triggers, eyes, waves, theme changes and scrolling.

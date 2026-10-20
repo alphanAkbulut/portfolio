@@ -45,7 +45,9 @@ Earlier brainstorm: walking over two differently colored objects causes two smal
 | V4-10 | Production/domain/diğer branch değişikliği yok | Kararlaştırıldı |
 
 ## Sonraki oturum
+**Güncel task sınırı:** önce [09 task kaydını](09-skin-task-log.md) oku. D1 onayı tüm build için onay sayılmaz; her task sonunda durup kullanıcı kararını bekle.
+
 Repo HEAD ve kullanıcı onayını kontrol et. 07 ve 08'i, sonra 01–06 yaratıcı ayrıntılarını oku. Onay yoksa build başlatma. Onay geldiyse önce G0 varlık/hak/ortam kaydı, sonra G1/G2 için 3–5 saniyelik kalite ve canlı göz/scroll deneyi yap; bütçe/erişim gerektiren somut bağımlılıkları ilgili kapıda çöz. Altı varyant, uzun film veya web efektleriyle başlama. main/design-preview/snapshot/BPMN ve DNS değişmez.
 
 ## Güncel durum
-Plan dokümantasyonu hazırlanmıştır; G0–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. İlk kullanıcı kararı: 07'deki plan ve ilk PoC aşamasının onayı.
+Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 tamamlandı; üretim ortamı henüz hazır değil. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. Sonraki adım yalnız D2 varlık araştırmasıdır; kullanıcı onayı beklenir. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
