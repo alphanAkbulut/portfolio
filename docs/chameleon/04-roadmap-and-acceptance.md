@@ -5,7 +5,7 @@ Create branch `portfolio-chameleon` from existing `design-preview` HEAD, commit 
 
 ## Stage 1 — visual fidelity proof (NOT STARTED)
 1. Choose a specific species consistent with user's two real reference photos; gather references/usage licenses and annotate actual eye anatomy, skin scale density, realistic color changes and gait.
-2. Produce **a short 3–5s photographic-quality motion proof**: chameleon in forest, right-to-left step, small eye motion; compare to reference at 100% crop. Investigate licensed wildlife footage vs 3D animation vs AI video; prioritize persistent anatomy and narrative control.
+2. Produce **a short 3–5s photographic-quality motion proof**: chameleon in forest, right-to-left step, small eye motion, and at most one short masked skin-color variation (do not require props/contacts); compare to reference at 100% crop. Investigate licensed wildlife footage vs 3D animation vs AI video; prioritize persistent anatomy and narrative control.
 3. Test on an actual page/mockup crop. Confirm natural-scale wide shot and readability, including mobile. Reject cartoony, fake feet, changing number of toes/eyes, unreliable skin texture, inconsistent tail.
 4. Get user's explicit acceptance of visual quality before spending effort on ripple/theme layers. Track asset provenance and licensing.
 
@@ -26,9 +26,9 @@ Set up Netlify branch deploy for `portfolio-chameleon` **or** independent projec
 
 ## Pass/fail criteria
 - Does first second show believable chameleon/forest without blank screen or loader?
-- Does animal walk physically right-to-left, staying out of left hero headline?
+- Does animal walk physically right-to-left, staying out of left hero headline? Are up to two early slight localized skin-color fluctuations believable, without newly introduced brightly colored objects or webpage theme changes? If too costly or fake-looking, can they be omitted cleanly?
 - Does water droplet/contact animation align with glass/text ripple within the visible frame? Does main title remain stable?
-- Does visitor recognition create a clear "it saw me!" sensation through independent eye behavior and a second wave?
+- Does chameleon pause **while drinking** as if alerted, react with eyes before head turn, with no required sound effect?\n- Does visitor recognition create a clear "it saw me!" sensation through independent eye behavior and a second wave?
 - Does skin color change immediately after recognition trigger FULL-site coherent semantic palette transitions?
 - Do both side-dependent eyes track correctly without simultaneous mirroring? Does touch/reduced-motion have suitable fallback?
 - Does scroll work at any moment, cause seamless zoom-out, and leave theme intact?
@@ -48,7 +48,7 @@ Set up Netlify branch deploy for `portfolio-chameleon` **or** independent projec
 | Scroll out transition jerks/cuts | MED/HIGH | Matched wide/close shots, continuous progress and early-scroll cases |
 | Water/glass refraction not perceptible | MEDIUM | User-tested second stronger ripple; small UI label refraction |
 | Distortion hurts usability/accessibility | MEDIUM | Visual-only layer and reduced-motion fallback |
-| Misleading biology (surface touch drives color) | LOW/MEDIUM | Creative metaphor, not claim of literal physical biological rule |
+| Misleading biology (surface touch drives color) | LOW/MEDIUM | REMOVE touch-color causal premise entirely; early minor skin fluctuations are artistic, non-contact-triggered and must not be marketed as proven biology |\n| Early micro-color changes add video complexity | MEDIUM | Use isolated skin masks in offline material pass; permit one or zero if the visual proof suggests unreliable continuity; no separate objects/scenes |
 | Loss of repo history/site | LOW if process followed | Separate branch, immutable references, explicit merge approval |
 | Chat context lost | HIGH unless documented | These GitHub docs and concise next-session prompt |
 
