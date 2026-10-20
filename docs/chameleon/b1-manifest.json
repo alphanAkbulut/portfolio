@@ -1,0 +1,24 @@
+{
+  "status": "blockout only; visual review required",
+  "blender": "4.5.14 LTS",
+  "source": "outputs/e1/eye-form-v1.blend",
+  "limbs": 4,
+  "reused_eyes": 2,
+  "reopen": "passed",
+  "implemented": [
+    "static whole-body proportions",
+    "E1 lids in head context",
+    "static tapered coil",
+    "short pink tongue"
+  ],
+  "not_implemented": [
+    "gait",
+    "rig",
+    "validated toe anatomy",
+    "tail animation",
+    "drinking",
+    "ripples",
+    "photoreal skin"
+  ],
+  "blend_sha256": "1301a7053a75d136461c785af3397e5d2991e6bb532e985179128983267b6c51"
+}

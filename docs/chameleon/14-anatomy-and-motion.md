@@ -141,3 +141,15 @@ Yürüyüş sırasında bacak/küçük gövde bölgelerinde hafif lokal renk de�
 Tür Furcifer pardalis korunur; cinsiyet/lokalite ve final oranlar seçilmiş sayılmaz.
 **Yetki:** kullanıcı bu sahne güncellemesini repoya işlemeyi ve ardından build'e devam etmeyi istedi. Önceki “analiz sonrası onay bekle” bu küçük devam adımı için aşılmıştır.
 **İlk build dilimi:** E1 göz geometrisini yeniden kullanarak tek düzenlenebilir bütün-vücut hacim taslağı; gövde, kafa, dört bacak/temas, incelen kıvrık kuyruk ve kısa pembe dil. Ölçüler tasarım hipotezi; anatomik final, iskelet doğrulaması veya yürüyüş implementasyonu olarak sunulmaz. Tam 12 basış, kuyruk deformasyonu ve su fiziği sonraki ayrı kabul kapılarıdır. Önce bütüncül biçim okunurluğu sınanır; fotogerçekçi deri eklenmez.
+
+## B1 — bütün vücut hacim taslağı, gerçek build sonucu
+2026-10-20; sahne sözleşmesi commit'i `3744c270128e1ca120d44073ffe168d53726885c` ardından üretildi.
+- Mevcut E1 .blend açıldı; kapak mesh'i iki göz için yeniden kullanıldı. E1 orijinali korunur.
+- Tek güncel çalışma sahnesi: `outputs/body-study/chameleon-study.blend`; önizleme `body-overview.png`; teknik kayıt `manifest.json`.
+- [Üretim script'i](../../scripts/chameleon/create_body_study.py). Önkoşul: yerel `outputs/e1/eye-form-v1.blend`; yoksa önce mevcut `create_eye_form.py` ile E1 üret. Script kendi B1 çıktısını günceller; önceki kullanıcı düzenlemesi varsa çalıştırmadan koru.
+- Blender 4.5.14 LTS / Cycles CPU; 1200×760, 32 sample. Kaydedilen sahne yeniden açıldı; dört ayrı bacak ve iki E1 kapak nesnesi doğrulandı.
+- Görsel incelendi: bütün gövde/kafa, dört bacak (uzaktakiler kısmen örtülü), kıvrık kuyruk ve kısa pembe dil var. İlk kuyruk birleşimi kırık bulundu; aynı çalışma sahnesinde düzeltildi. İlk deneme scratch'te korunur.
+- **Görsel durum REVISE / kullanıcı değerlendirmesi:** boyun/uzuv birleşimleri hâlâ ayrı hacimler olarak okunuyor; kafa ve göz oranları ölçülmedi, kuyruk geçişinde yüzey izi kalıyor, dal kuyruğun iç kıvrımını kısmen örtüyor. Parmaklar karşılıklı kavrama kütleleri; nihai parmak sayısı/dağılımı değil. Gövde fazla geometrik; fotogerçekçi veya anatomik final kabul edilmez.
+- Dil yalnız kısa çıkış ve renk hedefini gösteren statik nesne; su teması, geri çekilme veya içme animasyonu yok.
+- Armature/iskelet, gerçek yürüyüş fazları, 12 basış, kuyruk açılması, doku, renk geçişi ve ripple uygulanmadı. Screenshot veya .blend açılması bunların çalıştığını kanıtlamaz.
+- Sonraki küçük adım: panter yan/ön referanslarına göre kafa–gövde ve eklem yerleşimini düzeltme, ardından bir doğrulanabilir yürüyüş döngüsü. Anatomik referans kapısını atlayıp sentetik yürüyüşü biyolojik doğru diye etiketleme. Kullanıcı task sınırında değerlendirecek.
