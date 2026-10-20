@@ -7,25 +7,25 @@ Natural forest wildlife cinematography, anatomically correct chameleon, realisti
 
 ## Shot breakdown / story triggers
 
-### Shot A — Arrival / the walk (nominal 0–5s)
+### Shot A — Arrival / walk with subtle localized color variations (timing TBD)
 - Forest visible instantly via lightweight poster. Chameleon naturally traverses a branch from **screen-right to screen-left**, toward water. Footfall frequency, toe placement, tongue/mouth and tail consistent; avoid gliding or conveyor-belt treadmill impression. Subtle lateral tracking, bokeh and restrained foreground leaf parallax.
 - Position the future close-up target slightly right of center, providing clear camera/eye space **both left and right**, while the text remains uncluttered.
-- Interface at calm **Forest** baseline palette. Readable hero copy and CTAs function without any animation.
+- Along the uninterrupted walk, two **small, non-contact-triggered skin color fluctuations** may appear at distinct moments (e.g. localized leg/flank scale regions), gentle and plausible in hue, with **no synchronized UI theme change**. Do not add brightly colored objects or require stepping on them. Treat these as stylized natural/changing-state coloration, not a scientifically asserted causal mechanism. **Production simplification:** animate two bounded material masks/color maps in the offline video render; if continuity, believability or asset cost is problematic, use ONE subtle fluctuation or remove these entirely rather than compromising photorealism. Reuse the same established walk, camera and branch.\n- Interface at calm **Forest** baseline palette. Readable hero copy and CTAs function without any animation.
 
-### Shot B — Water contact / first ripple (nominal 5–8s)
+### Shot B — Reaching water / first ripple (after gradual walking; timing TBD)
 - Chameleon approaches a small **credible water source** (e.g. water captured in a leaf cup or small forest water pocket) and drinks. Determine if actual species drinking behavior would plausibly involve touching it with lips/tongue; do not create biologically absurd actions.
 - **Exact physical contact frame** emits `water-contact`. Water surface produces a center-origin concentric wave with realistic propagation and damping (visual cinematic effect).
 - At the SAME film time coordinate, **ONLY functional Liquid Glass components** respond: navbar, glass-like controls/buttons and their immediate text layers. Optional lightweight ripple through text itself (optical refraction only, no persistent layout/position change). Original concern: small control surfaces may not be visibly affected; aim for a modest clear transient (1–1.5s), tune after real display testing. Baseline glyphs remain crisp and hitboxes stable.
 - **Do NOT ripple the main "From complexity to clarity." heading**. Other page areas remain solid. Do not apply blanket page displacement, nor change site theme yet.
 
-### Shot C — Recognition / second ripple ("it noticed us", nominal 8–12s)
-- Chameleon finishes drinking, raises head and begins to turn toward camera; **camera begins a smooth, slow dolly-in toward face/eyes**.
+### Shot C — Unexpected stimulus / recognition / second ripple (timing TBD)
+- **While drinking**, chameleon abruptly and naturally **pauses as though detecting an environmental disturbance**. Do not auto-play a surprise audio cue; the site stays silent. The eye turrets react before the head turns. After a short beat the head rises, turns toward camera and **camera begins a smooth, slow dolly-in toward face/eyes**. The viewer first watches the animal; suddenly the animal appears to watch the viewer.
 - Eye turrets scan independently before focusing. At a meaningful moment one visible eye makes eye contact; the other continues scouting briefly. `visitor-recognized` emits a **second slightly more noticeable glass/text-only ripple**: emotional punctuation = "Eyvah, bizi fark etti!"
 - The recent conversation explicitly chose **this second ripple as emotional trigger followed immediately by color change**. Design should avoid presenting the second ripple as random decoration.
 - Keep no audio by default, no whole-screen blinding flash. Motion natural, slight surprise, then quiet.
 
 ### Shot D — Skin and site color change (begins IMMEDIATELY after recognition)
-- Chameleon gradually transitions to a second **plausible natural color state**. A believable micro-scale pigmentation/reflected-color shift over skin, not a flat HSV filter.
+- **Unlike the two early minor skin-only variations**, chameleon now performs the ONE **full-body color transformation**, in response to the narrative recognition beat (creative storytelling, not an accurate biological stimulus claim). Chameleon gradually transitions to a second **plausible natural color state**. A believable micro-scale pigmentation/reflected-color shift over skin, not a flat HSV filter.
 - Begin corresponding global site theme interpolation when visible skin change starts; `color-transition-start` and `theme-transition-complete` are explicit lifecycle events.
 - EVERY site section receives the same semantic theme identity: page backgrounds, section surfaces, CTAs, dividers, accent colors, links, glass reflection tones, focus outlines, hover surfaces and eventual lower sections. **Do not turn all tokens into the exact animal color**; retain legibility and hierarchy via palette families. Ensure accessible color contrast in ALL intermediate frames, not only endpoints.
 - Transition should feel calm and natural (~2–4s tuning estimate); text/layout stays stationary. Do NOT change theme during the first water touch.
@@ -51,6 +51,6 @@ Distinct events: `water-contact` (first ripple), `visitor-recognized` (second st
 Auto-start motion if user preference allows, but do not imply the site detects the actual person: "noticed us" is a narrative illusion caused by eye-to-camera direction and pointer motion, not camera/gaze/face recognition. Do **not** request camera/microphone permission. Do not capture, store, transmit or infer visitors' identities/mouse data. Cursor follow is purely ephemeral local motion.
 
 ## Film and site state machine (draft)
-`BOOT/POSTER -> WALK -> WATER_CONTACT/RIPPLE_1 -> LOOK_UP/DOLLY_IN -> RECOGNIZED/RIPPLE_2 -> COLOR_SHIFT -> MACRO_INTERACTIVE -> (SCROLL_OUT) -> CONTENT`.
+`BOOT/POSTER -> WALK/[SKIN_MICRO_SHIFT_1, SKIN_MICRO_SHIFT_2 (OPTIONAL; no UI change)] -> WATER_CONTACT/RIPPLE_1 -> LOOK_UP/DOLLY_IN -> RECOGNIZED/RIPPLE_2 -> COLOR_SHIFT -> MACRO_INTERACTIVE -> (SCROLL_OUT) -> CONTENT`.
 Interruption states: `OFFSCREEN_PAUSED`, `REDUCED_MOTION_STATIC`, `MEDIA_FAILURE_POSTER`, `USER_SCROLL_EARLY`.
 **All events should be idempotent, recoverable after seeking and triggered by authoritative media frame/time, not drifting timers.** UI color transition must be synchronized even if video stalls, loads late, or is resumed. If audio/video sequencing fails, preserve stable functional page.
