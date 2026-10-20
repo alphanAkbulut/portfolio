@@ -1,5 +1,7 @@
 # Decision register + next LLM session instructions
 
+**Güncel devam (2026-10-20):** E1 kullanıcı tarafından şimdilik yeterli bulundu; nihai kabul hareket ve deriyle yapılacak. Shutterstock 11428904 filigranlı veiled önizlemesi 48 zaman örneğinde incelendi. Kanıt, belirsizlik, yeniden üretim bilgisi ve somut güncelleme kabulü [14 — anatomi ve hareket](14-anatomy-and-motion.md) içinde. Bu tur yalnız analiz/dokümantasyon; model değişmedi. Önerilen sonraki task mevcut E1 sahnesinde deri kaplı iki göz hareket deneyi; ayrı statik E1.1 varyantı ertelendi. Task sınırında kullanıcı kararı; ücretli işlem/deploy yok. Aşağıdaki eski checkpoint'ler tarihsel kayıttır.
+
 > **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
 
 Date: 2026-10-20. Treat this as the canonical handoff. This file explicitly distinguishes AGREED vs PROPOSED.

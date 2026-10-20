@@ -2,7 +2,7 @@
 2026-10-20. Yalnız portfolio-chameleon. Kullanıcı göz, bütün hayvanın şekli/hareketi ve kuyruğun ayrı analiz edilmesini istedi; küçük tasklarla ilerleme tercihi sürüyor.
 
 ## Yön değişikliği
-D5.3'ün siyah açıklık işareti kullanıcı tarafından düğme gibi bulundu. D5.3 göz tasarımı olarak **REJECTED**; yalnız deri dağılımı deneyi olarak korunur. Renk animasyonu öncelik olmaktan çıktı. Yeni sıra: göz hacmi → kafa bağlantısı/bakış → deri → hareket; kuyruk ve yürüyüş ayrı kanıt kapıları. Tüm hayvanın biyolojik analizi tamamlandı denmez.
+D5.3'ün siyah açıklık işareti kullanıcı tarafından düğme gibi bulundu. D5.3 göz tasarımı olarak **REJECTED**; yalnız deri dağılımı deneyi olarak korunur. Renk animasyonu öncelik olmaktan çıktı. Güncel sıra: mevcut göz hacmi → aynı sahnede deriyle birlikte bakış/hareket deneyi; kuyruk ve yürüyüş ayrı kanıt kapıları. Tüm hayvanın biyolojik analizi tamamlandı denmez.
 
 ## Kaynaklar ve sınırları
 Kontrol tarihi 2026-10-20. Kullanıcının fotoğrafları görsel referans; lisanslı texture olarak kullanılmadı, GitHub'a kopyalanmadı.
@@ -27,10 +27,10 @@ Erişim sınırı: PMC3866397 tam metin robot kontrolüne takıldı; Higham loco
 ## Task sırası ve gözlenebilir kabul
 | Task | Küçük teslim | Kabul kapısı | Durum |
 |---|---|---|---|
-| E1 göz hacmi | Nötr gri; açıklık, yanak tabanı; ön/yan/üç çeyrek | Düğme yerine belirgin kapak hacmi; açıklık içinde pupil; kullanıcı oran değerlendirmesi | İlk artefakt hazır; görsel onay bekliyor |
-| E1.1 kafa bağlamı / oran | Temsili panter kafa yan siluetiyle göz konumu ve oranı | Alın, ağız çizgisi ve yanak içinde gözün oturuşu; final asset olarak sunulmaz | Önerilen sonraki adım |
+| E1 göz hacmi | Nötr gri; açıklık, yanak tabanı; ön/yan/üç çeyrek | Düğme yerine belirgin kapak hacmi; açıklık içinde pupil; kullanıcı oran değerlendirmesi | Kullanıcı şimdilik yeterli buldu; hareket/deri kabulü değil |
+| E1.1 kafa bağlamı / oran | Temsili panter kafa yan siluetiyle göz konumu ve oranı | Alın, ağız çizgisi ve yanak içinde gözün oturuşu; final asset olarak sunulmaz | Ayrı statik çıktı ertelendi; gereken bağlam hareket sahnesine alınacak |
 | E2 bakış pozları | Sabit başta sol/orta/sağ/yukarı/aşağı pozlar | Açıklık görünümü doğru yönde değişir; kapak tabanı kopmaz; mesh çakışmaz | NOT STARTED |
-| E3 göz hareketi | Referans video analizi + iki gözlü kısa tarama/hedefe yönelme | Ölçülen veya açıkça tasarlanmış hızlar ayrılır; gözler sürekli eşzamanlı değil; hedef koordinasyonu var | NOT STARTED |
+| E3 göz hareketi | Referans video analizi + iki gözlü kısa tarama/hedefe yönelme | Ölçülen veya açıkça tasarlanmış hızlar ayrılır; gözler sürekli eşzamanlı değil; hedef koordinasyonu var | Video analizi tamamlandı (aşağıda); animasyon NOT STARTED |
 | E4 deri entegrasyonu | E1/E2 onaylı formda ince göz pulları → karışık geçiş → yanak | Doku kayması/esnemesi ve yakın/uzak okuma kontrol edilir | NOT STARTED |
 | T1 kuyruk incelemesi | Panter özelinde foto/video poz haritası | Tür/poz/kaynak doğrulanır; dinlenme ve kavrama ayrılır | Genel anatomi ön araştırması var; task tamamlanmadı |
 | T2 kuyruk biçimi | Kökten uca incelen model; açık/kıvrık/kavrama pozları | Uzunluk/çap sürekliliği, öz-kesişim ve dal teması kontrolü | NOT STARTED |
@@ -47,7 +47,76 @@ Her task sonunda kullanıcı kararı. Önceki D1–D8 planı silinmez; bu işler
 - İlk render'da pupil iris yüzeyinin altında kaldı; bu deneme work/e1/attempt-1 içinde korundu. Katman derinliği düzeltildi ve yeniden render alındı.
 - Son ön/üç çeyrek görüntü ve ilk yan görünüm incelendi; yan son render hash'i ilk yan görünümle aynı. .blend yeniden açıldı, kapak nesnesi ve pupil/iris derinlik sırası kontrolü geçti.
 - Render çağrıları: 8.12 / 4.07 / 6.58 s. Toplam task süresi değil.
-- **Görsel durum: kullanıcı değerlendirmesi PENDING.** Simetrik/düzenli zarf ve oval destek hâlâ basitleştirilmiş; foto-gerçeklik, panter anatomik doğruluğu veya hareket kanıtı yok. Pul/renk ekleyerek biçim kusurları kapatılmadı.
+- **Görsel durum: kullanıcı “göz fena değil şimdilik” dedi; hareket ve deriyle doğrulama bekliyor.** Simetrik/düzenli zarf ve oval destek hâlâ basitleştirilmiş; foto-gerçeklik, panter anatomik doğruluğu veya hareket kanıtı yok. Pul/renk ekleyerek biçim kusurları kapatılmadı.
 
 ## Blender'da görme
 .blend dosyası tüm sahneyi içerir: kapak mesh'i, destek, iris/pupil, ışıklar ve kamera. Blender'da File → Open ile outputs/e1/eye-form-v1.blend açılır. Bu, bir PNG'den farklı olarak döndürülüp düzenlenebilir sahnedir. Ön/yan/üç çeyrek PNG'ler Blender açmadan incelenebilir. GUI etkileşimi bu taskta test edilmedi; background yeniden açma test edildi.
+
+
+## Güncel devam sözleşmesi — video analizi (2026-10-20)
+Bu bölüm göz çalışmasının güncel devam noktasıdır; yukarıdaki E1 üretim kaydı tarihsel kanıttır. Kullanıcı gereksiz aynı görünümlü dosyalar üretilmemesini istedi. **Tek gelişen Blender sahnesi; anlamlı hareket ve deri testi.** Bu analiz turunda model, script veya site değiştirilmedi. Yeni göz sıfırdan üretilmeyecek: mevcut E1 taban alınarak deformasyon ve ince pul yüzeyi eklenecek. Bu öneri henüz uygulanmadı; task sınırında kullanıcı kararı beklenir.
+
+### Kaynak kimliği, yeniden üretim ve hak sınırı
+- [Shutterstock 11428904 — Macro shot in 4K UHD of a veiled chameleon's eyes](https://www.shutterstock.com/tr/video/clip-11428904-macro-shot-4k-uhd-veiled-chameleon%27s-eyes). Sayfa üreticisi: mark smith nsb; sayfa yükleme tarihi 2015-08-28.
+- İncelenen: halka açık **filigranlı önizleme**, orijinal 4K değil. Sayfadaki tür veiled chameleon; projenin hedefi panter bukalemunu. Bu kayıt panterin kesin kafa oranlarına, göz açılarına veya deri anatomisine kanıt sayılmaz.
+- [Önizleme medya adresi](https://www.shutterstock.com/shutterstock/videos/11428904/preview/stock-footage-macro-shot-in-k-uhd-of-a-veiled-chameleon-s-eyes.webm); URL ileride değişebilir.
+- Yerel çalışma alanında `outputs/chameleon-eye-reference.webm`. SHA-256: `2fc7308fc8bb232adf4bf9b7d90e1130470ce5bae4f8c0f1c5110c4b8eef50a5`.
+- Tarayıcı süresi 11.878 s; Blender çözümlemesi 596×336, 356 kare, nominal 29.9700298 fps. Bunlar önizleme dosyasının ölçümleri; gerçek hayvan hareketinin çekim hızı veya ağır çekim olmadığı doğrulanmadı.
+- Blender 4.5.14 video sequencer ile 0–11.75 s arasında 0.25 s aralıklı **48 örnek** çıkarıldı ve sekiz temas sayfasında görsel incelendi. Sıfır tabanlı kaynak indeks `round(t*fps)`; Blender sahne karesi indeks+1. Tablo zamanları istenen nominal örnek zamanlarıdır; gerçek indeks/fps en yakın kareye yuvarlanır. Container PTS çözümlemesi yapılmadı.
+- Yerel scratch: `work/video-analysis/dense/extract.py`, `metadata.json`, `00.png…47.png`, `board-0.jpg…board-7.jpg`. Bunlar repo teslimatı değildir; silinirlerse yukarıdaki yöntem ve kaynak hash'i ile yeniden üretilebilir. Videonun her karesi tek tek incelendi denmez.
+- Video ve kareler GitHub'a eklenmedi; satın alma/lisans edinme yok. Filigran kaldırılmadı. Görüntü texture, reklam veya dağıtılabilir ürün asset'i olarak kullanılmayacak.
+
+### Gözlem tablosu
+**Yön sözlüğü:** L = görüntünün solu, R = görüntünün sağı; hayvanın anatomik sol/sağı değildir. “İç” yüz orta çizgisine, “dış” kadrajın yanına doğrudur. “Açıklık” görünen kapak açıklığıdır; siyah görünen alanın tamamını ölçülmüş pupil çapı kabul etme. Baş/kamera hareketinden arındırılmış izleme yapılmadı.
+
+| Örnek zamanı | Görsel kanıt | Güven ve sınır |
+|---|---|---|
+| 0–0.75 s | L açıklığı belirgin görünmez. R'de 0.25 s örneğinde hareket bulanıklığı, 0.50–0.75'te dış tarafta dar açıklık görülür | Yön değişimi yüksek güven; başlangıç/bitiş/hız ölçülmedi |
+| 1–1.50 s | L hacminin dış çizgisi değişir; R açıklığı içe doğru daha okunur hale gelir | Göreli değişim; başın küçük hareketi de görüntüye katkı verir |
+| 1.50–2.75 s | R açıklığı görünür kalır; L büyük ölçüde açıklıksız pullu yüzey gösterir | İki göz aynı görünen yönü paylaşmaz; hangi nesneye baktıkları bilinmez |
+| 3–4.25 s | L'nin üst/iç kenarında bazı karelerde çok dar koyu iz, 3.75 civarında biçim/bulanıklık değişimi vardır | Küçük açıklığın kesin konumu düşük güven; buradan göz kırpma çıkarılmaz |
+| 4.50–5.75 s | L'nin görünen pullu yüzeyi yön değiştirir; 5.50 civarı kenarda dar iz, 5.75'te alt/dış tarafta açık oval görünüm vardır. R daha sabittir | Açıklığın yeniden görünmesi yüksek güven; kesin geçiş süresi değil |
+| 6–7.50 s | L dış/alt, R daha iç/üst tarafta görünür. L açıklığı giderek daralır; R göreli olarak korunur | Bağımsız kontrol gereksinimi için güçlü görsel örnek |
+| 7.75–8.25 s | 8.00'de L'de bulanıklık; 8.25'te L açıklığı gizlenmiş ve yüzey/siluet değişmiştir. R açıklığı görünür kalır | Hareket olayı bu aralıkta; 0.5 s süren tek dönüş olduğu iddia edilmez |
+| 8.25–9.75 s | L açıklığı büyük ölçüde görünmez; R görünür ve küçük değişiklikler yapar | “Bekleme” tamamen hareketsizlik demek değildir |
+| 10–10.75 s | R açıklığı aşağı/dış tarafa kayar; L 10.50'de belirgin görünür, 10.75'te de açıktır | İki gözün olay zamanları aynı değil |
+| 11–11.75 s | R 11.00'de bulanık, ardından dışa yönelir ve 11.75'te açıklığı büyük ölçüde gizlenir. L görünür kalır | R açıklığının yok oluşunu pupil küçültme animasyonuyla taklit etme |
+
+Bu tablo bir animasyon mocap kaydı değildir. 0.25 s örnekleme hızlı hareketin ara fazlarını atlayabilir. Hareket bulanıklığı tek başına biyolojik saccade sınıflaması veya hız kanıtı değildir. Derece/saniye, anatomik limit, kas kuvveti, deri gerinimi, hedef mesafesi ve niyet ölçülmedi. Kesin olay süresi gerekirse yalnız ilgili kısa aralık tam kaynak kare hızında incelenmeli; tüm video için gereksiz yeni çıktı üretilmemeli.
+
+### Biçim ve deri: ne görüldü, ne çıkarıyoruz?
+1. **Gözlem:** göz, kafa yüzeyinin üstünde belirgin hacim oluşturuyor; pullu örtü açıklığa kadar geliyor. Açıklık merkezde sabit bir siyah düğme gibi kalmıyor. **Uygulama sonucu:** iris/pupil içeride, kapak zarfı dışarıda olmalı; büyük çıplak parlak küre yapma.
+2. **Gözlem:** yön değişiminde açıklık yuvarlak/oval/dar/gizli görünümler alıyor ve dış siluet de değişiyor. **Çıkarım:** 2D pupil kaydırma yeterli değil; kapak zarfının yönü ve perspektif örtülmesi birlikte gerekli. Videodan örtünün ne kadarının rijit dönüş, ne kadarının gerçek deformasyon olduğu ayrıştırılamaz.
+3. **Gözlem:** taban çevresinde kıvrım/gölge bantları ve kafaya devamlılık var. **Rig hipotezi:** taban bağlantısını sabit tutup uç bölgesinin dönüşünü yumuşak ağırlıklarla dağıtmak, sert sap üzerinde dönen küreden daha uygun ilk testtir. Kas simülasyonu olduğu iddia edilmez.
+4. **Gözlem:** gözde daha küçük pullar, kafa orta bölümünde daha büyük hücreler görülüyor; birleşme homojen değil. **Malzeme kararı:** ince göz pulları → karışık küçük/orta boy geçiş → iri kafa pulları. Eşit büyüklükte boncuk dizisi veya keskin boyut sınırı yapma. Hareketli yerde pulların neden küçük olduğu bu kliple biyolojik olarak kanıtlanmaz.
+5. **Sınır:** 596×336 ve sıkıştırma tek tek pulların gerçek esnemesini/gözeneklerini ölçmeye yetmez. Renk parlaklığı pigment dışında ışık, yüzey yönü ve video işlemeden etkilenir. Bu video fizyolojik renk dönüşümü kanıtı olarak kullanılamaz.
+
+### Mevcut E1 üzerinde önerilen teknik güncelleme — henüz uygulanmadı
+- Mevcut `create_eye_form.py` ve E1 sahnesini okuyup gerçek nesne/topoloji durumunu doğrula. Lathe kapak mesh'i deney tabanıdır; topo yetersizse yalnız deformasyon için gerekli değişikliği yap. Önceki E1 checkpoint'ini koru; paralel statik v2/v3 galerileri üretme.
+- İki göz için ayrı bakış kontrolü, kafa uzayında taban ankrajı ve zarfın içinde dönüş merkezi. Kontrol adlarında anatomik taraf ile kamera tarafını karıştırma. Merkez/limitler bu ilk deneyde **tasarım parametresi**, ölçülmüş biyolojik sayı değil.
+- Kapak tabanında düşük, uçta artan düzgün deformasyon ağırlığı dene. Taban boşluğu, hacim çökmesi, aşırı gerilme oluşursa şekil düzeltmeleri kullan. Bütün zarfı tek sert nesne olarak menteşeden çevirmek kabul edilmez.
+- Iris/pupil ve açıklık yönünü birlikte sür; açıklığın kenardan kaybolmasını geometri/örtülme üretsin. Görünürlüğü siyah diski küçültüp büyüterek taklit etme. Kornea parlaklığı açıklık içinde sınırlı; plastik boncuk görünümü yaratmamalı.
+- Pul koordinatlarını başlangıç yüzeyine/UV'ye bağla; mesh deformasyonunu takip etsin. Dünya uzayında sabit procedural koordinatlar yüzey üzerinde kayma yaratabilir. Ayrı pul geometrisi varsa aynı deformasyon alanına bağla; yüzeyden ayrılmasın.
+- İlk malzeme sade olsun: ince bombeli mikro yapı, dar aralıklar, kontrollü pürüzlülük. Renkle form kusurunu örtme. Mevcut D5 sonuçları dağılım fikri sağlar, doğrudan hazır anatomik göz kaplaması değildir.
+- Hareket ritmi ayrı “bakışı koru → yeniden yönel → yerleş” olaylarından oluşsun. İki gözü sürekli aynı sinüsle veya bağımsız beyaz gürültüyle döndürme. Kaynak ritmi esin verir; gerçek süreyi kopyaladığını iddia etme.
+- Kamera odaklı ortak bakış ilerideki anlatım durumudur. Referanstaki hayvanın kamerayı/avı fark ettiği doğrulanmadı. Cursor kontrolü ve WebGL entegrasyonu bu adımda yok.
+
+### Sonraki küçük teslim ve kabul kapısı
+**Öneri:** E2 poz kontrolünü önce aynı sahnede doğrula; ardından E3/E4'ün en küçük kesişimi olan **deri kaplı iki gözün kısa hareket testi**. Yeni göz tasarımı değil, E1'in güncellenmesidir. Önce nötr/dış/yukarı pozlarda taban ve açıklık kontrolü; başarısızsa animasyon render'ına geçme. Başarılıysa tek 6–8 s önizlemede bir göz bakışı korurken diğeri yön değiştirsin, sonra roller değişsin. Bu süre üretim önerisidir, biyolojik ölçüm veya onaylı bütçe değildir.
+
+Aynı klipte normal baş kadrajı ve kısa göz yakın planı değerlendirilsin; kamera hareketi deformasyon değerlendirmesini karıştırmasın diye her kadrajda kısa sabit bölüm kullanılsın. İlk teslim: **bir düzenlenebilir ana .blend ve bir kısa önizleme**; test kareleri scratch'te kalsın. Renk dönüşümü bu test kabul edilene kadar ertelensin.
+
+Kabul kriterleri:
+- Nötr ve uç test pozlarında kafayla taban arasında görünür açıklık/ayrılma yok.
+- Açıklık yön değiştirirken doğal perspektifle daralır/gizlenir; yüzey üstünde kayan düğme görünümü yok.
+- İki göz en az bir bölümde farklı yön/olay zamanına sahip; birinin sabit tutulması diğerini hareket ettirmiyor.
+- Pullar yüzeye bağlı, kareler arasında kayma/sıçrama/ayrılma yok; yakın planda ağır gerilme veya şişme yok.
+- İnce göz dokusundan iri kafa dokusuna karışık boyutlarla süreklilik var; büyük ölçek geçiş çizgisi görünmüyor.
+- Normal kadrajda gürültü/titreşim, yakın planda plastik boncuk etkisi incelenmiş; gerçek zaman performansı henüz test edildi denmiyor.
+- .blend yeniden açılıp ana kontrol ve en az üç poz doğrulanmış; kısa video gerçekten oynatılarak kontrol edilmiş.
+- Son kabul kullanıcının hareket + deri değerlendirmesi. Tam panter anatomisi, bütün karakter, kuyruk, yürüyüş ve hero kabulü değildir.
+
+### Sonradan okuyacak LLM için kesin durum
+DONE: E1 nötr biçim, önceki deri deneyleri, bu veiled önizlemesinin 48 örneklik nitel analizi.
+NOT DONE: deri kaplı hareketli göz, rig, tam kafa/karakter, panter hareket ölçümü, kuyruk/yürüyüş deneyi, canlı cursor, site değişimi.
+NEXT: kullanıcı bu somut E1 güncellemesini onayladığında mevcut script/sahneyi kontrol et; yalnız yukarıdaki küçük teslimi gerçekleştir; sonuç ve sorunları bu belgeye işle. Kullanıcının son talebi bu turda derin analiz ve repo kaydıdır; analiz bitmesini animasyonun tamamlanması sayma.

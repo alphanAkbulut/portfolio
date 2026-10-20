@@ -1,4 +1,6 @@
 # Deri task kaydı ve devam noktası
+
+**Güncel devam (2026-10-20):** E1 kullanıcı tarafından şimdilik yeterli bulundu; nihai kabul hareket ve deriyle yapılacak. Shutterstock 11428904 filigranlı veiled önizlemesi 48 zaman örneğinde incelendi. Kanıt, belirsizlik, yeniden üretim bilgisi ve somut güncelleme kabulü [14 — anatomi ve hareket](14-anatomy-and-motion.md) içinde. Bu tur yalnız analiz/dokümantasyon; model değişmedi. Önerilen sonraki task mevcut E1 sahnesinde deri kaplı iki göz hareket deneyi; ayrı statik E1.1 varyantı ertelendi. Task sınırında kullanıcı kararı; ücretli işlem/deploy yok. Aşağıdaki eski checkpoint'ler tarihsel kayıttır.
 Son güncelleme: 2026-10-20, Europe/Istanbul.
 Repo/dal: alphanAkbulut/portfolio / portfolio-chameleon.
 Başlangıç revision: 87c3e78763ebafc0fb7f0952a6e1bb049c9534b5.
