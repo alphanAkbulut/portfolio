@@ -66,3 +66,6 @@ Kullanıcı hesabı olmadığını bildirdi; hazır modelden bağımsız kendi k
 
 ## Son checkpoint — D5 ilk render
 Kullanıcı D5 üretimini onayladı. [13 sonuç raporu](13-skin-patch-result.md): üç PNG, .blend yeniden açma başarılı; yakın çekim kalite REVISE, kullanıcı kabulü bekliyor. Güncel task sınırı D5.1 geometri revizyonu önerisi; D6'ya geçme. Tam model temini açık. Kaynak script ve ölçüm manifesti kayıtlı; binary çıktılar yerel.
+
+## Son checkpoint — D5.1 hacim revizyonu
+Kullanıcı referans görüntüleri sağladı ve kabartı revizyonunu onayladı. Kavisli kubbe, yuvarlak kenar ve bölgesel pul boyutlarıyla ikinci örnek üretildi; .blend yeniden açma başarılı. D5 korunur. [13 sonuç kaydı](13-skin-patch-result.md). Güncel karar bekleme: kullanıcı D5.1 hacmini değerlendirecek; D6 veya yeni renk çalışması henüz yetkilendirilmedi.

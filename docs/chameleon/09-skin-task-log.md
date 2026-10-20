@@ -92,3 +92,6 @@ Kullanıcı Sketchfab hesabı olmadığını bildirdi ve kendi küçük deri yü
 
 ## D5 — İlk gerçek render checkpoint'i
 Kullanıcı üretimi onayladı. A/B renk ve gri kontrol PNG'leri ile düzenlenebilir .blend üretildi, dosya yeniden açıldı. [13 — sonuç ve kalite değerlendirmesi](13-skin-patch-result.md). Teknik üretim başarılı; köşeli/mozaik pul görünümü nedeniyle fotogerçekçilik geçmedi. D6 NOT STARTED. **Güncel devam: görselleri kullanıcıya sun ve D5.1 yalnız pul geometrisi revizyonu için karar bekle.** Eski D5 onay bekleme notu tarihsel olarak aşıldı.
+
+## D5.1 — kabartı ve dağılım revizyonu
+Kullanıcının yeni görsel referansları ve açık üretim onayıyla yuvarlatılmış kubbe pullar üretildi. A paleti/ışık/kamera korunarak A ve gri kontrol PNG'leri alındı; .blend yeniden açıldı. [13 güncellemesi](13-skin-patch-result.md). D5 çıktıları korunur. **Güncel devam: D5.1 hacim yönü için kullanıcı değerlendirmesi bekle; D6 başlamadı.** Kalite/G1 geçti sayılmaz.

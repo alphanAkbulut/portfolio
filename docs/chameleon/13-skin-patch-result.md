@@ -37,3 +37,17 @@ PNG ve .blend dosyaları yalnız yerel outputs/d5 altında; repo'ya büyük bina
 
 Teknik başarı kalite kabulü değildir. Bu yüzey final bukalemun derisi olarak kullanılmaya hazır sayılmaz.
 **Önerilen sonraki küçük iş D5.1:** yeni animasyona geçmeden, yalnız pul sınırlarının yuvarlatılması ve boyut/yerleşimin fotoğraf referansıyla karşılaştırılması. Kullanıcının eski gerçek fotoğraf referansları hâlâ mevcut değil; kesin görsel eşleştirme iddiası yok. Kullanıcı kararı beklenir; kendiliğinden D6'ya geçilmez. Astra Orta ile odaklı geometri revizyonu denenebilir; şu anda High zorunluluğu kanıtlanmadı.
+
+## D5.1 — Kullanıcı referanslarıyla kabartı revizyonu
+2026-10-20. Kullanıcı iki ekran görüntüsü sağladı; hafif kabartılı, üç boyutlu görünüm istedi ve yalnız hacim/dağılım revizyonunu onayladı. İlk görüntü görünüm referansı; ikinci görüntü üzerinde AI-Generated etiketi var, anatomik doğruluk kanıtı sayılmaz. Görüntüler texture olarak kullanılmadı ve repo'ya yüklenmedi; watermark kaldırılmadı.
+
+- Kaynak [create_skin_patch_v2.py](../../scripts/chameleon/create_skin_patch_v2.py), ölçümler [D5.1 manifest](d51-render-manifest.json).
+- Aynı A paleti, shader, kamera, ışık, yüzey eğrisi ve render ayarları korundu. Pul yerleşimi değiştiği için tek tek pulların renk ataması piksel düzeyinde aynı değildir.
+- Hücre köşeleri iki aşamalı yuvarlatıldı; düz tepe yerine yedi kesitli kavisli kubbe profili oluşturuldu. Yükseklik hücrenin eşdeğer yarıçapının 0.48–0.65 katı; biyolojik ölçüm değil.
+- Seed dağılımı yumuşak bölgesel sıkıştırmayla değiştirildi. Küçük/büyük pullar aynı yüzeyde bölgesel dağılıyor.
+- Yerel outputs/d5-1: skin-A.png, skin-clay.png, skin-patch-v2.blend ve render-manifest.json. D5 dosyaları korunuyor. Repo'da kaynak ve ölçüm var; büyük binary yok.
+- İki 768×768 PNG açılıp görsel incelendi; daha yuvarlak tepeler ve kenar gölgeleri görülüyor. Blender dosyası yeniden açıldı ve 273420 vertex/768 çözünürlük kontrolü geçti.
+- CPU render çağrıları 15.10 ve 12.36 saniye; toplam görev süresi/bellek/GPU ölçümü değildir. 235999 polygonluk bu yakın çekim deney geometrisi browser için optimize edilmiş sayılmaz.
+- Kabul: **kabartı revizyonu üretildi, kullanıcı görsel değerlendirmesi PENDING**. Fotogerçekçilik/G1 geçmedi; yerleşimde düzen hissi ve referansla yüzey farkları hâlâ değerlendirilmeli. Tam anatomi, renk zenginliği, animasyon bu adımda değiştirilmedi.
+
+**Güncel devam noktası:** D5.1 görselini kullanıcıya göster ve hacim yönü için karar bekle. Onay olmadan D6 animasyona veya yeni malzeme/renk revizyonuna geçme. Önceki D5.1 onay beklentisi kullanıcı tarafından karşılandı; şimdi sonuç değerlendirmesi bekleniyor.
