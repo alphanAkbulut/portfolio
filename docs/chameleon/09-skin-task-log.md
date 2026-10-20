@@ -17,7 +17,7 @@ Model önerileri zorunluluk veya kalite garantisi değil; oturumda seçilen mode
 | D1 Ortam kontrolü | Donanım, mevcut araçlar, eksikler ve sınırlar | **DONE — kontrol tamamlandı; üretim ortamı henüz hazır değil** |
 | D1.1 Blender kurulumu | Resmî Apple Silicon LTS paketi, bütünlük/imza ve küçük çalıştırma testi | **DONE** |
 | D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | **DONE — araştırma tamamlandı; asset seçilmedi** |
-| D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | NOT STARTED — lisansı doğrulanmış örnek dosya gerekir; Blender kurulu |
+| D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | **PARTIAL — sayfa/lisans kontrol edildi; yerel dosya incelemesi giriş bekliyor** |
 | D4 Deri hedefi | Tek bölge, pul yoğunluğu, ışık, iki renk durumu ve görsel referans | NOT STARTED |
 | D5 Sabit küçük deri örneği | Tek bölgede incelenebilir render; renk animasyonu yok | NOT STARTED |
 | D6 Lokal renk geçişi | Aynı bölgede kısa smooth geçiş; detay ve zaman tutarlılığı | NOT STARTED |
@@ -79,3 +79,8 @@ D1 kapanışında kullanıcıya sonuç sun ve D2 onayını bekle. Token/oturum k
 Araştırma tamamlandı; [10 — aday karşılaştırması](10-asset-candidates.md) içinde bir ücretsiz ve dört alternatif aday var. Ücretsiz adayın tam sayfası 403 döndü; tür/rig/doku/lisans sürümü henüz doğrulanmadı. Tüm gereksinimleri geçen ücretsiz hazır paket kanıtlanmadı. Hiçbir satın alma, asset indirme veya modele dokunma yapılmadı.
 
 **Güncel sonraki task D3a:** ücretsiz modelin lisans/dosya erişimini ve sonra mesh/UV/rig'ini inceleme. Sol High ile devam edilebilir; D4/D5 görsel üretim öncesinde Astra Orta önerisini kullanıcıya bildir. Asset kalitesi veya erişim çözülmeden otomatik final-model kararı verme.
+
+## D3a — Lisans ve public metadata doğrulandı; D3b eksik
+[11 — ücretsiz aday ön incelemesi](11-free-asset-preflight.md). Normal tarayıcıda CC BY 4.0 bağlantısı, UV ve formatlar doğrulandı. Sayfa rig olmadığını, 0 animasyon ve PBR No değerlerini veriyor. Bağımsız göz ve deri kalitesi yerel dosyayla henüz incelenmedi. Download düğmesi Sketchfab giriş penceresi açtı; dosya indirilmedi.
+
+**Güncel devam noktası:** kullanıcı mevcut hesabıyla giriş yaptıktan sonra D3b normal indirme ve Blender mesh/UV/material/rig raporu. Kullanıcıya hesap/oturum erişimi sorulur; ücretli modele veya D4/D5'e kendiliğinden geçilmez. Sol High yeterli; model değişimi henüz önerilmiyor.

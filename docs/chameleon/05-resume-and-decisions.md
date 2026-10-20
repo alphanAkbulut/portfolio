@@ -57,3 +57,6 @@ Kullanıcının açık talebiyle Blender 4.5.14 LTS kuruldu; paket/imza ve 64×6
 
 ## Son checkpoint — D2
 Varlık araştırması tamamlandı; [10 aday raporu](10-asset-candidates.md). Ücretsiz adayın lisansı/dosyası henüz doğrulanmadığı için üretim varlığı seçilmedi. Güncel devam noktası D3a ücretsiz model teknik incelemesi; ücretli adaylara kullanıcı kararı olmadan geçilmez. Blender hazır; G0 tamamlanmış değildir. D4/D5'e geçmeden model değişimi için kullanıcıyı uyar.
+
+## Son checkpoint — D3a / D3b erişim engeli
+Ücretsiz Sketchfab adayının public lisansı CC BY 4.0 ve metadata'sı doğrulandı; rig yok, animasyon 0, PBR No, UV Yes. D3b yerel dosya incelemesi tamamlanmadı: normal indirme Sketchfab login istiyor. Kullanıcı oturumu veya ayrı alternatif kararı gerekiyor. [11 raporu](11-free-asset-preflight.md) ve [09 devam kaydı](09-skin-task-log.md) güncel. Asset seçildi veya Blender'da incelendi deme.

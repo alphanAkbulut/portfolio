@@ -10,6 +10,9 @@ Bir ücretsiz mesh adayı ve dört karşılaştırma adayı kaydedildi. Hiçbir 
 **Önerilen sonraki küçük task D3a:** ücretsiz Trouvaille modelinin gerçek lisans bağlantısını ve indirilebilir dosyasını erişilebilir normal sayfadan doğrula; haklar uygunsa örneği yerelde mesh/UV/doku/rig açısından incele. Tür farklıysa veya kalite düşükse bunu üretim modeli seçme. Ücretsiz dosyaya erişilemiyorsa indirildi/inceleme yapıldı deme.
 Bu aşama için önceki Sol High önerisi sürer; model değişimi henüz gerekmiyor. D4/D5 görsel deri tasarımına geçerken kullanıcıya ayrıca Astra Orta önerilecek.
 
+## D3 güncellemesi — 2026-10-20
+Normal tarayıcıda A adayı açıldı: lisans bağlantısı CC BY 4.0; FBX/glTF/GLB, UV mevcut; **PBR No, Rigged No, Animations 0**. İndirme giriş istiyor; dosya alınmadı. Önceki D2 erişim sınırı tarihsel olarak korunuyor; güncel kanıt ve devam için [11 ön inceleme](11-free-asset-preflight.md) geçerli.
+
 ## Aday matrisi
 “İlan” satıcı/üretici beyanıdır; teknik doğrulama değildir. Fiyatlar arama/açılan sayfa görünümü, vergi ve güncel checkout hariç; harcama izni değil.
 
