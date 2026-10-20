@@ -28,6 +28,12 @@ The initial viewer emotion is **calm and trust**, then discovery and surprise: *
 - General portfolio vision: [../00-START-HERE.md](../00-START-HERE.md), [../01-product-vision-and-decisions.md](../01-product-vision-and-decisions.md), [../02-technical-plan-and-roadmap.md](../02-technical-plan-and-roadmap.md).
 - Alternate, independent BPMN plan: [../bpmn-hero-concept.md](../bpmn-hero-concept.md).
 
+## Örnek göz hareketi videosu
+
+Kullanıcının sağladığı ana hareket referansı: **[Videoyu Shutterstock'ta aç — 11428904](https://www.shutterstock.com/tr/video/clip-11428904-macro-shot-4k-uhd-veiled-chameleon%27s-eyes)** · [Filigranlı WebM önizlemeyi aç](https://www.shutterstock.com/shutterstock/videos/11428904/preview/stock-footage-macro-shot-in-k-uhd-of-a-veiled-chameleon-s-eyes.webm).
+
+Yaklaşık 12 saniye; veiled bukalemun gözleri. Hedef panter bukalemunu olduğundan kesin tür oranı referansı değildir. [48 zaman örneğinin analizi, dosya kimliği ve modelleme kararları](14-anatomy-and-motion.md#kaynak-kimliği-yeniden-üretim-ve-hak-sınırı) mevcut anatomi belgesindedir. Yerel önizleme: `outputs/chameleon-eye-reference.webm`; bu yerel yol GitHub'da medya dosyası olduğu anlamına gelmez. Repo kaynak bağlantılarını tutar; video binary'si yeniden yayımlanmadı, ürün kullanım lisansı edinilmedi.
+
 ## Source of design truth
 The user provided two **photographic chameleon references in the conversation** on 2026-10-20, exhibiting realistic micro-scales, anatomically realistic independently movable turret eyes, vivid natural skin colors, gripping feet and curled tail. Their imagery is NOT licensed or guaranteed to be stored in this GitHub repository. **Ask user to re-share assets before modeling if not available.** Never substitute the assistant's earlier cartoon mockup. Choose a specific plausible chameleon species and study real locomotion, eye structure, and scale appearance. Photo realism is a hard quality gate.
 
