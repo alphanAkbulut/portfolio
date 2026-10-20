@@ -50,7 +50,7 @@ Earlier brainstorm: walking over two differently colored objects causes two smal
 Repo HEAD ve kullanıcı onayını kontrol et. 07 ve 08'i, sonra 01–06 yaratıcı ayrıntılarını oku. Onay yoksa build başlatma. Onay geldiyse önce G0 varlık/hak/ortam kaydı, sonra G1/G2 için 3–5 saniyelik kalite ve canlı göz/scroll deneyi yap; bütçe/erişim gerektiren somut bağımlılıkları ilgili kapıda çöz. Altı varyant, uzun film veya web efektleriyle başlama. main/design-preview/snapshot/BPMN ve DNS değişmez.
 
 ## Güncel durum
-Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 ve D1.1 tamamlandı; Blender kuruldu ve küçük CPU render ile doğrulandı. D2 araştırması tamamlandı, asset seçilmedi. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. D3a sayfa incelemesi tamamlandı; D3b yerel inceleme eksik. Kullanıcı onayıyla D4 bağımsız yama hedefi hazırlandı; sıradaki D5 render için task onayı bekleniyor. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
+Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 ve D1.1 tamamlandı; Blender kuruldu ve küçük CPU render ile doğrulandı. D2 araştırması tamamlandı, asset seçilmedi. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. D3a sayfa incelemesi tamamlandı; D3b yerel inceleme eksik. Kullanıcı onayıyla D4 bağımsız yama hedefi hazırlandı; D5 render üretildi, kalite revizyonu ve kullanıcı değerlendirmesi bekleniyor. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
 
 ## Son checkpoint — D1.1
 Kullanıcının açık talebiyle Blender 4.5.14 LTS kuruldu; paket/imza ve 64×64 CPU smoke render doğrulandı. D2 varlık araştırması sürüyor; ücretli satın alma veya üretim yetkisi yok. Güncel kanıtlar [09 task kaydında](09-skin-task-log.md). Eski “kurulum yetkisi yok / Blender yok” ifadeleri D1 tarihindeki durumu anlatır.
@@ -63,3 +63,6 @@ Varlık araştırması tamamlandı; [10 aday raporu](10-asset-candidates.md). Ü
 
 ## Son checkpoint — D4 bağımsız deri yaması
 Kullanıcı hesabı olmadığını bildirdi; hazır modelden bağımsız kendi küçük yüzeyimizle D4'e geçişi onayladı ve Astra Orta seçtiğini söyledi. [12 — hedef ve deney sözleşmesi](12-skin-patch-target.md) hazır. D3b tamamlanmadı; final karakter temini açık. D4 dokümanı görsel kalite kanıtı değildir. **Güncel sonraki adım D5 sabit yama render'ı; task sınırında kullanıcı onayı bekleniyor.** Önceki D3b login devam noktası artık zorunlu önkoşul değil; hayvan modeline geçişten önce asset/UV/rig kapısı yine geçerli.
+
+## Son checkpoint — D5 ilk render
+Kullanıcı D5 üretimini onayladı. [13 sonuç raporu](13-skin-patch-result.md): üç PNG, .blend yeniden açma başarılı; yakın çekim kalite REVISE, kullanıcı kabulü bekliyor. Güncel task sınırı D5.1 geometri revizyonu önerisi; D6'ya geçme. Tam model temini açık. Kaynak script ve ölçüm manifesti kayıtlı; binary çıktılar yerel.
