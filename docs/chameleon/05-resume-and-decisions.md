@@ -51,3 +51,6 @@ Repo HEAD ve kullanıcı onayını kontrol et. 07 ve 08'i, sonra 01–06 yaratı
 
 ## Güncel durum
 Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 tamamlandı; üretim ortamı henüz hazır değil. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. Sonraki adım yalnız D2 varlık araştırmasıdır; kullanıcı onayı beklenir. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
+
+## Son checkpoint — D1.1
+Kullanıcının açık talebiyle Blender 4.5.14 LTS kuruldu; paket/imza ve 64×64 CPU smoke render doğrulandı. D2 varlık araştırması sürüyor; ücretli satın alma veya üretim yetkisi yok. Güncel kanıtlar [09 task kaydında](09-skin-task-log.md). Eski “kurulum yetkisi yok / Blender yok” ifadeleri D1 tarihindeki durumu anlatır.

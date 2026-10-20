@@ -4,6 +4,9 @@ Repo/dal: alphanAkbulut/portfolio / portfolio-chameleon.
 Başlangıç revision: 87c3e78763ebafc0fb7f0952a6e1bb049c9534b5.
 İlgili: [geliştirme planı](07-v4-development-plan.md), [kararlar](05-resume-and-decisions.md).
 
+## Son yetki güncellemesi — 2026-10-20
+Kullanıcı ücretsiz Blender kurulumunu açıkça istedi ve geliştirmeye devam edilmesini söyledi. Aynı modelle yapılabilecek işlerde ilerlenir; model değişimi önerilen adım öncesinde kullanıcıya açık öneri verilir. Önceki task sonunda kontrol noktası oluşturma ve küçük ilerleme tercihi korunur. Ücretli asset/eklenti/servis yetkisi verilmedi.
+
 ## Çalışma sözleşmesi — kullanıcının güncel talebi
 Deri işi küçük tasklara bölünür. **Her task sonunda sonuç/kanıt/eksik/sonraki task kaydedilir ve durulur; sonraki taska kullanıcı onay vermeden geçilmez.** Kullanıcı bu arada modeli değiştirebilir. D1'e başlama onayı verilmiştir; bu onay tüm build, kurulum, ücretli üretim, satın alma veya deploy izni değildir.
 Model önerileri zorunluluk veya kalite garantisi değil; oturumda seçilen modelin tam adı/ayarını ajan kesin olarak doğrulayamadığında tahmin edilmez. Astra High her task için şart değildir.
@@ -12,7 +15,8 @@ Model önerileri zorunluluk veya kalite garantisi değil; oturumda seçilen mode
 | Task | Bitiş çıktısı | Durum |
 |---|---|---|
 | D1 Ortam kontrolü | Donanım, mevcut araçlar, eksikler ve sınırlar | **DONE — kontrol tamamlandı; üretim ortamı henüz hazır değil** |
-| D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | NOT STARTED — kullanıcı onayı bekliyor |
+| D1.1 Blender kurulumu | Resmî Apple Silicon LTS paketi, bütünlük/imza ve küçük çalıştırma testi | **DONE** |
+| D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | IN PROGRESS — kullanıcının devam talebi kapsamında |
 | D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | NOT STARTED — örnek dosya ve gerekirse Blender gerekir |
 | D4 Deri hedefi | Tek bölge, pul yoğunluğu, ışık, iki renk durumu ve görsel referans | NOT STARTED |
 | D5 Sabit küçük deri örneği | Tek bölgede incelenebilir render; renk animasyonu yok | NOT STARTED |
@@ -57,3 +61,16 @@ Blender patch/Metal backend çalışması, gerçek render süre/bellek ölçüm�
 ## Sonraki tek task / durma noktası
 **D2 — yalnız varlık adaylarını ve lisans/düzenlenebilirlik bilgilerini araştır.** Önerilen model: Sol High. Asset indirme/satın alma, kurulum veya render henüz bu taska dahil değil.
 D1 kapanışında kullanıcıya sonuç sun ve D2 onayını bekle. Token/oturum kesilirse bu dosyadan ve güncel branch HEAD'den devam et; tamamlanmış D1 kontrollerini gerekçe olmadan yeniden çalıştırma.
+
+## D1.1 — Blender kurulumu tamamlandı
+- Kurulan uygulama: `/Applications/Blender.app`; sürüm **4.5.14 LTS**, ARM64, build hash `62c1db4208e8`.
+- Kaynak: [Blender resmî 4.5 dizini](https://download.blender.org/release/Blender4.5/); listede 15 Eylül 2026 tarihli paket görüldü.
+- Paket: [blender-4.5.14-macos-arm64.dmg](https://download.blender.org/release/Blender4.5/blender-4.5.14-macos-arm64.dmg), 311,909,763 byte.
+- [Resmî checksum](https://download.blender.org/release/Blender4.5/blender-4.5.14.sha256) ile SHA-256 eşleşti: `65134d9b07b20e2fa8d3c9e44f6f44ffb5c9774dd521b95f50387310241ca170`.
+- macOS `spctl`: accepted / Notarized Developer ID. İlk sandbox içi codesign denemesi hata verdi; tam erişimle tekrar `codesign --verify --deep --strict` başarılı: valid on disk / satisfies Designated Requirement. Güvenlik ayarı veya imza değiştirilmedi.
+- Önceden Blender.app olmadığını kontrol edip uygulama kopyalandı; var olan uygulama üzerine yazılmadı.
+- Fabrika ayarları, background ve disable-autoexec ile 64×64 varsayılan küp sahnesi, Cycles CPU, 1 sample render başarılı. PNG açıldı, boyutu ve boş tek renk olmadığı kontrol edildi.
+- Metal cihaz tespiti: Apple M2 (GPU - 10 cores). **Metal GPU render, GUI etkileşimi veya bukalemun kalitesi test edilmedi.**
+- Yerel kurulum kanıtları `work/blender-install/` altında; paket/smoke çıktısı repo'ya gönderilmedi. Smoke PNG SHA-256: `24ebec199593420d585f1af2496fdba8d9e58a5eea463ed265c88d5962dc4c83`.
+- Ücret/abonelik/eklenti yok. FFmpeg kurulmadı. Bu test D5 deri üretimi veya G1 kalite kabulü değildir.
+- D1'deki “Blender bulunamadı” gözlemi tarihsel olarak korunur; güncel durum kurulu ve temel render çalışıyor.
