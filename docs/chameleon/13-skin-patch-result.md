@@ -73,3 +73,16 @@ Süreler yalnız render çağrıları; geometri hazırlama ve toplam task süres
 Yakın kadrajda göz örneği daha ince, baş daha iri; uzak göz örneğinde küçük detaylar ortak yüzey dokusuna yaklaşır. Bu ölçek farklılığını gösterir, fotogerçekçilik kabulünü sağlamaz. Yerleşimde yapay düzen ve yumuşak/hamursu malzeme hissi hâlâ risk. Bölge dağılımları bağımsız yamalarda olduğundan gerçek göz kapağından yanağa bağlantı, ağız çizgisi ve hareket sırasında pul deformasyonu henüz kanıtlanmadı. D5/D5.1 çıktıları korundu.
 
 **Güncel devam önerisi:** kullanıcı görselleri değerlendirsin; sonraki küçük task, göz–yanak bağlantısını temsil eden basit kavisli formda iki dağılımın birleşmesi. Anatomik final model olarak sunulmaz. Sonrasında yakın kadrajda gerçek shader renk animasyonu ayrıca onaylanır; uç durum PNG'leri animasyon diye sunulmaz. D6 ve tam karakter build'i otomatik başlamaz.
+
+## D5.3 — Göz–yanak formu ve karışık geçiş
+2026-10-20. Kullanıcı birleşik formu onayladı ve küçük/büyük arasında irili ufaklı geçiş istedi.
+- Aynı sürekli yüzey üzerinde göz bölgesini temsil eden kavisli çıkıntı ve yanak alanı oluşturuldu. Koyu küre yalnız göz açıklığı yerini gösterir; anatomik göz, iris/kornea, rig veya canlı bakış değildir.
+- Göz merkezinden yaklaşık 4–11 mm yarıçap aralığında smoothstep yoğunluk geçişi; sınırda düşük genlikli uzamsal değişim ve yerel boyut varyasyonu. Böylece tek bir keskin dairede küçükten büyüğe atlanmaz. Değerler biyolojik ölçüm değil.
+- Başlangıç seed aralığı 0.43–1.15 mm; yerel 0.83–1.13 çarpanı. Tek komşuluk alanında Voronoi hücreleri oluşur; iki ayrı yamayı yapıştırma yok. Kubbe yüksekliği de geçiş alanında değişir.
+- [Kaynak](../../scripts/chameleon/create_eye_cheek.py); [manifest](d53-render-manifest.json). Çalıştırma önceki taskla aynı Blender seçenekleri; bu script bölge ortam değişkeni istemez. Çıktı outputs/d5-3 altında, önceki örnekler korunur.
+- near-A.png / far-A.png / near-B.png: 768×768; yakın 34 mm ve uzak 65 mm ortografik kadraj. D5.2'nin 18/60 mm kadrajıyla birebir piksel karşılaştırması yapılmaz; yeni kadraj birleşik alanı göstermek içindir.
+- Üç görüntü açılıp görsel incelendi. Karma boyut geçişinde ani bir sınır görülmedi; bu öznel teknik inceleme, kullanıcı görsel kabulü değil.
+- eye-cheek-v1.blend yeniden açıldı; 172256 vertex ve açıklık işareti doğrulandı. Render süreleri 11.86 / 5.08 / 9.78 s; toplam task süresi değil.
+- Kalan risk: iri pullarda yumuşak/taş benzeri görünüm, basit yüzeyin gerçek kafa anatomisini temsil etmemesi, hareket sırasında deformasyonun test edilmemesi. Kalite/G1 geçmedi. Renk B yalnız sabit uç durum; animasyon yapılmadı.
+
+**Güncel devam noktası:** kullanıcı karışık geçişi değerlendirsin. Onay sonrasında aynı geometri üzerinde kısa lokal renk animasyonu önerilebilir; animasyon taskı kullanıcı kararından önce başlamaz. Tam kafa/göz anatomisi ve rig ayrı açık bağımlılıktır.

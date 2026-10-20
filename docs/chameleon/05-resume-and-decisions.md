@@ -72,3 +72,6 @@ Kullanıcı referans görüntüleri sağladı ve kabartı revizyonunu onayladı.
 
 ## Son checkpoint — D5.2 bölge ve ölçek
 Kullanıcı genişletilmiş karşılaştırmayı onayladı. Üç bölge × yakın A/uzak A/yakın B üretildi ve dosyalar doğrulandı. [13 sonuç](13-skin-patch-result.md). Görsel kabul bekliyor; sonraki öneri basit göz–yanak formunda dağılımları birleştirmek. Sabit renk uç durumları zaman animasyonu değildir. Önceki checkpoint'lerin karar bekleme kayıtları tarihsel; güncel sınır bu paragraf ve 09'dur.
+
+## Son checkpoint — D5.3
+Birleşik göz–yanak temsil formu ve kullanıcı talebiyle karışık boyutlu geçiş üretildi. Üç kadraj/renk çıktısı incelendi; .blend tekrar açıldı. [13 sonucu](13-skin-patch-result.md). Güncel sınır: dağılım için kullanıcı değerlendirmesi; animasyon yetkisi henüz yok. Koyu açıklık işareti gerçek göz modeli değildir.

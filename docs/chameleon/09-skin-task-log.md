@@ -98,3 +98,6 @@ Kullanıcının yeni görsel referansları ve açık üretim onayıyla yuvarlat�
 
 ## D5.2 — Bölge/kadraj/renk karşılaştırması
 Kullanıcı kapsamı genişletmeyi onayladı. Göz/baş/gövde için yakın A, uzak A ve yakın B: 9 PNG, 3 .blend ve yerel comparison.html üretildi. PNG boyut/hash ve .blend yeniden açma kontrolleri geçti. [13 güncel sonuç](13-skin-patch-result.md). Renkler sabit uç durumlar; animasyon değil. **Güncel devam: kullanıcı değerlendirmesi ve basit göz–yanak birleşimi deneyi için karar bekle.** Fotogerçekçilik, gerçek kafa ve göz hareketi açık; D6 başlamadı.
+
+## D5.3 — Birleşik form ve karışık boyut geçişi
+Kullanıcı onayıyla aynı yüzeyde göz–yanak temsil formu ve küçük/orta/iri karışık geçiş üretildi. 3 PNG incelendi; .blend yeniden açıldı. [13 güncel sonuç](13-skin-patch-result.md). **Güncel devam: kullanıcı geçiş dağılımını değerlendirsin; onay sonrası lokal renk animasyonu önerisi.** Gerçek göz/kafa ve rig açık; animasyon başlamadı.

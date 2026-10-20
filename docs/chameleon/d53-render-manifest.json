@@ -1,0 +1,46 @@
+{
+  "experiment": "D5.3 continuous eye-cheek proxy with mixed size band",
+  "region": "eye-cheek-proxy",
+  "seed": 4105,
+  "blend_band_radius_m": [
+    0.004,
+    0.011
+  ],
+  "blender": "4.5.14 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "denoise": true,
+  "view": "AgX Medium High Contrast",
+  "exposure": 0,
+  "dimensions": [
+    768,
+    768
+  ],
+  "vertices": 172256,
+  "scale_faces": 148674,
+  "gpu_performance": "unknown",
+  "peak_memory": "unknown",
+  "renders": [
+    {
+      "state": "A",
+      "framing": "near",
+      "ortho_width_m": 0.034,
+      "seconds": 11.86,
+      "sha256": "de557f3fbdaaf5e6e6a4c04aeb2c0c8407d2a6ac89844192c3dac68f0b7736bb"
+    },
+    {
+      "state": "A",
+      "framing": "far",
+      "ortho_width_m": 0.065,
+      "seconds": 5.08,
+      "sha256": "c0ba87ef55b70050f23a3c6a47e7850e10d99d4089ba77cb35958b7dc2331890"
+    },
+    {
+      "state": "B",
+      "framing": "near",
+      "ortho_width_m": 0.034,
+      "seconds": 9.78,
+      "sha256": "176e039c6b437a397c590191de8aaba2d032c449129bbd88a9459d39db6773f6"
+    }
+  ]
+}
