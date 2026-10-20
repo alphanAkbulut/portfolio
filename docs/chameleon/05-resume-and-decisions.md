@@ -50,7 +50,10 @@ Earlier brainstorm: walking over two differently colored objects causes two smal
 Repo HEAD ve kullanıcı onayını kontrol et. 07 ve 08'i, sonra 01–06 yaratıcı ayrıntılarını oku. Onay yoksa build başlatma. Onay geldiyse önce G0 varlık/hak/ortam kaydı, sonra G1/G2 için 3–5 saniyelik kalite ve canlı göz/scroll deneyi yap; bütçe/erişim gerektiren somut bağımlılıkları ilgili kapıda çöz. Altı varyant, uzun film veya web efektleriyle başlama. main/design-preview/snapshot/BPMN ve DNS değişmez.
 
 ## Güncel durum
-Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 tamamlandı; üretim ortamı henüz hazır değil. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. Sonraki adım yalnız D2 varlık araştırmasıdır; kullanıcı onayı beklenir. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
+Kullanıcı küçük tasklarla ilerlemeyi ve her task sonunda onay için durmayı istedi; D1 ortam kontrolünü başlatmayı onayladı. D1 ve D1.1 tamamlandı; Blender kuruldu ve küçük CPU render ile doğrulandı. D2 araştırması tamamlandı, asset seçilmedi. G0 kısmen ilerledi; G1–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. Sonraki küçük adım D3a ücretsiz model lisans/dosya ve teknik incelemesidir; D4/D5 öncesi model değişimi için kullanıcı uyarılır. Ayrıntı ve devam noktası: [09 — deri task kaydı](09-skin-task-log.md).
 
 ## Son checkpoint — D1.1
 Kullanıcının açık talebiyle Blender 4.5.14 LTS kuruldu; paket/imza ve 64×64 CPU smoke render doğrulandı. D2 varlık araştırması sürüyor; ücretli satın alma veya üretim yetkisi yok. Güncel kanıtlar [09 task kaydında](09-skin-task-log.md). Eski “kurulum yetkisi yok / Blender yok” ifadeleri D1 tarihindeki durumu anlatır.
+
+## Son checkpoint — D2
+Varlık araştırması tamamlandı; [10 aday raporu](10-asset-candidates.md). Ücretsiz adayın lisansı/dosyası henüz doğrulanmadığı için üretim varlığı seçilmedi. Güncel devam noktası D3a ücretsiz model teknik incelemesi; ücretli adaylara kullanıcı kararı olmadan geçilmez. Blender hazır; G0 tamamlanmış değildir. D4/D5'e geçmeden model değişimi için kullanıcıyı uyar.

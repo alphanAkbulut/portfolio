@@ -16,8 +16,8 @@ Model önerileri zorunluluk veya kalite garantisi değil; oturumda seçilen mode
 |---|---|---|
 | D1 Ortam kontrolü | Donanım, mevcut araçlar, eksikler ve sınırlar | **DONE — kontrol tamamlandı; üretim ortamı henüz hazır değil** |
 | D1.1 Blender kurulumu | Resmî Apple Silicon LTS paketi, bütünlük/imza ve küçük çalıştırma testi | **DONE** |
-| D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | IN PROGRESS — kullanıcının devam talebi kapsamında |
-| D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | NOT STARTED — örnek dosya ve gerekirse Blender gerekir |
+| D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | **DONE — araştırma tamamlandı; asset seçilmedi** |
+| D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | NOT STARTED — lisansı doğrulanmış örnek dosya gerekir; Blender kurulu |
 | D4 Deri hedefi | Tek bölge, pul yoğunluğu, ışık, iki renk durumu ve görsel referans | NOT STARTED |
 | D5 Sabit küçük deri örneği | Tek bölgede incelenebilir render; renk animasyonu yok | NOT STARTED |
 | D6 Lokal renk geçişi | Aynı bölgede kısa smooth geçiş; detay ve zaman tutarlılığı | NOT STARTED |
@@ -58,7 +58,7 @@ Kontroller: system_profiler, sw_vers, disk alanı, PATH araması, sınırlı uyg
 ## Açık olanlar
 Blender patch/Metal backend çalışması, gerçek render süre/bellek ölçümü, FFmpeg kurulumu/codec desteği, browser WebGL yeteneği, seçilecek 3D varlığın hakları/kalitesi, Netlify erişimi ve model API hesapları doğrulanmadı. G0 kısmen ilerledi; **G0/G1/G2 geçti sayılmaz.**
 
-## Sonraki tek task / durma noktası
+## D1 kapanışındaki önceki devam noktası (tarihsel)
 **D2 — yalnız varlık adaylarını ve lisans/düzenlenebilirlik bilgilerini araştır.** Önerilen model: Sol High. Asset indirme/satın alma, kurulum veya render henüz bu taska dahil değil.
 D1 kapanışında kullanıcıya sonuç sun ve D2 onayını bekle. Token/oturum kesilirse bu dosyadan ve güncel branch HEAD'den devam et; tamamlanmış D1 kontrollerini gerekçe olmadan yeniden çalıştırma.
 
@@ -74,3 +74,8 @@ D1 kapanışında kullanıcıya sonuç sun ve D2 onayını bekle. Token/oturum k
 - Yerel kurulum kanıtları `work/blender-install/` altında; paket/smoke çıktısı repo'ya gönderilmedi. Smoke PNG SHA-256: `24ebec199593420d585f1af2496fdba8d9e58a5eea463ed265c88d5962dc4c83`.
 - Ücret/abonelik/eklenti yok. FFmpeg kurulmadı. Bu test D5 deri üretimi veya G1 kalite kabulü değildir.
 - D1'deki “Blender bulunamadı” gözlemi tarihsel olarak korunur; güncel durum kurulu ve temel render çalışıyor.
+
+## D2 — Varlık araştırması checkpoint'i
+Araştırma tamamlandı; [10 — aday karşılaştırması](10-asset-candidates.md) içinde bir ücretsiz ve dört alternatif aday var. Ücretsiz adayın tam sayfası 403 döndü; tür/rig/doku/lisans sürümü henüz doğrulanmadı. Tüm gereksinimleri geçen ücretsiz hazır paket kanıtlanmadı. Hiçbir satın alma, asset indirme veya modele dokunma yapılmadı.
+
+**Güncel sonraki task D3a:** ücretsiz modelin lisans/dosya erişimini ve sonra mesh/UV/rig'ini inceleme. Sol High ile devam edilebilir; D4/D5 görsel üretim öncesinde Astra Orta önerisini kullanıcıya bildir. Asset kalitesi veya erişim çözülmeden otomatik final-model kararı verme.
