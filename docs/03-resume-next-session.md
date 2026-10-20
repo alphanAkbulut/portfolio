@@ -1,4 +1,7 @@
 # Copy-paste continuity prompt / next meeting agenda
+
+> **V4 branch update — 2026-10-20:** On `portfolio-chameleon`, the active scope is [the single-chameleon hero development plan](chameleon/07-v4-development-plan.md), awaiting user plan approval before build. The V3 choices, branch creation and design-preview write instructions below are historical context and do not authorize current work. Preserve other branches. Read [current decisions](chameleon/05-resume-and-decisions.md) and [sources](chameleon/08-sources-and-evidence.md).
+
 Written 2026-10-20. This is a **future instructions template**, not approval to develop anything now.
 
 ## Suggested prompt for the next LLM session

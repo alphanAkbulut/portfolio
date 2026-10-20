@@ -1,4 +1,7 @@
 # PORTFOLIO MASTER HANDOFF — START HERE
+
+> **V4 branch update — 2026-10-20:** On `portfolio-chameleon`, the active scope is [the single-chameleon hero development plan](chameleon/07-v4-development-plan.md), awaiting user plan approval before build. The V3 choices, branch creation and design-preview write instructions below are historical context and do not authorize current work. Preserve other branches. Read [current decisions](chameleon/05-resume-and-decisions.md) and [sources](chameleon/08-sources-and-evidence.md).
+
 Last documented: 2026-10-20. Status: **PLANNING / AWAITING DESIGN CHOICE**.
 Source: collaborative portfolio design conversation + verified GitHub source and prior commits.
 **Read this before editing anything.** Companion files: [vision](01-product-vision-and-decisions.md), [implementation](02-technical-plan-and-roadmap.md), [resume prompt](03-resume-next-session.md), [BPMN plan](bpmn-hero-concept.md).

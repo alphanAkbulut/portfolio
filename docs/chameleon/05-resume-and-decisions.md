@@ -1,11 +1,15 @@
 # Decision register + next LLM session instructions
+
+> **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
+
 Date: 2026-10-20. Treat this as the canonical handoff. This file explicitly distinguishes AGREED vs PROPOSED.
 
 ## Committed creative decisions (AGREED for initial experiment)
 - A dedicated branch/version: **`portfolio-chameleon`** in the existing portfolio repository, NOT replacing main or existing `design-preview`.
 - More like **a realistic wildlife short film** than cartoon mascot or abstract neon animation.
 - Chameleon starts natural-scale inside forest and **walks right-to-left**; forest subtly moves as camera tracks; head stays visible near center when close up.
-- During uninterrupted right-to-left walking, suggest **up to two small local skin-color fluctuations** at different moments, with no colored stepping props, no requirement for contact and **no UI palette change**. Visual/biological credibility wins over the number: one or zero is preferable if the animation cannot remain convincing. This is storytelling, not a verified physiological sequence.\n- Chameleon reaches water, drinks; touch creates a genuine water ripple. **While drinking**, it unexpectedly pauses as if it has noticed some disturbance (NO sound required); one independently moving eye reacts first and then the head turns toward the camera.
+- During uninterrupted right-to-left walking, suggest **up to two small local skin-color fluctuations** at different moments, with no colored stepping props, no requirement for contact and **no UI palette change**. Visual/biological credibility wins over the number: one or zero is preferable if the animation cannot remain convincing. This is storytelling, not a verified physiological sequence.
+- Chameleon reaches water, drinks; touch creates a genuine water ripple. **While drinking**, it unexpectedly pauses as if it has noticed some disturbance (NO sound required); one independently moving eye reacts first and then the head turns toward the camera.
 - Ripple triggers synchronized optical ripple on **Liquid Glass components** including very briefly their text; **main headline stays still**. Effects obvious but not distracting.
 - After this pause, chameleon raises head, notices visitor. **Second stronger ripple** conveys "Eyvah, bizi fark etti!" Immediately after this, body coloration changes and **the ENTIRE site's semantic color palette transitions** in unison.
 - Camera slowly moves in toward head/eyes. At macro scale **independent eye tracking** begins: left-screen cursor => left-screen visible eye; right => right-screen visible eye; non-target eye scans independently. Provide center/touch behavior; don't assume anatomical right equals screen right.
@@ -15,19 +19,33 @@ Date: 2026-10-20. Treat this as the canonical handoff. This file explicitly dist
 - Use real-photo micro-scale, eye anatomical and color quality from two user-supplied screenshots as visual standards, not the assistant's flat cartoon drafts.
 - Nature/film thematic integration, trust/peace first, warmth and surprise second; restraint in effects.
 
-## Updated decision 2026-10-20 — remove colored-object dependency\nEarlier brainstorm: walking over two differently colored objects causes two small leg color changes. **SUPERSEDED**. No color-changing contacts/objects are required. The current narrative uses a continuous realistic forest walk with optional two very subtle regional coloration shifts (production choice: material masks in prerecorded animation). First global website color change must occur ONLY after eye contact/second glass ripple, when the full-body skin shift begins. An apparent sound/vibration stimulus is **performed by the animal's sudden pause and gaze**, without actual webpage audio. Adapt film timing rather than forcing the longer scene into 20s.\n\n## Important architecture choices still PROPOSED / NOT VALIDATED
+## Updated decision 2026-10-20 — remove colored-object dependency
+Earlier brainstorm: walking over two differently colored objects causes two small leg color changes. **SUPERSEDED**. No color-changing contacts/objects are required. The current narrative uses a continuous realistic forest walk with optional two very subtle regional coloration shifts (production choice: material masks in prerecorded animation). First global website color change must occur ONLY after eye contact/second glass ripple, when the full-body skin shift begins. An apparent sound/vibration stimulus is **performed by the animal's sudden pause and gaze**, without actual webpage audio. Adapt film timing rather than forcing the longer scene into 20s.
+
+## Important architecture choices still PROPOSED / NOT VALIDATED
 - Film-led hybrid: offline-rendered photoreal chameleon/forest with compressed video and a separate runtime-interactive eye component; **unproven compositing**. Alternate full 3D may be necessary. Do not prematurely promise feasibility.
-- Species, license and original photographic asset source unknown.
+- Species is now panther chameleon (Furcifer pardalis), explicitly requested. Specific locality/morph, asset license and photographic source rights remain unverified.
 - Forest Calm to Golden Curiosity are initial palette candidates, NOT definitive user approval. Exact transition hues should match accepted character material and readability.
 - Exact duration of film beats, ripple displacement magnitude, camera crop/framing, cost/availability of creation tools, video format constraints and hosting budget need testing.
-- Eye tracking technical implementation may require a pre-rendered fixed version as fallback if full 3D eye integration fails.
+- A pre-rendered fixed gaze is a degraded accessibility/error fallback only. It does not meet the requested live cursor tracking acceptance. Failure of both hybrid and realtime requires an explicit scope/resource decision.
 - Need clarify only what is essential after initial feasibility proof; user does not want repeated speculative questionnaires.
 
-## To next assistant — start with this exact prompt
-"Inspect GitHub repo `alphanAkbulut/portfolio`, branch `portfolio-chameleon`. Read every file under `docs/chameleon/`, plus `docs/00-START-HERE.md` and `docs/02-technical-plan-and-roadmap.md`; inspect the actual existing hero code, branches, Netlify status and production safety. Do not infer unimplemented film/3D capabilities from documents. Provide a brief resumption summary and a proof-of-realism plan. Use the user's two photoreal chameleon image references if available; otherwise request them again before making a model. The new V4 concept has been accepted for isolated experimentation, but the docs commit contains NO working animation yet. The revised storyboard includes optional localized, non-contact color shifts during walking; there are no colored stepping props, and the animal pauses while drinking as if alerted. Build only the first 3–5 second visual fidelity prototype in `portfolio-chameleon` when authorized. Protect main/design-preview/snapshot/BPMN branches and avoid DNS changes. Do not claim Netlify is connected to this new branch until verified. Record actual evidence, measured performance, costs and asset rights. We will approve the chameleon quality before extending to the full 20-second story." 
+## Güncel decision register — 2026-10-20
+| ID | Karar | Durum / gerekçe |
+|---|---|---|
+| V4-01 | Yalnız portfolio-chameleon; doküman commit'i şimdi, build plan onayı sonrası | Kullanıcının açık talebi |
+| V4-02 | İlk release tek sinematik hero ve tek renk davranış profili | Kararlaştırıldı; 6 varyant sonraki kapsam |
+| V4-03 | Tür panter bukalemunu; lokalite/morf asset aşamasında | Tür kararlı, asset henüz seçilmedi |
+| V4-04 | Yürüyüşte hafif lokal değişim; tam değişim ikinci ripple sonrası | Gereksinim; eski sessizce sıfıra indirme esnekliği kabulü karşılamaz |
+| V4-05 | Foto-gerçeklik + canlı bağımsız göz + scroll çıkış kapısı uzun filmden önce | Önerilen uygulama sırası; 07 G1/G2 |
+| V4-06 | Blender 4.5 LTS + kontrollü asset; hibrit ve realtime kısa karşılaştırma | Öneri, doğrulanmadı; nihai mimari G2 |
+| V4-07 | Saf video live gaze yerine geçmez | Kabul sınırı; yalnız degraded fallback |
+| V4-08 | Fiyat, model hesabı, donanım, Netlify preview bilinmeyenleri | Açık; 08 kaynak kaydı; garanti yok |
+| V4-09 | Eski V3A/B/C seçimi V4 için yeniden sorulmaz | V4 kapsamı kullanıcı tarafından seçildi |
+| V4-10 | Production/domain/diğer branch değişikliği yok | Kararlaştırıldı |
 
-## Next action
-1. Verify current repo and read docs.
-2. **Address capability risk first**: can we source/build sufficiently photorealistic wildlife animation and separately controllable eyes with acceptable performance? Produce/test a short asset-quality proof; decide film hybrid vs real 3D from evidence.
-3. Only once satisfactory: complete screenplay, reactive glass/labels, synced full-site theme, eye behavior and scroll-out.
-4. Deliver Netlify experimental preview, not main.
+## Sonraki oturum
+Repo HEAD ve kullanıcı onayını kontrol et. 07 ve 08'i, sonra 01–06 yaratıcı ayrıntılarını oku. Onay yoksa build başlatma. Onay geldiyse önce G0 varlık/hak/ortam kaydı, sonra G1/G2 için 3–5 saniyelik kalite ve canlı göz/scroll deneyi yap; bütçe/erişim gerektiren somut bağımlılıkları ilgili kapıda çöz. Altı varyant, uzun film veya web efektleriyle başlama. main/design-preview/snapshot/BPMN ve DNS değişmez.
+
+## Güncel durum
+Plan dokümantasyonu hazırlanmıştır; G0–G4 NOT STARTED. Film, rig, shader, preview, performans ve görsel kabul kanıtı yok. İlk kullanıcı kararı: 07'deki plan ve ilk PoC aşamasının onayı.

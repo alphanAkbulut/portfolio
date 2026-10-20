@@ -1,5 +1,10 @@
 # Execution stages, acceptance criteria and risk register
 
+> **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
+
+
+The stages below preserve the earlier roadmap. **Execute the current M1–M6 order in 07: eye/composite/scroll feasibility moves before full film production.** No stage below is new build authorization.
+
 ## Stage 0 — preserve and document (DONE FOR DOCUMENTATION ONLY)
 Create branch `portfolio-chameleon` from existing `design-preview` HEAD, commit this full concept without changing production, design-preview, existing snapshots or other experiment. No film/model built yet. Verify the branch and files exist. Preserve GitHub Pages URL and unspecified personal custom domain without DNS modifications.
 
@@ -28,7 +33,8 @@ Set up Netlify branch deploy for `portfolio-chameleon` **or** independent projec
 - Does first second show believable chameleon/forest without blank screen or loader?
 - Does animal walk physically right-to-left, staying out of left hero headline? Are up to two early slight localized skin-color fluctuations believable, without newly introduced brightly colored objects or webpage theme changes? If too costly or fake-looking, can they be omitted cleanly?
 - Does water droplet/contact animation align with glass/text ripple within the visible frame? Does main title remain stable?
-- Does chameleon pause **while drinking** as if alerted, react with eyes before head turn, with no required sound effect?\n- Does visitor recognition create a clear "it saw me!" sensation through independent eye behavior and a second wave?
+- Does chameleon pause **while drinking** as if alerted, react with eyes before head turn, with no required sound effect?
+- Does visitor recognition create a clear "it saw me!" sensation through independent eye behavior and a second wave?
 - Does skin color change immediately after recognition trigger FULL-site coherent semantic palette transitions?
 - Do both side-dependent eyes track correctly without simultaneous mirroring? Does touch/reduced-motion have suitable fallback?
 - Does scroll work at any moment, cause seamless zoom-out, and leave theme intact?
@@ -48,7 +54,8 @@ Set up Netlify branch deploy for `portfolio-chameleon` **or** independent projec
 | Scroll out transition jerks/cuts | MED/HIGH | Matched wide/close shots, continuous progress and early-scroll cases |
 | Water/glass refraction not perceptible | MEDIUM | User-tested second stronger ripple; small UI label refraction |
 | Distortion hurts usability/accessibility | MEDIUM | Visual-only layer and reduced-motion fallback |
-| Misleading biology (surface touch drives color) | LOW/MEDIUM | REMOVE touch-color causal premise entirely; early minor skin fluctuations are artistic, non-contact-triggered and must not be marketed as proven biology |\n| Early micro-color changes add video complexity | MEDIUM | Use isolated skin masks in offline material pass; permit one or zero if the visual proof suggests unreliable continuity; no separate objects/scenes |
+| Misleading biology (surface touch drives color) | LOW/MEDIUM | REMOVE touch-color causal premise entirely; early minor skin fluctuations are artistic, non-contact-triggered and must not be marketed as proven biology |
+| Early micro-color changes add video complexity | MEDIUM | Use isolated skin masks in offline material pass; permit one or zero if the visual proof suggests unreliable continuity; no separate objects/scenes |
 | Loss of repo history/site | LOW if process followed | Separate branch, immutable references, explicit merge approval |
 | Chat context lost | HIGH unless documented | These GitHub docs and concise next-session prompt |
 

@@ -1,5 +1,8 @@
 # Art direction, theme tokens, Liquid Glass components and accessibility
 
+> **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
+
+
 ## Distinctive positioning
 User wants **trust and peace, with a surprising moment of warmth and "the creature noticed me" wonder**. Realistic biological motion (water ripples, soft foliage breeze, skin color response, natural eye movement) replaces random futuristic shine. Keep premium editorial UI, enough negative space, high craft and sophisticated contrast; retain the existing brand headline and actual PO/TPM cases. Assistant-created cartoon character illustrations were **explicitly rejected**. User-provided macro wildlife photographs are the visual fidelity standard; do not invent facial smiles or anthropomorphic expressions.
 
@@ -8,7 +11,8 @@ User wants **trust and peace, with a surprising moment of warmth and "the creatu
 - Left: unchanged readable "From complexity to clarity." heading and introductory/CTA content, protected by a soft continuous background gradient, not a hard vertical split.
 - Forest extends as a coherent integrated backdrop under hero, without stock-photo postcard borders or abruptly different tint/particle density. Camera tracking should move foliage/camera relative to chameleon; support separate foreground/midground/background parallax where the chosen production method allows.
 - When recognized: controlled dolly into chameleon head, close-up centered or slightly right of page midpoint, enough margin **to its left and right** for cursor-relative eye behavior. **Responsive crop** must never cover or occlude hero words/mobile CTA.
-- No brightly colored stepping objects are needed; walking contains optional very small regional scale color fluctuations. Only the post-recognition full-body transformation changes the global site palette. The animal abruptly pauses while drinking as if alerted, without a required sound cue.\n- Film lighting: natural diffuse canopy with physically plausible wet highlights. Tiny reflections and soft shadows, avoid eye-burn bloom. No arbitrary clouds of futuristic droplets.
+- No brightly colored stepping objects are needed; walking contains optional very small regional scale color fluctuations. Only the post-recognition full-body transformation changes the global site palette. The animal abruptly pauses while drinking as if alerted, without a required sound cue.
+- Film lighting: natural diffuse canopy with physically plausible wet highlights. Tiny reflections and soft shadows, avoid eye-burn bloom. No arbitrary clouds of futuristic droplets.
 - Cinematic visual should read as a real animal, not a cute toy; "cute" emerges from plausible curious behavior and independent eyes.
 - On scroll camera/crop recedes as document flows; keep interactions smooth.
 

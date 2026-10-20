@@ -1,5 +1,8 @@
 # Film screenplay + explicit UI/UX event contract
 
+> **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
+
+
 All timings are **initial storyboarding estimates**, not locked exact video frame timings. Main film may contain held phases. The experience is **event-driven**, not a rigid 20-second video that forces visitors to wait. Observe reduced-motion preferences, pause hidden/off-screen.
 
 ## Cinematic grammar
@@ -10,7 +13,8 @@ Natural forest wildlife cinematography, anatomically correct chameleon, realisti
 ### Shot A — Arrival / walk with subtle localized color variations (timing TBD)
 - Forest visible instantly via lightweight poster. Chameleon naturally traverses a branch from **screen-right to screen-left**, toward water. Footfall frequency, toe placement, tongue/mouth and tail consistent; avoid gliding or conveyor-belt treadmill impression. Subtle lateral tracking, bokeh and restrained foreground leaf parallax.
 - Position the future close-up target slightly right of center, providing clear camera/eye space **both left and right**, while the text remains uncluttered.
-- Along the uninterrupted walk, two **small, non-contact-triggered skin color fluctuations** may appear at distinct moments (e.g. localized leg/flank scale regions), gentle and plausible in hue, with **no synchronized UI theme change**. Do not add brightly colored objects or require stepping on them. Treat these as stylized natural/changing-state coloration, not a scientifically asserted causal mechanism. **Production simplification:** animate two bounded material masks/color maps in the offline video render; if continuity, believability or asset cost is problematic, use ONE subtle fluctuation or remove these entirely rather than compromising photorealism. Reuse the same established walk, camera and branch.\n- Interface at calm **Forest** baseline palette. Readable hero copy and CTAs function without any animation.
+- Along the uninterrupted walk, two **small, non-contact-triggered skin color fluctuations** may appear at distinct moments (e.g. localized leg/flank scale regions), gentle and plausible in hue, with **no synchronized UI theme change**. Do not add brightly colored objects or require stepping on them. Treat these as stylized natural/changing-state coloration, not a scientifically asserted causal mechanism. **Production simplification:** animate two bounded material masks/color maps in the offline video render; if continuity, believability or asset cost is problematic, use ONE subtle fluctuation or remove these entirely rather than compromising photorealism. Reuse the same established walk, camera and branch.
+- Interface at calm **Forest** baseline palette. Readable hero copy and CTAs function without any animation.
 
 ### Shot B — Reaching water / first ripple (after gradual walking; timing TBD)
 - Chameleon approaches a small **credible water source** (e.g. water captured in a leaf cup or small forest water pocket) and drinks. Determine if actual species drinking behavior would plausibly involve touching it with lips/tongue; do not create biologically absurd actions.

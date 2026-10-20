@@ -1,6 +1,6 @@
 # Alphan Akbulut
 
-> **Portfolio redesign master plan (2026-10-20):** Before modifying the hero or trying Three.js, read **[START HERE — full context and handoff](docs/00-START-HERE.md)**. The [vision and decision log](docs/01-product-vision-and-decisions.md), [technical roadmap](docs/02-technical-plan-and-roadmap.md), [next-session prompt](docs/03-resume-next-session.md), and [BPMN hero concept](docs/bpmn-hero-concept.md) preserve the complete plan. **V3A vs V3B vs V3C has NOT been decided yet.** This is planning only; production is unchanged.
+> **V4 chameleon plan (2026-10-20):** This branch is `portfolio-chameleon`. Read the [development plan](docs/chameleon/07-v4-development-plan.md), [current decisions](docs/chameleon/05-resume-and-decisions.md), and [sources/evidence](docs/chameleon/08-sources-and-evidence.md). First release: one cinematic photoreal panther-chameleon hero. **Plan approval pending; build not started.** V3 material remains [historical context](docs/00-START-HERE.md). Production and other branches are preserved.
 
 
 **Senior Product Owner | Technical Product Manager**  
