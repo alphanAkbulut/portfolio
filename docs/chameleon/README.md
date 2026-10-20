@@ -12,7 +12,7 @@ The initial viewer emotion is **calm and trust**, then discovery and surprise: *
 - [02 — Visual system and palettes](02-visual-system-and-palettes.md): composition, materials, typography, liquid glass, colors, WCAG.
 - [03 — Architecture and performance](03-architecture-and-performance.md): source video vs 3D, timeline, fallback, performance, asset licensing.
 - [04 — Delivery roadmap, risks and tests](04-roadmap-and-acceptance.md): isolation, milestones, exact acceptance criteria, backlog and verification.
-- [05 — Next session prompt and decision register](05-resume-and-decisions.md): open questions and copyable LLM instructions.
+- [06 — Color behavior, six visit variants and millisecond timeline](06-color-behavior-and-variant-engine.md): physiology, spatial color-mask coverage, contrast palettes, six curated states, synchronized frame cues and random-per-visit loading.\n- [05 — Next session prompt and decision register](05-resume-and-decisions.md): open questions and copyable LLM instructions.
 - General portfolio vision: [../00-START-HERE.md](../00-START-HERE.md), [../01-product-vision-and-decisions.md](../01-product-vision-and-decisions.md), [../02-technical-plan-and-roadmap.md](../02-technical-plan-and-roadmap.md).
 - Alternate, independent BPMN plan: [../bpmn-hero-concept.md](../bpmn-hero-concept.md).
 
