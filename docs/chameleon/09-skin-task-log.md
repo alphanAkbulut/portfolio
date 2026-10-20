@@ -18,7 +18,7 @@ Model önerileri zorunluluk veya kalite garantisi değil; oturumda seçilen mode
 | D1.1 Blender kurulumu | Resmî Apple Silicon LTS paketi, bütünlük/imza ve küçük çalıştırma testi | **DONE** |
 | D2 Varlık adayları | Panter bukalemunu model kısa listesi; lisans/düzenlenebilirlik/deri/rig bilgisi; satın alma yok | **DONE — araştırma tamamlandı; asset seçilmedi** |
 | D3 Aday teknik incelemesi | Erişilebilir örnekte mesh/UV/doku/rig uygunluk kararı | **PARTIAL — sayfa/lisans kontrol edildi; yerel dosya incelemesi giriş bekliyor** |
-| D4 Deri hedefi | Tek bölge, pul yoğunluğu, ışık, iki renk durumu ve görsel referans | NOT STARTED |
+| D4 Deri hedefi | Tek bölge, pul yoğunluğu, ışık, iki renk durumu ve görsel referans | DONE — deney hedefi kaydedildi; render/görsel kabul değil |
 | D5 Sabit küçük deri örneği | Tek bölgede incelenebilir render; renk animasyonu yok | NOT STARTED |
 | D6 Lokal renk geçişi | Aynı bölgede kısa smooth geçiş; detay ve zaman tutarlılığı | NOT STARTED |
 | D7 Tarayıcı karşılaştırması | Aynı örneğin browser/Blender karşılaştırması ve ölçüm | NOT STARTED |
@@ -83,4 +83,9 @@ Araştırma tamamlandı; [10 — aday karşılaştırması](10-asset-candidates.
 ## D3a — Lisans ve public metadata doğrulandı; D3b eksik
 [11 — ücretsiz aday ön incelemesi](11-free-asset-preflight.md). Normal tarayıcıda CC BY 4.0 bağlantısı, UV ve formatlar doğrulandı. Sayfa rig olmadığını, 0 animasyon ve PBR No değerlerini veriyor. Bağımsız göz ve deri kalitesi yerel dosyayla henüz incelenmedi. Download düğmesi Sketchfab giriş penceresi açtı; dosya indirilmedi.
 
-**Güncel devam noktası:** kullanıcı mevcut hesabıyla giriş yaptıktan sonra D3b normal indirme ve Blender mesh/UV/material/rig raporu. Kullanıcıya hesap/oturum erişimi sorulur; ücretli modele veya D4/D5'e kendiliğinden geçilmez. Sol High yeterli; model değişimi henüz önerilmiyor.
+**D3a kapanışındaki devam noktası (D4 kararıyla güncellendi):** kullanıcı mevcut hesabıyla giriş yaptıktan sonra D3b normal indirme ve Blender mesh/UV/material/rig raporu. Kullanıcıya hesap/oturum erişimi sorulur; ücretli modele veya D4/D5'e kendiliğinden geçilmez. Sol High yeterli; model değişimi henüz önerilmiyor.
+
+## D4 — bağımsız yama hedefi hazır
+Kullanıcı Sketchfab hesabı olmadığını bildirdi ve kendi küçük deri yüzeyimizle D4'e geçişi onayladı; Astra Orta seçtiğini söyledi. [12 — deri hedefi](12-skin-patch-target.md) tek gövde yaması, sığ düzensiz pullar, nötr ışık, iki taslak renk durumu ve D5 kabul sözleşmesini tanımlar. D4 dokümantasyon tamamlandı; render ve görsel kabul yok. D3b incomplete ve tam karakter temini açık kalır. Hesap açılması veya asset satın alınması gerekmiyor.
+
+**Güncel devam noktası: D5 için kullanıcı onayı bekle.** İlk sabit A/B deri örneği ve gri kabartı kontrolü; animasyon/web entegrasyonu yok. Model önerisi Astra Orta; High gerektiren somut sorun yok. D5'e onay gelmeden üretim scripti/render başlatma.
