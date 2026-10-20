@@ -101,3 +101,6 @@ Kullanıcı kapsamı genişletmeyi onayladı. Göz/baş/gövde için yakın A, u
 
 ## D5.3 — Birleşik form ve karışık boyut geçişi
 Kullanıcı onayıyla aynı yüzeyde göz–yanak temsil formu ve küçük/orta/iri karışık geçiş üretildi. 3 PNG incelendi; .blend yeniden açıldı. [13 güncel sonuç](13-skin-patch-result.md). **Güncel devam: kullanıcı geçiş dağılımını değerlendirsin; onay sonrası lokal renk animasyonu önerisi.** Gerçek göz/kafa ve rig açık; animasyon başlamadı.
+
+## E1 — göz anatomisi önceliği
+Kullanıcı D5.3 göz işaretini reddetti; anatomik göz/kuyruk/hareket araştırmasını ve küçük tasklarla ilerlemeyi istedi. Renk animasyonu bekletildi. [14 anatomi/task kaydı](14-anatomy-and-motion.md) E1–E4, T1–T3 ve L1'i ayırır. E1 gri kapak hacmi üç açıdan üretildi, .blend tekrar açıldı. **Güncel devam: E1 görsel değerlendirmesi; önerilen E1.1 kafa bağlamında oran/konum.** Tüm biyoloji analizi tamamlanmış değildir.

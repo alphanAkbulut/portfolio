@@ -75,3 +75,6 @@ Kullanıcı genişletilmiş karşılaştırmayı onayladı. Üç bölge × yakı
 
 ## Son checkpoint — D5.3
 Birleşik göz–yanak temsil formu ve kullanıcı talebiyle karışık boyutlu geçiş üretildi. Üç kadraj/renk çıktısı incelendi; .blend tekrar açıldı. [13 sonucu](13-skin-patch-result.md). Güncel sınır: dağılım için kullanıcı değerlendirmesi; animasyon yetkisi henüz yok. Koyu açıklık işareti gerçek göz modeli değildir.
+
+## Son checkpoint — E1 anatomi
+Kullanıcı D5.3'ün düğme gözünü reddetti; D5.3 göz tasarımı kabul edilmedi. Renk animasyonundan önce anatomik göz formu ve hareket; kuyruk için ayrı tasklar. [14 kanıt/plan](14-anatomy-and-motion.md). E1 nötr gri üç açı artefaktı var; oran/kafa bağlamı kabulü ve hareket yok. Güncel küçük adım E1 değerlendirmesi ve E1.1 kafa bağlamı önerisi; kullanıcı kararı bekle.

@@ -1,0 +1,72 @@
+{
+  "task": "E1 neutral eye envelope",
+  "biological_dimensions": "unmeasured design ratios",
+  "blender": "4.5.14 LTS",
+  "samples": 48,
+  "engine": "Cycles CPU",
+  "profile": [
+    [
+      1.22,
+      -0.1
+    ],
+    [
+      1.12,
+      0.02
+    ],
+    [
+      1.055,
+      0.19
+    ],
+    [
+      1.015,
+      0.44
+    ],
+    [
+      0.91,
+      0.76
+    ],
+    [
+      0.72,
+      1.035
+    ],
+    [
+      0.49,
+      1.225
+    ],
+    [
+      0.29,
+      1.325
+    ],
+    [
+      0.225,
+      1.345
+    ],
+    [
+      0.192,
+      1.32
+    ],
+    [
+      0.187,
+      1.255
+    ]
+  ],
+  "aperture_diameter_to_max_envelope_diameter": 0.15737704918032788,
+  "motion": "not tested",
+  "renders": [
+    {
+      "view": "front",
+      "seconds": 8.12,
+      "sha256": "2ad850b64d25e98582c3822f4d9ea998e6b9626292ceefe91b6a058b5b0b2b14"
+    },
+    {
+      "view": "side",
+      "seconds": 4.07,
+      "sha256": "4cc40605ba324fe3722bbb26181e6e6edc76152d31dd0e628a24d03c364407aa"
+    },
+    {
+      "view": "three-quarter",
+      "seconds": 6.58,
+      "sha256": "7b9be36bd8778d4c7cdcb525c3864c54eeafe45209118987324f33806ce0c198"
+    }
+  ]
+}
