@@ -1,0 +1,42 @@
+# PORTFOLIO CHAMELEON — V4 Master Brief
+
+**Status:** APPROVED FOR ISOLATED V4 PROTOTYPING; implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read EVERY file in this folder before coding.
+
+## Vision, one sentence
+A breathtakingly realistic, nature-documentary-like chameleon in a living forest quietly walks to water, drinks, disturbs the real water and the website's glass components, notices the visitor, changes color **together with the entire website**, and makes independent eye contact with the cursor; scrolling gracefully pulls the camera back and enters the actual portfolio.
+
+The initial viewer emotion is **calm and trust**, then discovery and surprise: **"Eyvah, bizi fark etti!" / "Oh, it noticed us!"** Unlike decorative 3D particles, each major UI motion has an intelligible story cause. Delight is earned through realism, not childish cartoon faces.
+
+## Navigation
+- [01 — Film and interaction screenplay](01-cinematic-story-and-interaction.md): shot-by-shot triggers, eyes, waves, theme changes and scrolling.
+- [02 — Visual system and palettes](02-visual-system-and-palettes.md): composition, materials, typography, liquid glass, colors, WCAG.
+- [03 — Architecture and performance](03-architecture-and-performance.md): source video vs 3D, timeline, fallback, performance, asset licensing.
+- [04 — Delivery roadmap, risks and tests](04-roadmap-and-acceptance.md): isolation, milestones, exact acceptance criteria, backlog and verification.
+- [05 — Next session prompt and decision register](05-resume-and-decisions.md): open questions and copyable LLM instructions.
+- General portfolio vision: [../00-START-HERE.md](../00-START-HERE.md), [../01-product-vision-and-decisions.md](../01-product-vision-and-decisions.md), [../02-technical-plan-and-roadmap.md](../02-technical-plan-and-roadmap.md).
+- Alternate, independent BPMN plan: [../bpmn-hero-concept.md](../bpmn-hero-concept.md).
+
+## Source of design truth
+The user provided two **photographic chameleon references in the conversation** on 2026-10-20, exhibiting realistic micro-scales, anatomically realistic independently movable turret eyes, vivid natural skin colors, gripping feet and curled tail. Their imagery is NOT licensed or guaranteed to be stored in this GitHub repository. **Ask user to re-share assets before modeling if not available.** Never substitute the assistant's earlier cartoon mockup. Choose a specific plausible chameleon species and study real locomotion, eye structure, and scale appearance. Photo realism is a hard quality gate.
+
+## Current baseline / do not damage
+- Live GitHub Pages production `main`: https://alphanakbulut.github.io/portfolio/ — do not update without permission.
+- `design-preview`: current Manrope/Instrument Sans, atmospheric particle hero, 20s auto-loop and simplified text-only Selected Cases card. Netlify was connected to this branch; **new V4 branch does not automatically have a Netlify URL**.
+- `snapshot/particle-hero-v1` is an immutable V1 reference; `experiment/bpmn-hero-v2` is independent BPMN concept/branch.
+- `portfolio-chameleon` is a separate experimental VERSION, not a separate repo and not a replacement for main or the custom domain. User owns a domain but its exact name / DNS mapping were not established; do not edit DNS.
+- Preserve contact information, CV, experience, case studies, accessible navigation/CTA and existing brand headline **"From complexity to clarity."**
+- Prototype the hero ONLY before considering full-site changes. The concept **does require theme token plumbing across the existing site** for accurate demo, but avoid refactoring unrelated sections.
+
+## Explicit exclusions
+No cartoon mascot, smiling wide-eyed character, simplified flat illustrated lizard, giant generic 3D knot, overdone mint/cyan-on-navy tech palette, fake metrics, required "play" click, forced 20-second watching, mandatory sound, full-screen strobe, freezing scrolling, persistent text deformation, visual breaks between left text and right scene, or production publishing without explicit approval.
+
+## Meaning of "build"
+The user's latest instruction was to **push the FULL technical, creative, UI/UX, color and build specification** as a separate named version. Do not claim a photorealistic film or eye-tracking implementation exists. Next coding session may proceed with an **isolated, gated prototype** after confirming the brief and ensuring necessary reference assets. Do not overwrite approved baselines.
+
+## Handoff priority
+1. Protect production and all snapshots.
+2. Solve photo-realistic asset and movement plausibility **before** building website effects.
+3. Verify that high-quality motion can run smoothly under realistic mobile constraints (poster+optimized video before heavyweight full-scene 3D).
+4. Synchronize film state and site theme from a **single authoritative timeline**.
+5. Evaluate the eye-tracking approach without knowingly promising impossible interaction inside fixed video.
+6. Give the user a real Netlify / previewable experience and request visual acceptance.
