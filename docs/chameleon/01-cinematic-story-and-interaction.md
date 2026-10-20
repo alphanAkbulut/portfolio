@@ -5,6 +5,18 @@
 
 All timings are **initial storyboarding estimates**, not locked exact video frame timings. Main film may contain held phases. The experience is **event-driven**, not a rigid 20-second video that forces visitors to wait. Observe reduced-motion preferences, pause hidden/off-screen.
 
+## Güncel sahne sözleşmesi — kullanıcı onaylı, 2026-10-20
+Bu bölüm önceki kesintisiz yürüyüş, üç toplam basış, 7. saniyede fark etme ve çene teması önerilerinin yerine geçer.
+1. Sağdan sola yürüyüş: dört ayağın HER BİRİ iki kez kaldırılıp yeniden basar (8 basış). Ayaklar aynı anda değil, doğrulanacak yürüyüş fazlarıyla ilerler.
+2. 0.5 s duruş: baş ziyaretçiye dönmez, gözler çevreyi tarar; ziyaretçi henüz fark edilmez.
+3. Her ayak bir kez daha basar (4 basış; sahne boyunca ayak başına 3, toplam 12).
+4. İkinci kısa duruş ve gözle çevre kontrolü; bu duruşun süresi henüz kilitli değil.
+5. Baş suya yaklaşır, ağız hafif açılır; kısa çıkan kırmızımsı pembe dil su yüzeyine dokunur. Çene teması şart değil; uzun dil fırlatma/lıkır lıkır içme yok. İlk fiziksel dil-su teması = water-contact: yerel su halkaları ve cam kontroller/yazılarında ripple-1. Ana başlık sabit; site paleti değişmez.
+6. İçerken tek göz önce ziyaretçiyi fark eder (eye-notice); dil geri çekilir, baş hızlı fakat kontrollü kalkıp ziyaretçiye yönelir. Başın kilitlenme anı = visitor-recognized; ripple-2, en güçlü gövde renk dönüşümü ve tüm site palet dönüşümü başlar. Baş yükselirken kamera yakınlaşabilir; canlı cursor yalnız yakın plan hazır olunca.
+Yürüyüş sırasında bacak/küçük gövde bölgelerinde hafif lokal renk değişimleri korunur; temas nesnesi gerekmez. Bunlar tüm site rengini değiştirmez. Scroll her anda önceliklidir.
+**Süre:** 7 s / 20 s kilidi yok. Önce ayak teması, ilerleme ve içme inandırıcılığı; sonra kurgu. Basış sayısı fiziksel hareket kabulüdür, sadece timeline etiketi değildir.
+**Kanıt ayrımı:** Kullanıcı kısa dil çıkışı ve pembe-kırmızı görünümü görsel hedef olarak onayladı. İki ekran görüntüsü hareket hızı veya suyla temas anını ölçmez. Dil ucunun küçük su yüzeyine teması yaratıcı sahne kararıdır; türün tüm doğal içme biçimlerinin iddiası değildir.
+
 ## Cinematic grammar
 Natural forest wildlife cinematography, anatomically correct chameleon, realistic scaly skin, individually rotating turret eyes, deliberate gait, believable foot grip, controlled tail balance, foliage parallax, modest breeze and soft bounce/reflection lighting. **Start with chameleon in its environment at natural scale**, not a giant face. Character travels **right-to-left** inside right/center-right of screen; never cross or cover the large left-side headline. Camera smoothly follows so forest moves relative to the chameleon. Use foliage at differing depths. The source should look like real macro wildlife footage, **NOT a cartoon nor overprocessed AI glamour render**.
 
@@ -13,11 +25,11 @@ Natural forest wildlife cinematography, anatomically correct chameleon, realisti
 ### Shot A — Arrival / walk with subtle localized color variations (timing TBD)
 - Forest visible instantly via lightweight poster. Chameleon naturally traverses a branch from **screen-right to screen-left**, toward water. Footfall frequency, toe placement, tongue/mouth and tail consistent; avoid gliding or conveyor-belt treadmill impression. Subtle lateral tracking, bokeh and restrained foreground leaf parallax.
 - Position the future close-up target slightly right of center, providing clear camera/eye space **both left and right**, while the text remains uncluttered.
-- Along the uninterrupted walk, two **small, non-contact-triggered skin color fluctuations** may appear at distinct moments (e.g. localized leg/flank scale regions), gentle and plausible in hue, with **no synchronized UI theme change**. Do not add brightly colored objects or require stepping on them. Treat these as stylized natural/changing-state coloration, not a scientifically asserted causal mechanism. **Production simplification:** animate two bounded material masks/color maps in the offline video render; if continuity, believability or asset cost is problematic, use ONE subtle fluctuation or remove these entirely rather than compromising photorealism. Reuse the same established walk, camera and branch.
+- During the two walking sections, two **small, non-contact-triggered skin color fluctuations** may appear at distinct moments (e.g. localized leg/flank scale regions), gentle and plausible in hue, with **no synchronized UI theme change**. Do not add brightly colored objects or require stepping on them. Treat these as stylized natural/changing-state coloration, not a scientifically asserted causal mechanism. Animate bounded regional material masks; do not silently remove the requested local changes. Reuse the same established walk, camera and branch.
 - Interface at calm **Forest** baseline palette. Readable hero copy and CTAs function without any animation.
 
 ### Shot B — Reaching water / first ripple (after gradual walking; timing TBD)
-- Chameleon approaches a small **credible water source** (e.g. water captured in a leaf cup or small forest water pocket) and drinks. Determine if actual species drinking behavior would plausibly involve touching it with lips/tongue; do not create biologically absurd actions.
+- Chameleon approaches a small **credible water source** (e.g. water captured in a leaf cup or small forest water pocket) and drinks. Use the approved short reddish-pink tongue contact; chin contact is not required. Drinking mechanics remain subject to visual reference validation.
 - **Exact physical contact frame** emits `water-contact`. Water surface produces a center-origin concentric wave with realistic propagation and damping (visual cinematic effect).
 - At the SAME film time coordinate, **ONLY functional Liquid Glass components** respond: navbar, glass-like controls/buttons and their immediate text layers. Optional lightweight ripple through text itself (optical refraction only, no persistent layout/position change). Original concern: small control surfaces may not be visibly affected; aim for a modest clear transient (1–1.5s), tune after real display testing. Baseline glyphs remain crisp and hitboxes stable.
 - **Do NOT ripple the main "From complexity to clarity." heading**. Other page areas remain solid. Do not apply blanket page displacement, nor change site theme yet.
@@ -34,7 +46,7 @@ Natural forest wildlife cinematography, anatomically correct chameleon, realisti
 - EVERY site section receives the same semantic theme identity: page backgrounds, section surfaces, CTAs, dividers, accent colors, links, glass reflection tones, focus outlines, hover surfaces and eventual lower sections. **Do not turn all tokens into the exact animal color**; retain legibility and hierarchy via palette families. Ensure accessible color contrast in ALL intermediate frames, not only endpoints.
 - Transition should feel calm and natural (~2–4s tuning estimate); text/layout stays stationary. Do NOT change theme during the first water touch.
 
-### Shot E — Macro eye encounter / cursor follow (nominal from ~12–16s until user leaves)
+### Shot E — Macro eye encounter / cursor follow (timing derived from validated action sequence)
 - Camera's close-up gives visible skin microtexture and accurately modeled independently moving eyes. The chameleon has space on both sides so viewer can move pointer to the "near eye" side.
 - **Mapping based on displayed eye visibility, not naive anatomy**. For a screen-left cursor, the **screen-left visible eye** follows; for screen-right cursor, **screen-right visible eye** follows. Anatomical left/right when facing camera may be mirrored relative to viewer. Resolve after character rig and camera layout.
 - Non-target eye performs controlled ambient search, not mirroring the target. In center zone a short, occasional binocular focus may occur, biologically plausible. No robotically identical movement, snapping or excessive rotation.
@@ -55,6 +67,6 @@ Distinct events: `water-contact` (first ripple), `visitor-recognized` (second st
 Auto-start motion if user preference allows, but do not imply the site detects the actual person: "noticed us" is a narrative illusion caused by eye-to-camera direction and pointer motion, not camera/gaze/face recognition. Do **not** request camera/microphone permission. Do not capture, store, transmit or infer visitors' identities/mouse data. Cursor follow is purely ephemeral local motion.
 
 ## Film and site state machine (draft)
-`BOOT/POSTER -> WALK/[SKIN_MICRO_SHIFT_1, SKIN_MICRO_SHIFT_2 (OPTIONAL; no UI change)] -> WATER_CONTACT/RIPPLE_1 -> LOOK_UP/DOLLY_IN -> RECOGNIZED/RIPPLE_2 -> COLOR_SHIFT -> MACRO_INTERACTIVE -> (SCROLL_OUT) -> CONTENT`.
+`BOOT/POSTER -> WALK_A (2 footfalls per foot) -> SCAN_A (0.5s, head forward) -> WALK_B (1 footfall per foot) -> SCAN_B -> TONGUE_CONTACT/RIPPLE_1 -> EYE_NOTICE -> TONGUE_RETRACT/HEAD_RISE -> VISITOR_RECOGNIZED/RIPPLE_2/COLOR_SHIFT -> MACRO_INTERACTIVE -> (SCROLL_OUT) -> CONTENT`.
 Interruption states: `OFFSCREEN_PAUSED`, `REDUCED_MOTION_STATIC`, `MEDIA_FAILURE_POSTER`, `USER_SCROLL_EARLY`.
 **All events should be idempotent, recoverable after seeking and triggered by authoritative media frame/time, not drifting timers.** UI color transition must be synchronized even if video stalls, loads late, or is resumed. If audio/video sequencing fails, preserve stable functional page.

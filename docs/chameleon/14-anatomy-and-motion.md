@@ -120,3 +120,24 @@ Kabul kriterleri:
 DONE: E1 nötr biçim, önceki deri deneyleri, bu veiled önizlemesinin 48 örneklik nitel analizi.
 NOT DONE: deri kaplı hareketli göz, rig, tam kafa/karakter, panter hareket ölçümü, kuyruk/yürüyüş deneyi, canlı cursor, site değişimi.
 NEXT: kullanıcı bu somut E1 güncellemesini onayladığında mevcut script/sahneyi kontrol et; yalnız yukarıdaki küçük teslimi gerçekleştir; sonuç ve sorunları bu belgeye işle. Kullanıcının son talebi bu turda derin analiz ve repo kaydıdır; analiz bitmesini animasyonun tamamlanması sayma.
+
+
+## Güncel sahne sözleşmesi — kullanıcı onaylı, 2026-10-20
+Bu bölüm önceki kesintisiz yürüyüş, üç toplam basış, 7. saniyede fark etme ve çene teması önerilerinin yerine geçer.
+1. Sağdan sola yürüyüş: dört ayağın HER BİRİ iki kez kaldırılıp yeniden basar (8 basış). Ayaklar aynı anda değil, doğrulanacak yürüyüş fazlarıyla ilerler.
+2. 0.5 s duruş: baş ziyaretçiye dönmez, gözler çevreyi tarar; ziyaretçi henüz fark edilmez.
+3. Her ayak bir kez daha basar (4 basış; sahne boyunca ayak başına 3, toplam 12).
+4. İkinci kısa duruş ve gözle çevre kontrolü; bu duruşun süresi henüz kilitli değil.
+5. Baş suya yaklaşır, ağız hafif açılır; kısa çıkan kırmızımsı pembe dil su yüzeyine dokunur. Çene teması şart değil; uzun dil fırlatma/lıkır lıkır içme yok. İlk fiziksel dil-su teması = water-contact: yerel su halkaları ve cam kontroller/yazılarında ripple-1. Ana başlık sabit; site paleti değişmez.
+6. İçerken tek göz önce ziyaretçiyi fark eder (eye-notice); dil geri çekilir, baş hızlı fakat kontrollü kalkıp ziyaretçiye yönelir. Başın kilitlenme anı = visitor-recognized; ripple-2, en güçlü gövde renk dönüşümü ve tüm site palet dönüşümü başlar. Baş yükselirken kamera yakınlaşabilir; canlı cursor yalnız yakın plan hazır olunca.
+Yürüyüş sırasında bacak/küçük gövde bölgelerinde hafif lokal renk değişimleri korunur; temas nesnesi gerekmez. Bunlar tüm site rengini değiştirmez. Scroll her anda önceliklidir.
+**Süre:** 7 s / 20 s kilidi yok. Önce ayak teması, ilerleme ve içme inandırıcılığı; sonra kurgu. Basış sayısı fiziksel hareket kabulüdür, sadece timeline etiketi değildir.
+**Kanıt ayrımı:** Kullanıcı kısa dil çıkışı ve pembe-kırmızı görünümü görsel hedef olarak onayladı. İki ekran görüntüsü hareket hızı veya suyla temas anını ölçmez. Dil ucunun küçük su yüzeyine teması yaratıcı sahne kararıdır; türün tüm doğal içme biçimlerinin iddiası değildir.
+
+### İçme kaynak güncellemesi ve sonraki build dilimi
+- [MNHN, panter bukalemunu](https://www.mnhn.fr/fr/cameleon-panthere), 2026-10-20 erişim: su damlalarını dille alma davranışını açıklar. Kaynağın kaptan içmeye ilişkin mutlak ifadesi tüm bireyler için deneysel yasak olarak alınmadı.
+- [Ueno Zoo, 2015-09-11](https://www.tokyo-zoo.net/topics/news/ueno/4291_23157_2015-09-11.html): panter sergisinde dal/yaprak damlaları ve damlayan su; baş/dil hızını ölçmez.
+- [Kim & Bush 2012, Natural drinking strategies](https://thales.mit.edu/bush/wp-content/uploads/2012/04/drinking-JFM.pdf): dil yüzeyi ve su alma mekanikleri; bu bireyin hareket zamanlaması değil.
+Tür Furcifer pardalis korunur; cinsiyet/lokalite ve final oranlar seçilmiş sayılmaz.
+**Yetki:** kullanıcı bu sahne güncellemesini repoya işlemeyi ve ardından build'e devam etmeyi istedi. Önceki “analiz sonrası onay bekle” bu küçük devam adımı için aşılmıştır.
+**İlk build dilimi:** E1 göz geometrisini yeniden kullanarak tek düzenlenebilir bütün-vücut hacim taslağı; gövde, kafa, dört bacak/temas, incelen kıvrık kuyruk ve kısa pembe dil. Ölçüler tasarım hipotezi; anatomik final, iskelet doğrulaması veya yürüyüş implementasyonu olarak sunulmaz. Tam 12 basış, kuyruk deformasyonu ve su fiziği sonraki ayrı kabul kapılarıdır. Önce bütüncül biçim okunurluğu sınanır; fotogerçekçi deri eklenmez.

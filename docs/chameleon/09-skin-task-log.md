@@ -1,5 +1,7 @@
 # Deri task kaydı ve devam noktası
 
+**Güncel yetki/karar:** kullanıcı 8 basış → 0.5 s göz taraması → 4 basış → kısa tarama → pembe dil-su teması/ripple-1 → tek göz fark etmesi → dil çekilmesi/baş kalkışı → ripple-2 ve global renk dönüşümünü onayladı. 7 s kilidi ve çene teması şartı kaldırıldı. Ayrıntı [01](01-cinematic-story-and-interaction.md) ve [14](14-anatomy-and-motion.md). Doküman güncellemesinden sonra bütün-vücut hacim taslağıyla build devamı yetkili; yürüyüş/anatomi final kabulü değil.
+
 **Güncel devam (2026-10-20):** E1 kullanıcı tarafından şimdilik yeterli bulundu; nihai kabul hareket ve deriyle yapılacak. Shutterstock 11428904 filigranlı veiled önizlemesi 48 zaman örneğinde incelendi. Kanıt, belirsizlik, yeniden üretim bilgisi ve somut güncelleme kabulü [14 — anatomi ve hareket](14-anatomy-and-motion.md) içinde. Bu tur yalnız analiz/dokümantasyon; model değişmedi. Önerilen sonraki task mevcut E1 sahnesinde deri kaplı iki göz hareket deneyi; ayrı statik E1.1 varyantı ertelendi. Task sınırında kullanıcı kararı; ücretli işlem/deploy yok. Aşağıdaki eski checkpoint'ler tarihsel kayıttır.
 Son güncelleme: 2026-10-20, Europe/Istanbul.
 Repo/dal: alphanAkbulut/portfolio / portfolio-chameleon.
