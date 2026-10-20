@@ -3,7 +3,7 @@
 **Status:** APPROVED FOR ISOLATED V4 PROTOTYPING; implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read EVERY file in this folder before coding.
 
 ## Vision, one sentence
-A breathtakingly realistic, nature-documentary-like chameleon in a living forest quietly walks to water, drinks, disturbs the real water and the website's glass components, notices the visitor, changes color **together with the entire website**, and makes independent eye contact with the cursor; scrolling gracefully pulls the camera back and enters the actual portfolio.
+A breathtakingly realistic, nature-documentary-like chameleon in a living forest walks through the forest with optional subtle localized skin color fluctuations (without touching special colored props), drinks and suddenly pauses as if alerted, disturbs the real water and the website's glass components, notices the visitor, changes color **together with the entire website**, and makes independent eye contact with the cursor; scrolling gracefully pulls the camera back and enters the actual portfolio.
 
 The initial viewer emotion is **calm and trust**, then discovery and surprise: **"Eyvah, bizi fark etti!" / "Oh, it noticed us!"** Unlike decorative 3D particles, each major UI motion has an intelligible story cause. Delight is earned through realism, not childish cartoon faces.
 
