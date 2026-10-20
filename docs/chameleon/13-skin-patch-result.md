@@ -51,3 +51,25 @@ Teknik başarı kalite kabulü değildir. Bu yüzey final bukalemun derisi olara
 - Kabul: **kabartı revizyonu üretildi, kullanıcı görsel değerlendirmesi PENDING**. Fotogerçekçilik/G1 geçmedi; yerleşimde düzen hissi ve referansla yüzey farkları hâlâ değerlendirilmeli. Tam anatomi, renk zenginliği, animasyon bu adımda değiştirilmedi.
 
 **Güncel devam noktası:** D5.1 görselini kullanıcıya göster ve hacim yönü için karar bekle. Onay olmadan D6 animasyona veya yeni malzeme/renk revizyonuna geçme. Önceki D5.1 onay beklentisi kullanıcı tarafından karşılandı; şimdi sonuç değerlendirmesi bekleniyor.
+
+## D5.2 — Bölge × kadraj × renk uç durumları
+2026-10-20. Kullanıcı üç bölge önerisini onayladı ve yakın/uzak görünüm ile yakın kadrajda renk değişiminin değerlendirilmesini istedi. Bu task üç bağımsız deri yaması üretir; gerçek kafa modeli, göz hareketi, anatomik deformasyon veya zamansal renk animasyonu üretmez.
+
+### Deney sözleşmesi
+- Aynı 40×30 mm civarı yüzey, aynı kamera açısı/ışık/shader/palet.
+- Göz çevresi: yaklaşık 0.60–0.65 mm seed aralığı ve dairesel yönlenme; baş: yaklaşık 1.35 mm; gövde: 0.95 mm temel aralık ve bölgesel sıkıştırma. Bunlar biyolojik ölçüm değil, tasarım hipotezi.
+- Yakın kadraj ortografik 18 mm, uzak 60 mm. Aynı geometri ekranda 3.33 kat farklı büyüklükte görünür; gerçek film perspektifi veya kamera hareketi testi değildir.
+- Her bölge için near-A, far-A, near-B PNG: toplam dokuz 768×768 render. A/B aynı geometri ve ışıkta iki sabit renk uç durumu; zaman tutarlılığı/akıcılık kabulü yok.
+- Kaynak [create_skin_regions.py](../../scripts/chameleon/create_skin_regions.py). SKIN_REGION ortam değişkeni eye/head/body seçer; her değer için Blender background/factory-startup/disable-autoexec ile script çalıştırılır. Repo köküne göre outputs/d5-2/<region> çıktıları; yeniden çalıştırmadan mevcut sürümleri koru.
+- [Ölçüm manifestleri](d52-render-manifests.json). Yerel comparison.html dokuz görseli bölge başına yakın A / uzak A / yakın B sırasıyla gösterir; görüntü bağlantıları tam PNG'yi açar. Büyük render/.blend dosyaları repo'ya eklenmedi.
+
+### Doğrulama ve sonuç
+Dokuz PNG'nin boyut/hash kontrolü geçti. Üç .blend yeniden açıldı, geometri ve yakın kamera ayarı kontrol edildi. Görsel incelemede üç yakın A ile göz uzak A/yakın B incelendi; diğer dört dosya teknik olarak doğrulandı, ayrı ayrıntılı görsel kabul yapılmadı.
+- Eye: 548156 vertex; üç render toplam 35.11 s.
+- Head: 127512 vertex; üç render toplam 43.45 s.
+- Body: 298256 vertex; üç render toplam 46.35 s.
+Süreler yalnız render çağrıları; geometri hazırlama ve toplam task süresi değil. GPU/tepe toplam bellek/browser performansı bilinmiyor. Bu yüksek detaylı mesh'ler runtime için hazır değil.
+
+Yakın kadrajda göz örneği daha ince, baş daha iri; uzak göz örneğinde küçük detaylar ortak yüzey dokusuna yaklaşır. Bu ölçek farklılığını gösterir, fotogerçekçilik kabulünü sağlamaz. Yerleşimde yapay düzen ve yumuşak/hamursu malzeme hissi hâlâ risk. Bölge dağılımları bağımsız yamalarda olduğundan gerçek göz kapağından yanağa bağlantı, ağız çizgisi ve hareket sırasında pul deformasyonu henüz kanıtlanmadı. D5/D5.1 çıktıları korundu.
+
+**Güncel devam önerisi:** kullanıcı görselleri değerlendirsin; sonraki küçük task, göz–yanak bağlantısını temsil eden basit kavisli formda iki dağılımın birleşmesi. Anatomik final model olarak sunulmaz. Sonrasında yakın kadrajda gerçek shader renk animasyonu ayrıca onaylanır; uç durum PNG'leri animasyon diye sunulmaz. D6 ve tam karakter build'i otomatik başlamaz.

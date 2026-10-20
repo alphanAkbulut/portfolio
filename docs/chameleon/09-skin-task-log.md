@@ -95,3 +95,6 @@ Kullanıcı üretimi onayladı. A/B renk ve gri kontrol PNG'leri ile düzenleneb
 
 ## D5.1 — kabartı ve dağılım revizyonu
 Kullanıcının yeni görsel referansları ve açık üretim onayıyla yuvarlatılmış kubbe pullar üretildi. A paleti/ışık/kamera korunarak A ve gri kontrol PNG'leri alındı; .blend yeniden açıldı. [13 güncellemesi](13-skin-patch-result.md). D5 çıktıları korunur. **Güncel devam: D5.1 hacim yönü için kullanıcı değerlendirmesi bekle; D6 başlamadı.** Kalite/G1 geçti sayılmaz.
+
+## D5.2 — Bölge/kadraj/renk karşılaştırması
+Kullanıcı kapsamı genişletmeyi onayladı. Göz/baş/gövde için yakın A, uzak A ve yakın B: 9 PNG, 3 .blend ve yerel comparison.html üretildi. PNG boyut/hash ve .blend yeniden açma kontrolleri geçti. [13 güncel sonuç](13-skin-patch-result.md). Renkler sabit uç durumlar; animasyon değil. **Güncel devam: kullanıcı değerlendirmesi ve basit göz–yanak birleşimi deneyi için karar bekle.** Fotogerçekçilik, gerçek kafa ve göz hareketi açık; D6 başlamadı.

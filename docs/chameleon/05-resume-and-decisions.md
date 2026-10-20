@@ -69,3 +69,6 @@ Kullanıcı D5 üretimini onayladı. [13 sonuç raporu](13-skin-patch-result.md)
 
 ## Son checkpoint — D5.1 hacim revizyonu
 Kullanıcı referans görüntüleri sağladı ve kabartı revizyonunu onayladı. Kavisli kubbe, yuvarlak kenar ve bölgesel pul boyutlarıyla ikinci örnek üretildi; .blend yeniden açma başarılı. D5 korunur. [13 sonuç kaydı](13-skin-patch-result.md). Güncel karar bekleme: kullanıcı D5.1 hacmini değerlendirecek; D6 veya yeni renk çalışması henüz yetkilendirilmedi.
+
+## Son checkpoint — D5.2 bölge ve ölçek
+Kullanıcı genişletilmiş karşılaştırmayı onayladı. Üç bölge × yakın A/uzak A/yakın B üretildi ve dosyalar doğrulandı. [13 sonuç](13-skin-patch-result.md). Görsel kabul bekliyor; sonraki öneri basit göz–yanak formunda dağılımları birleştirmek. Sabit renk uç durumları zaman animasyonu değildir. Önceki checkpoint'lerin karar bekleme kayıtları tarihsel; güncel sınır bu paragraf ve 09'dur.
