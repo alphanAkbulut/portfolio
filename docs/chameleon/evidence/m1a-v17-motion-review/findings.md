@@ -1,3 +1,15 @@
+## Kullanıcı kabulü — korunacak göz pul dokusu (25 Ekim 2026)
+
+Kullanıcı M1a'nın 6 saniyelik v17 videosundaki göz üzerindeki pattern dokusunu açıkça beğendi ve bozulmamasını istedi. **Bu görünüm kabul edilmiş karşılaştırma referansıdır.** Kabul; pul şekli, yuvarlatılmış kenarlar, hafif bombeli taçlar, irili ufaklı dağılım ve videoda görünen hareketli doku karakterini kapsar. Bütün hayvan, nihai renk/materyal, biyolojik doğruluk veya tüm çarpışmalar için kabul değildir.
+
+- Model: `outputs/body-study/chameleon-study-v17-graded-scales.blend`; SHA256 `8181189517408c0e2a3ccd9ab9e5affd442cf90a9660dddff8bb51861d8a8fc6` (354968314 byte, yerel).
+- Video: `outputs/eye-motion-review-v17/eye-motion.mp4`; SHA256 `b8f0835b080845ad55a9f606c768ca5d3810740fd3b9388e8d9206c43ed93672` (1041847 byte).
+- Sabit GitHub video referansı: [kabul edilen video](https://github.com/alphanAkbulut/portfolio/blob/9d29fa56c5b67ab82cd214949c97c413c538a4ed/docs/chameleon/evidence/m1a-v17-motion-review/eye-motion.mp4).
+
+Sonraki LLM: bu model/video üzerine yazma. Ana göz pul katmanını yeniden üretme, seed/dağılım, boyut, taç profili veya gerilme davranışını genel olarak değiştirme. M1b önerisi henüz uygulanmadı; açıklık kenarı–kapak birleşimi ele alınırsa değişiklik yalnız o sınırla sınırlı ayrı adayda yapılmalı. Kabul edilen dokuya dokunma ihtiyacı doğarsa önce farkı kullanıcıya göster. Aynı kamera/ışık/pozlarda kabul edilen video ile karşılaştır; yeni materyal eklemek de bu doku karakterini kaybettirmemeli. V17 dosyası GitHub'da değil; bu kayıt tam Blender yedeği değildir.
+
+---
+
 # M1a — V17 göz–deri hareketi, 25 Ekim 2026
 
 Durum: mevcut sürümün teşhisi ve karşılaştırma kaydı. Yeni model sürümü üretilmedi. Kullanıcı göz bölümünü tek başına kullanılabilecek kalite parçası olarak geliştirmeyi önceliklendirdi. Bu, bitmiş bağımsız web asset'i olduğu anlamına gelmez.
