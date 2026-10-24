@@ -1,3 +1,5 @@
+> **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
+
 # PORTFOLIO CHAMELEON — V4 Master Brief
 
 > **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.

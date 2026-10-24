@@ -1,3 +1,5 @@
+> **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
+
 # Deri task kaydı ve devam noktası
 
 **Son build: B1 bütün-vücut hacim taslağı hazır; REVISE.** E1 gözleri yeniden kullanıldı, dört bacak ve statik kuyruk/pembe dil eklendi. Sahne tekrar açıldı; henüz rig/yürüyüş/içme yok. Görsel eksikler ve sonraki kapı [14 B1 kaydında](14-anatomy-and-motion.md#b1--bütün-vücut-hacim-taslağı-gerçek-build-sonucu). Önceki devam önerileri bu checkpoint öncesine aittir.

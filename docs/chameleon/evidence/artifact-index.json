@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-25",
+  "artifacts": [
+    {
+      "local_path": "work/body-study/revise_proportions.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/revise_proportions.py",
+      "sha256": "61c19bf6c660b3dc66db81b2c43abe361ed7aaea5a80063689f119e3c0078722",
+      "bytes": 9770,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/body-study/refine_silhouette.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/refine_silhouette.py",
+      "sha256": "c393a358184a3c307f3542a6414c3393f5f85abada9608f1d02b7532fd97b20f",
+      "bytes": 3445,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/body-study/rounded_body_skin.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/rounded_body_skin.py",
+      "sha256": "e32290a67594411aa6d1ec85ca00d12d365486b9ffc7bf6a674587bdfbdc0d3d",
+      "bytes": 6067,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/apply_g1.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/apply_g1.py",
+      "sha256": "e305ba08150115cf9e5528edf18affdd11b1fc94a3ca16999c66ce1f766d4bb0",
+      "bytes": 3808,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g3_surface_motion.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g3_surface_motion.py",
+      "sha256": "79b3aa29a113e26f346a547e81945e3fedeefc850cf2495b628b60f7a98b35a5",
+      "bytes": 7016,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g4_rim_ratio.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g4_rim_ratio.py",
+      "sha256": "4843f129972fdc8e7f6e43436c3467bc904c952ef08adf38b9e3041cf171ab0c",
+      "bytes": 7127,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g5_skin_folds.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g5_skin_folds.py",
+      "sha256": "d483b7672fd74d1fe2b15b8ffbead71b07533374ae5b274016c88d880970de86",
+      "bytes": 7779,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g6_scale_geometry.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g6_scale_geometry.py",
+      "sha256": "69f3e7889aadc6745c94d3284cc87025456d0ca1cea2ff907dfd7a4a3a8363f1",
+      "bytes": 6559,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g7_forward_clearance.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g7_forward_clearance.py",
+      "sha256": "d139fbc1ce08904244d20f4e7e55d646aa4f053e93a4ea8ef479bbeb0dcdba3f",
+      "bytes": 3968,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g8_optical_eye.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g8_optical_eye.py",
+      "sha256": "9268846b7819cff4707948b947b64d25b9d7ad16ee358e696cf317799edc9a2d",
+      "bytes": 4432,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g9_scale_strain.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g9_scale_strain.py",
+      "sha256": "c064e13dace82175b25609c3c916cfef490c443a0f30ee25b511c166557536d7",
+      "bytes": 3510,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g10_soft_rim.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g10_soft_rim.py",
+      "sha256": "f6a5d27dc23d128c34fa0d3417b8af9a1109e87080b1a0d3bb7203bdeb8618f5",
+      "bytes": 2041,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g11_crater_rim.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g11_crater_rim.py",
+      "sha256": "ce5e7f9ab005717a7c7e11698d3c1d94e02295ca4d334c57613a748aeff571a5",
+      "bytes": 2480,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/eye-analysis/g12_patterned_lip.py",
+      "repo_path": "docs/chameleon/evidence/source/work/eye-analysis/g12_patterned_lip.py",
+      "sha256": "c8437d91ea39d4f63722321818866496380f3a05b66557a385db090ff3d10e51",
+      "bytes": 4653,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/body-study/graded-skin/build_body.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/graded-skin/build_body.py",
+      "sha256": "8f38c57b506bce39135c9e0bccd68a44bf5f63fe883cf6cc4b8e0d55d4144328",
+      "bytes": 5653,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/body-study/graded-skin/build_eye.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/graded-skin/build_eye.py",
+      "sha256": "143ca24498cabc3f18193e2c7e3a53e0eee8c3aebafe8c7460132fe37eecc387",
+      "bytes": 8962,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "work/body-study/graded-skin/verify.py",
+      "repo_path": "docs/chameleon/evidence/source/work/body-study/graded-skin/verify.py",
+      "sha256": "3fe35dcf6308819e6521ec6f8b4fc1d0c8489f3e912e1f3772192fe12e7149f6",
+      "bytes": 1174,
+      "role": "archived authoring source; not a verified clean-checkout pipeline"
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v17-graded-scales.blend",
+      "sha256": "8181189517408c0e2a3ccd9ab9e5affd442cf90a9660dddff8bb51861d8a8fc6",
+      "bytes": 354968314,
+      "remote_availability": "NOT included; transfer needed on another machine"
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v16-patterned-eye-rim.blend",
+      "sha256": "d644b4f32e4f7ce0ce9882f6af83742c4b61457a74041411abe290ef85996ea6",
+      "bytes": 222095768,
+      "remote_availability": "NOT included; transfer needed on another machine"
+    },
+    {
+      "local_path": "outputs/body-study/body-v17-close.png",
+      "sha256": "3c9f49b0687617b2c19c8a44a003b1b7efa10fe36e03d1c2e2834ba9f1b68550",
+      "bytes": 1105463,
+      "remote_availability": "NOT included; transfer needed on another machine"
+    },
+    {
+      "local_path": "outputs/body-study/body-v17-overview.png",
+      "sha256": "bd50f9bb8f4a3df5646ae3e928fe5ed85940d4107605204c1a06b227df175dd1",
+      "bytes": 770433,
+      "remote_availability": "NOT included; transfer needed on another machine"
+    }
+  ]
+}

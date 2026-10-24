@@ -1,3 +1,5 @@
+> **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
+
 # Decision register + next LLM session instructions
 
 **Güncel yetki/karar:** kullanıcı 8 basış → 0.5 s göz taraması → 4 basış → kısa tarama → pembe dil-su teması/ripple-1 → tek göz fark etmesi → dil çekilmesi/baş kalkışı → ripple-2 ve global renk dönüşümünü onayladı. 7 s kilidi ve çene teması şartı kaldırıldı. Ayrıntı [01](01-cinematic-story-and-interaction.md) ve [14](14-anatomy-and-motion.md). Doküman güncellemesinden sonra bütün-vücut hacim taslağıyla build devamı yetkili; yürüyüş/anatomi final kabulü değil.

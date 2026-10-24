@@ -1,3 +1,5 @@
+> **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
+
 # V4 first release — uygulanabilir geliştirme planı
 Tarih: 2026-10-20 (Europe/Istanbul). Durum: **PLAN ONAYI BEKLİYOR — BUILD BAŞLAMADI**.
 Hedef repo/dal: `alphanAkbulut/portfolio / portfolio-chameleon`.

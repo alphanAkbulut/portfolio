@@ -1,3 +1,5 @@
+> **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
+
 # Anatomi ve hareket — kanıt, küçük tasklar ve E1
 2026-10-20. Yalnız portfolio-chameleon. Kullanıcı göz, bütün hayvanın şekli/hareketi ve kuyruğun ayrı analiz edilmesini istedi; küçük tasklarla ilerleme tercihi sürüyor.
 
