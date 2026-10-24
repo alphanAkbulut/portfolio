@@ -1,0 +1,23 @@
+{
+  "source_intermediate_sha256": "843ed294a799b334ed4d76e88b63dc305ff45d45feee3a516de795fb96ee032b",
+  "intermediate_unchanged": true,
+  "output_sha256": "8181189517408c0e2a3ccd9ab9e5affd442cf90a9660dddff8bb51861d8a8fc6",
+  "eye_scales": 2726,
+  "frames_mapped": 90,
+  "method": "Continuous smoothstep eye density and Gaussian body mobility fields; mixed spacing; area-preserving strain correction retained",
+  "limits": [
+    "Body joint mobility is a design assumption, not measured strain",
+    "Only near eye has finished geometry; far eye remains previous proxy",
+    "Body skin not rigged; not browser optimized"
+  ],
+  "reopen": "passed",
+  "lid_optics_body_unchanged": true,
+  "eye_frames_compared": [
+    1,
+    29,
+    43,
+    57,
+    90
+  ],
+  "visual_review": "graded density render review recorded in analysis.md"
+}

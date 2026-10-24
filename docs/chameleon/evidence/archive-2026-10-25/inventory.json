@@ -1,0 +1,1680 @@
+{
+  "snapshot": "2026-10-25",
+  "immutable_policy": "Add a dated revision; do not overwrite historical bytes. Git commit pins every version.",
+  "records": [
+    {
+      "local_path": "outputs/body-study/body-overview.png",
+      "sha256": "82d482b19564fd9d37dd211b41894749f74312f4b923e8c7f09c6561ad3444d1",
+      "bytes": 1439315,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v11-close.png",
+      "sha256": "7a3c9df685f79fdcd8d24d89f780547004800834a56bf8843d2c52becf150626",
+      "bytes": 1057404,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v11-overview.png",
+      "sha256": "6a67b66cf94bdb962132a306ba03ff9ec7767dd6ee9b0a6d37cad89bc26701bb",
+      "bytes": 772192,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v16-overview.png",
+      "sha256": "d8768cfa1c0efc7fd998fce106b6c4c54b08da451b04361e02ee55161514e4a9",
+      "bytes": 1705611,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v17-close.png",
+      "sha256": "3c9f49b0687617b2c19c8a44a003b1b7efa10fe36e03d1c2e2834ba9f1b68550",
+      "bytes": 1105463,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/body-study/body-v17-close.png",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v17-overview.png",
+      "sha256": "bd50f9bb8f4a3df5646ae3e928fe5ed85940d4107605204c1a06b227df175dd1",
+      "bytes": 770433,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/body-study/body-v17-overview.png",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v3-overview.png",
+      "sha256": "45990f5cf6daf468513ed616a9f775895908f9f60da3e67b6c06c001a9d7acf9",
+      "bytes": 1062165,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v3-side.png",
+      "sha256": "c075be8b5de4932960b42ba9613da4161a67f7cfa0f115de0e6508335392edb4",
+      "bytes": 564813,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/body-v4-overview.png",
+      "sha256": "27423e09fdbde022d0e04f7b842435ee36b81c1e3c44610250483e291d542f85",
+      "bytes": 1063990,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v10-forward-clearance.blend",
+      "sha256": "1c52ddb6763a7036ccae9084e415c21195fd6b111968535a9306020d109930c4",
+      "bytes": 136922929,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v11-rounded-body.blend",
+      "sha256": "0a76cc11f6e889eaa2255eccdd9cb2d8cb7b748e49d59a4ac30c3a87d7c97b71",
+      "bytes": 218923783,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v12-recessed-glossy-eye.blend",
+      "sha256": "91ce73e7d6f73c1f6d684645a0a04c0e4ff6dde667e7f9832445966e7b4218eb",
+      "bytes": 219077363,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v13-rounder-moving-scales.blend",
+      "sha256": "b5c169060e4e8a7434cf75240364417412d748c1c29b42344da36a1e6df056ee",
+      "bytes": 219077347,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v14-soft-eye-rim.blend",
+      "sha256": "f99ed510c23650fa26f3a71fa7d32f5dafebb4a4881874891197b3389f50c72b",
+      "bytes": 219148185,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v15-crater-eye-rim.blend",
+      "sha256": "f0b809311386984255eca646a1dee7559dc054bf1371847374800cc868c19290",
+      "bytes": 219171401,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v16-patterned-eye-rim.blend",
+      "sha256": "d644b4f32e4f7ce0ce9882f6af83742c4b61457a74041411abe290ef85996ea6",
+      "bytes": 222095768,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v17-graded-scales.blend",
+      "sha256": "8181189517408c0e2a3ccd9ab9e5affd442cf90a9660dddff8bb51861d8a8fc6",
+      "bytes": 354968314,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v3.blend",
+      "sha256": "b58bc23f80d07e5b7f2dd7e4a07127d428074b3a933d94f08bf2a7025db5a7e2",
+      "bytes": 8822188,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v4.blend",
+      "sha256": "7ed09aaebab31fdf6c9432c0d8d24fc678d2a0d7cf47744a921c16232d2d9d28",
+      "bytes": 8878172,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v5-eye-motion.blend",
+      "sha256": "c06428c05ae95d2e00a4c559a971a026385696553206390515a4f9524dfefe6f",
+      "bytes": 9803066,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v6-eye-motion.blend",
+      "sha256": "d0245eed4ba76532500b2c7e16f2fd51c8df37a5629dcdc82443edd59d93cb80",
+      "bytes": 16650823,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v7-eye-rim.blend",
+      "sha256": "a24495a5dd16250e02c14cb50c45ee4f125092567eddf1dbbbcc9619c48dd403",
+      "bytes": 16650876,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v8-eye-folds.blend",
+      "sha256": "08cda43f221fa37c5f775a7134716f7bf29ac49b5f12defbc6064245e4ea8975",
+      "bytes": 21455492,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study-v9-rounded-scales.blend",
+      "sha256": "b2ff9adbe4c035d3ad281b5a9c74d4c89d23e37e11b5ca5f9eec4f77f68b77a2",
+      "bytes": 136922889,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/chameleon-study.blend",
+      "sha256": "90c4aa526167e02ccae686051f8baf63fe880feeb8978034866de866130d952c",
+      "bytes": 8845361,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v11.json",
+      "sha256": "83ca4cf860598bf6a21aa5465fa115e65157ceddb071270a9d3041ccf5900422",
+      "bytes": 2027,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v12.json",
+      "sha256": "543248b420a1c9f0db7450e5a4bc9c167dc0cde759b8744f23e9301b1279b962",
+      "bytes": 561,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v13.json",
+      "sha256": "56f0144798dbcee4effe8e352dec940de90925a58edd96ec9662c957c5440bda",
+      "bytes": 898,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v14.json",
+      "sha256": "6173fa217e89641818241c4385a844e3b11c2337abc41e3933c20f16396f0482",
+      "bytes": 396,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v15.json",
+      "sha256": "b348afcdb5ed9c12478bd4a4d45623673c4ea0908ade3cb18ffbdd47da45d589",
+      "bytes": 446,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v16.json",
+      "sha256": "dda55dcc814a67a010672a0fbb9c8c20fb229747f2c6e39b0ba0e7038a78a35f",
+      "bytes": 576,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v17.json",
+      "sha256": "694aadcf75cee603c44e05cf9ae6eff9328d1a94e7e83cb8d211ac4c0e4f1d1f",
+      "bytes": 829,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v3.json",
+      "sha256": "0c0503dcb4003cd11e7429ada800c5741dbac10d063fbd0d9811ff1070dd3242",
+      "bytes": 951,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest-v4.json",
+      "sha256": "63b5552b7cd2c0791370690eae5e43a3a7f599fc0dcde1e2bd78a64706e46ade",
+      "bytes": 1019,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/manifest.json",
+      "sha256": "a3c1bdd7bc819d8b22b91836c03823e556879e399db48d03eef8e28026451466",
+      "bytes": 1588,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/body-study/silhouette-before-after.jpg",
+      "sha256": "a22b168d2dba4e255b2315cc1ded0cbfcdf7dc818193e8f05282e6aac53d32fb",
+      "bytes": 139731,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/body-study/silhouette-before-after.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/chameleon-eye-reference.webm",
+      "sha256": "2fc7308fc8bb232adf4bf9b7d90e1130470ce5bae4f8c0f1c5110c4b8eef50a5",
+      "bytes": 1339987,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5/render-manifest.json",
+      "sha256": "3e3f85939007893f020d6fdfb93619ab19c6df5bb109c4a7e99813b4f8a48f1a",
+      "bytes": 746,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5/skin-A.png",
+      "sha256": "cb94b9b31ae98d4868237a9ba9034d03a1a2a7df2f9b0b646a5ef93870cda42d",
+      "bytes": 999019,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5/skin-B.png",
+      "sha256": "36da10633a7ebbd0e8003caa69a38990f5959c498687dc4e8844937c76745a5f",
+      "bytes": 975006,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5/skin-clay.png",
+      "sha256": "eb66c4d8d35843e865930991309cab1efa4bcacff63158e7e80f2d6488f1d959",
+      "bytes": 872031,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/d5/skin-clay.png",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5/skin-patch-v1.blend",
+      "sha256": "a0118f793d6809a933ab8d2bf30565a23093962ed67dc21f7c33cf86609a8ed0",
+      "bytes": 4871782,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-1/render-manifest.json",
+      "sha256": "fa6b26b7c31612231cb68a165098b075ae227af06f1490687e5c7d4c5fbe32ef",
+      "bytes": 669,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-1/skin-A.png",
+      "sha256": "3b612bd25c29b0934bd7f45ff8f9620794c9b686310ff111e28b118c79fb66cf",
+      "bytes": 1133309,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-1/skin-clay.png",
+      "sha256": "68f3bf2443411b22e1726b0c68282925bf69623bb4fc130fc87c68a002f3c3f8",
+      "bytes": 988930,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/d5-1/skin-clay.png",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-1/skin-patch-v2.blend",
+      "sha256": "52b29fc1706bb5c596aaea3d23b9df3b06e61732f2bbc61dfb04d07b2cc4dec7",
+      "bytes": 21169934,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/all-manifests.json",
+      "sha256": "f4b13ea9b635779d6f2cb66f1370f1d71ef118436e23ff603e6b8dfe1bb61d5c",
+      "bytes": 3226,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/body/far-A.png",
+      "sha256": "36f3d60fcbadc61a0271d63b45926f397c0fb1d79ce11070cf5d452064713c25",
+      "bytes": 773721,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/body/near-A.png",
+      "sha256": "08b5325d7d6a447c146b7574f497796d91f37c09741ec6e1b3a835eb8821d08a",
+      "bytes": 1051692,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/body/near-B.png",
+      "sha256": "d992440fae7314dae7a80ea1a8449f13d86735708c579ebcbb9b32956ead26df",
+      "bytes": 1042170,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/body/render-manifest.json",
+      "sha256": "65c0e646e8f83fdaa55b24e0e25a2384f43226277aa2ba75157f2670a7b4b979",
+      "bytes": 990,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/body/skin-patch-v3.blend",
+      "sha256": "c74d11134b449886ab2ebfce248e57d647bf0c4aafa1175db36434cb43389a59",
+      "bytes": 22831778,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/comparison.html",
+      "sha256": "464a5fd75e507cc80a6cc75a17335c7b2c8d695a6b681699c8b0971d117383c5",
+      "bytes": 3137,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/eye/far-A.png",
+      "sha256": "e63cc5d8a3cd1a8089b8c51997e6a4a2a486881e019078e72351fa59d05285b2",
+      "bytes": 786978,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/eye/near-A.png",
+      "sha256": "0f736b3f1e4c1e091396a6afc1c578ea28446a9ec60a68d27cb0bffc64bbfec7",
+      "bytes": 1119122,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/eye/near-B.png",
+      "sha256": "68b2a08eca5b049a93f5da3394497c6a3fe340327955b95e74d8fcb8efd08348",
+      "bytes": 1098986,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/eye/render-manifest.json",
+      "sha256": "e34513ea3427f1489e585d6ba92c6ed090369e7602a492b4e3ee786a8de1667e",
+      "bytes": 988,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/eye/skin-patch-v3.blend",
+      "sha256": "5f4c73825e121dcf72ad9eee3eb8b78da424ade3c32c157eda94a4d28ee527db",
+      "bytes": 39554238,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/head/far-A.png",
+      "sha256": "7448edbc7a4e74572f56d90c1dffaf083a41d118dd47f42d153a343fe0af465b",
+      "bytes": 725495,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/head/near-A.png",
+      "sha256": "61208e789ebc495663804b98ea6f95451d3a0b4227bc2d4ac34a1c4cc5fa4bcc",
+      "bytes": 1007042,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/head/near-B.png",
+      "sha256": "700848021666fdfdf8447849c7d7e44ec26193ce05ee5134fed5a8ab865f3ad7",
+      "bytes": 995517,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/head/render-manifest.json",
+      "sha256": "f8d5f62f1f1dabb4d77e42e9b94e9248fef5756f779c3e38fc690c44335761c0",
+      "bytes": 988,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-2/head/skin-patch-v3.blend",
+      "sha256": "13f6157b080cbcd28d574e6df88287856178c70a9b0c009cc7acd0c74efc5655",
+      "bytes": 11406142,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-3/eye-cheek-v1.blend",
+      "sha256": "baa2a50fdf821078815968b1f2cdbaa27be11500c6891570d6cc90bd282ff7b1",
+      "bytes": 14541923,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-3/far-A.png",
+      "sha256": "c0ba87ef55b70050f23a3c6a47e7850e10d99d4089ba77cb35958b7dc2331890",
+      "bytes": 699792,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-3/near-A.png",
+      "sha256": "de557f3fbdaaf5e6e6a4c04aeb2c0c8407d2a6ac89844192c3dac68f0b7736bb",
+      "bytes": 1060672,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/d5-3/near-A.png",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-3/near-B.png",
+      "sha256": "176e039c6b437a397c590191de8aaba2d032c449129bbd88a9459d39db6773f6",
+      "bytes": 1055027,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/d5-3/render-manifest.json",
+      "sha256": "27ea30292d0d5074c6dd715a2903d44b2366bb5d6059ceef5d98cc06dae4807c",
+      "bytes": 1066,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/e1/eye-form-v1.blend",
+      "sha256": "94ad790bbf5c2f45fa367e03a49d12a98ba61304adb1b40a41177274a9175d13",
+      "bytes": 2272516,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/e1/front.png",
+      "sha256": "2ad850b64d25e98582c3822f4d9ea998e6b9626292ceefe91b6a058b5b0b2b14",
+      "bytes": 621513,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/e1/manifest.json",
+      "sha256": "18dae3b1f8efe2bb91077cb4b01c011a27ce4245ef4e9f18e192d52ecdbaba81",
+      "bytes": 1136,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/e1/side.png",
+      "sha256": "4cc40605ba324fe3722bbb26181e6e6edc76152d31dd0e628a24d03c364407aa",
+      "bytes": 510128,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/e1/three-quarter.png",
+      "sha256": "7b9be36bd8778d4c7cdcb525c3864c54eeafe45209118987324f33806ce0c198",
+      "bytes": 554138,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/analysis.md",
+      "sha256": "052e02f94b40e746ff42a717d799dd4b66639b134028989c02565ef54f3446a3",
+      "bytes": 41729,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/aperture-ratio-reference.jpg",
+      "sha256": "8c1fdb512199142f620c3ff1edcd7a927c86aefbd17607e61c7d1f9703f26d33",
+      "bytes": 113385,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g1-before-after.jpg",
+      "sha256": "50435be15cb5ce95af27a163547a3749be622c77f3e755dbd7e9aa34197a4957",
+      "bytes": 156064,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g1-four-views.jpg",
+      "sha256": "f10d5721bf9b2ae0e03b01eb072a77044655097007a871580d7d55db6e5012a6",
+      "bytes": 348462,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g10-rim-comparison.jpg",
+      "sha256": "855bc6ec73b70c6231ad6e16ced85011f69ec466ea6455dfdbfc87232d79a65f",
+      "bytes": 31145,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g10-rim-comparison.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g11-crater-comparison.jpg",
+      "sha256": "95ff69cd9d8402477bba56aca8f73017b18187160f381f79fd6f7cd0ae810994",
+      "bytes": 49275,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g11-crater-comparison.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g12-patterned-rim.jpg",
+      "sha256": "7b14ba74d04a77cc0981a4b850d006478d4cf9b39abcc30be6e1b436bcf997c3",
+      "bytes": 49541,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g12-patterned-rim.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g2-failed-pose.jpg",
+      "sha256": "5078dfc514917a4fbe81234f19ef5a8a8b793ef487804cde76e3850996e02c55",
+      "bytes": 134308,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g2-failed-pose.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g2-manifest.json",
+      "sha256": "d71a77effedc08ebf78ffa00fdca025ff0f307cf24f4c72072da869b73f8a8b2",
+      "bytes": 855,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g3-manifest.json",
+      "sha256": "2ae0e64ff76cf838dc9b9c4b9d1d8b3e7ce09f0b61f827bb7fe7ba53ddc071ec",
+      "bytes": 945,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g4-manifest.json",
+      "sha256": "4f080edd76f7fa7ecaa8e5fcb95991799652632cd59383baaa3760cc4fd0c1a1",
+      "bytes": 798,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g4-reference-measurements.json",
+      "sha256": "9f2275ca1dc4d626584410d0e7b4aed9c74d0bc77312af67b1550904de071aa8",
+      "bytes": 1331,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g4-three-poses.jpg",
+      "sha256": "425bbfc5aa4f510547fa72a9d338db44fe1d0bf7f44e59beb231073e6affabcc",
+      "bytes": 96473,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g4-three-poses.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g5-manifest.json",
+      "sha256": "282cc7f75a85f94016aaed60c863ccdbc8db8c25dbf05152205cc002eef4c0f5",
+      "bytes": 1180,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g5-three-poses.jpg",
+      "sha256": "18da5bf6d031e83c8872e85e9ed923be121d0a8970b71eab0b3d1ee9b35f76d4",
+      "bytes": 153775,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g5-three-poses.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g6-before-after.jpg",
+      "sha256": "b02a6cfb9f08199b96a1f33ed259061eb472d73707fc3f46f20ea4ffef595db4",
+      "bytes": 110864,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g6-before-after.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g6-manifest.json",
+      "sha256": "f8f21c168bff662b0b22ac4f5b967c4059d862cb9dd696586cb01e6c9e75ba09",
+      "bytes": 918,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g7-forward-before-after.jpg",
+      "sha256": "c9b9ee883764c30abef47eff67b78bac82873be0687810a14ed69b4aebcedca6",
+      "bytes": 114310,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g7-forward-before-after.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g7-manifest.json",
+      "sha256": "ae95107783c0ac703b0caea2ec4a757c2028c26cf4e3232f67c95c38c0e13d8b",
+      "bytes": 789,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g8-glossy-eye.png",
+      "sha256": "49e090367eb89d6798d52b9c3259f2f71e20cf625eb04116d2ecd6261d7852b7",
+      "bytes": 631685,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g8-light-response.jpg",
+      "sha256": "715da2dff338b0cd66056990779cacf5ff6a8fd19d39363cf809871bbc8442d7",
+      "bytes": 101965,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g8-light-response.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/g9-roundness-comparison.jpg",
+      "sha256": "c82787bf51130aae58d3f081bdb739341e96effeecb4a84b823533e12ba81e05",
+      "bytes": 101745,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/g9-roundness-comparison.jpg",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/measurements.json",
+      "sha256": "b5f25e1d17fd8d49be130e657dd8c43a962d4a4be5e6a7fed7a8cdd9c384efa2",
+      "bytes": 824,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/model-four-views.jpg",
+      "sha256": "9daef40ddb13d024bf490b6573ffcfccad2486e4ac998830df9c741aa4c0a042",
+      "bytes": 319039,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/motion-reference.jpg",
+      "sha256": "c927adfe725a14f951ff29a189dbe7774e0283ccb4441f9dc1f88996a982dfd0",
+      "bytes": 265462,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/reference-eye-ratios.jpg",
+      "sha256": "927daa9706864ef076ceff6add9aff9b129f8320fd896bbde55aa4a92a48357a",
+      "bytes": 282396,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/reference-measurements.json",
+      "sha256": "c6810d26bd0eea3ece0fb2018fb8455cf8aa38fb7f6f7c428b60aba5d2b866a1",
+      "bytes": 2990,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/single-eye-motion-test.mp4",
+      "sha256": "7bcbf419c6d7d7b50d85c22af5d96efeb6e7b486ff39f59017acd9c110a67e3d",
+      "bytes": 214496,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/single-eye-rounded-scales.mp4",
+      "sha256": "fcd57d10df3aea7a72dee0b774c6d626ef2b1e28d119531266587f8afa2f6ccd",
+      "bytes": 718929,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/single-eye-rounded-scales.mp4",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/single-eye-skin-folds.mp4",
+      "sha256": "a228b1a1acfaad2eb9f7befbd1747bf6bd3f2349fb988b6388844101bba95d34",
+      "bytes": 481055,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/single-eye-skin-folds.mp4",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/single-eye-surface-motion.mp4",
+      "sha256": "391e80182b0290eb8bb6609f2525d12cb609d64e3c99f16eb4f48a89f957b002",
+      "bytes": 184023,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/single-eye-surface-motion.mp4",
+      "storage": "github_binary",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/skin-25-consecutive-frames.jpg",
+      "sha256": "5c14274cdf3f8e41a2a856e49b8d8eecfec141d4352e29c490a2e8650bc42888",
+      "bytes": 1096496,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/skin-fold-reference.jpg",
+      "sha256": "3cc6588785b0150dd8fd02f66ba8b5e0cb5714196cc8f2739616dfec16829ef7",
+      "bytes": 453597,
+      "repo_path": "docs/chameleon/evidence/archive-2026-10-25/outputs/eye-analysis/skin-fold-reference.jpg",
+      "storage": "github_binary",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/eye-analysis/skin-reference-source.json",
+      "sha256": "33312f2c26ae0806ce15403c55f4b9d0ca21a1a3196c1f9bdde16b9c487e5713",
+      "bytes": 1177,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/analysis.md",
+      "sha256": "af59c5ef38807fc6139ff14c108d321ddb70f85129fd05e1667cf754a12ddaf3",
+      "bytes": 8968,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/inceleme.html",
+      "sha256": "cffdab4c7ae1d9064fd71b74194b7dcf8cb0c189e81f21a23b4afbc549d6e4a1",
+      "bytes": 1037127,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/landmarks.json",
+      "sha256": "2752db3889c46e13807e6366f92036050e7298dede764ce13849bdddeb489d23",
+      "bytes": 15711,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/measurements.csv",
+      "sha256": "8e58c6d3e9bc59be3bae39b189232a4d80c8b2cf135f821cd5ee664461d32769",
+      "bytes": 2276,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/model-side.jpg",
+      "sha256": "e6bdb3b3a9a3c6ac5d050d5721ebc76d4505db7da347872e17904d8147f274af",
+      "bytes": 47871,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/normalized-comparison.png",
+      "sha256": "57636f9116c0c21f9fd39387860af4b754ab2eb3fc35a2ae854c486d81bd7377",
+      "bytes": 47572,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "project_output",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/sources.json",
+      "sha256": "016433755a394a5c9248eb5762ccde7882e9fb479e442c3ce5ceab285e6eab6f",
+      "bytes": 4335,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/summary.json",
+      "sha256": "3d019377f31c278637bd3218bce171d5c11062173dd52c2d4f3f13f997e368d0",
+      "bytes": 1518,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "outputs/morphometry/ten-reference-sketches.jpg",
+      "sha256": "95b63ff09ee25f96b63a02326fc578e341fc5c41a7d08ec1a4b62b13235a7f9a",
+      "bytes": 598769,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/01.jpg",
+      "sha256": "dfd8118a2b54d0b99986d4c8b4633d6de3bfce9beb943b5bdcbb950dd4abf37c",
+      "bytes": 81676,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/01.source",
+      "sha256": "43089144e3387f4d980d611dc848d7e85b992f99a50a8ff607d8b04a93329877",
+      "bytes": 313681,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/02.jpg",
+      "sha256": "cf8bd37f2caa2451112b1c9d83d094873a9d83bf83f878d8b34a1f50a8086c0c",
+      "bytes": 35603,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/02.source",
+      "sha256": "3e5b7fe8cea1507bc225eacb3a113b917274e1bd1d39673130a6b3faee60ce81",
+      "bytes": 109611,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/03.jpg",
+      "sha256": "7d09bbe91599d2b9ecc2e05ea509bd96f914422daa64b2fee0ca17d76b569762",
+      "bytes": 106607,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/03.source",
+      "sha256": "7eeb3bf63a5a9fa6d69251a6f47280de99484840df151f1ea576c3c065c87f01",
+      "bytes": 394844,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/04.jpg",
+      "sha256": "66d45d3c60fb53123da71ad7ab9e239752d32851e06eddb3e77ac80c138b8280",
+      "bytes": 58485,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/04.source",
+      "sha256": "af510238353cca728615454e3c9509571c9254772eeb70bbeff7d5fcdb97e06a",
+      "bytes": 16682930,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/05.jpg",
+      "sha256": "3af56068f08c7db0087a6034915751acbc32b7e43266ae010a2a6cfeb14f41b8",
+      "bytes": 32222,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/05.source",
+      "sha256": "33388912d9cfcf904087c8b5f49230b9c3b86999e2f64ee9aaa941ff83f62cc1",
+      "bytes": 231886,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/06.jpg",
+      "sha256": "54ad7851c246db306514ef818a293f4d946a2f68e3c77f0aff996ebd8127ec6d",
+      "bytes": 55151,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/06.source",
+      "sha256": "d2cddd13516a1981f6e64ab4aa110e073f8f96df2ade6dfa5ecdd299aec655c9",
+      "bytes": 127991,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/07.jpg",
+      "sha256": "aec0aec4b04676ca96ab56931ea89c9d574be9b73dea683a4588159e7b83bd37",
+      "bytes": 75458,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/07.source",
+      "sha256": "305ff42807d540c6a54f408921485d3a52a5a77d36842c53ed68f7d767c25219",
+      "bytes": 9934544,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/08.jpg",
+      "sha256": "34df3a5262ffa4a6e67727f957088267c1bd0884f71614cbdea2ac6cd82f51ea",
+      "bytes": 102004,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/08.source",
+      "sha256": "568428657c0181b70651c703292bf941c672156e32678f48c490e1958ca95e00",
+      "bytes": 323255,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/09.jpg",
+      "sha256": "ac980a7276dfcd9680be6b1591a14da5c059530805d79d475821e8cb07e51ac2",
+      "bytes": 76950,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/09.source",
+      "sha256": "143d7bee93eabdb43e64e64f49f56b1ef86864a2c0a8bbc96a2b7ab650e80389",
+      "bytes": 249491,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/10.jpg",
+      "sha256": "b98e16c6dbacb9276c35fe2fc3f5cbaf17278e4c45c4282a0687e11838ac548c",
+      "bytes": 100096,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/10.source",
+      "sha256": "8828079a70e829d7406e1d7eca9ffcede10e4900cf590a8fd348d50c2b0b45a1",
+      "bytes": 340786,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/downloads.json",
+      "sha256": "016433755a394a5c9248eb5762ccde7882e9fb479e442c3ce5ceab285e6eab6f",
+      "bytes": 4335,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/model.jpg",
+      "sha256": "e6bdb3b3a9a3c6ac5d050d5721ebc76d4505db7da347872e17904d8147f274af",
+      "bytes": 47871,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/morphometry/sources.json",
+      "sha256": "a5855c4c09c21b1f8eb4876c0945d835e49ede88980f70e17e5cad678f699cc9",
+      "bytes": 1896,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/all-25-frames.jpg",
+      "sha256": "c05d5b6acba063745856bb598ed500761335a0842b44266ecdd0fbdbe09f3552",
+      "bytes": 1073911,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f000.png",
+      "sha256": "8a25af5390714367415d45b6d459d9a9f953728d5f2be594428d9e752b082299",
+      "bytes": 1406249,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f001.png",
+      "sha256": "a651c11767481c5581a071b7f7dac2d98db75dfded80793e6129d8353aea688f",
+      "bytes": 1407649,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f002.png",
+      "sha256": "ff18cfbdb43a926e8b2ad2f00b00b8cc2c53be9874b6c30f787174d6dc76b032",
+      "bytes": 1413766,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f003.png",
+      "sha256": "46ccd47d9c4c08ea70defaffbc5f1d8488f9299099b1a94726dcabfd1a4ce61d",
+      "bytes": 1429615,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f004.png",
+      "sha256": "a170c55b7807272aa1c784d4390ec66dd772b7f62ae925567a6fd020f3c4e87d",
+      "bytes": 1457573,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f005.png",
+      "sha256": "87a271011864cc1e07e04c9419842605c020846f3ace064792f70246259302d9",
+      "bytes": 1500298,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f006.png",
+      "sha256": "f9a2c4606d31647b6997a58e615923c810db22c8b34e170cfd53b456889b0c28",
+      "bytes": 1487060,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f007.png",
+      "sha256": "abdcc1251d622399f8838b2257f35518e8eaf99e360c85cc8f9e84b09cedb47e",
+      "bytes": 1550051,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f008.png",
+      "sha256": "810122d7dc473a4232170ad1824fa771f2d18784285317b4da996e10a540aa67",
+      "bytes": 1565968,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f009.png",
+      "sha256": "722981b647782a001865a843a9e088ca130a36607c72360cafbaaff2b9590ed9",
+      "bytes": 1569754,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f010.png",
+      "sha256": "8c905fb9d70bd76222d5aa5690c112e3fe8378cd057d9ec4b5e1ecb560d4bad6",
+      "bytes": 1590566,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f011.png",
+      "sha256": "a776405b1d31e2fe042d867f35f4c2dbd57613ffd35def21e8d1ebe74923b99c",
+      "bytes": 1608664,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f012.png",
+      "sha256": "e5c3a622607b88c8e1389876906e484798a01db1f14563b466e2bbed1c5a0501",
+      "bytes": 2106593,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f013.png",
+      "sha256": "9774e110f6c1709a82809c60a5c27928d534c46a43373bd7273dc04adef2ace5",
+      "bytes": 2043798,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f014.png",
+      "sha256": "2082ad9dde02bb811ee14868f411739ae298555e7fce4df720937055b870afad",
+      "bytes": 2030524,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f015.png",
+      "sha256": "f2e2f6a7a16499b6c9036a350a773d50fff07567c5016e90716d82e582797444",
+      "bytes": 2028317,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f016.png",
+      "sha256": "2ad8d515af5900cf958c31bb43e627135b9f6e9a10bf482ed7efbf3f3505b0c5",
+      "bytes": 2030725,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f017.png",
+      "sha256": "132de0983a1fc11634f85ed097a5916f941e2ffde04d0cfa2d156b5b6d60a558",
+      "bytes": 2029219,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f018.png",
+      "sha256": "d7ae254d57f03152e85a73a76d390f0cdac5f504249030460c30c1969adaeeca",
+      "bytes": 2030225,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f019.png",
+      "sha256": "5c4abb7ccba410b7744cc9d876aed97883c04771ef0f7d366f0b831744359d62",
+      "bytes": 2036270,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f020.png",
+      "sha256": "174b7627930d439ccdf844455f655a36715445cbc87b5742fbe5ae0d7e9c382a",
+      "bytes": 2012180,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f021.png",
+      "sha256": "c486023e8843dcd21c41640c52bd2729808fe86396d2e7d258c903812cd0380c",
+      "bytes": 1991997,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f022.png",
+      "sha256": "25b6222977170ec681915875946b9515993f20e591a054808096643b0ad30bf9",
+      "bytes": 2012837,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f023.png",
+      "sha256": "185698afbb8b5405a3a741606406ad1d29351f07ec7a9f3b7f60d2e0294a461b",
+      "bytes": 2007326,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/f024.png",
+      "sha256": "1d81d864cc391f55eeb85e5400f73e8112691c5cc9b930535b570cbca0fe27ae",
+      "bytes": 2140062,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/overview-0.jpg",
+      "sha256": "4f525fab45492e038c825abb667ee5e18002c9cafb43cea132123081f1df02e8",
+      "bytes": 234342,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/overview-1.jpg",
+      "sha256": "ccc3025c2a402af2db70587f575b07f9524b9b34b1edc61a7fc4bc2531a33796",
+      "bytes": 235714,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/overview-2.jpg",
+      "sha256": "da743a40fb21e22dbdf03aa749014980b9e16c26cd6eea2880b1b6485877d466",
+      "bytes": 239365,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-00.png",
+      "sha256": "f35cd7ef6cc16eea20e10f3d61048c610ccabd3805234e2a119e712c6132078e",
+      "bytes": 1406249,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-01.png",
+      "sha256": "06aa675ed4b7db5f90738fb6a73d54bdfacefdd0bba596eca948f9b8ed5f2bbb",
+      "bytes": 2140062,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-02.png",
+      "sha256": "f2561122938d3a24e35d36d5957c6f266d773a042793011add7b2c19bb295dea",
+      "bytes": 2095472,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-03.png",
+      "sha256": "648a31fa7cd233d428ca144456ab57c21c966beaaaf2917d2514599594d695da",
+      "bytes": 2102797,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-04.png",
+      "sha256": "e1e4fc525eda8d8f102f311a10086e92b2006ded18b37ab59921c629adcead00",
+      "bytes": 2032348,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-05.png",
+      "sha256": "03c0e6da00065240768c8112aec5ddcf5548fea79b500c9b1cf2a20c88ffc96c",
+      "bytes": 2032411,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-06.png",
+      "sha256": "c78e829db2ef31ef386f38a9e532e6c5020fedd9e97c224e0274d3119fabf433",
+      "bytes": 2072143,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-07.png",
+      "sha256": "692188fcc81ff854c2b3a7d463a62f023ebfc9671823330bd81553d6d6c70a9f",
+      "bytes": 2090904,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-08.png",
+      "sha256": "518db92f244e028617f840ac60c10a2a018913825786b346db681348a77e108a",
+      "bytes": 2064480,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-09.png",
+      "sha256": "2095939964eff176db913ec1361a9c98ed8f0a96b46586723007e8398e0007fe",
+      "bytes": 2047043,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-10.png",
+      "sha256": "985e2f7fffde0c0691b96d21f9bff8f6499c1358069c1506794a68fe21e050db",
+      "bytes": 2111169,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-11.png",
+      "sha256": "aa6bb0ec4d21537bbdb475d8f8154a8ffe062f4ce0d2f34ccb7e194cab2cecb0",
+      "bytes": 2104242,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-12.png",
+      "sha256": "13fdd8974c3bf83419e4a72cc00c21ae2b5b8a99cf035acb204acada2cecf9e5",
+      "bytes": 2055587,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-13.png",
+      "sha256": "5aeb6c8fc21c3b04cc5f89b16bf32db6ee2d61cac8f93991a2c0f3fd07bcc4e2",
+      "bytes": 2156695,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-14.png",
+      "sha256": "9a313226ed16933b76d616d05145e0ddd8566d5a251222d10486f52b4e9a5c6a",
+      "bytes": 2117697,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/panther-eyes.ogv",
+      "sha256": "80f3d33c4d1fec3e45ac4130eb660a18803840c14187a5af5775ec41233a44da",
+      "bytes": 14874355,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/source.json",
+      "sha256": "f881d27fee97d50c1da8f090bb4f75716cc35c0a4fa8ad9283fde4585cce331d",
+      "bytes": 444,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    },
+    {
+      "local_path": "work/eye-skin-analysis/static-details.jpg",
+      "sha256": "eebc6995b31675f8a5857100070266f368281219ebd1ac800b5bd2e0d5203ad8",
+      "bytes": 223554,
+      "repo_path": null,
+      "storage": "local_only",
+      "provenance": "reference_or_mixed_review_license",
+      "note": "File inventory is not a claim of visual review or acceptance."
+    }
+  ]
+}

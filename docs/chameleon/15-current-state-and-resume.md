@@ -1,3 +1,5 @@
+> **Görsel arşivi eklendi:** [Sürümlü prototip galerisi, referans panosu, videolar ve kaynak dizini](evidence/archive-2026-10-25/README.md). Yerel dosya envanteri ile GitHub'a gerçekten yüklenen dosyalar ayrı işaretlidir.
+
 # V17 devir noktası — 25 Ekim 2026
 
 Bu dosya güncel durumun giriş noktasıdır. Önceki B1/E1 durum kayıtları tarihseldir; silinmediler. Bu kayıt başka bir LLM'in sohbeti bilmeden devam etmesi içindir. Tasarım gerekçeleri ve kullanıcı kararları kaydedilir; biyolojik doğruluk veya üretim kalitesi onayı verilmez.
@@ -32,7 +34,7 @@ Bu dosya güncel durumun giriş noktasıdır. Önceki B1/E1 durum kayıtları ta
 - Önceki kabul edilen şekil/optik karşılaştırması: v16. V17 beden formunu ve gözün optik yüzeyini koruyup yoğunluğu değiştirdi.
 - Ortam: Blender 4.5.14 LTS, Python/numpy. Kaynaklar çalışma köküne göre göreli yollar kullanır.
 
-**Büyük .blend dosyaları ve renderlar bu dokümantasyon commit'inde GitHub'a yüklenmedi.** Başka makinedeki LLM bu yerel yolu açamaz. `evidence/artifact-index.json` erişim ve hash kaydıdır; yedek dosya değildir. `evidence/source/` mevcut üretim betiklerinin arşividir; temiz checkout'tan uçtan uca tekrar üretim henüz doğrulanmadı. Başlamadan önce v17 veya gerekli kaynak .blend dosyalarına erişimi doğrula; yoksa kullanıcıdan aktarım iste, B1'i son sürüm sanarak baştan üretme.
+**Büyük .blend dosyaları GitHub'a yüklenmedi. Seçilmiş renderlar ve hareket videoları aşağıdaki sürümlü görsel arşivine eklendi.** Başka makinedeki LLM bu yerel yolu açamaz. `evidence/artifact-index.json` erişim ve hash kaydıdır; yedek dosya değildir. `evidence/source/` mevcut üretim betiklerinin arşividir; temiz checkout'tan uçtan uca tekrar üretim henüz doğrulanmadı. Başlamadan önce v17 veya gerekli kaynak .blend dosyalarına erişimi doğrula; yoksa kullanıcıdan aktarım iste, B1'i son sürüm sanarak baştan üretme.
 
 V17 üretim zinciri: v16 → `work/body-study/graded-skin/build_body.py` → `work/body-study/graded-skin/body-intermediate.blend` → `build_eye.py` → v17. `verify.py` v16/v17 karşılaştırmasıdır. Arşiv betikleri doğrudan çalıştırılacak yeni pipeline değildir; içlerindeki çalışma yollarını koruyarak ayrı çalışma alanına geri koy. Bazı eski betikler kendi sürüm çıktılarının üzerine yazar; incelemeden çalıştırma. Başlangıç B2 betiği `work/body-study/proportions-before/chameleon-study.blend` gerektirir; bu checkpoint GitHub'da yoktur.
 

@@ -1,0 +1,128 @@
+[
+  {
+    "experiment": "D5.2 region / framing / color endpoints",
+    "region": "eye",
+    "seed": 4105,
+    "blender": "4.5.14 LTS",
+    "engine": "Cycles CPU",
+    "samples": 32,
+    "denoise": true,
+    "view": "AgX Medium High Contrast",
+    "exposure": 0,
+    "dimensions": [
+      768,
+      768
+    ],
+    "vertices": 548156,
+    "scale_faces": 473111,
+    "gpu_performance": "unknown",
+    "peak_memory": "unknown",
+    "renders": [
+      {
+        "state": "A",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 11.32,
+        "sha256": "0f736b3f1e4c1e091396a6afc1c578ea28446a9ec60a68d27cb0bffc64bbfec7"
+      },
+      {
+        "state": "A",
+        "framing": "far",
+        "ortho_width_m": 0.06,
+        "seconds": 6.21,
+        "sha256": "e63cc5d8a3cd1a8089b8c51997e6a4a2a486881e019078e72351fa59d05285b2"
+      },
+      {
+        "state": "B",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 17.58,
+        "sha256": "68b2a08eca5b049a93f5da3394497c6a3fe340327955b95e74d8fcb8efd08348"
+      }
+    ]
+  },
+  {
+    "experiment": "D5.2 region / framing / color endpoints",
+    "region": "head",
+    "seed": 4105,
+    "blender": "4.5.14 LTS",
+    "engine": "Cycles CPU",
+    "samples": 32,
+    "denoise": true,
+    "view": "AgX Medium High Contrast",
+    "exposure": 0,
+    "dimensions": [
+      768,
+      768
+    ],
+    "vertices": 127512,
+    "scale_faces": 110055,
+    "gpu_performance": "unknown",
+    "peak_memory": "unknown",
+    "renders": [
+      {
+        "state": "A",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 15.31,
+        "sha256": "61208e789ebc495663804b98ea6f95451d3a0b4227bc2d4ac34a1c4cc5fa4bcc"
+      },
+      {
+        "state": "A",
+        "framing": "far",
+        "ortho_width_m": 0.06,
+        "seconds": 7.6,
+        "sha256": "7448edbc7a4e74572f56d90c1dffaf083a41d118dd47f42d153a343fe0af465b"
+      },
+      {
+        "state": "B",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 20.54,
+        "sha256": "700848021666fdfdf8447849c7d7e44ec26193ce05ee5134fed5a8ab865f3ad7"
+      }
+    ]
+  },
+  {
+    "experiment": "D5.2 region / framing / color endpoints",
+    "region": "body",
+    "seed": 4105,
+    "blender": "4.5.14 LTS",
+    "engine": "Cycles CPU",
+    "samples": 32,
+    "denoise": true,
+    "view": "AgX Medium High Contrast",
+    "exposure": 0,
+    "dimensions": [
+      768,
+      768
+    ],
+    "vertices": 298256,
+    "scale_faces": 257425,
+    "gpu_performance": "unknown",
+    "peak_memory": "unknown",
+    "renders": [
+      {
+        "state": "A",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 16.84,
+        "sha256": "08b5325d7d6a447c146b7574f497796d91f37c09741ec6e1b3a835eb8821d08a"
+      },
+      {
+        "state": "A",
+        "framing": "far",
+        "ortho_width_m": 0.06,
+        "seconds": 11.26,
+        "sha256": "36f3d60fcbadc61a0271d63b45926f397c0fb1d79ce11070cf5d452064713c25"
+      },
+      {
+        "state": "B",
+        "framing": "near",
+        "ortho_width_m": 0.018,
+        "seconds": 18.25,
+        "sha256": "d992440fae7314dae7a80ea1a8449f13d86735708c579ebcbb9b32956ead26df"
+      }
+    ]
+  }
+]

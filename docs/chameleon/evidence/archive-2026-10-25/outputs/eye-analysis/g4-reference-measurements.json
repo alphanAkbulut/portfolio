@@ -1,0 +1,67 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv",
+  "method": "Manual ellipse estimates; sqrt(width*height) equivalent diameter; excludes outer orbital rim; projected visible turret, NOT measured eyeball. Same animal at 3 poses, not independent samples. Boundary uncertainty approximately 10 pixels; no calibrated 3D reconstruction.",
+  "measurements": [
+    {
+      "second": 10,
+      "crop_origin": [
+        780,
+        400
+      ],
+      "aperture_bbox_crop": [
+        115,
+        235,
+        214,
+        323
+      ],
+      "turret_bbox_crop": [
+        73,
+        92,
+        350,
+        440
+      ],
+      "ratio": 0.3006279994851493
+    },
+    {
+      "second": 11,
+      "crop_origin": [
+        780,
+        400
+      ],
+      "aperture_bbox_crop": [
+        135,
+        195,
+        230,
+        284
+      ],
+      "turret_bbox_crop": [
+        73,
+        92,
+        350,
+        440
+      ],
+      "ratio": 0.2961606124128335
+    },
+    {
+      "second": 12,
+      "crop_origin": [
+        780,
+        400
+      ],
+      "aperture_bbox_crop": [
+        126,
+        184,
+        222,
+        274
+      ],
+      "turret_bbox_crop": [
+        73,
+        92,
+        350,
+        440
+      ],
+      "ratio": 0.29938315770121404
+    }
+  ],
+  "chosen_model_ratio": 0.29
+}

@@ -1,0 +1,26 @@
+{
+  "source_sha256": "7ed09aaebab31fdf6c9432c0d8d24fc678d2a0d7cf47744a921c16232d2d9d28",
+  "source_unchanged": true,
+  "output_sha256": "d0245eed4ba76532500b2c7e16f2fd51c8df37a5629dcdc82443edd59d93cb80",
+  "root_drift": 0,
+  "spherical_face_inversions_sampled": 0,
+  "frames_checked": 90,
+  "radius": 0.24,
+  "center": [
+    -2.0507278442382812,
+    -0.4301225543022156,
+    2.117842197418213
+  ],
+  "method": "fixed spherical envelope, mobile aperture using spherical surface mapping; per-frame shape keys",
+  "status": "render complete; sampled poses show preserved convex envelope",
+  "limits": [
+    "Approximate sphere, not measured biological eyeball",
+    "Only near eye animated",
+    "Full 180 degree sweep and skin mechanics unvalidated"
+  ],
+  "video_frames": 90,
+  "fps": 15,
+  "seconds": 6,
+  "reopen": "passed",
+  "remaining_issue": "Natural wrinkle mechanics and full 180-degree sweep remain unvalidated; only near eye rebuilt."
+}

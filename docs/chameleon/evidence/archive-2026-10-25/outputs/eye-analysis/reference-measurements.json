@@ -1,0 +1,132 @@
+[
+  {
+    "id": "01",
+    "ellipse": [
+      793,
+      173,
+      27,
+      26
+    ],
+    "head_projected_px": 165.5152243485545,
+    "turret_equivalent_diameter_px": 52.99056519796708,
+    "ratio": 0.32015523288888237,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "02",
+    "ellipse": [
+      417,
+      331,
+      12,
+      14
+    ],
+    "head_projected_px": 82.60503666570699,
+    "turret_equivalent_diameter_px": 25.92296279363144,
+    "ratio": 0.31381818639629283,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "03",
+    "ellipse": [
+      219,
+      150,
+      32,
+      32
+    ],
+    "head_projected_px": 208.2655402618169,
+    "turret_equivalent_diameter_px": 64.0,
+    "ratio": 0.30729999749139325,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "04",
+    "ellipse": [
+      173,
+      185,
+      17,
+      17
+    ],
+    "head_projected_px": 120.5739550712222,
+    "turret_equivalent_diameter_px": 34.0,
+    "ratio": 0.28198461251367624,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "05",
+    "ellipse": [
+      94,
+      245,
+      14,
+      15
+    ],
+    "head_projected_px": 88.49535453109901,
+    "turret_equivalent_diameter_px": 28.982753492378876,
+    "ratio": 0.3275059311977078,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "06",
+    "ellipse": [
+      203,
+      184,
+      17,
+      17
+    ],
+    "head_projected_px": 117.67966646985148,
+    "turret_equivalent_diameter_px": 34.0,
+    "ratio": 0.28891992151176354,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "07",
+    "ellipse": [
+      772,
+      245,
+      26,
+      24
+    ],
+    "head_projected_px": 189.32422071353164,
+    "turret_equivalent_diameter_px": 49.95998398718719,
+    "ratio": 0.2638858556971542,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "08",
+    "ellipse": [
+      195,
+      212,
+      33,
+      31
+    ],
+    "head_projected_px": 192.99999456383242,
+    "turret_equivalent_diameter_px": 63.968742366877905,
+    "ratio": 0.3314442703039612,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "09",
+    "ellipse": [
+      197,
+      248,
+      29,
+      27
+    ],
+    "head_projected_px": 159.115592166479,
+    "turret_equivalent_diameter_px": 55.96427431853289,
+    "ratio": 0.351720868813276,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  },
+  {
+    "id": "10",
+    "ellipse": [
+      748,
+      364,
+      24,
+      28
+    ],
+    "head_projected_px": 181.0014324008956,
+    "turret_equivalent_diameter_px": 51.84592558726288,
+    "ratio": 0.2864393110018634,
+    "uncertainty": "manual bounds; perspective and pose; not eyeball diameter"
+  }
+]

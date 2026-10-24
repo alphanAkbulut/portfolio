@@ -1,0 +1,34 @@
+{
+  "seed": 4105,
+  "blender": "4.5.14 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "denoise": true,
+  "view": "AgX Medium High Contrast",
+  "exposure": 0,
+  "dimensions": [
+    768,
+    768
+  ],
+  "vertices": 31888,
+  "scale_faces": 25245,
+  "gpu_performance": "unknown",
+  "peak_memory": "unknown",
+  "renders": [
+    {
+      "state": "A",
+      "seconds": 9.47,
+      "sha256": "cb94b9b31ae98d4868237a9ba9034d03a1a2a7df2f9b0b646a5ef93870cda42d"
+    },
+    {
+      "state": "B",
+      "seconds": 8.93,
+      "sha256": "36da10633a7ebbd0e8003caa69a38990f5959c498687dc4e8844937c76745a5f"
+    },
+    {
+      "state": "clay",
+      "seconds": 8.79,
+      "sha256": "eb66c4d8d35843e865930991309cab1efa4bcacff63158e7e80f2d6488f1d959"
+    }
+  ]
+}

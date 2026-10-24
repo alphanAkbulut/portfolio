@@ -1,0 +1,42 @@
+{
+  "experiment": "D5.2 region / framing / color endpoints",
+  "region": "body",
+  "seed": 4105,
+  "blender": "4.5.14 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "denoise": true,
+  "view": "AgX Medium High Contrast",
+  "exposure": 0,
+  "dimensions": [
+    768,
+    768
+  ],
+  "vertices": 298256,
+  "scale_faces": 257425,
+  "gpu_performance": "unknown",
+  "peak_memory": "unknown",
+  "renders": [
+    {
+      "state": "A",
+      "framing": "near",
+      "ortho_width_m": 0.018,
+      "seconds": 16.84,
+      "sha256": "08b5325d7d6a447c146b7574f497796d91f37c09741ec6e1b3a835eb8821d08a"
+    },
+    {
+      "state": "A",
+      "framing": "far",
+      "ortho_width_m": 0.06,
+      "seconds": 11.26,
+      "sha256": "36f3d60fcbadc61a0271d63b45926f397c0fb1d79ce11070cf5d452064713c25"
+    },
+    {
+      "state": "B",
+      "framing": "near",
+      "ortho_width_m": 0.018,
+      "seconds": 18.25,
+      "sha256": "d992440fae7314dae7a80ea1a8449f13d86735708c579ebcbb9b32956ead26df"
+    }
+  ]
+}

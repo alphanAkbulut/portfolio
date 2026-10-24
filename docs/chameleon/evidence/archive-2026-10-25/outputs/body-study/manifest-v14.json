@@ -1,0 +1,10 @@
+{
+  "source_sha256": "b5c169060e4e8a7434cf75240364417412d748c1c29b42344da36a1e6df056ee",
+  "source_unchanged": true,
+  "output_sha256": "f99ed510c23650fa26f3a71fa7d32f5dafebb4a4881874891197b3389f50c72b",
+  "reopen": "passed",
+  "change": "Only aperture reveal mesh and smoothing modifier; object animation retained",
+  "limits": [
+    "Visual prototype, not measured anatomical lip profile"
+  ]
+}

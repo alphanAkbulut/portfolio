@@ -1,0 +1,88 @@
+{
+  "source_sha256": "1c52ddb6763a7036ccae9084e415c21195fd6b111968535a9306020d109930c4",
+  "source_unchanged": true,
+  "output_sha256": "0a76cc11f6e889eaa2255eccdd9cb2d8cb7b748e49d59a4ac30c3a87d7c97b71",
+  "objects": [
+    {
+      "object": "Body skin | continuous axial surface",
+      "scales": 10180,
+      "vertices": 733680
+    },
+    {
+      "object": "Front_far limb",
+      "scales": 1408,
+      "vertices": 101436
+    },
+    {
+      "object": "Front_far opposing grip -1",
+      "scales": 197,
+      "vertices": 14076
+    },
+    {
+      "object": "Front_far opposing grip 1",
+      "scales": 186,
+      "vertices": 13584
+    },
+    {
+      "object": "Front_near limb",
+      "scales": 1420,
+      "vertices": 102096
+    },
+    {
+      "object": "Front_near opposing grip -1",
+      "scales": 199,
+      "vertices": 14160
+    },
+    {
+      "object": "Front_near opposing grip 1",
+      "scales": 187,
+      "vertices": 13392
+    },
+    {
+      "object": "Hind_far limb",
+      "scales": 1312,
+      "vertices": 94188
+    },
+    {
+      "object": "Hind_far opposing grip -1",
+      "scales": 205,
+      "vertices": 14688
+    },
+    {
+      "object": "Hind_far opposing grip 1",
+      "scales": 190,
+      "vertices": 13716
+    },
+    {
+      "object": "Hind_near limb",
+      "scales": 1346,
+      "vertices": 96684
+    },
+    {
+      "object": "Hind_near opposing grip -1",
+      "scales": 199,
+      "vertices": 14268
+    },
+    {
+      "object": "Hind_near opposing grip 1",
+      "scales": 195,
+      "vertices": 13956
+    }
+  ],
+  "method": "Surface-distributed rounded Voronoi crown geometry using D5 profile; no eye edits",
+  "limits": [
+    "Static body scale layer, not bound to future rig",
+    "Not optimized for browser",
+    "Dense crown layer requires collision and silhouette review"
+  ],
+  "reopen": "passed",
+  "eye_evaluated_geometry_unchanged": true,
+  "eye_frames_compared": [
+    1,
+    29,
+    43,
+    57,
+    90
+  ],
+  "visual_review": "close and overview reviewed; rounded body crowns visible"
+}

@@ -1,0 +1,29 @@
+{
+  "source_sha256": "b58bc23f80d07e5b7f2dd7e4a07127d428074b3a933d94f08bf2a7025db5a7e2",
+  "output_sha256": "7ed09aaebab31fdf6c9432c0d8d24fc678d2a0d7cf47744a921c16232d2d9d28",
+  "reopen": "passed",
+  "source_unchanged": true,
+  "eyes": [
+    {
+      "eye": "Far eye | reused E1 lid",
+      "radial_scale": 0.68,
+      "axial_scale": 0.82,
+      "root_surface_hits": 128,
+      "root_inset": 0.018,
+      "max_root_adjustment": 0.09477479733736378
+    },
+    {
+      "eye": "Near eye | reused E1 lid",
+      "radial_scale": 0.68,
+      "axial_scale": 0.82,
+      "root_surface_hits": 128,
+      "root_inset": 0.018,
+      "max_root_adjustment": 0.09476195574700472
+    }
+  ],
+  "limitations": [
+    "Static overlap skirt; not welded or motion tested",
+    "Eye bump remains procedural preview, not final scale geometry"
+  ],
+  "visual_review": "Reviewed side/front/top/oblique: smaller turret, previously visible root gaps covered in neutral pose. Motion untested; fine-to-coarse scale transition remains provisional."
+}

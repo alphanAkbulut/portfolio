@@ -1,0 +1,68 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv",
+  "author": "MatthiasKabel",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "sha256": "80f3d33c4d1fec3e45ac4130eb660a18803840c14187a5af5775ec41233a44da",
+  "fps": 24.0,
+  "frames": 360,
+  "size": [
+    1920,
+    1080
+  ],
+  "time_basis": "nominal source frame / fps; PTS not independently inspected",
+  "analysis": {
+    "overview_seconds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "consecutive_source_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "crop_xyxy": [
+      780,
+      400,
+      1150,
+      850
+    ],
+    "method": "Visual comparison of consecutive decoded frames; no optical-flow strain estimation",
+    "notes": "Aperture motion and fold visibility; exact tissue strain/lag not measured"
+  }
+}

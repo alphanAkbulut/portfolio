@@ -1,0 +1,20 @@
+{
+  "version": "B3",
+  "source": "/Users/alphanakbulut/Documents/Codex/2026-10-20/referenced-chatgpt-conversation-this-is-an/outputs/body-study/chameleon-study.blend",
+  "source_sha256": "90c4aa526167e02ccae686051f8baf63fe880feeb8978034866de866130d952c",
+  "output_sha256": "b58bc23f80d07e5b7f2dd7e4a07127d428074b3a933d94f08bf2a7025db5a7e2",
+  "changed_meshes": 32,
+  "head_shift_design_units": -0.3,
+  "belly_max_lift_design_units": 0.24,
+  "axial_branch_intersections": 0,
+  "reopen": "passed",
+  "source_unchanged": true,
+  "reference": "outputs/morphometry/analysis.md",
+  "limits": [
+    "Static silhouette only; photo ratios are approximate",
+    "No new rig, tail work or final skin transfer",
+    "Limb proxies remain"
+  ],
+  "visual_review": "Side and overview reviewed; head lowered towards belly, central belly raised; dorsal crests follow deformed neck. Limb proxies and final anatomy refinement remain.",
+  "neck_ventral_blend_max": 0.2
+}

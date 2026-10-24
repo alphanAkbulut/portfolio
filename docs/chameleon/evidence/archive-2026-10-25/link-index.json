@@ -1,0 +1,320 @@
+{
+  "status": "Pointers extracted from existing records, not newly visited; authoritative JSON source records take precedence over punctuation in extracted Markdown links.",
+  "links": [
+    {
+      "url_as_recorded": "https://ask.ifas.ufl.edu/publication/UW501",
+      "found_in": [
+        "outputs/body-study/manifest.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv",
+      "found_in": [
+        "outputs/eye-analysis/g4-reference-measurements.json",
+        "outputs/eye-analysis/skin-reference-source.json",
+        "work/eye-skin-analysis/source.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Montagne_d%E2%80%99Ambre.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Montagne_d%E2%80%99Ambre.jpg)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md",
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md",
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "found_in": [
+        "outputs/eye-analysis/skin-reference-source.json",
+        "work/eye-skin-analysis/source.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://creativecommons.org/licenses/by-sa/3.0/)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://creativecommons.org/licenses/by-sa/3.0/)**",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://images.imagerenderer.com/images/artworkimages/mediumlarge/2/panther-chameleon-furcifer-pardalis-martin-harvey.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://images.imagerenderer.com/images/artworkimages/mediumlarge/2/panther-chameleon-furcifer-pardalis-martin-harvey.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0070761)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://photos.com/featured/panther-chameleon-furcifer-pardalis-martin-harvey.html",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://photos.com/featured/panther-chameleon-furcifer-pardalis-martin-harvey.html)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://pubmed.ncbi.nlm.nih.gov/11448716/)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Panther_chameleon_%28Furcifer_pardalis%29_male_Nosy_Be.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Panther_chameleon_%28Furcifer_pardalis%29_male_Nosy_Be.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Panther_chameleon_%28Furcifer_pardalis%29_male_Montagne_d%E2%80%99Ambre.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Panther_chameleon_%28Furcifer_pardalis%29_male_Montagne_d%E2%80%99Ambre.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.gex-fp.co.jp/exoterra/assets/images/explore/care-guides/lizards/furcifer-pardalis/Careguides_Furcifer_pardalis3_s.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.gex-fp.co.jp/exoterra/assets/images/explore/care-guides/lizards/furcifer-pardalis/Careguides_Furcifer_pardalis3_s.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.gex-fp.co.jp/exoterra/explore/care-guides/lizards/furcifer-pardalis/",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.gex-fp.co.jp/exoterra/explore/care-guides/lizards/furcifer-pardalis/)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/de/was-kostet-ein-chamaeleon/",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/de/was-kostet-ein-chamaeleon/)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/en/furcifer-pardalis/",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/en/furcifer-pardalis/)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-Lokalform-Sambava-male-2022-5.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-Lokalform-Sambava-male-2022-5.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-in-Ambanja-2018-1.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-in-Ambanja-2018-1.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambanja-M%C3%A4nnchen-2017.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambanja-M%C3%A4nnchen-2017.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambilobe-M%C3%A4nnchen-2017-3.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambilobe-M%C3%A4nnchen-2017-3.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ankaramibe-2017-M%C3%A4nnchen-1.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ankaramibe-2017-M%C3%A4nnchen-1.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.pardalis.be/168-thickbox_01prem/furcifer-pardalis-ambilobe.jpg",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.pardalis.be/168-thickbox_01prem/furcifer-pardalis-ambilobe.jpg)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.pardalis.be/nl/autres-especes/46-furcifer-pardalis-ambilobe.html",
+      "found_in": [
+        "outputs/morphometry/sources.json",
+        "work/morphometry/downloads.json",
+        "work/morphometry/sources.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.pardalis.be/nl/autres-especes/46-furcifer-pardalis-ambilobe.html)",
+      "found_in": [
+        "outputs/morphometry/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.researchgate.net/profile/Timothy-Higham/publication/258346020_Chameleon_anatomy/links/004635334bb0e4859e000000/Chameleon-anatomy.pdf)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.shutterstock.com/tr/video/clip-11428904-macro-shot-4k-uhd-veiled-chameleon%27s-eyes)",
+      "found_in": [
+        "outputs/eye-analysis/analysis.md"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.zoo-frankfurt.de/en/tiere-von-a-z-detailansicht/animal/tiere-von-a-z-detailansicht/chamaeleon-panther",
+      "found_in": [
+        "outputs/body-study/manifest.json"
+      ]
+    },
+    {
+      "url_as_recorded": "https://www.zootier-lexikon.org/kriechtiere-reptilia/echsen/chamaeleons/madagaskarchamaeleons-furcifer-pardalis",
+      "found_in": [
+        "outputs/body-study/manifest.json"
+      ]
+    }
+  ]
+}

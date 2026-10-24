@@ -1,0 +1,30 @@
+{
+  "source_sha256": "7ed09aaebab31fdf6c9432c0d8d24fc678d2a0d7cf47744a921c16232d2d9d28",
+  "source_unchanged": true,
+  "output_sha256": "08cda43f221fa37c5f775a7134716f7bf29ac49b5f12defbc6064245e4ea8975",
+  "root_drift": 0,
+  "spherical_face_inversions_sampled": 0,
+  "frames_checked": 90,
+  "radius": 0.24,
+  "aperture_to_globe_diameter": 0.29,
+  "orbital_lip_height": 0.013,
+  "wrinkle_amplitude_base": 0.0035,
+  "wrinkle_driver": "gaze-direction compression proxy in rest coordinates",
+  "center": [
+    -2.0507278442382812,
+    -0.4301225543022156,
+    2.117842197418213
+  ],
+  "method": "G3 mobile aperture with radial collar and pose-dependent wrinkle arcs; per-frame shape keys",
+  "status": "render complete; neutral and forward poses visually reviewed; collar and folds visible",
+  "limits": [
+    "Approximate sphere, not measured biological eyeball",
+    "Only near eye animated",
+    "Full 180 degree sweep and skin mechanics unvalidated"
+  ],
+  "video_frames": 90,
+  "fps": 15,
+  "seconds": 6,
+  "reopen": "passed",
+  "remaining_issue": "Wrinkles use an artistic gaze-compression proxy, not measured strain. Only near eye updated. Full 180 degree sweep unvalidated."
+}

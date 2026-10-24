@@ -1,0 +1,30 @@
+{
+  "experiment": "D5.1 rounded domes and regional density",
+  "seed": 4105,
+  "blender": "4.5.14 LTS",
+  "engine": "Cycles CPU",
+  "samples": 32,
+  "denoise": true,
+  "view": "AgX Medium High Contrast",
+  "exposure": 0,
+  "dimensions": [
+    768,
+    768
+  ],
+  "vertices": 273420,
+  "scale_faces": 235999,
+  "gpu_performance": "unknown",
+  "peak_memory": "unknown",
+  "renders": [
+    {
+      "state": "A",
+      "seconds": 15.1,
+      "sha256": "3b612bd25c29b0934bd7f45ff8f9620794c9b686310ff111e28b118c79fb66cf"
+    },
+    {
+      "state": "clay",
+      "seconds": 12.36,
+      "sha256": "68f3bf2443411b22e1726b0c68282925bf69623bb4fc130fc87c68a002f3c3f8"
+    }
+  ]
+}

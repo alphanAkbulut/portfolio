@@ -1,0 +1,152 @@
+[
+  {
+    "id": "01",
+    "page": "https://www.madcham.de/de/was-kostet-ein-chamaeleon/",
+    "url": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-in-Ambanja-2018-1.jpg",
+    "size": [
+      1200,
+      800
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "43089144e3387f4d980d611dc848d7e85b992f99a50a8ff607d8b04a93329877",
+    "status": "downloaded"
+  },
+  {
+    "id": "02",
+    "page": "https://www.pardalis.be/nl/autres-especes/46-furcifer-pardalis-ambilobe.html",
+    "url": "https://www.pardalis.be/168-thickbox_01prem/furcifer-pardalis-ambilobe.jpg",
+    "size": [
+      760,
+      1140
+    ],
+    "analysis_size": [
+      500,
+      750
+    ],
+    "sha256": "3e5b7fe8cea1507bc225eacb3a113b917274e1bd1d39673130a6b3faee60ce81",
+    "status": "downloaded"
+  },
+  {
+    "id": "03",
+    "page": "https://www.madcham.de/en/furcifer-pardalis/",
+    "url": "https://www.madcham.de/wp-content/uploads/2014/09/Furcifer-pardalis-Lokalform-Sambava-male-2022-5.jpg",
+    "size": [
+      1200,
+      800
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "7eeb3bf63a5a9fa6d69251a6f47280de99484840df151f1ea576c3c065c87f01",
+    "status": "downloaded"
+  },
+  {
+    "id": "04",
+    "page": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Montagne_d%E2%80%99Ambre.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Panther_chameleon_%28Furcifer_pardalis%29_male_Montagne_d%E2%80%99Ambre.jpg",
+    "size": [
+      6000,
+      2880
+    ],
+    "analysis_size": [
+      1000,
+      480
+    ],
+    "sha256": "af510238353cca728615454e3c9509571c9254772eeb70bbeff7d5fcdb97e06a",
+    "status": "downloaded"
+  },
+  {
+    "id": "05",
+    "page": "https://www.gex-fp.co.jp/exoterra/explore/care-guides/lizards/furcifer-pardalis/",
+    "url": "https://www.gex-fp.co.jp/exoterra/assets/images/explore/care-guides/lizards/furcifer-pardalis/Careguides_Furcifer_pardalis3_s.jpg",
+    "size": [
+      500,
+      747
+    ],
+    "analysis_size": [
+      500,
+      747
+    ],
+    "sha256": "33388912d9cfcf904087c8b5f49230b9c3b86999e2f64ee9aaa941ff83f62cc1",
+    "status": "downloaded"
+  },
+  {
+    "id": "06",
+    "page": "https://photos.com/featured/panther-chameleon-furcifer-pardalis-martin-harvey.html",
+    "url": "https://images.imagerenderer.com/images/artworkimages/mediumlarge/2/panther-chameleon-furcifer-pardalis-martin-harvey.jpg",
+    "size": [
+      900,
+      600
+    ],
+    "analysis_size": [
+      900,
+      600
+    ],
+    "sha256": "d2cddd13516a1981f6e64ab4aa110e073f8f96df2ade6dfa5ecdd299aec655c9",
+    "status": "downloaded"
+  },
+  {
+    "id": "07",
+    "page": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Nosy_Be.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Panther_chameleon_%28Furcifer_pardalis%29_male_Nosy_Be.jpg",
+    "size": [
+      4355,
+      2903
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "305ff42807d540c6a54f408921485d3a52a5a77d36842c53ed68f7d767c25219",
+    "status": "downloaded"
+  },
+  {
+    "id": "08",
+    "page": "https://www.madcham.de/en/furcifer-pardalis/",
+    "url": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambilobe-M%C3%A4nnchen-2017-3.jpg",
+    "size": [
+      1000,
+      667
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "568428657c0181b70651c703292bf941c672156e32678f48c490e1958ca95e00",
+    "status": "downloaded"
+  },
+  {
+    "id": "09",
+    "page": "https://www.madcham.de/en/furcifer-pardalis/",
+    "url": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ankaramibe-2017-M%C3%A4nnchen-1.jpg",
+    "size": [
+      1000,
+      667
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "143d7bee93eabdb43e64e64f49f56b1ef86864a2c0a8bbc96a2b7ab650e80389",
+    "status": "downloaded"
+  },
+  {
+    "id": "10",
+    "page": "https://www.madcham.de/en/furcifer-pardalis/",
+    "url": "https://www.madcham.de/wp-content/uploads/2017/09/Furcifer-pardalis-aus-Ambanja-M%C3%A4nnchen-2017.jpg",
+    "size": [
+      1000,
+      667
+    ],
+    "analysis_size": [
+      1000,
+      667
+    ],
+    "sha256": "8828079a70e829d7406e1d7eca9ffcede10e4900cf590a8fd348d50c2b0b45a1",
+    "status": "downloaded"
+  }
+]

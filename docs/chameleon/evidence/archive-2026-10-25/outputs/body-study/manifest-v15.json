@@ -1,0 +1,11 @@
+{
+  "source_unchanged": true,
+  "source_sha256": "f99ed510c23650fa26f3a71fa7d32f5dafebb4a4881874891197b3389f50c72b",
+  "output_sha256": "f0b809311386984255eca646a1dee7559dc054bf1371847374800cc868c19290",
+  "reopen": "passed",
+  "change": "Only aperture skin reveal mesh/material; broad outer shoulder with smooth descent",
+  "limits": [
+    "Not a measured anatomical profile",
+    "Separate surface transition, not welded to scaled eyelid"
+  ]
+}

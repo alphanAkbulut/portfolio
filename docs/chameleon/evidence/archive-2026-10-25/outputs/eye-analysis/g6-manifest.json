@@ -1,0 +1,21 @@
+{
+  "source_sha256": "08cda43f221fa37c5f775a7134716f7bf29ac49b5f12defbc6064245e4ea8975",
+  "source_unchanged": true,
+  "output_sha256": "b2ff9adbe4c035d3ad281b5a9c74d4c89d23e37e11b5ca5f9eec4f77f68b77a2",
+  "scales": 1402,
+  "vertices": 99636,
+  "frames_mapped": 90,
+  "finite_coordinates": true,
+  "method": "D5.3 clipped rounded Voronoi crown profile mapped by bilinear rest parameters onto G5 shape keys",
+  "limits": [
+    "Near eye only; body remains placeholder material",
+    "Not a measured biological scale distribution",
+    "Extreme gaze stretching and self intersection require review"
+  ],
+  "status": "render complete; neutral and forward poses visually reviewed; rounded crowns visible",
+  "video_frames": 90,
+  "fps": 15,
+  "seconds": 6,
+  "reopen": "passed",
+  "remaining_issue": "Geometric scale crowns transferred; extreme gaze stretches scales. Body remains placeholder. Not production optimized."
+}

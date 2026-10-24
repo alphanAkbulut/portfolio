@@ -1,0 +1,28 @@
+{
+  "source_sha256": "b2ff9adbe4c035d3ad281b5a9c74d4c89d23e37e11b5ca5f9eec4f77f68b77a2",
+  "source_unchanged": true,
+  "output_sha256": "1c52ddb6763a7036ccae9084e415c21195fd6b111968535a9306020d109930c4",
+  "forward_outward_offset": 0.045,
+  "neutral_up_down_end_weights": [
+    3.718757928006419e-14,
+    0,
+    0,
+    3.718757928006419e-14
+  ],
+  "checks": {
+    "Near eye | spherical surface motion": {
+      "root_drift": 0,
+      "face_normal_reversals_vs_v9": 0
+    },
+    "Near eye | rounded scale geometry": {
+      "root_drift": null,
+      "face_normal_reversals_vs_v9": null
+    }
+  },
+  "frames_checked": 90,
+  "limits": [
+    "Design correction, not measured anatomical distance",
+    "Scale stretching inherited from v9",
+    "Not a complete inter-object collision test"
+  ]
+}

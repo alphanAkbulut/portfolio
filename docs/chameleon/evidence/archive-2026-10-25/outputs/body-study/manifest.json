@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-23",
+  "source_checkpoint": "work/body-study/proportions-before/chameleon-study.blend",
+  "old_torso_dimensions": [
+    2.9000015258789062,
+    0.8800002336502075,
+    1.7999999523162842
+  ],
+  "target_torso_dimensions_before_join": [
+    3.190000057220459,
+    0.8799999952316284,
+    1.619999885559082
+  ],
+  "torso_length_ratio": 1.0999994409498328,
+  "torso_height_ratio": 0.8999999602635691,
+  "old_tail_centerline": 4.199669593548599,
+  "new_tail_centerline_before_join": 5.459570737984479,
+  "tail_length_ratio": 1.300000063426728,
+  "tail_root_radius": 0.29,
+  "tail_tip_radius": 0.009,
+  "body_branch_surface_intersections": 0,
+  "units": "design units, not biological measurements",
+  "skin": "procedural bump preview, not final geometry",
+  "limits": [
+    "post-remesh length not identical to control curve",
+    "foot proxies unchanged",
+    "no rig or animation",
+    "no validated anatomical ratios"
+  ],
+  "sources": [
+    "https://ask.ifas.ufl.edu/publication/UW501",
+    "https://www.zoo-frankfurt.de/en/tiere-von-a-z-detailansicht/animal/tiere-von-a-z-detailansicht/chamaeleon-panther",
+    "https://www.zootier-lexikon.org/kriechtiere-reptilia/echsen/chamaeleons/madagaskarchamaeleons-furcifer-pardalis"
+  ],
+  "reopen": "passed",
+  "blend_sha256": "90c4aa526167e02ccae686051f8baf63fe880feeb8978034866de866130d952c",
+  "visual_review": "Reviewed overview: closed mouth and no visible tongue; flatter belly and continuous neck; skin readable. Eye skin transition and limb attachment still need refinement. Final geometric scale transfer pending."
+}

@@ -1,0 +1,16 @@
+{
+  "source_sha256": "0a76cc11f6e889eaa2255eccdd9cb2d8cb7b748e49d59a4ac30c3a87d7c97b71",
+  "source_unchanged": true,
+  "output_sha256": "91ce73e7d6f73c1f6d684645a0a04c0e4ff6dde667e7f9832445966e7b4218eb",
+  "frames_updated": 90,
+  "pupil_center_inset": 0.022,
+  "pupil_cap_depth": 0.016,
+  "roughness": 0.09,
+  "coat_roughness": 0.035,
+  "limits": [
+    "Optical appearance approximation, not a full biological eye",
+    "Only near eye changed",
+    "Previous scale stretching remains"
+  ],
+  "alternate_light": "render-only test; default light saved in blend"
+}

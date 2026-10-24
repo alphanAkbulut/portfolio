@@ -1,0 +1,24 @@
+{
+  "source_sha256": "7ed09aaebab31fdf6c9432c0d8d24fc678d2a0d7cf47744a921c16232d2d9d28",
+  "output_sha256": "c06428c05ae95d2e00a4c559a971a026385696553206390515a4f9524dfefe6f",
+  "root_max_drift": 0,
+  "frames_checked": 90,
+  "pivot": [
+    -2.0814952850341797,
+    -0.5638947486877441,
+    2.1312193870544434
+  ],
+  "test_angles": "yaw +/-30, pitch +/-20, forward look about 77 degrees from resting axis",
+  "source_unchanged": true,
+  "status": "render complete; visual acceptance FAILED at forward look",
+  "limits": [
+    "Experimental pivot and deformation",
+    "No measured biological skin strain",
+    "Far eye and body static"
+  ],
+  "video_frames": 90,
+  "fps": 15,
+  "seconds": 6,
+  "reopen": "passed",
+  "remaining_issue": "Collar folds/self-overlaps on large forward rotation despite fixed root. Requires topology/corrective shape redesign."
+}
