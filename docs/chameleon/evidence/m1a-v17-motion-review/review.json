@@ -1,0 +1,75 @@
+{
+  "source": "outputs/body-study/chameleon-study-v17-graded-scales.blend",
+  "source_sha256": "8181189517408c0e2a3ccd9ab9e5affd442cf90a9660dddff8bb51861d8a8fc6",
+  "evaluated_samples": 179,
+  "range": "1\u201390 including half frames",
+  "root_max_drift": 0,
+  "nonfinite_samples": [],
+  "largest_half_frame_displacements": [
+    {
+      "frame": 23.0,
+      "max_displacement": 0.033105406910181046
+    },
+    {
+      "frame": 22.5,
+      "max_displacement": 0.03310505673289299
+    },
+    {
+      "frame": 22.0,
+      "max_displacement": 0.032664425671100616
+    },
+    {
+      "frame": 21.5,
+      "max_displacement": 0.032664310187101364
+    },
+    {
+      "frame": 21.0,
+      "max_displacement": 0.031271740794181824
+    },
+    {
+      "frame": 20.5,
+      "max_displacement": 0.031271617859601974
+    },
+    {
+      "frame": 23.5,
+      "max_displacement": 0.030802041292190552
+    },
+    {
+      "frame": 24.0,
+      "max_displacement": 0.030801784247159958
+    }
+  ],
+  "limits": [
+    "Not an all-scale collision or biological strain test",
+    "Only near eye; body static",
+    "Existing v17 motion, no model edits"
+  ],
+  "renders": [
+    {
+      "frame": 1,
+      "image": "neutral.png"
+    },
+    {
+      "frame": 15,
+      "image": "back.png"
+    },
+    {
+      "frame": 29,
+      "image": "forward.png"
+    },
+    {
+      "frame": 43,
+      "image": "up.png"
+    },
+    {
+      "frame": 57,
+      "image": "down.png"
+    },
+    {
+      "frame": 71,
+      "image": "visitor.png"
+    }
+  ],
+  "video_frames": 90,
+  "source_unchanged": true
+}

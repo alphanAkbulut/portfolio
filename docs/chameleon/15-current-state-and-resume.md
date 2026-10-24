@@ -1,3 +1,5 @@
+> **M1a hareket incelemesi tamamlandı (25 Ekim):** [Bulgular ve mevcut v17 hareket kaydı](evidence/m1a-v17-motion-review/findings.md). 179 ara/tam karede kök kayması yok; açıklık kenarı–kapak geçişi ve kıvrımlarda pul yığılması açık. Model değiştirilmedi. Sonraki küçük iş M1b kenar–kapak birleşimi; genel beden araştırmasının tamamlandığı anlamına gelmez.
+
 > **Görsel arşivi eklendi:** [Sürümlü prototip galerisi, referans panosu, videolar ve kaynak dizini](evidence/archive-2026-10-25/README.md). Yerel dosya envanteri ile GitHub'a gerçekten yüklenen dosyalar ayrı işaretlidir.
 
 # V17 devir noktası — 25 Ekim 2026
