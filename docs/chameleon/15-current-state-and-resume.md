@@ -1,3 +1,5 @@
+> **V18 baş–göz kökü adayı:** [Görsel, video, kaynak ve doğrulama](evidence/v18-eye-root/README.md). Yalnız tabana ayrı ince pullu deri geçişi eklendi; v17 ana göz deseni/kapak/optik verileri korunuyor. V18 kullanıcı kabulü bekler, v17 kabul edilmiş referans olmaya devam eder. Bu iş siyah açıklık çevresindeki bant düzeltmesi değildir.
+
 > **Kabul edilmiş göz dokusu:** Kullanıcı 6 saniyelik M1a/v17 videosundaki göz pul desenini beğendi ve korunmasını istedi. Ana pul katmanını yeniden üretmeyin/değiştirmeyin; kaynak üzerine yazmayın. [Kabul kapsamı, sabit video ve SHA256 kaydı](evidence/m1a-v17-motion-review/findings.md). Önceki kusur notları genel doku değişikliği yetkisi değildir.
 
 > **M1a hareket incelemesi tamamlandı (25 Ekim):** [Bulgular ve mevcut v17 hareket kaydı](evidence/m1a-v17-motion-review/findings.md). 179 ara/tam karede kök kayması yok; açıklık kenarı–kapak geçişi ve kıvrımlarda pul yığılması açık. Model değiştirilmedi. Sonraki küçük iş M1b kenar–kapak birleşimi; genel beden araştırmasının tamamlandığı anlamına gelmez.
