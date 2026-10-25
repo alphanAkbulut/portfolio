@@ -1,0 +1,45 @@
+{
+  "source_sha256": "3b3ef214729dda1ce3232fae1fdb9a0d3d243c2a3b418940981fba14358e0c41",
+  "output_sha256": "e523bbdb581612c380e1407ca16917b79fa8e525ec62bef22ec46c990113013a",
+  "protected_geometry_and_shape_keys_unchanged": {
+    "Near eye | rounded scale geometry": "9515c4cc27fcae6938c84d23258d8ba23e5807a153af7cc3a2d6581ec8bd17eb",
+    "Near eye | spherical surface motion": "0781db437144c54fee71fd01089bca63d8a94609c6a938cc968bc9dc3c74ab77",
+    "Near eye | patterned crater lip": "97145c0fd84502e822bd95b2ab1a74eb372d72121753d8f15c59fbcc9b23b881",
+    "Pupil | surface motion": "790032344b71ea863d7691d7f28304418bcdcbc2c167a10e8a98d84bc8eb60e9",
+    "Near eye | inner aperture reveal": "c6788b61059e8726cf52abf33ca38ffecbfd71ac0499832dbfc1d051d4abf52b",
+    "Body skin | continuous axial surface": "9cf81a338fb7f7500c0b623034dc24bb18157ae50e50565168478667eec2fcc9"
+  },
+  "new_root_crowns": 872,
+  "ray_misses": 0,
+  "source_unchanged": true,
+  "limits": [
+    "Additive overlay; not unified manifold skin",
+    "Measurements are model arc lengths, not biological strain or projected visible area",
+    "Global intersections not exhaustively checked",
+    "No new motion video in this focused three-pose review"
+  ],
+  "protected_data_reopen": "passed",
+  "samples": 179,
+  "outer_edge_drift": 0,
+  "finite": true,
+  "meridian_arc_scene_units": {
+    "1": {
+      "upper_mean_arc": 0.08181203901767731,
+      "lower_mean_arc": 0.06317634135484695
+    },
+    "43": {
+      "upper_mean_arc": 0.03978374972939491,
+      "lower_mean_arc": 0.1128094419836998
+    },
+    "57": {
+      "upper_mean_arc": 0.15934863686561584,
+      "lower_mean_arc": 0.059686969965696335
+    }
+  },
+  "directional_checks": {
+    "up_upper_narrows": true,
+    "up_lower_expands": true,
+    "down_lower_narrows": true,
+    "down_upper_expands": true
+  }
+}
