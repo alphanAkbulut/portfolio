@@ -1,3 +1,5 @@
+> **V20 burun tarafı kök adayı:** [Görsel/ölçüm/kaynak kaydı](evidence/v20-nose-root/README.md). Kullanıcı arka=kuyruk, ön=burun olarak netleştirdi. Arka bağlantı test edilen bölgede aynen korundu; ön nötr genişliği arka tarafa yaklaştırıldı. Ana göz deseni korunuyor. Ön/arka hareket tam eşdeğer değil; özellikle buruna bakışta nötre göre daralma ölçütü henüz sağlanmadı. V20 aday, kullanıcı kabulü bekler.
+
 > **V19 yönlü kök derisi adayı:** [Yukarı–nötr–aşağı karşılaştırması](evidence/v19-directional-root/README.md). Baş bağlantısı sabit, göz tarafındaki bant bakış doğrultusunda daralır; karşı tarafta genişler. Ana kabul edilmiş göz deseni korunur. Aşağı daralma daha hafiftir; v19 kullanıcı kabulü bekler, v17/v18 korunur.
 
 > **V18 baş–göz kökü adayı:** [Görsel, video, kaynak ve doğrulama](evidence/v18-eye-root/README.md). Yalnız tabana ayrı ince pullu deri geçişi eklendi; v17 ana göz deseni/kapak/optik verileri korunuyor. V18 kullanıcı kabulü bekler, v17 kabul edilmiş referans olmaya devam eder. Bu iş siyah açıklık çevresindeki bant düzeltmesi değildir.

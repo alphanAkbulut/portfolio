@@ -1,0 +1,48 @@
+{
+  "source_sha256": "e523bbdb581612c380e1407ca16917b79fa8e525ec62bef22ec46c990113013a",
+  "output_sha256": "192f57bde939e7d23fb12dc0423acb3f559b223cb56d460dc4d1d43f824baca5",
+  "protected_geometry_and_shape_keys_unchanged": {
+    "Near eye | rounded scale geometry": "9515c4cc27fcae6938c84d23258d8ba23e5807a153af7cc3a2d6581ec8bd17eb",
+    "Near eye | spherical surface motion": "0781db437144c54fee71fd01089bca63d8a94609c6a938cc968bc9dc3c74ab77",
+    "Near eye | patterned crater lip": "97145c0fd84502e822bd95b2ab1a74eb372d72121753d8f15c59fbcc9b23b881",
+    "Pupil | surface motion": "790032344b71ea863d7691d7f28304418bcdcbc2c167a10e8a98d84bc8eb60e9",
+    "Near eye | inner aperture reveal": "c6788b61059e8726cf52abf33ca38ffecbfd71ac0499832dbfc1d051d4abf52b",
+    "Body skin | continuous axial surface": "9cf81a338fb7f7500c0b623034dc24bb18157ae50e50565168478667eec2fcc9"
+  },
+  "new_root_crowns": 872,
+  "ray_misses": 0,
+  "source_unchanged": true,
+  "limits": [
+    "Additive overlay candidate; not unified watertight topology",
+    "Root folds artistic not measured strain",
+    "Main eye crowns unchanged but root band may occlude some base crowns",
+    "Not a global collision proof"
+  ],
+  "protected_data_reopen": "passed",
+  "tail_side_max_displacement_vs_v19": 0,
+  "tail_side_test_mask": "rest x > -2.00, cuff and its crowns, all stored shape keys",
+  "outer_edge_drift": 0,
+  "samples": 179,
+  "section_arcs": {
+    "1": {
+      "nose_arc": 0.061564695090055466,
+      "tail_arc": 0.06415852159261703
+    },
+    "15": {
+      "nose_arc": 0.153644859790802,
+      "tail_arc": 0.041578907519578934
+    },
+    "29": {
+      "nose_arc": 0.06313087046146393,
+      "tail_arc": 0.10599116235971451
+    },
+    "43": {
+      "nose_arc": 0.06041077896952629,
+      "tail_arc": 0.06490360200405121
+    },
+    "57": {
+      "nose_arc": 0.06260984390974045,
+      "tail_arc": 0.06354101002216339
+    }
+  }
+}
