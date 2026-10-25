@@ -44,3 +44,7 @@ Kullanıcının talebi açık araştırma işi olarak korunur. Sayı uğruna ayn
 Sıra: (R1a) ayak açık/kavrama/bırakma, üst–alt–yan; (R1b) kuyruk gevşek/sıkı spiral, açılma/kavrama, kök/uç; (R1c) baş eğilmesi, boyun–boğaz–omuz; (R1d) aynı bireyde renk değişimi ve geniş gövde. Her dilimde yalnız o bölgeye ilişkin karar ver, kullanıcıya kısa pano + bulgu + eksik kanıt sun. Yüzlerce kullanılabilir poz sayısı, kapsanan bağımsız klip/birey ve bulanık/tekrarlı elenen kare sayısı ayrı raporlanmalı. Bu sayılar henüz üretilmedi.
 
 Fotoğraftaki koyu çizgi hem gölge hem pigment olabilir. Normal/displacement yüksekliğini tek aydınlatmadan kesin çıkarmayacağız. Aşırı katlı görünümü kalıcı mesh kabartısı yapmadan, aynı bölgenin açık ve bükülmüş halini karşılaştıracağız. Yeni görsel atlas tamamlanmadan bütün bedene yeni skin/motion uygulanmayacak.
+
+## Güncelleme — tüm 360 kareyi kapsayan video araştırması
+
+25 Ekim 2026: Yukarıdaki ilk 25 kare/özet kare kaydı önceki çalışmanın kapsamıdır. Sonraki çalışmada aynı klibin F000–F359 kareleri 15 ardışık panoda atlamadan görsel tarandı; sekiz seçili göz pozu doğal piksel boyutunda karşılaştırıldı, üç karede görünür sınırlar elle işaretlendi ve 23 görsel olay kaydedildi. Bu, her karede pul takibi veya 360 bağımsız birey incelemesi değildir. [Yöntem ve bulgular](18-frame-by-frame-video-research.md), [sürümlü kanıt paketi](evidence/video-review-v1/README.md). Bu yeni çalışma göz/kafa, burun tablası ve kapalı ağız hattına odaklanır; yüzlerce farklı poz ve uzuv hareketi araştırması hâlâ açık iştir.

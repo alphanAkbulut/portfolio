@@ -1,0 +1,164 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Panter Atlası · Kare kare araştırma / V1</title>
+<style>
+:root{color-scheme:dark;--bg:#101d19;--panel:#1c3028;--ink:#ecf2e9;--muted:#b6c9bb;--accent:#e3b16a;--line:#3c5548}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui}main{max-width:1280px;margin:auto;padding:28px}h1{font-size:clamp(30px,5vw,58px);line-height:1.06;margin:12px 0 22px;max-width:900px}h2{font-size:24px}a{color:#b6e5c4}p{max-width:900px}.eyebrow,small{color:var(--muted)}.lead{font-size:19px;color:#d2dfd4}.tags,.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.tags span{border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13px}section{margin:32px 0}.panel{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:14px}button,select{font:inherit;color:var(--ink);background:#2b4436;border:1px solid #57705d;border-radius:8px;padding:10px 14px;cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}select{max-width:100%}input[type=range]{width:100%;accent-color:var(--accent)}label{display:block;margin:14px 0 5px}.visual{position:relative;background:#07110d;margin-top:18px;border-radius:8px;overflow:hidden}canvas{width:100%;height:auto;display:block}.status{color:var(--accent);font-weight:700}.note{min-height:52px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}.card{padding:20px;border:1px solid var(--line);border-radius:12px}.card h3{margin-top:0}img,svg{width:100%;height:auto}figure{margin:0}figcaption{font-size:14px;color:var(--muted);margin-top:8px}.steps{counter-reset:step}.steps article{border-top:1px solid var(--line);padding:16px 0}.steps h3:before{counter-increment:step;content:'0' counter(step) ' / ';color:var(--accent)}details{margin:14px 0}summary{cursor:pointer;color:#dceac9}.eventlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px}.eventlist button{text-align:left;font-size:14px}footer{border-top:1px solid var(--line);padding-top:22px;margin-top:40px;color:var(--muted)}#error{color:#ffd79a}.tiny{font-size:13px}.sheetlinks{display:flex;gap:12px;flex-wrap:wrap}.sheetlinks a{padding:6px;border-bottom:1px solid var(--line)}@media(max-width:550px){main{padding:16px}.panel{padding:14px}.controls button{flex:1}.note{min-height:95px}}
+</style></head><body><main>
+<header><p class="eyebrow">FURCIFER PARDALIS / ARAŞTIRMA ARŞİVİ V1</p><h1>Bir göz hareketinden<br>bir tasarım kararına.</h1><p class="lead">Hangi kareye baktık, ne gördük, neyi ölçemedik ve modelde neyi değiştirmeyi önerdik? Kanıt ve yorumları aynı yerde izleyebilirsin.</p><div class="tags"><span>360 ardışık kare</span><span>23 işaretli olay</span><span>8 yakın detay</span><span>3 görünüş ölçümü</span><span>Tek birey / tek klip</span></div><p><a href="README.md">Arşiv rehberi</a> · <a href="analysis.md">Ayrıntılı analiz</a> · <a href="source.json">Kaynak kaydı</a> · <a href="frame-register.csv">360 kare dökümü</a></p></header>
+<section class="panel" aria-labelledby="viewer-heading"><h2 id="viewer-heading">Kareyi seç, değişimi karşılaştır</h2><div class="controls"><button id="prev">← Önceki</button><button id="next">Sonraki →</button><output id="position" class="status" aria-live="polite"></output><a id="native" hidden>Tam boy kareyi aç</a></div><label for="frame-number">Kare / 0–359</label><input type="range" id="frame-number" min="0" max="359" step="1" value="0"><label for="event-select">İşaretli göz hareketine git</label><select id="event-select"><option value="">Bir olay seç…</option></select><p id="note" class="note"></p><p id="error" role="alert" hidden></p><div class="visual"><canvas id="frame-canvas" width="960" height="540" role="img" aria-label="Kaynak videodan seçilen kare"></canvas></div><p class="tiny">Gezinti: 960×540 sıkıştırılmış önizleme. Ölçüm kaynağı 1920×1080; seçili 10 kare tam boy bağlantısıyla saklandı. Zaman = kare / 24; gerçek kare zaman damgaları ayrıca doğrulanmadı. Yapay ara kare yok.</p><noscript>Gezinti JavaScript gerektirir. Aşağıdaki ardışık pano bağlantıları ve analysis.md dosyası JavaScript olmadan açılır.</noscript></section>
+<section><h2>Ne yaptık?</h2><div class="steps"><article><h3>Kaynağın kimliğini doğruladık</h3><p>MatthiasKabel'in Commons videosunu, dosya hashini ve lisansını kaydettik. Önceki araştırmadaki kliple aynı kaynak; yeni bağımsız hayvan örneği saymadık.</p></article><article><h3>360 kareyi çıkardık ve sırayla taradık</h3><p>15 panonun her biri 24 ardışık kare içeriyor. Tüm panolar görüldü. Bu işlem her karede pul parçacığı takibi veya tek tek anatomik ölçüm yapıldığı anlamına gelmiyor.</p></article><article><h3>Seçili ayrıntıları yakın inceledik</h3><p>F000, F007, F022, F058, F168, F185, F249 ve F293: açıklığın yönü, kök kıvrımları ve optik görünüm. F000, F168, F336: baş, burun, ağız ve yaklaşık görünür sınırlar.</p></article><article><h3>Gözlemi model kararından ayırdık</h3><p>Geniş burun tablası, yükselen yan kenarlar ve ince kapalı çene hattı için ayrı biçim çalışması önerdik. Onaylı gözün deseni ve hareketi korundu; bu analizde Blender modeli değiştirilmedi.</p></article></div></section>
+<section><h2>Gözlem → yorum → tasarım kararı</h2><div class="grid"><article class="card"><h3>Göz ve kafa</h3><p><strong>Gözlem:</strong> Pullu kapak kubbesi, esnek kök ve yükseltili baş kenarı ayrı okunuyor.</p><p><strong>Yorum:</strong> Kafanın merkez yüzeyi ve yanak hacmi, gözün algılanan büyüklüğünü etkiliyor.</p><p><strong>Karar:</strong> Onaylı göz korunacak; önce kafa biçimi, sonra eşlenmiş kamerada oran kontrolü.</p></article><article class="card"><h3>Burun</h3><p><strong>Gözlem:</strong> Geniş orta tabla, iki yükseltili kenar ve önde kısa çıkıntı var.</p><p><strong>Sınır:</strong> Uç bulanık; çatal derinliği ve burun deliği biçimi bu klipten ölçülemez.</p><p><strong>Karar:</strong> Tek bombeli kama yerine bu hacimleri ayrı ve yumuşak bağlı kur.</p></article><article class="card"><h3>Ağız ve çene</h3><p><strong>Gözlem:</strong> İnce kapanma hattının iki yanında pullu kenarlar; üzerinde ayrı burun çıkıntısı.</p><p><strong>Sınır:</strong> Belirgin açılma döngüsü yok; çene eklemi ve ağız içi doğrulanmadı.</p><p><strong>Karar:</strong> Yüzeyle birleşen ince hat; boşta duran çizgi veya kalın halka yok.</p></article></div></section>
+<section><h2>Yakın incelemenin görsel kaydı</h2><figure><a href="assets/eye-detail-sequence.jpg"><img loading="lazy" src="assets/eye-detail-sequence.jpg" alt="Sekiz seçili karede kapak ve kök kıvrımlarının karşılaştırması"></a><figcaption>MatthiasKabel / CC BY-SA 3.0 · Kırpma ve etiketler eklendi. F006 gibi bulanık geçişler pul ölçümü için kullanılmadı.</figcaption></figure></section>
+<section><h2>Ölçtüğümüz oran neydi?</h2><p>Yakın pullu kapağın görüntüdeki yatay genişliği / iki gözün görünür dış uçları arasındaki yatay açıklık. <strong>Gerçek göz çapı / kafa uzunluğu değil.</strong> Aynı bireyin üç pozu; sınır başına yaklaşık ±15 piksel okuma toleransı. Perspektif düzeltilmedi; tür ortalaması çıkarılmadı.</p><div id="measurements" class="grid"></div><p><a href="measurements.json">Ham noktalar ve ölçüm tanımı</a>. Önceki yandan fotoğraf oranları bu farklı ölçüyle birleştirilmez.</p></section>
+<section><h2>23 işaretli olay</h2><p>Olay olmayan kareler “tamamen hareketsiz” diye etiketlenmedi. Notlar 2B görsel gözlemdir; kesin hareket başlangıcı, 3B bakış açısı veya fizyolojik hız ölçümü değildir.</p><div id="events" class="eventlist"></div></section>
+<section><h2>İncelenen bütün ardışık panolar</h2><p>Özgün inceleme sırasında kullanılan panolar aynen saklandı. Bağlantı tam boy panoyu açar.</p><div id="sheets" class="sheetlinks"></div></section>
+<section class="panel"><h2>Neyi hâlâ bilmiyoruz?</h2><p>Gerçek 3B göz/kafa oranı, deri kalınlığı ve gerinimi, pul parçacıklarının hareketi, çene açılma davranışı ve uzuv eklemlerinin hareketi ölçülmedi. Son saniyelerde başın/kameranın konum değişimi göz hareketiyle karışıyor. Bu, AI destekli görsel araştırmadır; bilimsel tür normu veya anatomik doğruluk sertifikası değildir.</p><p><a href="analysis.md">Açık sorular ve sonraki küçük model deneyi</a></p></section>
+<details><summary>Özgün videoyu ve lisansını aç</summary><p><a href="https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv">Wikimedia Commons'ta özgün video</a> · <a href="source-player.html">Gömülü oynatıcı</a></p><p>Sayfa görüntüleme sırasında üçüncü taraf oynatıcı otomatik yüklenmez. Yukarıdaki bağlantı internet gerektirir.</p></details>
+<footer><p>MatthiasKabel · <em>Furcifer pardalis moving eyes.ogv</em> · 9 Ocak 2011 · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Türev medyada kırpma, küçültme, yeniden kodlama ve anotasyon yapıldı. <a href="ATTRIBUTION.md">Atıf ve haklar</a>.</p><p>Arşiv V1 · 25 Ekim 2026 · Bağımsız inceleme sayfası; portföy yayını veya şifreli alan değildir.</p></footer>
+</main><script>
+const EVENTS=[
+  {
+    "frame": 6,
+    "time_s": 0.25,
+    "note": "Yakın göz: üstteki açıklık yana geçiyor; hareket bulanıklığı.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 9,
+    "time_s": 0.375,
+    "note": "Uzak gözde kısa yön değişimi; yakın gözün hareketinden ayrı.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 21,
+    "time_s": 0.875,
+    "note": "Yakın açıklık görüntüde aşağıya kayıyor; geçiş bulanık.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 39,
+    "time_s": 1.625,
+    "note": "Yakın açıklıkta küçük konum düzeltmesi.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 57,
+    "time_s": 2.375,
+    "note": "Yakın göz aşağı yönüne geçiyor; 58. karede yeni duruş.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 94,
+    "time_s": 3.9166666666666665,
+    "note": "Uzak göz yön değiştiriyor; yakın göz yaklaşık aynı duruşta.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 112,
+    "time_s": 4.666666666666667,
+    "note": "Uzak göz yukarı yöneliyor; 113–114 ile karşılaştır.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 116,
+    "time_s": 4.833333333333333,
+    "note": "Yakın gözde küçük yön düzeltmesi.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 150,
+    "time_s": 6.25,
+    "note": "Uzak göz yön değiştiriyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 163,
+    "time_s": 6.791666666666667,
+    "note": "Uzak açıklık görünmez tarafa dönüyor; bunu göz kırpma olarak etiketleme.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 167,
+    "time_s": 6.958333333333333,
+    "note": "Yakın göz belirgin aşağı bakışa geçiyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 184,
+    "time_s": 7.666666666666667,
+    "note": "Yakın açıklık kameraya daha dönük, yuvarlak görünüme geçiyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 197,
+    "time_s": 8.208333333333334,
+    "note": "Uzak gözün görünen konturunda küçük değişim.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 211,
+    "time_s": 8.791666666666666,
+    "note": "Yakın açıklıkta konum düzeltmesi.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 236,
+    "time_s": 9.833333333333334,
+    "note": "Yakın açıklık görüntüde yukarı ilerliyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 248,
+    "time_s": 10.333333333333334,
+    "note": "Yakın göz kameraya daha doğrudan yöneliyor; 249 net açıklık/parıltı referansı.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 272,
+    "time_s": 11.333333333333334,
+    "note": "Yakın gözde küçük yön düzeltmesi.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 292,
+    "time_s": 12.166666666666666,
+    "note": "Yakın göz aşağıya dönüyor; 293 yeni duruş.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 314,
+    "time_s": 13.083333333333334,
+    "note": "Uzak gözde yön değişimi; sonraki karelerde yüzün kadrajdaki yeri de değişiyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 327,
+    "time_s": 13.625,
+    "note": "Yakın göz aşağı yöneliyor; bütün başın görüntü konumu da kaymış.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 334,
+    "time_s": 13.916666666666666,
+    "note": "Yakın göz açıklığı dış yana geçiyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 346,
+    "time_s": 14.416666666666666,
+    "note": "Yakın açıklık yeniden daha öne/üstte görünür oluyor.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  },
+  {
+    "frame": 358,
+    "time_s": 14.916666666666666,
+    "note": "Uzak gözde son kısa yön değişimi.",
+    "interpretation": "2D visual event, not calibrated gaze angle or exact saccade onset/end"
+  }
+], MEASUREMENTS=[{"frame": 0, "eye_box": [825, 445, 1110, 825], "two_eye_span": [250, 1110], "time_s": 0.0, "visible_eye_width_px": 285, "visible_face_span_px": 860, "ratio": 0.3313953488372093}, {"frame": 168, "eye_box": [875, 475, 1155, 840], "two_eye_span": [280, 1155], "time_s": 7.0, "visible_eye_width_px": 280, "visible_face_span_px": 875, "ratio": 0.32}, {"frame": 336, "eye_box": [875, 530, 1145, 920], "two_eye_span": [270, 1145], "time_s": 14.0, "visible_eye_width_px": 270, "visible_face_span_px": 875, "ratio": 0.30857142857142855}], KEYS=[0,7,22,58,168,185,249,293,336,359];
+const slider=document.getElementById('frame-number'),select=document.getElementById('event-select'),canvas=document.getElementById('frame-canvas'),ctx=canvas.getContext('2d'),cache=new Map();let current=0,request=0;
+const getAtlas=s=>{if(!cache.has(s)){cache.set(s,new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>{cache.delete(s);reject(new Error('Görsel dosyası yüklenemedi.'));};im.src='assets/atlas-'+String(s).padStart(2,'0')+'.webp';}));}return cache.get(s);};
+async function show(value){const n=Math.max(0,Math.min(359,Math.round(Number(value)||0)));current=n;const token=++request;slider.value=n;select.value=EVENTS.some(e=>e.frame===n)?String(n):'';document.getElementById('position').textContent='F'+String(n).padStart(3,'0')+' / 359 · '+(n/24).toFixed(3)+' s';document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===359;const event=EVENTS.find(e=>e.frame===n);document.getElementById('note').textContent=event?event.note:'Bu kare için ayrı olay işareti yok. Komşu karelerle karşılaştır; bu etiket mikrohareket bulunmadığı anlamına gelmez.';const link=document.getElementById('native');link.hidden=!KEYS.includes(n);link.href='keyframes/'+String(n).padStart(3,'0')+'.jpg';canvas.setAttribute('aria-label','F'+n+' · '+(n/24).toFixed(3)+' saniye; 960×540 önizleme');document.getElementById('error').hidden=true;ctx.clearRect(0,0,960,540);try{const im=await getAtlas(Math.floor(n/24));if(token!==request)return;ctx.drawImage(im,(n%24%6)*960,Math.floor(n%24/6)*540,960,540,0,0,960,540);}catch(e){if(token===request){document.getElementById('error').textContent='Kare önizlemesi yüklenemedi. Arşivi assets klasörüyle birlikte indir veya aşağıdaki panoyu aç.';document.getElementById('error').hidden=false;}}}
+for(const e of EVENTS){const o=document.createElement('option');o.value=e.frame;o.textContent='F'+String(e.frame).padStart(3,'0')+' · '+e.time_s.toFixed(3)+' s';select.append(o);const b=document.createElement('button');b.textContent=o.textContent+' — '+e.note;b.addEventListener('click',()=>{show(e.frame);document.getElementById('viewer-heading').scrollIntoView({block:'start'});});document.getElementById('events').append(b);}
+for(let i=0;i<15;i++){const a=document.createElement('a');a.href='assets/sequence-'+String(i).padStart(2,'0')+'.jpg';a.textContent=i+'–'+(i+1)+' s / F'+String(i*24).padStart(3,'0')+'–'+String(i*24+23).padStart(3,'0');document.getElementById('sheets').append(a);}
+for(const m of MEASUREMENTS){const [x,y,r,b]=m.eye_box,[l,rr]=m.two_eye_span;const f=document.createElement('figure');f.innerHTML='<svg viewBox="200 350 1050 730" role="img" aria-label="F'+m.frame+' yaklaşık görünür sınırlar"><image href="keyframes/'+String(m.frame).padStart(3,'0')+'.jpg" width="1920" height="1080"/><rect x="'+x+'" y="'+y+'" width="'+(r-x)+'" height="'+(b-y)+'" fill="none" stroke="#ffc96a" stroke-width="4"/><path d="M'+l+',990 H'+rr+' M'+l+',975 V1005 M'+rr+',975 V1005" fill="none" stroke="#69edf2" stroke-width="4"/></svg><figcaption>F'+String(m.frame).padStart(3,'0')+' · '+m.visible_eye_width_px+'/'+m.visible_face_span_px+' ≈ '+m.ratio.toFixed(2)+'<br>Sarı: yakın kapak. Mavi: dış uçlar arası yatay açıklık; çizgi okunması için aşağıda.</figcaption>';document.getElementById('measurements').append(f);}
+slider.addEventListener('input',()=>show(slider.value));select.addEventListener('change',()=>{if(select.value!=='')show(select.value);});document.getElementById('prev').onclick=()=>show(current-1);document.getElementById('next').onclick=()=>show(current+1);show(0);
+</script></body></html>

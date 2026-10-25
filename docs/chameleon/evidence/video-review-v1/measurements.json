@@ -1,0 +1,58 @@
+{
+  "definition": "Image-horizontal bounding width of near scaly eyelid turret, excluding outer root cuff, divided by horizontal span between the two visible turret extremes. Not skull width, head length, internal eyeball diameter, or physical 3D ratio. Perspective is not rectified.",
+  "method": "Manual visual annotation of full-resolution frames with 50px coordinate grid. One individual; three poses; not independent biological samples.",
+  "uncertainty": "Each boundary roughly +/-15 px, outer far-eye edge particularly blurred; this is a reading tolerance, not statistical confidence. Do not average into a species norm.",
+  "samples": [
+    {
+      "frame": 0,
+      "eye_box": [
+        825,
+        445,
+        1110,
+        825
+      ],
+      "two_eye_span": [
+        250,
+        1110
+      ],
+      "time_s": 0.0,
+      "visible_eye_width_px": 285,
+      "visible_face_span_px": 860,
+      "ratio": 0.3313953488372093
+    },
+    {
+      "frame": 168,
+      "eye_box": [
+        875,
+        475,
+        1155,
+        840
+      ],
+      "two_eye_span": [
+        280,
+        1155
+      ],
+      "time_s": 7.0,
+      "visible_eye_width_px": 280,
+      "visible_face_span_px": 875,
+      "ratio": 0.32
+    },
+    {
+      "frame": 336,
+      "eye_box": [
+        875,
+        530,
+        1145,
+        920
+      ],
+      "two_eye_span": [
+        270,
+        1145
+      ],
+      "time_s": 14.0,
+      "visible_eye_width_px": 270,
+      "visible_face_span_px": 875,
+      "ratio": 0.30857142857142855
+    }
+  ]
+}

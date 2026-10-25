@@ -1,0 +1,35 @@
+{
+  "frames_validated": 360,
+  "size": [
+    1920,
+    1080
+  ],
+  "source_sha1_matches_commons": true,
+  "v25_sha256": "3aa86f68a35f1b546f0b9a574cc0208f9ebf6246418791e77cd5eb6d8033339b",
+  "model_unchanged": true,
+  "model_saved": false,
+  "reviewed_sequential_sheets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "viewer_checks": [
+    "Loaded page and source image in IAB",
+    "Previous/next F348\u2192F347",
+    "Event jump F248 with matching note and URL",
+    "Slider End F359 and next disabled",
+    "Slider Home F000 and previous disabled"
+  ]
+}

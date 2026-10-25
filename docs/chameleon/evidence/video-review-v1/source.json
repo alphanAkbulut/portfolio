@@ -1,0 +1,32 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv",
+  "requested_url": "https://tr.wikipedia.org/wiki/Dosya:Furcifer_pardalis_moving_eyes.ogv",
+  "author": "MatthiasKabel",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "sha256": "80f3d33c4d1fec3e45ac4130eb660a18803840c14187a5af5775ec41233a44da",
+  "sha1": "d2abec8859fc2edbdf15cbe8ec1b964e7a12c018",
+  "fps": 24.0,
+  "frames": 360,
+  "size": [
+    1920,
+    1080
+  ],
+  "time_basis": "Zero-based frame index / nominal 24 fps; container PTS not independently verified",
+  "derivation": "Blender VSE sequential decode at source nominal fps; Standard transform; JPEG95; no interpolation, sharpening or generated frames.",
+  "local_original_relative_path": "work/eye-skin-analysis/panther-eyes.ogv",
+  "remote_original": "Wikimedia Commons; original OGV is not copied into this archive",
+  "preview_derivation": "All 360 source JPEGs resized from 1920x1080 to 960x540 with Lanczos and encoded into 15 WebP atlases, quality 85. These are display previews, not measurement source images.",
+  "native_resolution_keyframes": [
+    0,
+    7,
+    22,
+    58,
+    168,
+    185,
+    249,
+    293,
+    336,
+    359
+  ]
+}

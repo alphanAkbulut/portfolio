@@ -1,0 +1,39 @@
+{
+  "frame_register_rows": 360,
+  "atlas_count": 15,
+  "atlas_size": [
+    5760,
+    2160
+  ],
+  "preview_size": [
+    960,
+    540
+  ],
+  "all_360_atlas_tiles_compared_to_resized_source": true,
+  "max_mean_absolute_rgb_error_0_255": 2.1087609310699587,
+  "mean_error": 1.940155047939529,
+  "original_review_sheets_byte_identical": 15,
+  "native_keyframes_byte_identical": 10,
+  "events": 23,
+  "measurements": 3,
+  "browser_checks": [
+    "Loaded source frame and visible canvas",
+    "Event jump F248 then next F249 with native link",
+    "Slider End F359, next disabled",
+    "Slider Home F000, previous disabled"
+  ],
+  "not_tested": [
+    "Physical tissue strain or 3D gaze reconstruction",
+    "Private authentication, deployment or hosting",
+    "Simulated network failure UI",
+    "Mobile viewport",
+    "Direct file:// opening: test browser protocol policy disallowed; HTTP viewer tested instead"
+  ],
+  "reproduction_test": {
+    "blender": "4.5.14 LTS",
+    "actual_reextracted_frames": 360,
+    "byte_identical_to_original_local_jpegs": 0,
+    "decoded_pixel_identical_frames": 360,
+    "note": "JPEG byte hashes differ; all decoded RGB pixel arrays are identical. File-byte identity is not claimed."
+  }
+}
