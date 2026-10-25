@@ -32,6 +32,25 @@ The initial viewer emotion is **calm and trust**, then discovery and surprise: *
 - General portfolio vision: [../00-START-HERE.md](../00-START-HERE.md), [../01-product-vision-and-decisions.md](../01-product-vision-and-decisions.md), [../02-technical-plan-and-roadmap.md](../02-technical-plan-and-roadmap.md).
 - Alternate, independent BPMN plan: [../bpmn-hero-concept.md](../bpmn-hero-concept.md).
 
+## Panter bukalemunu — gömülebilir özgün video
+
+**[Videoyu Wikimedia Commons'ta aç](https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv)** · [Gömülü oynatıcı HTML dosyası](evidence/panther-eye-reference.html).
+
+*Furcifer pardalis moving eyes.ogv* — **MatthiasKabel**, 9 Ocak 2011; 15 saniye, 1920 × 1080. Seçilen lisans: **[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)**. Video değiştirilmedi; oynatıcı Wikimedia'dan yüklenir. Repo bu eklemede video dosyasını yeniden barındırmaz.
+
+GitHub README/dosya görünümü iframe çalıştırmaz; yukarıdaki video bağlantısını kullanın. HTML dosyasını indirip tarayıcıda veya yerel inceleme sunucusunda açınca gömülü oynatıcı kullanılabilir. Bu araştırma referansıdır; Blender prototipi veya ürünün hero videosu değildir. Production/GitHub Pages yayını yapılmadı.
+
+```html
+<iframe
+  title="MatthiasKabel: Furcifer pardalis göz hareketleri"
+  width="1920" height="1080" style="width:100%;height:auto;aspect-ratio:16/9;border:0"
+  loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+  src="https://commons.wikimedia.org/wiki/File:Furcifer_pardalis_moving_eyes.ogv?embedplayer=true">
+</iframe>
+```
+
+Gömülü kullanımda kaynak, eser sahibi ve lisans bağlantıları oynatıcının yanında korunmalıdır; HTML örneği bunları içerir.
+
 ## Örnek göz hareketi videosu
 
 Kullanıcının sağladığı ana hareket referansı: **[Videoyu Shutterstock'ta aç — 11428904](https://www.shutterstock.com/tr/video/clip-11428904-macro-shot-4k-uhd-veiled-chameleon%27s-eyes)** · [Filigranlı WebM önizlemeyi aç](https://www.shutterstock.com/shutterstock/videos/11428904/preview/stock-footage-macro-shot-in-k-uhd-of-a-veiled-chameleon-s-eyes.webm).
