@@ -1,0 +1,46 @@
+{
+  "version": "v2",
+  "source_version": "V37 existing renders; preceding v1 analysis retained",
+  "source_sha256": {
+    "comparison.jpg": "d1a17d38d25dcf7f8c7b01b4765b8f41e25cb4809a5b6b4d9ec6d9612c5d2322",
+    "front-neutral.png": "e712c2b00da2d197acf783afcae509e8a645517a6a3bd5f73e75cc7286bff33b",
+    "V37-side-annotated.jpg": "01d733ee838084058151345e525060496932d603df4640d9f1e549fc67213543"
+  },
+  "image_dimensions": [
+    680,
+    580
+  ],
+  "manual_dome_bbox": [
+    308,
+    172,
+    501,
+    354
+  ],
+  "manual_visible_inner_surface_bbox": [
+    363,
+    231,
+    407,
+    279
+  ],
+  "definition": "inside visible eyelid rim; gray Workbench surface, not anatomical retina or separately resolved pupil",
+  "D_px": 187.41931597356768,
+  "a_px": 45.95650117230423,
+  "a_over_D": 0.2452068557265763,
+  "D_over_head_span_from_existing_annotation_rounded": 0.396,
+  "a_over_head_span_approx": 0.09710191486772422,
+  "boundary_selection_sensitivity_px": 2,
+  "preservation_contract": {
+    "fixed": "V37 visible inner eye surface size relative to unchanged head and optics appearance",
+    "variable": "outer scaly dome dimensions/ovality; aperture-to-dome ratio follows",
+    "formula": "a_new=a_V37; (a/D)_new=(a/D)_V37 / dome_scale",
+    "illustration_only_dome_scale": 0.85,
+    "illustration_only_new_a_over_D": 0.28847865379597215,
+    "not_applied": true
+  },
+  "cautions": [
+    "2D image ratio; not calibrated anatomical dimensions",
+    "front view aperture is foreshortened; do not lock screen-space roundness",
+    "inner sphere diameter not measured from this exposed patch",
+    "actual eye objects/materials/rig not edited or revalidated this turn"
+  ]
+}

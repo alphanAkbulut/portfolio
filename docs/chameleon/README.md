@@ -1,3 +1,5 @@
+> **28 Ekim — göz şekli demosu V5:** [Demo, test ve karar geçmişi](eye-shape-review-v5/README.md). Profil ve açıklık ayrı ayarlanır; V3/V4 korunur. Bu 2B kontur çalışmasıdır, V37 modeline uygulanmadı.
+
 > **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
 
 > **360 karelik video araştırması arşivlendi (25 Ekim 2026):** [Yöntem, bulgular ve devam noktası](18-frame-by-frame-video-research.md) · [İnteraktif sayfa ve kanıt paketi](evidence/video-review-v1/README.md). Bu yeni analiz, önceki ilk 25 karelik göz incelemesini genişletir; aşağıdaki eski model durumları tarihsel kayıttır. Bu commit bütün yerel Blender sürümlerinin yedeği değildir.

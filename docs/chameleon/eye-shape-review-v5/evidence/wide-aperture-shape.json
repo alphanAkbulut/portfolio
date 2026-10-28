@@ -1,0 +1,247 @@
+{
+  "sources_sha256": {
+    "aperture-ratio-reference.jpg": "8c1fdb512199142f620c3ff1edcd7a927c86aefbd17607e61c7d1f9703f26d33",
+    "motion-reference.jpg": "c927adfe725a14f951ff29a189dbe7774e0283ccb4441f9dc1f88996a982dfd0",
+    "skin-25-consecutive-frames.jpg": "5c14274cdf3f8e41a2a856e49b8d8eecfec141d4352e29c490a2e8650bc42888",
+    "skin-fold-reference.jpg": "3cc6588785b0150dd8fd02f66ba8b5e0cb5714196cc8f2739616dfec16829ef7"
+  },
+  "measurement_method": "threshold existing colored manual outlines, equivalent diameter sqrt(width*height); no new anatomical segmentation",
+  "outline_measurements": [
+    {
+      "panel": 1,
+      "time_label_s": 10,
+      "local_bbox_xyxy": {
+        "dome": [
+          72,
+          92,
+          350,
+          440
+        ],
+        "aperture": [
+          115,
+          234,
+          214,
+          323
+        ]
+      },
+      "ratio": 0.30178703671570334
+    },
+    {
+      "panel": 2,
+      "time_label_s": 11,
+      "local_bbox_xyxy": {
+        "dome": [
+          73,
+          92,
+          350,
+          440
+        ],
+        "aperture": [
+          135,
+          195,
+          230,
+          285
+        ]
+      },
+      "ratio": 0.2978197884896735
+    },
+    {
+      "panel": 3,
+      "time_label_s": 12,
+      "local_bbox_xyxy": {
+        "dome": [
+          73,
+          92,
+          350,
+          439
+        ],
+        "aperture": [
+          126,
+          184,
+          222,
+          274
+        ]
+      },
+      "ratio": 0.2998142351853971
+    }
+  ],
+  "candidate": {
+    "B_max_dome_diameter": 1.0,
+    "a_aperture_diameter": 0.3,
+    "c_outer_tip_diameter_design": 0.44,
+    "L_depth_design": 0.46,
+    "first_bezier_z_radius": [
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.18,
+        0.5
+      ],
+      [
+        0.43,
+        0.34
+      ],
+      [
+        0.45,
+        0.22
+      ]
+    ],
+    "rim_bezier_z_radius": [
+      [
+        0.45,
+        0.22
+      ],
+      [
+        0.455,
+        0.19
+      ],
+      [
+        0.46,
+        0.17
+      ],
+      [
+        0.46,
+        0.15
+      ]
+    ],
+    "root_blend_depth_design": 0.46,
+    "root_blend": "quintic smoothstep; zero end derivatives",
+    "warning": "2D ratio motivates a/B; L,c and deformation are design hypotheses, not recovered 3D anatomy"
+  },
+  "rejected_trial": {
+    "root_blend_depth": 0.22,
+    "local_orientation_check_passed": false,
+    "min_triangle_area_ratio": 0.009827184586130867,
+    "note": "Initial one-triangle-per-cell diagnostic; replaced by wider blend and both-triangle checks"
+  },
+  "checks": [
+    {
+      "axis": "pitch",
+      "angle_design_deg": -25,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999999,
+        0.3000000000000001
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.1988236791284571
+    },
+    {
+      "axis": "pitch",
+      "angle_design_deg": -20,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999997,
+        0.30000000000000027
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.3609840236081433
+    },
+    {
+      "axis": "pitch",
+      "angle_design_deg": 0,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.29999999999999993,
+        0.30000000000000004
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.9999999999999923
+    },
+    {
+      "axis": "pitch",
+      "angle_design_deg": 20,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999999,
+        0.30000000000000004
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.3609840236081433
+    },
+    {
+      "axis": "pitch",
+      "angle_design_deg": 25,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999999,
+        0.30000000000000004
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.19882367912845714
+    },
+    {
+      "axis": "yaw",
+      "angle_design_deg": -25,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999998,
+        0.3000000000000001
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.19882367912845708
+    },
+    {
+      "axis": "yaw",
+      "angle_design_deg": -20,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.29999999999999966,
+        0.3000000000000003
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.3609840236081432
+    },
+    {
+      "axis": "yaw",
+      "angle_design_deg": 0,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.29999999999999993,
+        0.30000000000000004
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.9999999999999923
+    },
+    {
+      "axis": "yaw",
+      "angle_design_deg": 20,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.29999999999999977,
+        0.3000000000000002
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.3609840236081433
+    },
+    {
+      "axis": "yaw",
+      "angle_design_deg": 25,
+      "finite": true,
+      "root_max_displacement": 0.0,
+      "aperture_diameter_min_max": [
+        0.2999999999999999,
+        0.3000000000000001
+      ],
+      "local_orientation_nonpositive": 0,
+      "min_local_area_ratio": 0.1988236791284571
+    }
+  ],
+  "limitations": [
+    "local orientation checks do not prove absence of global self-intersection",
+    "no head mesh collision test",
+    "no existing V37 rig/skin/scale/clip edits or validation",
+    "four contact sheets only; motion sample times not calibrated reaction times"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "v5",
+  "tested_grid_cases": 16,
+  "checks": [
+    "independent controls",
+    "both aperture lengths",
+    "fixed aperture center",
+    "finite SVG paths",
+    "photo toggle",
+    "reset to 60/0",
+    "JSON export payload"
+  ],
+  "passed": true,
+  "scope": "demo logic only; no Blender or physical motion validation"
+}

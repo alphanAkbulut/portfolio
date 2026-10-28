@@ -1,0 +1,21 @@
+{
+  "version": "v5",
+  "date": "2026-10-28",
+  "files_sha256": {
+    "README.md": "d5452b1e5f929a970c03ba5d9df077ad8493f907ce9cada1472b5d85a47d3bf8",
+    "RESEARCH_AND_DECISIONS.md": "bc84c8362c20d30293d00e85db30d26687ff70cd0cf5883ff64cc2f601e85249",
+    "assets/V37-side-annotated.jpg": "01d733ee838084058151345e525060496932d603df4640d9f1e549fc67213543",
+    "assets/front-neutral.png": "e712c2b00da2d197acf783afcae509e8a645517a6a3bd5f73e75cc7286bff33b",
+    "evidence/aperture-lock-v2.json": "785779c32f17523ea4174af10b120a5e022a858e1be4b486888dc3ebe19fe7bb",
+    "evidence/motion-contour-measurements.json": "12186fe86ff9d38f9b79374329c0d91e13d76346efc3b874ddbe1b43571a51cd",
+    "evidence/motion-profile-fit.json": "2ff4046e2599ee6492fc7a626f42745bf66a28b323fcbfe9506c775d0f41f951",
+    "evidence/wide-aperture-shape.json": "2bcb72afa0ea968ee4a0826de3212892840bd5fcc46b215258d52d00e7592fa7",
+    "index.html": "eeadb16a371a2e055edea5a2eed9b3ea27c015a59febf54d372937a429052dd6",
+    "preview-v5.png": "2e1330759ffb564b33dbcf015443c091395628ebe90d54e1ebf41e2da5e0ba08",
+    "test-demo.cjs": "bfb3cf9418ee9686b5bfa09e1846827bc4b343b8e3b76f8a5f247c5e81c2bfb2",
+    "v3/index.html": "1ad0d4347211c836510d65b31e6aab11dee30368e1ff5c9cc13451f7a7e806cc",
+    "v4/index.html": "5fbedf4f37665779038d2f62f6e27768ad6461709d2fbc9d8907fa6b550e26ce",
+    "verification-v5.json": "b0f63b21999cfe29ce0ca8ecb1e1e077498e838883e7614ff1243865361682c3"
+  },
+  "note": "Self-authored model renders included. Third-party photos are referenced, not newly copied."
+}

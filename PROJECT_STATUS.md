@@ -4,6 +4,8 @@
 
 Bu dosya güncel durumun giriş noktasıdır. Eski tarihli plan ve raporlar tarihsel kanıttır; güncel model durumunu bu belge geçersiz kılana kadar aşağıdaki kayıt belirler. Belge bir tamamlanmış ürün, biyolojik doğruluk veya bütün dosyaların GitHub yedeği iddiası değildir.
 
+> **28 Ekim ek çalışma:** Kullanıcı göz şekli için V3–V5 demo/analiz çalışmasını başlattı. [V5 karar kaydı ve testler](docs/chameleon/eye-shape-review-v5/README.md): profil daraltma ve açıklık küçültme kontrolleri; gerçek model V37 olarak korunuyor. Aşağıdaki devir kapsamı bu yeni demo talebinden önceki kayıttır.
+
 ## 0. Yeni yapay zeka için ilk 60 saniye
 
 **28 Ekim kapsam kararı:** Şu an yalnız devir tamamlanıyor. Canlı bağımsız hedef/imleç takibi, web entegrasyonu ve performans optimizasyonu ertelendi. Yeni model, animasyon cilası veya uygulama build'i için bu belge tek başına çalışma yetkisi değildir. Aşağıdaki sonraki adımlar, kullanıcı tekrar başlatırsa kullanılacak devam rehberidir.
