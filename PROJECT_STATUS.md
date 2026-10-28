@@ -1,5 +1,12 @@
 # PROJECT_STATUS — Panter Bukalemunu Teknik Devir Teslimi
 
+## Güncel teslim — VFinal_Eye (28 Ekim 2026)
+
+Kullanıcı V8 G1 tabanlı demoda profil **%50**, açıklık küçültme **%15**, derinlik **%75** seçti. Son V37 üzerinde yalnız göz şekli revize edildi. Güncel yerel dosyalar `outputs/VFinal_Eye/VFinal_Eye.blend` ve `outputs/VFinal_Eye/VFinal_Eye.glb`. Üç mesh, 97 kemik, beş Action ve 21 PBR malzeme korundu; mevcut kaynakta image texture yok, pullar geometridir. Göz dışı 1.874.485 Body vertex'i ve animasyon eğrileri değişmedi. Kaynak V37 korunmuştur.
+
+[Karar, demo ve doğrulama](docs/chameleon/vfinal-eye/README.md) · [İndirilebilir dosyalar](https://github.com/alphanAkbulut/portfolio/releases/tag/vfinal-eye-2026-10-28). Aşağıdaki V37 devir bölümleri tarihsel kayıttır; “son model V37” ifadeleri bu teslimle güncellenmiştir. Canlı web entegrasyonu/performance işi yapılmadı.
+
+
 **Devir güncellemesi:** 28 Ekim 2026 · **Son model üretimi:** 26 Ekim 2026 · **Tür:** *Furcifer pardalis* · **Model:** V37 göz animasyonu adayı / V36 korunmuş temel.
 
 Bu dosya güncel durumun giriş noktasıdır. Eski tarihli plan ve raporlar tarihsel kanıttır; güncel model durumunu bu belge geçersiz kılana kadar aşağıdaki kayıt belirler. Belge bir tamamlanmış ürün, biyolojik doğruluk veya bütün dosyaların GitHub yedeği iddiası değildir.

@@ -1,0 +1,16 @@
+{
+  "version": "v8",
+  "accepted_size_reference": "outputs/eye-analysis/g1-four-views.jpg",
+  "source_blend": "outputs/body-study/chameleon-study-v4.blend",
+  "source_build": "work/eye-analysis/apply_g1.py",
+  "documented_radial_scale": 0.68,
+  "documented_axial_scale": 0.82,
+  "scope": "G1 source renders and symmetric manual 2D contour only; no model changes",
+  "landmarks": "manual image-space root B=120, center depth L=91; not anatomical measurement",
+  "assets": {
+    "g1-top.png": "c425bd913bab4427e9958b9adccb72ee9836c54dfd36d1a8a8cdabd734dfa1e8",
+    "g1-side.png": "8c696a3c8f235f385f8e357d815a93512b8b20b6644fa3295c29e078bfd5c8c3",
+    "g1-front.png": "bdcaf3c9d0ced513905c5c7443d79644e3e64f4dbe51e3246760bb3601041792",
+    "g1-oblique.png": "cbcccc48a38147b3b6e54bc7f5cca8eb7ce6925ecd4fc452756ce8fc931ad1c2"
+  }
+}

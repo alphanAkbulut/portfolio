@@ -1,0 +1,16 @@
+{
+  "version": "v8",
+  "tested_grid_cases": 64,
+  "checks": [
+    "independent controls",
+    "both aperture lengths",
+    "fixed aperture vertical center",
+    "depth moves both apertures with unchanged B and a",
+    "finite SVG paths",
+    "photo toggle",
+    "reset to 50/15/75",
+    "JSON export payload"
+  ],
+  "passed": true,
+  "scope": "demo logic only; no Blender or physical motion validation"
+}

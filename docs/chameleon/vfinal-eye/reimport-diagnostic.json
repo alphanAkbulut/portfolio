@@ -1,0 +1,41 @@
+{
+  "objects": [
+    {
+      "name": "Body",
+      "type": "MESH",
+      "parent": "ChameleonRig",
+      "vertices": 2550032
+    },
+    {
+      "name": "ChameleonRig",
+      "type": "ARMATURE",
+      "parent": null,
+      "vertices": null
+    },
+    {
+      "name": "Icosphere",
+      "type": "MESH",
+      "parent": null,
+      "vertices": 42
+    },
+    {
+      "name": "LeftEye",
+      "type": "MESH",
+      "parent": "ChameleonRig",
+      "vertices": 6303
+    },
+    {
+      "name": "RightEye",
+      "type": "MESH",
+      "parent": "ChameleonRig",
+      "vertices": 6303
+    }
+  ],
+  "actions": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ]
+}

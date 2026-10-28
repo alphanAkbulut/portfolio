@@ -1,0 +1,229 @@
+{
+  "blend_reopened": true,
+  "meshes": [
+    "Body",
+    "LeftEye",
+    "RightEye"
+  ],
+  "bones": [
+    "Root",
+    "Torso",
+    "Chest",
+    "Neck_Bone",
+    "Eye_L",
+    "Eye_R",
+    "Girdle_Fore.L",
+    "Upper_Fore.L",
+    "Lower_Fore.L",
+    "Foot_Fore.L",
+    "Grip_Fore.L_A",
+    "Grip_Fore.L_B",
+    "Girdle_Fore.R",
+    "Upper_Fore.R",
+    "Lower_Fore.R",
+    "Foot_Fore.R",
+    "Grip_Fore.R_A",
+    "Grip_Fore.R_B",
+    "Pelvis",
+    "Tail_Base",
+    "Tail_Curl",
+    "Tail_01",
+    "Tail_02",
+    "Tail_03",
+    "Tail_04",
+    "Tail_05",
+    "Tail_06",
+    "Tail_07",
+    "Tail_08",
+    "Tail_09",
+    "Tail_10",
+    "Tail_11",
+    "Tail_12",
+    "Tail_13",
+    "Tail_14",
+    "Tail_15",
+    "Tail_16",
+    "Tail_17",
+    "Tail_18",
+    "Tail_19",
+    "Tail_20",
+    "Tail_21",
+    "Tail_22",
+    "Tail_23",
+    "Tail_24",
+    "Tail_25",
+    "Tail_26",
+    "Tail_27",
+    "Tail_28",
+    "Tail_29",
+    "Tail_30",
+    "Tail_31",
+    "Tail_32",
+    "Tail_33",
+    "Tail_34",
+    "Tail_35",
+    "Tail_36",
+    "Tail_37",
+    "Tail_38",
+    "Tail_39",
+    "Tail_40",
+    "Tail_41",
+    "Tail_42",
+    "Tail_43",
+    "Tail_44",
+    "Tail_45",
+    "Tail_46",
+    "Tail_47",
+    "Tail_48",
+    "Tail_49",
+    "Tail_50",
+    "Tail_51",
+    "Tail_52",
+    "Tail_53",
+    "Tail_54",
+    "Tail_55",
+    "Tail_56",
+    "Tail_57",
+    "Tail_58",
+    "Tail_59",
+    "Tail_60",
+    "Tail_61",
+    "Tail_62",
+    "Tail_63",
+    "Tail_64",
+    "Girdle_Hind.L",
+    "Upper_Hind.L",
+    "Lower_Hind.L",
+    "Foot_Hind.L",
+    "Grip_Hind.L_A",
+    "Grip_Hind.L_B",
+    "Girdle_Hind.R",
+    "Upper_Hind.R",
+    "Lower_Hind.R",
+    "Foot_Hind.R",
+    "Grip_Hind.R_A",
+    "Grip_Hind.R_B"
+  ],
+  "actions": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ],
+  "pose_checks": [
+    {
+      "action": "walk",
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "action": "walk",
+      "frame": 72,
+      "finite": true
+    },
+    {
+      "action": "walk",
+      "frame": 145,
+      "finite": true
+    },
+    {
+      "action": "idle_look",
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "action": "idle_look",
+      "frame": 96,
+      "finite": true
+    },
+    {
+      "action": "idle_look",
+      "frame": 193,
+      "finite": true
+    },
+    {
+      "action": "drink",
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "action": "drink",
+      "frame": 72,
+      "finite": true
+    },
+    {
+      "action": "drink",
+      "frame": 145,
+      "finite": true
+    },
+    {
+      "action": "tail_coil",
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "action": "tail_coil",
+      "frame": 96,
+      "finite": true
+    },
+    {
+      "action": "tail_coil",
+      "frame": 193,
+      "finite": true
+    },
+    {
+      "action": "tail_wave",
+      "frame": 1,
+      "finite": true
+    },
+    {
+      "action": "tail_wave",
+      "frame": 96,
+      "finite": true
+    },
+    {
+      "action": "tail_wave",
+      "frame": 193,
+      "finite": true
+    }
+  ],
+  "glb_meshes": [
+    "Body",
+    "LeftEye",
+    "RightEye"
+  ],
+  "glb_animations": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ],
+  "glb_joint_count": 97,
+  "embedded_images": 0,
+  "external_buffers": [],
+  "external_images": [],
+  "pbr_material_count": 21,
+  "texture_note": "Zero source image textures; geometric scales and all 21 original PBR materials retained.",
+  "sha256": {
+    "VFinal_Eye.blend": "7ac485d5d899b3eae3bc1016db68a432e41b95142fa8314fcb75afa532c34648",
+    "VFinal_Eye.glb": "011ae4a4925067f173db60af247ccd6e7d98aa88cecbcb5ab669844fae277849"
+  },
+  "glb_reimport_meshes": [
+    "Body",
+    "LeftEye",
+    "RightEye"
+  ],
+  "importer_generated_bone_control_shapes": [
+    "Icosphere"
+  ],
+  "glb_reimport_actions": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ],
+  "glb_reimport_passed": true
+}

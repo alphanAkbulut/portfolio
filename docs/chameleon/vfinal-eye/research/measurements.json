@@ -1,0 +1,94 @@
+{
+  "version": "depth-ratio-v1",
+  "date": "2026-10-28",
+  "method": "Recomputed from existing manual landmarks, visually reviewed against original montage; no new 3D anatomical measurement",
+  "source_sha256": "12186fe86ff9d38f9b79374329c0d91e13d76346efc3b874ddbe1b43571a51cd",
+  "reference_rows": [
+    {
+      "time_s_approx": 0,
+      "image_side": "L",
+      "root_span_px": 158.25612152457168,
+      "max_projected_protrusion_px": 99.47798447439935,
+      "protrusion_over_root_span": 0.6285885406268715
+    },
+    {
+      "time_s_approx": 0,
+      "image_side": "R",
+      "root_span_px": 142.12670403551894,
+      "max_projected_protrusion_px": 76.24182994697443,
+      "protrusion_over_root_span": 0.5364356435643566
+    },
+    {
+      "time_s_approx": 0.5,
+      "image_side": "L",
+      "root_span_px": 160.1998751560063,
+      "max_projected_protrusion_px": 98.87648154890661,
+      "protrusion_over_root_span": 0.6172069825436408
+    },
+    {
+      "time_s_approx": 0.5,
+      "image_side": "R",
+      "root_span_px": 142.12670403551894,
+      "max_projected_protrusion_px": 74.86277875930305,
+      "protrusion_over_root_span": 0.5267326732673268
+    },
+    {
+      "time_s_approx": 1.25,
+      "image_side": "L",
+      "root_span_px": 161.01242188104618,
+      "max_projected_protrusion_px": 96.9490416803522,
+      "protrusion_over_root_span": 0.6021215043394407
+    },
+    {
+      "time_s_approx": 1.25,
+      "image_side": "R",
+      "root_span_px": 135.2368293032634,
+      "max_projected_protrusion_px": 69.15276000022523,
+      "protrusion_over_root_span": 0.5113456175843403
+    },
+    {
+      "time_s_approx": 2,
+      "image_side": "L",
+      "root_span_px": 159.00314462299164,
+      "max_projected_protrusion_px": 98.48232899499354,
+      "protrusion_over_root_span": 0.6193734672889805
+    },
+    {
+      "time_s_approx": 2,
+      "image_side": "R",
+      "root_span_px": 131.0953851209111,
+      "max_projected_protrusion_px": 64.77726116878722,
+      "protrusion_over_root_span": 0.4941231234725941
+    }
+  ],
+  "demo_v5": [
+    {
+      "image_side": "left",
+      "B_px": 287,
+      "L_aperture_center_px": 195,
+      "L_center_over_B": 0.6794425087108014,
+      "L_max_at_aperture_arc_px": 201.5,
+      "L_max_over_B": 0.7020905923344948
+    },
+    {
+      "image_side": "right",
+      "B_px": 287,
+      "L_aperture_center_px": 210,
+      "L_center_over_B": 0.7317073170731707,
+      "L_max_at_aperture_arc_px": 216.5,
+      "L_max_over_B": 0.7543554006968641
+    }
+  ],
+  "limitations": [
+    "Reference max silhouette projection and demo aperture center are different endpoints.",
+    "Four poses are not four animals; species of stock montage unverified.",
+    "No camera calibration; no population estimate.",
+    "Demo roots are hand-drawn proxies, not anatomical attachment planes."
+  ],
+  "candidate_depth_scales": [
+    1,
+    0.9,
+    0.85
+  ],
+  "candidate_status": "Design experiment only; no changes applied to model or demo"
+}

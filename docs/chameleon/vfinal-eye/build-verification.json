@@ -1,0 +1,189 @@
+{
+  "source": "outputs/eyes-v37/chameleon-animated-v37.blend",
+  "source_sha256": "387d5181f1ed7185183bb8fb738b4f3b9242884ca075330bdec602941da41628",
+  "accepted_settings": {
+    "profile_percent": 50,
+    "aperture_reduction_percent": 15,
+    "depth_percent": 75
+  },
+  "G1_base_radius": 0.23426007677475102,
+  "G1_depth": 0.3032044114223673,
+  "target_depth": 0.22740330856677549,
+  "target_aperture_radius": 0.03982421305170763,
+  "method": "V8 cubic cross-section revolved from averaged upper/lower envelope; G1 size calibration; local root blend. 2D-to-3D interpretation, not pixel-identical reconstruction.",
+  "changed_parts": [
+    {
+      "name": "Near eye | head root skin transition v20_export",
+      "vertices": 4224
+    },
+    {
+      "name": "Near eye | inner aperture reveal_export",
+      "vertices": 23040
+    },
+    {
+      "name": "Near eye | patterned crater lip_export",
+      "vertices": 44604
+    },
+    {
+      "name": "Near eye | root transition fine crowns v20_export",
+      "vertices": 60156
+    },
+    {
+      "name": "Near eye | rounded scale geometry_export",
+      "vertices": 194112
+    },
+    {
+      "name": "Near eye | spherical surface motion_export",
+      "vertices": 11264
+    },
+    {
+      "name": "Far eye | mirrored head root skin transition v20",
+      "vertices": 4224
+    },
+    {
+      "name": "Far eye | mirrored inner aperture reveal",
+      "vertices": 23040
+    },
+    {
+      "name": "Far eye | mirrored patterned crater lip",
+      "vertices": 44604
+    },
+    {
+      "name": "Far eye | mirrored root transition fine crowns v20",
+      "vertices": 60156
+    },
+    {
+      "name": "Far eye | mirrored rounded scale geometry",
+      "vertices": 194112
+    },
+    {
+      "name": "Far eye | mirrored spherical surface motion",
+      "vertices": 11264
+    }
+  ],
+  "unchanged_non_eye_vertices": 1874485,
+  "unchanged_non_eye_vertex_sha256": "ea29cd5e6ba6afd96e41466a9d38a28bd323b596512a637e030510ca64b3d543",
+  "actions_before": {
+    "drink": "06cdf452e862ea2637e9ba9e274808e1c3d77e1b6827248a8f7f31c3fc554927",
+    "idle_look": "1d3053de46f4a079a13531e61ccdd67ca22c31eea45948e72519074460391267",
+    "tail_coil": "ce58f46485c4dd846c836c79b2a413acc72a60d6d6cd021a0b33421ed8ef06ae",
+    "tail_wave": "9d0143ddf0c53a6ef3a74b5e62431bfd7e95b9702181c0d741c6cba5bd8a5b23",
+    "walk": "9d4293625344e22c4e2ed856968c4817232b7cc71264a54207a4e5cc1c1f6ab1"
+  },
+  "actions_after": {
+    "drink": "06cdf452e862ea2637e9ba9e274808e1c3d77e1b6827248a8f7f31c3fc554927",
+    "idle_look": "1d3053de46f4a079a13531e61ccdd67ca22c31eea45948e72519074460391267",
+    "tail_coil": "ce58f46485c4dd846c836c79b2a413acc72a60d6d6cd021a0b33421ed8ef06ae",
+    "tail_wave": "9d0143ddf0c53a6ef3a74b5e62431bfd7e95b9702181c0d741c6cba5bd8a5b23",
+    "walk": "9d4293625344e22c4e2ed856968c4817232b7cc71264a54207a4e5cc1c1f6ab1"
+  },
+  "bones": [
+    "Root",
+    "Torso",
+    "Chest",
+    "Neck_Bone",
+    "Eye_L",
+    "Eye_R",
+    "Girdle_Fore.L",
+    "Upper_Fore.L",
+    "Lower_Fore.L",
+    "Foot_Fore.L",
+    "Grip_Fore.L_A",
+    "Grip_Fore.L_B",
+    "Girdle_Fore.R",
+    "Upper_Fore.R",
+    "Lower_Fore.R",
+    "Foot_Fore.R",
+    "Grip_Fore.R_A",
+    "Grip_Fore.R_B",
+    "Pelvis",
+    "Tail_Base",
+    "Tail_Curl",
+    "Tail_01",
+    "Tail_02",
+    "Tail_03",
+    "Tail_04",
+    "Tail_05",
+    "Tail_06",
+    "Tail_07",
+    "Tail_08",
+    "Tail_09",
+    "Tail_10",
+    "Tail_11",
+    "Tail_12",
+    "Tail_13",
+    "Tail_14",
+    "Tail_15",
+    "Tail_16",
+    "Tail_17",
+    "Tail_18",
+    "Tail_19",
+    "Tail_20",
+    "Tail_21",
+    "Tail_22",
+    "Tail_23",
+    "Tail_24",
+    "Tail_25",
+    "Tail_26",
+    "Tail_27",
+    "Tail_28",
+    "Tail_29",
+    "Tail_30",
+    "Tail_31",
+    "Tail_32",
+    "Tail_33",
+    "Tail_34",
+    "Tail_35",
+    "Tail_36",
+    "Tail_37",
+    "Tail_38",
+    "Tail_39",
+    "Tail_40",
+    "Tail_41",
+    "Tail_42",
+    "Tail_43",
+    "Tail_44",
+    "Tail_45",
+    "Tail_46",
+    "Tail_47",
+    "Tail_48",
+    "Tail_49",
+    "Tail_50",
+    "Tail_51",
+    "Tail_52",
+    "Tail_53",
+    "Tail_54",
+    "Tail_55",
+    "Tail_56",
+    "Tail_57",
+    "Tail_58",
+    "Tail_59",
+    "Tail_60",
+    "Tail_61",
+    "Tail_62",
+    "Tail_63",
+    "Tail_64",
+    "Girdle_Hind.L",
+    "Upper_Hind.L",
+    "Lower_Hind.L",
+    "Foot_Hind.L",
+    "Grip_Hind.L_A",
+    "Grip_Hind.L_B",
+    "Girdle_Hind.R",
+    "Upper_Hind.R",
+    "Lower_Hind.R",
+    "Foot_Hind.R",
+    "Grip_Hind.R_A",
+    "Grip_Hind.R_B"
+  ],
+  "mesh_names": [
+    "Body",
+    "LeftEye",
+    "RightEye"
+  ],
+  "material_state_unchanged": true,
+  "texture_images": [],
+  "texture_note": "Source has no image textures or procedural shader nodes; scales are mesh geometry and material values are standard PBR. No textures omitted.",
+  "topology_unchanged": true,
+  "rig_rest_unchanged": true
+}

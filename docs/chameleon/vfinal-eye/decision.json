@@ -1,0 +1,12 @@
+{
+  "name": "VFinal_Eye",
+  "accepted_demo": "shape-preview-v8",
+  "profile_effect_percent": 50,
+  "aperture_reduction_percent": 15,
+  "depth_scale": 0.75,
+  "base_size_reference": "G1 / body-study-v4",
+  "source_model": "eyes-v37/chameleon-animated-v37.blend",
+  "scope": "eye geometry only; preserve latest skin, nose, mouth, limbs, tail, rig and animation curves",
+  "demo_projected_L_over_B": 0.56875,
+  "important": "2D demo is an artistic target, not a uniquely defined 3D deformation"
+}
