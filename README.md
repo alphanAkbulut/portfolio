@@ -1,6 +1,6 @@
 # Alphan Akbulut
 
-> **V4 chameleon plan (2026-10-20):** This branch is `portfolio-chameleon`. Read the [development plan](docs/chameleon/07-v4-development-plan.md), [current decisions](docs/chameleon/05-resume-and-decisions.md), and [sources/evidence](docs/chameleon/08-sources-and-evidence.md). First release: one cinematic photoreal panther-chameleon hero. **Plan approval pending; build not started.** V3 material remains [historical context](docs/00-START-HERE.md). Production and other branches are preserved.
+> **Current chameleon handoff — 28 October 2026:** Start with [PROJECT_STATUS.md](PROJECT_STATUS.md). The local model reached V36; V37 adds eye-motion polish and awaits visual playback review. Five animation clips exist. The repository remains a static portfolio; Next.js/R3F integration and production release are not complete. Large model files are local-only; see the handoff manifest. Read only the component relevant to the task.
 
 
 **Senior Product Owner | Technical Product Manager**  
@@ -44,3 +44,4 @@ The following are **selected examples**, not a complete inventory of my work or 
 ---
 
 [Portfolio website](https://alphanakbulut.github.io/portfolio/) · *The website's design and project presentation are being refined separately.*
+

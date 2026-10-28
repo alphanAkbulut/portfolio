@@ -1,3 +1,5 @@
+> **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
+
 > **V20 burun tarafı kök adayı:** [Görsel/ölçüm/kaynak kaydı](evidence/v20-nose-root/README.md). Kullanıcı arka=kuyruk, ön=burun olarak netleştirdi. Arka bağlantı test edilen bölgede aynen korundu; ön nötr genişliği arka tarafa yaklaştırıldı. Ana göz deseni korunuyor. Ön/arka hareket tam eşdeğer değil; özellikle buruna bakışta nötre göre daralma ölçütü henüz sağlanmadı. V20 aday, kullanıcı kabulü bekler.
 
 > **V19 yönlü kök derisi adayı:** [Yukarı–nötr–aşağı karşılaştırması](evidence/v19-directional-root/README.md). Baş bağlantısı sabit, göz tarafındaki bant bakış doğrultusunda daralır; karşı tarafta genişler. Ana kabul edilmiş göz deseni korunur. Aşağı daralma daha hafiftir; v19 kullanıcı kabulü bekler, v17/v18 korunur.
@@ -67,3 +69,4 @@ Bu sıra önerilen devam sırasıdır; bu commit yeni Blender düzenlemesi, rig 
 Yerel v17 manifesti dosyanın yeniden açıldığını ve v16 ile 1/29/43/57/90 karelerinde göz kapağı/optik/ana bedenin korunduğunu bildirir. Bu turda manifest ve doğrulama logu okundu; tam render/90 kare testi yeniden çalıştırılmadı. Bu testler biyolojik doğruluk, tüm pullarda çarpışmasızlık veya tarayıcı performansı kanıtı değildir.
 
 Okuma sırası: bu dosya → [tasarım evrimi](16-design-evolution.md) → [bölgesel kanıt](17-regional-skin-evidence.md) → [ayrıntılı yerel geliştirme kaydı](evidence/eye-development-log.md) → mevcut 05/07/14 belgelerinin tarihsel kararları. Yerel G1…G12 göz deney etiketleri, 07 planındaki mimari karar kapılarıyla aynı şey değildir.
+

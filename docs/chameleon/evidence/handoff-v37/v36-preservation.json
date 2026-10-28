@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "hashes": {
+    "protected_positions": "8acb58d138f83e6e9f957457315d7e4bd23e45ca310e3b3fe628ef4bf6463d37",
+    "protected_weights": "d26f0f838a2021bcb9cccdfeb572992b080b3534e5e83b7d4d52a4d04b586dc4",
+    "protected_vertices": 2415653,
+    "LeftEye": "c53a58fffea86126b8b220b9c55ef5656edded603f248c7917616e30aa4a9a7f",
+    "RightEye": "c53a58fffea86126b8b220b9c55ef5656edded603f248c7917616e30aa4a9a7f",
+    "rig": "ceeffd379c9485439feeb2d2719c27e4f0769094e494230ce9e9b8a92fe6006e",
+    "walk": "dd139ba2159e4e569e061ff2a4fbf0638410a65f6f270a804fd1e204ed2f5e4e",
+    "idle_look": "6c79a381e9014dee5dac1e1b5e9fd57fda27f6f978e9e9ad0709931507721faa",
+    "drink": "5e8451b5e7174b2cc0f7ff7e4533f4a519ed19585f469b8458a14b36ea77c784",
+    "tail_coil": "5b628a10fb451c1f48bf59d6b6bc0d481083b83d3c494f9d221e91c182446fc5",
+    "tail_wave": "288da5f599ff10e96178810b727931e07408b14f8d10c978487565e1f03f889c"
+  },
+  "scope": "Everything outside the three proximal limb cores and transported crowns, including accepted first limb, head, eyes, entire V35 tail, all rig bones and all five animation curves."
+}

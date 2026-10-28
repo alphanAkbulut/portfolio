@@ -1,3 +1,5 @@
+> **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
+
 > **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
 
 # Decision register + next LLM session instructions
@@ -84,3 +86,4 @@ Birleşik göz–yanak temsil formu ve kullanıcı talebiyle karışık boyutlu 
 
 ## Son checkpoint — E1 anatomi
 Kullanıcı D5.3'ün düğme gözünü reddetti; D5.3 göz tasarımı kabul edilmedi. Renk animasyonundan önce anatomik göz formu ve hareket; kuyruk için ayrı tasklar. [14 kanıt/plan](14-anatomy-and-motion.md). E1 nötr gri üç açı artefaktı var; oran/kafa bağlamı kabulü ve hareket yok. Güncel küçük adım E1 değerlendirmesi ve E1.1 kafa bağlamı önerisi; kullanıcı kararı bekle.
+

@@ -1,3 +1,5 @@
+> **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
+
 > **360 karelik video araştırması arşivlendi (25 Ekim 2026):** [Yöntem, bulgular ve devam noktası](18-frame-by-frame-video-research.md) · [İnteraktif sayfa ve kanıt paketi](evidence/video-review-v1/README.md). Bu yeni analiz, önceki ilk 25 karelik göz incelemesini genişletir; aşağıdaki eski model durumları tarihsel kayıttır. Bu commit bütün yerel Blender sürümlerinin yedeği değildir.
 
 > **Görsel arşivi eklendi:** [Sürümlü prototip galerisi, referans panosu, videolar ve kaynak dizini](evidence/archive-2026-10-25/README.md). Yerel dosya envanteri ile GitHub'a gerçekten yüklenen dosyalar ayrı işaretlidir.
@@ -9,7 +11,7 @@
 > **Güncel V4 kapsamı (2026-10-20):** Yalnız `portfolio-chameleon`; plan onayı gelmeden build yok. İlk release tek fotogerçekçi panter bukalemunu hero, canlı bağımsız gözler ve tüm site palet geçişidir. Altı varyant sonradır. Güncel uygulama sırası, karar kapıları ve kabul sözleşmesi için [07 — geliştirme planı](07-v4-development-plan.md) ve [08 — kaynak/kanıt](08-sources-and-evidence.md) geçerlidir; aşağıdaki eski öneriler çelişirse 07 önceliklidir.
 
 
-**Status:** D1 + D1.1 COMPLETE; Blender 4.5.14 installed and smoke-tested; D3a public license/metadata checked; D3b local inspection incomplete; D4 independent skin-patch target documented; D5.3 eye rejected; E1 neutral eye envelope produced; provisionally sufficient for motion testing; 48-sample reference-video analysis documented; skinned eye motion not implemented; B1 whole-body clay blockout produced (REVISE; no rig/gait); asset not selected; hero implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read EVERY file in this folder before coding.
+**Status:** D1 + D1.1 COMPLETE; Blender 4.5.14 installed and smoke-tested; D3a public license/metadata checked; D3b local inspection incomplete; D4 independent skin-patch target documented; D5.3 eye rejected; E1 neutral eye envelope produced; provisionally sufficient for motion testing; 48-sample reference-video analysis documented; skinned eye motion not implemented; B1 whole-body clay blockout produced (REVISE; no rig/gait); asset not selected; hero implementation NOT STARTED. **Updated:** 2026-10-20. **Branch:** `portfolio-chameleon` in [alphanAkbulut/portfolio](https://github.com/alphanAkbulut/portfolio). This documentation is the canonical handoff for this V4 concept. Read PROJECT_STATUS.md first, then only the files relevant to the current task.
 
 ## Vision, one sentence
 A breathtakingly realistic, nature-documentary-like chameleon in a living forest walks through the forest with optional subtle localized skin color fluctuations (without touching special colored props), drinks and suddenly pauses as if alerted, disturbs the real water and the website's glass components, notices the visitor, changes color **together with the entire website**, and makes independent eye contact with the cursor; scrolling gracefully pulls the camera back and enters the actual portfolio.
@@ -83,3 +85,4 @@ The user's latest instruction was to **push the FULL technical, creative, UI/UX,
 4. Synchronize film state and site theme from a **single authoritative timeline**.
 5. Evaluate the eye-tracking approach without knowingly promising impossible interaction inside fixed video.
 6. Give the user a real Netlify / previewable experience and request visual acceptance.
+

@@ -1,0 +1,58 @@
+{
+  "source": "V37 actual GLB JSON metadata; geometry buffers not inspected",
+  "mesh_nodes": [
+    "Body",
+    "LeftEye",
+    "RightEye"
+  ],
+  "joint_count": 97,
+  "eye_neck_bones": [
+    "Neck_Bone",
+    "Eye_L",
+    "Eye_R"
+  ],
+  "tail_joint_count": 66,
+  "clips": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ],
+  "files": [
+    {
+      "local_path": "/Users/alphanakbulut/Documents/Codex/2026-10-20/referenced-chatgpt-conversation-this-is-an/outputs/eyes-v37/chameleon-animated-v37.blend",
+      "relative_path": "outputs/eyes-v37/chameleon-animated-v37.blend",
+      "bytes": 464802446,
+      "sha256": "387d5181f1ed7185183bb8fb738b4f3b9242884ca075330bdec602941da41628",
+      "remote_availability": "local-only; not present in Git tree",
+      "public_path": null
+    },
+    {
+      "local_path": "/Users/alphanakbulut/Documents/Codex/2026-10-20/referenced-chatgpt-conversation-this-is-an/outputs/eyes-v37/chameleon-animated-v37.glb",
+      "relative_path": "outputs/eyes-v37/chameleon-animated-v37.glb",
+      "bytes": 188573780,
+      "sha256": "0b398cb589c1d1a64eeabecae86f56e99332fab19e0a5f1d706e1d8b6da380bf",
+      "remote_availability": "local-only; not present in Git tree",
+      "public_path": null
+    },
+    {
+      "local_path": "/Users/alphanakbulut/Documents/Codex/2026-10-20/referenced-chatgpt-conversation-this-is-an/outputs/limbs-v36/chameleon-animated-v36.blend",
+      "relative_path": "outputs/limbs-v36/chameleon-animated-v36.blend",
+      "bytes": 464525966,
+      "sha256": "65a4f81ea7b0efda3d128947aee33135ace86e7b6f1f81afd69b5e80d0006ce3",
+      "remote_availability": "local-only; not present in Git tree",
+      "public_path": null
+    },
+    {
+      "local_path": "/Users/alphanakbulut/Documents/Codex/2026-10-20/referenced-chatgpt-conversation-this-is-an/outputs/limbs-v36/chameleon-animated-v36.glb",
+      "relative_path": "outputs/limbs-v36/chameleon-animated-v36.glb",
+      "bytes": 188573780,
+      "sha256": "1fe1ea8ec0d6e108506444c01272290d452e75284972672022cfa05c85511f66",
+      "remote_availability": "local-only; not present in Git tree",
+      "public_path": null
+    }
+  ],
+  "tail_joint_count_note": "66 prefix matches = 64 Tail_01..Tail_64 joints plus legacy Tail_Base and Tail_Curl",
+  "scope": "GLB JSON metadata and streamed file hashes only; geometry buffers were not anatomically inspected."
+}

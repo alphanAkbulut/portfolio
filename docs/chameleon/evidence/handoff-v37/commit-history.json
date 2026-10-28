@@ -1,0 +1,102 @@
+{
+  "branch": "portfolio-chameleon",
+  "pre_handoff_head": "7c95e50ff8f7b8177d37eabd004f17f69213d784",
+  "commits": [
+    {
+      "sha": "7c95e50ff8f7b8177d37eabd004f17f69213d784",
+      "date": "2026-10-25T10:53:05Z",
+      "message": "docs: archive frame-by-frame panther chameleon research [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/7c95e50ff8f7b8177d37eabd004f17f69213d784"
+    },
+    {
+      "sha": "3ca3074065f32ac4c4fd862adfdfc5b3acf91fda",
+      "date": "2026-10-25T10:27:50Z",
+      "message": "docs: add attributed panther eye reference embed [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/3ca3074065f32ac4c4fd862adfdfc5b3acf91fda"
+    },
+    {
+      "sha": "184eae181b857386af46ad7b6b7288154ea19a0f",
+      "date": "2026-10-25T07:17:43Z",
+      "message": "docs: archive v20 nose-side root candidate and remaining motion gap [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/184eae181b857386af46ad7b6b7288154ea19a0f"
+    },
+    {
+      "sha": "cb47d092beb534315664723f0009843764a590af",
+      "date": "2026-10-25T06:44:40Z",
+      "message": "docs: archive directional eye-root skin v19 candidate [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/cb47d092beb534315664723f0009843764a590af"
+    },
+    {
+      "sha": "17558eaa43854e8a15422de8477927700a2637fb",
+      "date": "2026-10-25T06:26:16Z",
+      "message": "docs: archive v18 eye-root skin candidate preserving approved scales [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/17558eaa43854e8a15422de8477927700a2637fb"
+    },
+    {
+      "sha": "7644d3245652c4dea714eddc522968c0502eac74",
+      "date": "2026-10-24T22:52:12Z",
+      "message": "docs: lock user-approved v17 eye scale appearance [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/7644d3245652c4dea714eddc522968c0502eac74"
+    },
+    {
+      "sha": "9d29fa56c5b67ab82cd214949c97c413c538a4ed",
+      "date": "2026-10-24T22:50:08Z",
+      "message": "docs: record v17 eye motion baseline and focused skin findings [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/9d29fa56c5b67ab82cd214949c97c413c538a4ed"
+    },
+    {
+      "sha": "3d8907076167fb55733c5cfce071fe98250dd60d",
+      "date": "2026-10-24T22:26:12Z",
+      "message": "docs: archive versioned chameleon renders, motion studies and reference provenance [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/3d8907076167fb55733c5cfce071fe98250dd60d"
+    },
+    {
+      "sha": "e2c469b096a04b6be6f7e3396c0dad335de1a093",
+      "date": "2026-10-24T22:18:11Z",
+      "message": "docs: preserve v17 chameleon design history, evidence and resume checkpoint [skip ci] [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/e2c469b096a04b6be6f7e3396c0dad335de1a093"
+    },
+    {
+      "sha": "144c84d298a64a51f704954ce551d61c3140d021",
+      "date": "2026-10-20T14:13:47Z",
+      "message": "feat: add editable whole-body clay study reusing E1 eyes [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/144c84d298a64a51f704954ce551d61c3140d021"
+    },
+    {
+      "sha": "3744c270128e1ca120d44073ffe168d53726885c",
+      "date": "2026-10-20T14:07:56Z",
+      "message": "docs: lock footfall sequence and tongue contact story [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/3744c270128e1ca120d44073ffe168d53726885c"
+    },
+    {
+      "sha": "ff7b5ca0d06335ccf2d5bb8e2c7c0dae39a5fec3",
+      "date": "2026-10-20T13:40:06Z",
+      "message": "docs: surface eye reference video in chameleon index [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/ff7b5ca0d06335ccf2d5bb8e2c7c0dae39a5fec3"
+    },
+    {
+      "sha": "77d4a4b2c32c3b344c9849f83cfd207d921e3fa9",
+      "date": "2026-10-20T13:37:35Z",
+      "message": "docs: deepen eye motion evidence and define skinned E1 test [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/77d4a4b2c32c3b344c9849f83cfd207d921e3fa9"
+    },
+    {
+      "sha": "74f52f85654fcaa5c3475dca6d0084c40abd15cd",
+      "date": "2026-10-20T12:58:52Z",
+      "message": "feat: prototype neutral eye envelope and separate anatomy motion gates [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/74f52f85654fcaa5c3475dca6d0084c40abd15cd"
+    },
+    {
+      "sha": "8a5d4549a0a9724add5dd06b7e6568f70bd1dea1",
+      "date": "2026-10-20T12:45:19Z",
+      "message": "feat: blend scale sizes across connected eye-cheek proxy [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/8a5d4549a0a9724add5dd06b7e6568f70bd1dea1"
+    },
+    {
+      "sha": "71292b88b3f1cedd3704460063c00c83c5edb263",
+      "date": "2026-10-20T12:33:41Z",
+      "message": "feat: compare skin regions at two scales and color endpoints [skip netlify]",
+      "url": "https://github.com/alphanAkbulut/portfolio/commit/71292b88b3f1cedd3704460063c00c83c5edb263"
+    }
+  ]
+}

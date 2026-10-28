@@ -1,3 +1,5 @@
+> **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
+
 # PORTFOLIO MASTER HANDOFF — START HERE
 
 > **V4 branch update — 2026-10-20:** On `portfolio-chameleon`, the active scope is [the single-chameleon hero development plan](chameleon/07-v4-development-plan.md), awaiting user plan approval before build. The V3 choices, branch creation and design-preview write instructions below are historical context and do not authorize current work. Preserve other branches. Read [current decisions](chameleon/05-resume-and-decisions.md) and [sources](chameleon/08-sources-and-evidence.md).
@@ -49,3 +51,4 @@ Questions asked in chat: "İlk hangi tasarımı prototiplememi istersin? V3A, V3
 
 ## Quick next-session contract
 Read all four documents; inspect actual repository state. Confirm the user's V3A/B/C choice. Only after consent, branch safely, make a self-contained hero prototype, provide independently viewable Netlify preview, visually QA it; iterate on user feedback. Keep meaningful humor optional and low-friction, not distracting from career presentation.
+

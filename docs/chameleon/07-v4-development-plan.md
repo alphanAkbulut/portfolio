@@ -1,3 +1,5 @@
+> **Güncel devir — 28 Ekim 2026:** [PROJECT_STATUS.md](../../PROJECT_STATUS.md) bu dosyadaki eski durum/başlama talimatlarından önceliklidir. V36 korunmuş model temeli, V37 yalnız göz hareketi cilası adayıdır; beş animasyon vardır. V37 görsel kabulü ve web entegrasyonu açık. Yalnız görevle ilgili parçaları okuyun; bütün proje klasörünü tekrar taramayın. Aşağıdaki tarihli plan ve kararlar tarihsel kanıt olarak korunur.
+
 > **25 Ekim 2026 güncel durum:** Yerel çalışma v17'ye ulaştı; aşağıdaki B1/E1 ve ilk plan durumları tarihseldir. Önce [güncel devir belgesini](15-current-state-and-resume.md), [tasarım evrimini](16-design-evolution.md) ve [bölgesel deri kanıtını](17-regional-skin-evidence.md) okuyun. Yakın göz hareket denemesi vardır; beden derisi rigli değildir, nihai gerçekçi malzeme ve hero tamamlanmadı. Yüzlerce poz araştırması açık iştir. Büyük Blender dosyaları yereldir; GitHub dokümanı dosya yedeği değildir.
 
 # V4 first release — uygulanabilir geliştirme planı
@@ -247,3 +249,4 @@ Bu görevde **yalnız Markdown**. Belge commit'inde `[skip netlify]` mesajı kul
 Uygun asset ve hedef cihazların temin edileceği **varsayım**, henüz kanıt değil. Hiçbir PoC bugün tamamlanmış değildir. Kapı kalırsa **çıktı → kanıt → kalan risk → en küçük sonraki iş → gerekli karar** sunulur. Bir kapının başarısızlığı bütçesiz yeni hafta/çağrı izni olmaz. Kaliteyi veya gerçek cursor tracking'i sessizce kapsamdan çıkararak tamamlandı denmez.
 
 Onay sonrası ilk eylem: G0 varlık/hak/ortam kontrolü ve G1/G2 için somut deney sözleşmesi. Uzun film, altı varyant veya production değişikliğiyle başlanmaz.
+

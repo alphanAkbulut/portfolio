@@ -1,0 +1,90 @@
+{
+  "source": "V36",
+  "changed_channels": "Eye_L / Eye_R quaternion only",
+  "focus_lead_ms": 125,
+  "snap_ms": 42,
+  "pause_ms": 100,
+  "reference": "video-research-v1: independently timed visual eye events; timings and angles are authored, not measured biological values",
+  "clips": {
+    "walk": {
+      "L": {
+        "events_seconds": [
+          0.45,
+          3.45,
+          5.05
+        ],
+        "max_delta_degrees": 1.3965915113158387,
+        "loop_error": 0.0
+      },
+      "R": {
+        "events_seconds": [
+          0.8200000000000001,
+          3.8200000000000003,
+          5.42
+        ],
+        "max_delta_degrees": 1.411642153317079,
+        "loop_error": 0.0
+      }
+    },
+    "idle_look": {
+      "L": {
+        "events_seconds": [
+          0.45,
+          3.45,
+          5.05,
+          6.65
+        ],
+        "max_delta_degrees": 4.505802370923834,
+        "loop_error": 0.0
+      },
+      "R": {
+        "events_seconds": [
+          0.8200000000000001,
+          3.8200000000000003,
+          5.42,
+          7.0200000000000005
+        ],
+        "max_delta_degrees": 3.601838360216871,
+        "loop_error": 0.0
+      }
+    },
+    "drink": {
+      "L": {
+        "events_seconds": [
+          0.45,
+          3.45,
+          5.05
+        ],
+        "max_delta_degrees": 0.7922836943097905,
+        "loop_error": 0.0
+      },
+      "R": {
+        "events_seconds": [
+          0.8200000000000001,
+          3.8200000000000003,
+          5.42
+        ],
+        "max_delta_degrees": 0.7370096413995219,
+        "loop_error": 0.0
+      }
+    }
+  },
+  "exported_clips": [
+    "drink",
+    "idle_look",
+    "tail_coil",
+    "tail_wave",
+    "walk"
+  ],
+  "exported_eye_channels": {
+    "drink": 6,
+    "idle_look": 6,
+    "tail_coil": 6,
+    "tail_wave": 6,
+    "walk": 6
+  },
+  "files_bytes": {
+    "chameleon-animated-v37.blend": 464802446,
+    "chameleon-animated-v37.glb": 188573780
+  }
+}

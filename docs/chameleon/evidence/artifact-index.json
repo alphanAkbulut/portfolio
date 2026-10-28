@@ -144,5 +144,10 @@
       "bytes": 770433,
       "remote_availability": "NOT included; transfer needed on another machine"
     }
-  ]
+  ],
+  "current_status": "../../../PROJECT_STATUS.md",
+  "current_manifest": "handoff-v37/model-manifest.json",
+  "current_version": "V37 eye-motion candidate; V36 baseline",
+  "current_updated": "2026-10-28",
+  "historical_inventory_date": "2026-10-25"
 }
