@@ -28,5 +28,6 @@
   "source/reimport.py": "383535088ca4c89468c1b1746d6b2735d90505d51e60e5d3a48702fb0cbc60fd",
   "source/export_verify.py": "4a74ce492d91111474f59c57d427f7b32f47df17d87a7f9a4298ee0405d0e543",
   "source/eye-parts.json": "3d2833280d0335bac88e553b9bb6060aae10fd901b966b3a7697b2c4d2b7bfb9",
-  "source/v37-shell.npy": "9aa8b31af2b9612fb918b808d311a103afd9fe6689b2eea3646868ed51a062ac"
+  "source/v37-shell.npy": "9aa8b31af2b9612fb918b808d311a103afd9fe6689b2eea3646868ed51a062ac",
+  "publication.json": "7e1b8eb20af1e8ca217ed5f7b870068fc36100dec7fd099c27b926a6fe3efebe"
 }

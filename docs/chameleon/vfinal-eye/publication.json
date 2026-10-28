@@ -1,0 +1,31 @@
+{
+  "release_id": 426943412,
+  "tag": "vfinal-eye-2026-10-28",
+  "commit": "4266a75cf4cecef81914bac7181f93d32493ea3e",
+  "draft": false,
+  "assets": [
+    {
+      "name": "VFinal_Eye.blend",
+      "id": 685687586,
+      "size": 109856522,
+      "sha256": "7ac485d5d899b3eae3bc1016db68a432e41b95142fa8314fcb75afa532c34648",
+      "url": "https://github.com/alphanAkbulut/portfolio/releases/download/untagged-cb6dca899afd54a0311b/VFinal_Eye.blend"
+    },
+    {
+      "name": "VFinal_Eye.glb",
+      "id": 685689446,
+      "size": 188573776,
+      "sha256": "011ae4a4925067f173db60af247ccd6e7d98aa88cecbcb5ab669844fae277849",
+      "url": "https://github.com/alphanAkbulut/portfolio/releases/download/untagged-cb6dca899afd54a0311b/VFinal_Eye.glb"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 685691705,
+      "size": 164,
+      "sha256": "ad53a0470193033dfc6832c5252ed7e8d956c319b0769e3d4ff4f258c5b44f0a",
+      "url": "https://github.com/alphanAkbulut/portfolio/releases/download/untagged-cb6dca899afd54a0311b/SHA256SUMS.txt"
+    }
+  ],
+  "html_url": "https://github.com/alphanAkbulut/portfolio/releases/tag/vfinal-eye-2026-10-28",
+  "remote_readback_verified": true
+}
