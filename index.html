@@ -9,148 +9,19 @@
   <meta property="og:description" content="Product leadership, analytical thinking and selected work.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://alphanakbulut.github.io/portfolio/">
-    <meta property="og:url" content="https://alphanakbulut.github.io/portfolio/">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:url" content="https://alphanakbulut.github.io/portfolio/">
   <meta property="og:image" content="https://alphanakbulut.github.io/portfolio/assets/og-image.png">
   <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Alphan Akbulut — From complexity to clarity.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://alphanakbulut.github.io/portfolio/assets/og-image.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Alphan Akbulut","jobTitle":"Senior Product Owner & Technical Product Manager","url":"https://alphanakbulut.github.io/portfolio/","address":{"@type":"PostalAddress","addressLocality":"Istanbul","addressCountry":"TR"},"sameAs":["https://www.linkedin.com/in/alphan-akbulut-14005118/","https://github.com/alphanAkbulut"]}</script>
-  <script>
-/* Alphan Akbulut portfolio v2 — enhancements, no dependencies */
-(function(){
-  'use strict';
-  var CFG={
-    goatcounter:'',      // e.g. 'alphan' -> loads https://alphan.goatcounter.com/count (leave '' to disable)
-    chameleonUrl:''      // e.g. 'https://alphanakbulut.github.io/chameleon/' -> shows the link in Contact
-  };
-  var root=document.documentElement; root.classList.add('js');
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ---- analytics: tool-agnostic. Works with GoatCounter / Umami / Plausible if present ---- */
-  function track(name,where){
-    try{
-      if(window.goatcounter&&window.goatcounter.count) window.goatcounter.count({path:'event/'+name+(where?'/'+where:''),title:name,event:true});
-      if(window.umami&&window.umami.track) window.umami.track(name,{where:where});
-      if(window.plausible) window.plausible(name,{props:{where:where}});
-      window.dispatchEvent(new CustomEvent('portfolio:track',{detail:{name:name,where:where}}));
-    }catch(e){}
-  }
-  window.track=track;
-  document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('[data-track]'); if(a) track(a.getAttribute('data-track'),a.getAttribute('data-where')||'');
-  });
-  if(CFG.goatcounter){
-    var s=document.createElement('script'); s.async=true;
-    s.setAttribute('data-goatcounter','https://'+CFG.goatcounter+'.goatcounter.com/count');
-    s.src='https://gc.zgo.at/count.js'; document.head.appendChild(s);
-  }
-  if(CFG.chameleonUrl){var c=document.getElementById('chameleon-link'); if(c){c.href=CFG.chameleonUrl; c.hidden=false;}}
-
-  /* ---- scroll progress + topbar state + active nav ---- */
-  var bar=document.createElement('div'); bar.className='progress'; bar.setAttribute('aria-hidden','true'); document.body.appendChild(bar);
-  var top=document.querySelector('.topbar'), links=[].slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
-  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
-  var tick=false;
-  function onScroll(){
-    if(tick) return; tick=true;
-    requestAnimationFrame(function(){
-      var h=document.documentElement.scrollHeight-innerHeight, y=scrollY;
-      bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
-      top&&top.classList.toggle('scrolled',y>30);
-      var cur=null; secs.forEach(function(s){ if(s.getBoundingClientRect().top<innerHeight*.35) cur=s; });
-      links.forEach(function(a){ a.classList.toggle('active',!!cur&&a.getAttribute('href')==='#'+cur.id); });
-      tick=false;
-    });
-  }
-  addEventListener('scroll',onScroll,{passive:true}); onScroll();
-
-  /* ---- reveal on scroll (staggered) ---- */
-  if(!reduce&&'IntersectionObserver' in window){
-    var targets=document.querySelectorAll('.section .section-header,.section .two-col>*,.metric,.pillar,.job,.skill,.showcase,.credentials>div,.contact-grid>*,.flow-item');
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
-    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
-    [].forEach.call(targets,function(el,i){
-      el.classList.add('rv');
-      var sib=el.parentElement?[].indexOf.call(el.parentElement.children,el):0;
-      el.style.setProperty('--d',Math.min(sib,5)*0.08+'s'); io.observe(el);
-    });
-    // safety: never leave content hidden
-    setTimeout(function(){[].forEach.call(document.querySelectorAll('.rv:not(.in)'),function(el){var r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add('in');});},1800);
-  }
-
-  /* ---- cursor spotlight on cards ---- */
-  if(!reduce&&matchMedia('(hover:hover)').matches){
-    document.addEventListener('pointermove',function(e){
-      var c=e.target.closest&&e.target.closest('.metric,.showcase'); if(!c) return;
-      var r=c.getBoundingClientRect(); c.style.setProperty('--mx',(e.clientX-r.left)+'px'); c.style.setProperty('--my',(e.clientY-r.top)+'px');
-    },{passive:true});
-  }
-
-  /* ---- count-up for metric numbers ---- */
-  if(!reduce&&'IntersectionObserver' in window){
-    var vals=document.querySelectorAll('.metric .value');
-    var io2=new IntersectionObserver(function(es){
-      es.forEach(function(en){
-        if(!en.isIntersecting) return; io2.unobserve(en.target);
-        var el=en.target, node=null;
-        for(var i=0;i<el.childNodes.length;i++){ if(el.childNodes[i].nodeType===3&&/\d/.test(el.childNodes[i].nodeValue)){node=el.childNodes[i];break;} }
-        if(!node) return;
-        var m=node.nodeValue.match(/^(\D*)([\d.,]+)(.*)$/); if(!m) return;
-        var end=parseFloat(m[2].replace(/,/g,'')); if(!isFinite(end)) return;
-        var dec=(m[2].split('.')[1]||'').length, t0=performance.now(), dur=1100;
-        (function step(t){
-          var p=Math.min(1,(t-t0)/dur), v=end*(1-Math.pow(1-p,3));
-          node.nodeValue=m[1]+v.toFixed(dec)+m[3]; if(p<1) requestAnimationFrame(step); else node.nodeValue=m[1]+m[2]+m[3];
-        })(t0);
-      });
-    },{threshold:.6});
-    [].forEach.call(vals,function(v){io2.observe(v)});
-  }
-})();
-
-</script>
+  <script src="./assets/enhance.js" defer></script>
   <title>Alphan Akbulut | Senior Product Owner & Technical Product Manager</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./hero-graph.css?v=responsive-motion-2">
-  <style>
-/* v2 enhancements: light, no libraries */
-.hero-cinematic .hero-tertiary{font-size:12px;font-weight:650;color:#9fb4bf;padding:14px 4px;letter-spacing:.02em}
-.hero-cinematic .hero-tertiary:hover{color:#b7eacd}
-.hero-actions{flex-wrap:wrap;align-items:center}
-.chameleon-link{font-weight:730}
-.contact-links a:nth-child(1){font-size:clamp(16px,2vw,20px)}
-.contact-links a:first-child{font-size:clamp(16px,2vw,20px)}
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.js .rv.in{opacity:1;transform:none}
-/* cursor spotlight on cards */
-.metric,.job,.skill,.pillar,.showcase{position:relative}
-.metric::after,.showcase::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;
- background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(183,234,205,.10),transparent 60%)}
-.metric:hover::after,.showcase:hover::after{opacity:1}
-.metric{transition:border-color .25s,transform .25s}.metric:hover{border-color:#6f9a86;transform:translateY(-3px)}
-.skill,.pillar{transition:border-color .25s}.skill:hover,.pillar:hover{border-top-color:#b7eacd}
-/* top bar shrinks + progress line */
-.topbar{transition:background .3s,box-shadow .3s}.topbar.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.35)}
-.topbar.scrolled .nav{min-height:64px}.nav{transition:min-height .25s}
-.progress{position:fixed;left:0;top:0;height:2px;width:100%;background:#b7eacd;transform-origin:0 50%;transform:scaleX(0);z-index:60;pointer-events:none}
-.nav-links a.active:not(.nav-cta){color:#b7eacd}
-/* case preview fallback if remote image fails */
-.preview.no-img img{display:none}
-.preview.no-img::after{content:"Agency information → Documents → Confirmation";flex:1;display:grid;place-items:center;text-align:center;padding:24px;color:#b5c5d1;font-size:13px;border:1px dashed #526a78;margin-top:0}
-/* mobile: stop hero credentials colliding with the graph label */
-@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.progress{display:none}}
-@media(max-width:600px){
- .hero.hero-cinematic,.hero-cinematic .hero-layout{min-height:1070px}
- .hero-cinematic .hero-tertiary{padding:6px 0}
- .hero-cinematic .hero-credentials{margin-top:20px}
- .pg-map{top:48%}
- .pg-topline,.pg-flag{top:55%}
-}
-[hidden]{display:none!important}
-
-</style>
+  <link rel="stylesheet" href="./assets/enhance.css">
   <script src="./hero-graph.js?v=responsive-motion-2" defer></script>
 </head>
 <body>
