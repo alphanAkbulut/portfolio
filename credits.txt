@@ -1,0 +1,12 @@
+Alphan Akbulut, İstanbul 2026
+Tasarım ve kod: Alphan Akbulut. © 2026 Tüm hakları saklıdır.
+
+Yazı tipleri (SIL Open Font License 1.1):
+  Nunito, Vernon Adams ve Nunito projesi
+  Rubik, Hubert ve Fischer, Rubik projesi
+  IBM Plex Sans, IBM Corp.
+Kütüphane: three.js (MIT), three.js yazarları
+
+Görseller (Wikimedia Commons):
+  Pazırık halısı: [YAZAR / LİSANS EKLENECEK]
+  İznik çini paneli: [YAZAR / LİSANS EKLENECEK]
